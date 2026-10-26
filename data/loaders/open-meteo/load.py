@@ -7,7 +7,7 @@ destination is the climate of the coordinates of its city (not of a resort next 
 For every destination, 12 rows (January first) averaged over the years START_YEAR..END_YEAR:
 - `temp_max_c`, `temp_min_c`: mean of the daily maximum and minimum of the month over all its days of all years;
 - `precipitation_mm`: total of the month, mean over the years.
-`sea_temp_c` is filled by P1-DS-03.4 (Open-Meteo Marine), which extends this loader.
+`sea_temp_c` is filled by P1-DS-03.4: run load_sea.py after this loader, it adds the field to out/climate.jsonl.
 
 The years are fixed, so a rebuild gives the same file. One response per destination is cached in
 data/loaders/open-meteo/cache/ (not in git); a file placed there by hand is used without any request. Delete it or
@@ -15,6 +15,7 @@ pass --refresh to fetch a new one.
 
 The free API limits the requests per IP address and answers 429 when the limit is spent. The daily limit stops the
 loader at once (rerun it later, the destinations already cached are not requested again); the other limits are waited out.
+A network error is retried a few times.
 
 Usage: python3 data/loaders/open-meteo/load.py [--refresh]
 """
@@ -38,6 +39,7 @@ START_YEAR, END_YEAR = 2015, 2024
 DAILY = ("temperature_2m_max", "temperature_2m_min", "precipitation_sum")
 RETRIES = 3
 RETRY_WAIT_SECONDS = 65  # the minutely limit of the free API resets after a minute
+NETWORK_RETRY_WAIT_SECONDS = 5
 PAUSE_SECONDS = 1.0
 
 
@@ -50,6 +52,31 @@ def read_jsonl(path):
         raise LoadError(f"{path} not found, run the loader that writes it first")
     with path.open(encoding="utf-8") as f:
         return [json.loads(line) for line in f if line.strip()]
+
+
+def get_json(url, params, label):
+    """GET with the limits of the free API: waits out the minutely 429, stops on the daily one; retries network errors."""
+    for attempt in range(1, RETRIES + 1):
+        try:
+            response = requests.get(url, params=params, timeout=60)
+        except requests.RequestException as e:
+            if attempt == RETRIES:
+                raise LoadError(f"{label}: request failed after {RETRIES} attempts: {e}") from None
+            print(f"  network error for {label}, retrying in {NETWORK_RETRY_WAIT_SECONDS} s: {type(e).__name__}")
+            time.sleep(NETWORK_RETRY_WAIT_SECONDS)
+            continue
+        if response.status_code != 429:
+            break
+        reason = response.json().get("reason", "") if response.content else ""
+        if "daily" in reason.lower():
+            raise LoadError(f"{label}: {reason}")
+        if attempt == RETRIES:
+            raise LoadError(f"{label}: still 429 after {RETRIES} attempts: {reason}")
+        print(f"  429 for {label}, waiting {RETRY_WAIT_SECONDS} s: {reason}")
+        time.sleep(RETRY_WAIT_SECONDS)
+    if response.status_code != 200:
+        raise LoadError(f"{label}: HTTP {response.status_code}: {response.text[:200]}")
+    return response.json()
 
 
 def fetch(destination, city, refresh):
@@ -65,23 +92,7 @@ def fetch(destination, city, refresh):
         "daily": ",".join(DAILY),
         "timezone": "auto",
     }
-    for attempt in range(1, RETRIES + 1):
-        try:
-            response = requests.get(ARCHIVE_URL, params=params, timeout=60)
-        except requests.RequestException as e:
-            raise LoadError(f"{destination['id']}: request failed: {e}") from None
-        if response.status_code != 429:
-            break
-        reason = response.json().get("reason", "") if response.content else ""
-        if "daily" in reason.lower():
-            raise LoadError(f"{destination['id']}: {reason}")
-        if attempt == RETRIES:
-            raise LoadError(f"{destination['id']}: still 429 after {RETRIES} attempts: {reason}")
-        print(f"  429 for {destination['id']}, waiting {RETRY_WAIT_SECONDS} s: {reason}")
-        time.sleep(RETRY_WAIT_SECONDS)
-    if response.status_code != 200:
-        raise LoadError(f"{destination['id']}: HTTP {response.status_code}: {response.text[:200]}")
-    data = response.json()
+    data = get_json(ARCHIVE_URL, params, destination["id"])
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     part = path.with_suffix(".part")
     part.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")

@@ -52,11 +52,24 @@ def read_jsonl(path):
 
 
 def collect_loader_outputs():
-    """Groups loader output files by dataset name; several loaders may feed one dataset."""
+    """Groups loader output files by dataset name; several loaders may feed one dataset.
+
+    `calibration` is not a list of records: its parts are merged by merge_calibration.
+    """
     datasets = defaultdict(list)
     for path in sorted(LOADERS_DIR.glob("*/out/*.jsonl")):
-        datasets[path.stem].extend(read_jsonl(path))
+        if path.stem != "calibration":
+            datasets[path.stem].extend(read_jsonl(path))
     return datasets
+
+
+def collect_calibration_parts():
+    """Returns (loader name, partial calibration object) for every loader that writes out/calibration.jsonl."""
+    return [
+        (path.parent.parent.name, record)
+        for path in sorted(LOADERS_DIR.glob("*/out/calibration.jsonl"))
+        for record in read_jsonl(path)
+    ]
 
 
 def canonical_line(record):
@@ -76,6 +89,28 @@ def write_dataset(name, records):
     }
 
 
+def merge_calibration(parts):
+    """Merges the parts of the single `calibration` object (CFC-3) written by several loaders (P1-DS-07).
+
+    Each loader writes its own partial object to its out/calibration.jsonl. The top-level keys of the parts must
+    not overlap; `sources` of all parts are united.
+    """
+    merged = {}
+    owner = {}
+    for source, part in parts:
+        for key, value in part.items():
+            if key == "sources":
+                continue
+            if key in owner:
+                raise BuildError(f"calibration: key {key!r} is given by both {owner[key]} and {source}")
+            owner[key] = source
+            merged[key] = value
+    sources = sorted({name for _, part in parts for name in part.get("sources", [])})
+    if sources:
+        merged["sources"] = sources
+    return [merged] if merged else []
+
+
 def fill_city_airports(datasets):
     """Sets cities[].airports to the IATA codes of the airports whose city_id is that city.
 
@@ -93,6 +128,9 @@ def build():
     for name, apply_override in OVERRIDES.items():
         datasets[name] = apply_override(datasets.get(name, []), OVERRIDES_DIR)
     fill_city_airports(datasets)
+    calibration = merge_calibration(collect_calibration_parts())
+    if calibration:
+        datasets["calibration"] = calibration
 
     SNAPSHOT_DIR.mkdir(exist_ok=True)
     # Drop datasets left over from earlier builds so the snapshot matches the manifest.

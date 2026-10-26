@@ -80,5 +80,13 @@
   критерий `03.4` требует её для каждого направления с тегом `sea`. Тегов `sea` теперь 13, остальные не изменились.
   Технически: `tags` Махачкалы в `data/loaders/catalog/destinations.csv`, пересобраны `destinations` и `climate`.
   (`19fc3d8`)
+- Набор стран `countries` в снапшоте: 199 стран с названиями по-русски и по-английски, все паспорта и направления
+  визовой матрицы, так что у `visa` не будет ссылок на неизвестную страну. Технически: загрузчик
+  `data/loaders/passport-index-data/countries.py` берёт коды из `passport-index-matrix-iso2.csv`
+  (`imorte/passport-index-data`), английское название и geonameId из `countryInfo.txt`, русское из
+  `alternateNamesV2.zip` (GeoNames, кэш в `cache/`, не в git) и пишет `out/countries.jsonl`; русское название —
+  предпочитаемое в GeoNames, у CD, KM и SC взято другое название той же страны («Заир» и сокращения «о-ва»
+  заменены); загрузчик падает, если кода из матрицы нет в GeoNames или нет русского названия.
+  `data/snapshot/countries.jsonl`, запись в `manifest.json`, `validate.py` проходит. (`eecadb4`)
 
 [unreleased]: https://github.com/parnickname/ostrovok-parser/commits/main

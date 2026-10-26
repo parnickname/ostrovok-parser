@@ -126,16 +126,24 @@ def read_cities(lines, country_codes):
     return rows, left_out
 
 
+CYRILLIC = re.compile("[\u0400-\u04ff]")
+
+
 def read_russian_names(lines, wanted_ids):
-    """Maps geonameId -> best Russian name: preferred first, then not short, then the lowest name id."""
+    """Maps geonameId -> best Russian name.
+
+    Only names tagged `ru` that contain Cyrillic (some are written in Latin: "Ural'sk"), not historic. Order: not
+    colloquial first (a colloquial name is the only `ru` name of Murmansk, so it is the last resort), then preferred,
+    then not short, then the lowest name id. Cities with no such name are fixed in overrides/city_names_ru.csv.
+    """
     best = {}
     for line in lines:
         row = line.split("\t")
         if len(row) < 8 or row[ALT_LANG] != "ru" or row[ALT_GEONAME_ID] not in wanted_ids:
             continue
-        if row[ALT_COLLOQUIAL] == "1" or row[ALT_HISTORIC] == "1":
+        if row[ALT_HISTORIC] == "1" or not CYRILLIC.search(row[ALT_NAME]):
             continue
-        key = (row[ALT_PREFERRED] != "1", row[ALT_SHORT] == "1", int(row[0]))
+        key = (row[ALT_COLLOQUIAL] == "1", row[ALT_PREFERRED] != "1", row[ALT_SHORT] == "1", int(row[0]))
         current = best.get(row[ALT_GEONAME_ID])
         if current is None or key < current[0]:
             best[row[ALT_GEONAME_ID]] = (key, row[ALT_NAME])
@@ -202,8 +210,9 @@ def build_records(rows, russian_names, ids):
         name_en = row[ASCII_NAME] or row[NAME]
         name_ru = russian_names.get(geoname_id)
         if name_ru is None:
-            # impulse: a city without a Russian name in GeoNames gets its English name; catalog cities
-            # (P1-DS-03.1) must be fixed by hand, remove when all of them have a Russian name.
+            # impulse: a city without a Russian name in GeoNames gets its English name; the cities that must have
+            # a Russian name (departure cities, destinations) are fixed in data/overrides/city_names_ru.csv by
+            # build.py, remove when GeoNames has a Russian name for all of them.
             name_ru = name_en
             no_russian += 1
         records.append({

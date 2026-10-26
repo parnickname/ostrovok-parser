@@ -13,6 +13,7 @@ dataset files and therefore the same sha256 in the manifest. Only
 Usage: python3 data/build.py
 """
 
+import csv
 import hashlib
 import json
 import shutil
@@ -29,9 +30,8 @@ SOURCES_FILE = DATA_DIR / "sources.yaml"
 
 SCHEMA_VERSION = 1
 
-# Dataset name -> function(records, overrides_dir) -> records.
+# Dataset name -> function(records, overrides_dir) -> records, defined below.
 # Each override is added by the subtask that introduces it (visa.csv: P1-DS-02.4).
-OVERRIDES = {}
 
 
 class BuildError(Exception):
@@ -91,6 +91,37 @@ def write_dataset(name, records):
         "sha256": hashlib.sha256(content).hexdigest(),
         "schema_version": SCHEMA_VERSION,
     }
+
+
+def apply_city_names(records, overrides_dir):
+    """Sets `name_ru` of the cities listed in overrides/city_names_ru.csv (`id,name_ru,comment`).
+
+    For the cities that must have a Russian name but have none in GeoNames. An id that is not in `cities` is an
+    error: an override that no longer fits must not stay silently.
+    """
+    path = overrides_dir / "city_names_ru.csv"
+    if not path.exists():
+        return records
+    shown = path.relative_to(DATA_DIR.parent).as_posix()
+    names = {}
+    with path.open(encoding="utf-8", newline="") as f:
+        for line_no, row in enumerate(csv.DictReader(f), start=2):
+            city_id, name = (row["id"] or "").strip(), (row["name_ru"] or "").strip()
+            if not city_id or not name:
+                raise BuildError(f"{shown}:{line_no}: id and name_ru must not be empty")
+            if city_id in names:
+                raise BuildError(f"{shown}:{line_no}: city {city_id!r} twice")
+            names[city_id] = name
+    by_id = {r["id"]: r for r in records}
+    for city_id, name in names.items():
+        if city_id not in by_id:
+            raise BuildError(f"{shown}: city {city_id!r} is not in cities")
+        by_id[city_id]["name_ru"] = name
+    return records
+
+
+# impulse: one override per dataset is enough now; make it a list if a dataset needs several.
+OVERRIDES = {"cities": apply_city_names}
 
 
 def merge_calibration(parts):

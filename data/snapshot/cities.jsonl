@@ -1781,7 +1781,7 @@
 {"airports":["MMB"],"country_code":"JP","id":"ozora","lat":43.91298,"lon":144.16852,"name_en":"Ozora","name_ru":"Одзора","population":7430,"stations":[],"timezone":"Asia/Tokyo"}
 {"airports":["MME"],"country_code":"GB","id":"sunderland","lat":54.90465,"lon":-1.38222,"name_en":"Sunderland","name_ru":"Сандерленд","population":170134,"stations":[],"timezone":"Europe/London"}
 {"airports":["MMJ"],"country_code":"JP","id":"matsumoto","lat":36.23333,"lon":137.96667,"name_en":"Matsumoto","name_ru":"Мацумото","population":241145,"stations":[],"timezone":"Asia/Tokyo"}
-{"airports":["MMK"],"country_code":"RU","id":"murmansk","lat":68.96778,"lon":33.09922,"name_en":"Murmansk","name_ru":"Murmansk","population":295374,"stations":[],"timezone":"Europe/Moscow"}
+{"airports":["MMK"],"country_code":"RU","id":"murmansk","lat":68.96778,"lon":33.09922,"name_en":"Murmansk","name_ru":"Мурманск","population":295374,"stations":[],"timezone":"Europe/Moscow"}
 {"airports":["MMO"],"country_code":"CV","id":"vila-do-maio","lat":15.13823,"lon":-23.21158,"name_en":"Vila do Maio","name_ru":"Вила-ду-Майо","population":4472,"stations":[],"timezone":"Atlantic/Cape_Verde"}
 {"airports":["MMX"],"country_code":"SE","id":"malmoe","lat":55.60587,"lon":13.00073,"name_en":"Malmoe","name_ru":"Мальмё","population":362133,"stations":[],"timezone":"Europe/Stockholm"}
 {"airports":["MMY","SHI"],"country_code":"JP","id":"miyakojima","lat":24.79016,"lon":125.31109,"name_en":"Miyakojima","name_ru":"Миякодзима","population":54908,"stations":[],"timezone":"Asia/Tokyo"}
@@ -2525,7 +2525,7 @@
 {"airports":["STR"],"country_code":"DE","id":"stuttgart","lat":48.78232,"lon":9.17702,"name_en":"Stuttgart","name_ru":"Штутгарт","population":612663,"stations":[],"timezone":"Europe/Berlin"}
 {"airports":["STS"],"country_code":"US","id":"santa-rosa-us","lat":38.44047,"lon":-122.71443,"name_en":"Santa Rosa","name_ru":"Санта-Роза","population":178127,"stations":[],"timezone":"America/Los_Angeles"}
 {"airports":["STV"],"country_code":"IN","id":"surat","lat":21.19594,"lon":72.83023,"name_en":"Surat","name_ru":"Сурат","population":4591246,"stations":[],"timezone":"Asia/Kolkata"}
-{"airports":["STW"],"country_code":"RU","id":"stavropol","lat":45.03442,"lon":41.9642,"name_en":"Stavropol","name_ru":"Stavropol’","population":433931,"stations":[],"timezone":"Europe/Moscow"}
+{"airports":["STW"],"country_code":"RU","id":"stavropol","lat":45.03442,"lon":41.9642,"name_en":"Stavropol","name_ru":"Ставрополь","population":433931,"stations":[],"timezone":"Europe/Moscow"}
 {"airports":["SUB"],"country_code":"ID","id":"surabaya","lat":-7.24917,"lon":112.75083,"name_en":"Surabaya","name_ru":"Сурабая","population":3018022,"stations":[],"timezone":"Asia/Jakarta"}
 {"airports":["SUG"],"country_code":"PH","id":"surigao","lat":9.789,"lon":125.495,"name_en":"Surigao","name_ru":"Серигао Сити","population":87832,"stations":[],"timezone":"Asia/Manila"}
 {"airports":["SUI"],"country_code":"GE","id":"sokhumi","lat":43.00697,"lon":40.9893,"name_en":"Sokhumi","name_ru":"Сухум","population":65439,"stations":[],"timezone":"Europe/Moscow"}
@@ -2792,7 +2792,7 @@
 {"airports":["UNN"],"country_code":"TH","id":"ranong","lat":9.96583,"lon":98.63476,"name_en":"Ranong","name_ru":"Ранонг","population":24561,"stations":[],"timezone":"Asia/Bangkok"}
 {"airports":["UPG"],"country_code":"ID","id":"makassar","lat":-5.14861,"lon":119.43194,"name_en":"Makassar","name_ru":"Макассар","population":1474393,"stations":[],"timezone":"Asia/Makassar"}
 {"airports":["UPN"],"country_code":"MX","id":"uruapan","lat":19.41677,"lon":-102.05842,"name_en":"Uruapan","name_ru":"Уруапан","population":299523,"stations":[],"timezone":"America/Mexico_City"}
-{"airports":["URA"],"country_code":"KZ","id":"oral","lat":51.24601,"lon":51.42558,"name_en":"Oral","name_ru":"Ural’sk","population":330000,"stations":[],"timezone":"Asia/Oral"}
+{"airports":["URA"],"country_code":"KZ","id":"oral","lat":51.24601,"lon":51.42558,"name_en":"Oral","name_ru":"Уральск","population":330000,"stations":[],"timezone":"Asia/Oral"}
 {"airports":["URC"],"country_code":"CN","id":"ueruemqi","lat":43.80096,"lon":87.60046,"name_en":"UEruemqi","name_ru":"Урумчи","population":4054000,"stations":[],"timezone":"Asia/Urumqi"}
 {"airports":["URE"],"country_code":"EE","id":"kuressaare","lat":58.25382,"lon":22.49217,"name_en":"Kuressaare","name_ru":"Курессааре","population":12698,"stations":[],"timezone":"Europe/Tallinn"}
 {"airports":["URG"],"country_code":"BR","id":"uruguaiana","lat":-29.75472,"lon":-57.08833,"name_en":"Uruguaiana","name_ru":"Уругуаяна","population":120819,"stations":[],"timezone":"America/Sao_Paulo"}
@@ -3174,7 +3174,7 @@
 {"airports":[],"country_code":"AF","id":"hukumati-azrah","lat":34.17355,"lon":69.64573,"name_en":"Hukumati Azrah","name_ru":"Хукумати Азра","population":12526,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"imam-sahib","lat":37.18897,"lon":68.93644,"name_en":"Imam Sahib","name_ru":"Имам Сахиб","population":9659,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"istalif","lat":34.83268,"lon":69.07756,"name_en":"Istalif","name_ru":"Исталиф","population":41413,"stations":[],"timezone":"Asia/Kabul"}
-{"airports":[],"country_code":"AF","id":"jabal-os-saraj","lat":35.11833,"lon":69.23778,"name_en":"Jabal os Saraj","name_ru":"Dzhabal’-Ussaradzh","population":15032,"stations":[],"timezone":"Asia/Kabul"}
+{"airports":[],"country_code":"AF","id":"jabal-os-saraj","lat":35.11833,"lon":69.23778,"name_en":"Jabal os Saraj","name_ru":"Jabal os Saraj","population":15032,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"jalalabad","lat":34.42647,"lon":70.45153,"name_en":"Jalalabad","name_ru":"Джелалабад","population":271900,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"jurm","lat":36.86477,"lon":70.83421,"name_en":"Jurm","name_ru":"Журм","population":23064,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"karukh","lat":34.48108,"lon":62.5863,"name_en":"Karukh","name_ru":"Карух","population":17484,"stations":[],"timezone":"Asia/Kabul"}
@@ -3196,7 +3196,7 @@
 {"airports":[],"country_code":"AF","id":"mehtar-lam","lat":34.67139,"lon":70.20944,"name_en":"Mehtar Lam","name_ru":"Митарлам","population":17345,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"mir-bachah-kot","lat":34.74999,"lon":69.11899,"name_en":"Mir Bachah Kot","name_ru":"Мир-Бача-Кот","population":5405,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"mirabad","lat":30.43624,"lon":61.8383,"name_en":"Mirabad","name_ru":"Mirabad","population":14160,"stations":[],"timezone":"Asia/Kabul"}
-{"airports":[],"country_code":"AF","id":"muhmand-dara","lat":34.24749,"lon":70.87218,"name_en":"Muhmand Dara","name_ru":"Basavul’","population":6835,"stations":[],"timezone":"Asia/Kabul"}
+{"airports":[],"country_code":"AF","id":"muhmand-dara","lat":34.24749,"lon":70.87218,"name_en":"Muhmand Dara","name_ru":"Muhmand Dara","population":6835,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"nahrin","lat":36.0649,"lon":69.13343,"name_en":"Nahrin","name_ru":"Нахрин","population":22363,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"nili","lat":33.72178,"lon":66.13023,"name_en":"Nili","name_ru":"Нили","population":30058,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"paghman","lat":34.58787,"lon":68.95091,"name_en":"Paghman","name_ru":"Пагман","population":49157,"stations":[],"timezone":"Asia/Kabul"}
@@ -4436,7 +4436,7 @@
 {"airports":[],"country_code":"AZ","id":"aghjabadi","lat":40.05015,"lon":47.45937,"name_en":"Aghjabadi","name_ru":"Агджабеди","population":41200,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"aghstafa","lat":41.11889,"lon":45.45389,"name_en":"Aghstafa","name_ru":"Агстафа","population":12200,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"aghsu","lat":40.57028,"lon":48.40087,"name_en":"Aghsu","name_ru":"Ахсу","population":22300,"stations":[],"timezone":"Asia/Baku"}
-{"airports":[],"country_code":"AZ","id":"ahmadbayli","lat":39.88074,"lon":48.39158,"name_en":"Ahmadbayli","name_ru":"Tel’mankend","population":17242,"stations":[],"timezone":"Asia/Baku"}
+{"airports":[],"country_code":"AZ","id":"ahmadbayli","lat":39.88074,"lon":48.39158,"name_en":"Ahmadbayli","name_ru":"Ahmadbayli","population":17242,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"aliabad","lat":41.4829,"lon":46.63483,"name_en":"Aliabad","name_ru":"Алиабад","population":9103,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"amirdzhan","lat":40.42639,"lon":49.98361,"name_en":"Amirdzhan","name_ru":"Amirdzhan","population":28203,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"aran","lat":40.62528,"lon":46.97556,"name_en":"Aran","name_ru":"Аран","population":6724,"stations":[],"timezone":"Asia/Baku"}
@@ -4452,7 +4452,7 @@
 {"airports":[],"country_code":"AZ","id":"belokany","lat":41.72626,"lon":46.40478,"name_en":"Belokany","name_ru":"Белоканы","population":14800,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"beylagan","lat":39.77556,"lon":47.61861,"name_en":"Beylagan","name_ru":"Бейлаган","population":15599,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"bilajari","lat":40.4444,"lon":49.80566,"name_en":"Bilajari","name_ru":"Баладжары","population":42194,"stations":[],"timezone":"Asia/Baku"}
-{"airports":[],"country_code":"AZ","id":"bilajer","lat":40.56441,"lon":50.04002,"name_en":"Bilajer","name_ru":"Bil’gyakh","population":8983,"stations":[],"timezone":"Asia/Baku"}
+{"airports":[],"country_code":"AZ","id":"bilajer","lat":40.56441,"lon":50.04002,"name_en":"Bilajer","name_ru":"Бильгях","population":8983,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"binagadi","lat":40.46602,"lon":49.82783,"name_en":"Binagadi","name_ru":"Бинагади","population":14012,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"biny-selo","lat":40.45076,"lon":50.08686,"name_en":"Biny Selo","name_ru":"Бина","population":24596,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"boradigah","lat":38.93013,"lon":48.7092,"name_en":"Boradigah","name_ru":"Борадигях","population":5904,"stations":[],"timezone":"Asia/Baku"}
@@ -4466,7 +4466,7 @@
 {"airports":[],"country_code":"AZ","id":"digah","lat":40.49257,"lon":49.87477,"name_en":"Digah","name_ru":"Дигях","population":9800,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"divichibazar","lat":41.20117,"lon":48.98712,"name_en":"Divichibazar","name_ru":"Дивичи","population":23248,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"dollyar-dzhagir","lat":40.88245,"lon":46.03665,"name_en":"Dollyar-Dzhagir","name_ru":"Dollyar-Dzhagir","population":5038,"stations":[],"timezone":"Asia/Baku"}
-{"airports":[],"country_code":"AZ","id":"dunyamalilar","lat":39.77278,"lon":47.75889,"name_en":"Dunyamalilar","name_ru":"Dun’yamalylar","population":5968,"stations":[],"timezone":"Asia/Baku"}
+{"airports":[],"country_code":"AZ","id":"dunyamalilar","lat":39.77278,"lon":47.75889,"name_en":"Dunyamalilar","name_ru":"Dunyamalilar","population":5968,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"fuzuli","lat":39.60094,"lon":47.14529,"name_en":"Fuzuli","name_ru":"Физули","population":25100,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"gadabay","lat":40.57055,"lon":45.81229,"name_en":"Gadabay","name_ru":"Кедабек","population":14500,"stations":[],"timezone":"Asia/Baku"}
 {"airports":[],"country_code":"AZ","id":"garayeri","lat":40.78674,"lon":46.31365,"name_en":"Garayeri","name_ru":"Караери","population":6300,"stations":[],"timezone":"Asia/Baku"}
@@ -20871,7 +20871,7 @@
 {"airports":[],"country_code":"ES","id":"sant-feliu-de-llobregat","lat":41.38333,"lon":2.05,"name_en":"Sant Feliu de Llobregat","name_ru":"Фелиу-де-Льобрегат","population":42919,"stations":[],"timezone":"Europe/Madrid"}
 {"airports":[],"country_code":"ES","id":"sant-joan-dalacant","lat":38.40148,"lon":-0.43623,"name_en":"Sant Joan d'Alacant","name_ru":"Sant Joan d'Alacant","population":21939,"stations":[],"timezone":"Europe/Madrid"}
 {"airports":[],"country_code":"ES","id":"sant-joan-de-vilatorrada","lat":41.74549,"lon":1.80476,"name_en":"Sant Joan de Vilatorrada","name_ru":"Sant Joan de Vilatorrada","population":10779,"stations":[],"timezone":"Europe/Madrid"}
-{"airports":[],"country_code":"ES","id":"sant-joan-despi","lat":41.36718,"lon":2.0574,"name_en":"Sant Joan Despi","name_ru":"Sant Joan Despí","population":32030,"stations":[],"timezone":"Europe/Madrid"}
+{"airports":[],"country_code":"ES","id":"sant-joan-despi","lat":41.36718,"lon":2.0574,"name_en":"Sant Joan Despi","name_ru":"Sant Joan Despi","population":32030,"stations":[],"timezone":"Europe/Madrid"}
 {"airports":[],"country_code":"ES","id":"sant-just-desvern","lat":41.38389,"lon":2.06758,"name_en":"Sant Just Desvern","name_ru":"Sant Just Desvern","population":15811,"stations":[],"timezone":"Europe/Madrid"}
 {"airports":[],"country_code":"ES","id":"sant-lluis","lat":39.84939,"lon":4.25819,"name_en":"Sant Lluis","name_ru":"Сан-Луис","population":6892,"stations":[],"timezone":"Europe/Madrid"}
 {"airports":[],"country_code":"ES","id":"sant-pere-de-ribes","lat":41.26045,"lon":1.77391,"name_en":"Sant Pere de Ribes","name_ru":"Sant Pere de Ribes","population":28353,"stations":[],"timezone":"Europe/Madrid"}
@@ -20882,7 +20882,7 @@
 {"airports":[],"country_code":"ES","id":"sant-vicenc-de-montalt","lat":41.57853,"lon":2.50879,"name_en":"Sant Vicenc de Montalt","name_ru":"Sant Vicenc de Montalt","population":6007,"stations":[],"timezone":"Europe/Madrid"}
 {"airports":[],"country_code":"ES","id":"sant-vicenc-dels-horts","lat":41.39317,"lon":2.00689,"name_en":"Sant Vicenc dels Horts","name_ru":"Sant Vicenc dels Horts","population":27901,"stations":[],"timezone":"Europe/Madrid"}
 {"airports":[],"country_code":"ES","id":"santa-brigida","lat":28.03197,"lon":-15.50425,"name_en":"Santa Brigida","name_ru":"Santa Brigida","population":18314,"stations":[],"timezone":"Atlantic/Canary"}
-{"airports":[],"country_code":"ES","id":"santa-coloma-de-cervello","lat":41.36736,"lon":2.01426,"name_en":"Santa Coloma de Cervello","name_ru":"Santa Coloma de Cervelló","population":7086,"stations":[],"timezone":"Europe/Madrid"}
+{"airports":[],"country_code":"ES","id":"santa-coloma-de-cervello","lat":41.36736,"lon":2.01426,"name_en":"Santa Coloma de Cervello","name_ru":"Santa Coloma de Cervello","population":7086,"stations":[],"timezone":"Europe/Madrid"}
 {"airports":[],"country_code":"ES","id":"santa-coloma-de-farners","lat":41.86667,"lon":2.66667,"name_en":"Santa Coloma de Farners","name_ru":"Santa Coloma de Farners","population":11739,"stations":[],"timezone":"Europe/Madrid"}
 {"airports":[],"country_code":"ES","id":"santa-coloma-de-gramenet","lat":41.45152,"lon":2.2081,"name_en":"Santa Coloma de Gramenet","name_ru":"Санта-Колома-де-Граманет","population":118821,"stations":[],"timezone":"Europe/Madrid"}
 {"airports":[],"country_code":"ES","id":"santa-comba","lat":43.03306,"lon":-8.80925,"name_en":"Santa Comba","name_ru":"Santa Comba","population":10487,"stations":[],"timezone":"Europe/Madrid"}
@@ -24319,7 +24319,7 @@
 {"airports":[],"country_code":"GB","id":"humberstone","lat":52.64738,"lon":-1.08647,"name_en":"Humberstone","name_ru":"Humberstone","population":18854,"stations":[],"timezone":"Europe/London"}
 {"airports":[],"country_code":"GB","id":"hungerford","lat":51.41513,"lon":-1.51556,"name_en":"Hungerford","name_ru":"Hungerford","population":5100,"stations":[],"timezone":"Europe/London"}
 {"airports":[],"country_code":"GB","id":"hunstanton","lat":52.95,"lon":0.5,"name_en":"Hunstanton","name_ru":"Hunstanton","population":9332,"stations":[],"timezone":"Europe/London"}
-{"airports":[],"country_code":"GB","id":"huntingdon","lat":52.33049,"lon":-0.18651,"name_en":"Huntingdon","name_ru":"The Huntingdon","population":23937,"stations":[],"timezone":"Europe/London"}
+{"airports":[],"country_code":"GB","id":"huntingdon","lat":52.33049,"lon":-0.18651,"name_en":"Huntingdon","name_ru":"Huntingdon","population":23937,"stations":[],"timezone":"Europe/London"}
 {"airports":[],"country_code":"GB","id":"hurstpierpoint","lat":50.93388,"lon":-0.18007,"name_en":"Hurstpierpoint","name_ru":"Hurstpierpoint","population":12730,"stations":[],"timezone":"Europe/London"}
 {"airports":[],"country_code":"GB","id":"huyton","lat":53.4115,"lon":-2.83935,"name_en":"Huyton","name_ru":"Хейтон","population":54738,"stations":[],"timezone":"Europe/London"}
 {"airports":[],"country_code":"GB","id":"hyde","lat":53.45131,"lon":-2.07943,"name_en":"Hyde","name_ru":"Hyde","population":35895,"stations":[],"timezone":"Europe/London"}
@@ -38715,14 +38715,14 @@
 {"airports":[],"country_code":"KG","id":"boz-beshik","lat":42.43247,"lon":77.95153,"name_en":"Boz-Beshik","name_ru":"Боз-Бешик","population":5237,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"cholpon-ata","lat":42.64944,"lon":77.08225,"name_en":"Cholpon-Ata","name_ru":"Чолпон-Ата","population":14237,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"daroot-korgon","lat":39.55274,"lon":72.20518,"name_en":"Daroot-Korgon","name_ru":"Дароот-Коргон","population":6421,"stations":[],"timezone":"Asia/Bishkek"}
-{"airports":[],"country_code":"KG","id":"gulcha","lat":40.3138,"lon":73.44418,"name_en":"Gul'cha","name_ru":"Gul’cha","population":13755,"stations":[],"timezone":"Asia/Bishkek"}
+{"airports":[],"country_code":"KG","id":"gulcha","lat":40.3138,"lon":73.44418,"name_en":"Gul'cha","name_ru":"Гульча","population":13755,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"iradan","lat":40.26667,"lon":72.1,"name_en":"Iradan","name_ru":"Ирадан","population":26200,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"ivanovka","lat":42.88778,"lon":75.085,"name_en":"Ivanovka","name_ru":"Ивановка","population":17513,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"kaindy","lat":42.82469,"lon":73.67585,"name_en":"Kaindy","name_ru":"Каинды","population":9561,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"kant-kg","lat":42.89106,"lon":74.85077,"name_en":"Kant","name_ru":"Кант","population":22617,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"kara-balta","lat":42.81423,"lon":73.84813,"name_en":"Kara-Balta","name_ru":"Кара-Балта","population":48278,"stations":[],"timezone":"Asia/Bishkek"}
-{"airports":[],"country_code":"KG","id":"kara-kul","lat":41.62828,"lon":72.67027,"name_en":"Kara-Kul'","name_ru":"Kara-Kul’","population":26901,"stations":[],"timezone":"Asia/Bishkek"}
-{"airports":[],"country_code":"KG","id":"kara-kulja","lat":40.63223,"lon":73.59249,"name_en":"Kara-Kulja","name_ru":"Kara-Kul’dzha","population":15616,"stations":[],"timezone":"Asia/Bishkek"}
+{"airports":[],"country_code":"KG","id":"kara-kul","lat":41.62828,"lon":72.67027,"name_en":"Kara-Kul'","name_ru":"Кара-Куль","population":26901,"stations":[],"timezone":"Asia/Bishkek"}
+{"airports":[],"country_code":"KG","id":"kara-kulja","lat":40.63223,"lon":73.59249,"name_en":"Kara-Kulja","name_ru":"Кара-Кульджа","population":15616,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"kara-suu","lat":40.7046,"lon":72.86666,"name_en":"Kara Suu","name_ru":"Кара-Суу","population":26609,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"katran","lat":39.84434,"lon":70.01474,"name_en":"Katran","name_ru":"Катран","population":7149,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"kazarman","lat":41.40452,"lon":74.02828,"name_en":"Kazarman","name_ru":"Казарман","population":11191,"stations":[],"timezone":"Asia/Bishkek"}
@@ -38733,7 +38733,7 @@
 {"airports":[],"country_code":"KG","id":"kojomkul","lat":42.87378,"lon":74.44058,"name_en":"Kojomkul","name_ru":"Военно-Антоновка","population":20182,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"kulundu","lat":40.10635,"lon":69.64127,"name_en":"Kulundu","name_ru":"Кулунду","population":8250,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"kyzyl-adyr","lat":42.61981,"lon":71.5891,"name_en":"Kyzyl-Adyr","name_ru":"Кировское","population":13612,"stations":[],"timezone":"Asia/Bishkek"}
-{"airports":[],"country_code":"KG","id":"kyzyl-bel","lat":40.09991,"lon":70.74053,"name_en":"Kyzyl-Bel'","name_ru":"Kyzyl-Bel’","population":7481,"stations":[],"timezone":"Asia/Bishkek"}
+{"airports":[],"country_code":"KG","id":"kyzyl-bel","lat":40.09991,"lon":70.74053,"name_en":"Kyzyl-Bel'","name_ru":"Кызыл-Бель","population":7481,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"kyzyl-jol","lat":40.04158,"lon":70.81207,"name_en":"Kyzyl-Jol","name_ru":"Кызыл-Джол","population":6378,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"kyzyl-kyya","lat":40.25684,"lon":72.12793,"name_en":"Kyzyl-Kyya","name_ru":"Кызыл-Кия","population":32000,"stations":[],"timezone":"Asia/Bishkek"}
 {"airports":[],"country_code":"KG","id":"kyzyl-suu","lat":42.34211,"lon":78.00644,"name_en":"Kyzyl-Suu","name_ru":"Покровка","population":15075,"stations":[],"timezone":"Asia/Bishkek"}
@@ -49385,7 +49385,7 @@
 {"airports":[],"country_code":"RU","id":"proletarsk","lat":46.70241,"lon":41.72487,"name_en":"Proletarsk","name_ru":"Пролетарск","population":19493,"stations":[],"timezone":"Europe/Moscow"}
 {"airports":[],"country_code":"RU","id":"promyshlennaya","lat":54.91443,"lon":85.63971,"name_en":"Promyshlennaya","name_ru":"Промышленная","population":17216,"stations":[],"timezone":"Asia/Novokuznetsk"}
 {"airports":[],"country_code":"RU","id":"protvino","lat":54.86821,"lon":37.21583,"name_en":"Protvino","name_ru":"Протвино","population":37329,"stations":[],"timezone":"Europe/Moscow"}
-{"airports":[],"country_code":"RU","id":"pugachev","lat":52.01664,"lon":48.79895,"name_en":"Pugachev","name_ru":"Pugachëv","population":41375,"stations":[],"timezone":"Europe/Saratov"}
+{"airports":[],"country_code":"RU","id":"pugachev","lat":52.01664,"lon":48.79895,"name_en":"Pugachev","name_ru":"Пугачёв","population":41375,"stations":[],"timezone":"Europe/Saratov"}
 {"airports":[],"country_code":"RU","id":"pushchino","lat":54.83373,"lon":37.61138,"name_en":"Pushchino","name_ru":"Пущино","population":20072,"stations":[],"timezone":"Europe/Moscow"}
 {"airports":[],"country_code":"RU","id":"pushkin","lat":59.71417,"lon":30.39642,"name_en":"Pushkin","name_ru":"Пушкин","population":92889,"stations":[],"timezone":"Europe/Moscow"}
 {"airports":[],"country_code":"RU","id":"pushkino","lat":55.99456,"lon":37.82897,"name_en":"Pushkino","name_ru":"Пушкино","population":102816,"stations":[],"timezone":"Europe/Moscow"}
@@ -51528,7 +51528,7 @@
 {"airports":[],"country_code":"TJ","id":"ishqoshim","lat":36.72484,"lon":71.61331,"name_en":"Ishqoshim","name_ru":"Ишкашим","population":26000,"stations":[],"timezone":"Asia/Dushanbe"}
 {"airports":[],"country_code":"TJ","id":"istaravshan","lat":39.9142,"lon":69.00328,"name_en":"Istaravshan","name_ru":"Истаравшан","population":273500,"stations":[],"timezone":"Asia/Dushanbe"}
 {"airports":[],"country_code":"TJ","id":"istiqlol","lat":40.57017,"lon":69.64175,"name_en":"Istiqlol","name_ru":"Табошар","population":17600,"stations":[],"timezone":"Asia/Dushanbe"}
-{"airports":[],"country_code":"TJ","id":"jilikul","lat":37.49167,"lon":68.53106,"name_en":"Jilikul","name_ru":"Dzhilikul’","population":5434,"stations":[],"timezone":"Asia/Dushanbe"}
+{"airports":[],"country_code":"TJ","id":"jilikul","lat":37.49167,"lon":68.53106,"name_en":"Jilikul","name_ru":"Jilikul","population":5434,"stations":[],"timezone":"Asia/Dushanbe"}
 {"airports":[],"country_code":"TJ","id":"khodzha-maston","lat":38.74457,"lon":68.62702,"name_en":"Khodzha-Maston","name_ru":"Khodzha-Maston","population":9781,"stations":[],"timezone":"Asia/Dushanbe"}
 {"airports":[],"country_code":"TJ","id":"khorugh","lat":37.49039,"lon":71.55337,"name_en":"Khorugh","name_ru":"Хорог","population":30500,"stations":[],"timezone":"Asia/Dushanbe"}
 {"airports":[],"country_code":"TJ","id":"kirov-tj","lat":37.81908,"lon":68.85905,"name_en":"Kirov","name_ru":"Киров","population":7696,"stations":[],"timezone":"Asia/Dushanbe"}
@@ -52015,7 +52015,7 @@
 {"airports":[],"country_code":"TR","id":"beylikova","lat":39.68694,"lon":31.20556,"name_en":"Beylikova","name_ru":"Beylikova","population":5131,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"beypazari","lat":40.1675,"lon":31.92111,"name_en":"Beypazari","name_ru":"Beypazari","population":38769,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"beysehir","lat":37.67735,"lon":31.72458,"name_en":"Beysehir","name_ru":"Бейшехир","population":44460,"stations":[],"timezone":"Europe/Istanbul"}
-{"airports":[],"country_code":"TR","id":"beytuessebap","lat":37.56318,"lon":43.16583,"name_en":"Beytuessebap","name_ru":"El’ki","population":8354,"stations":[],"timezone":"Europe/Istanbul"}
+{"airports":[],"country_code":"TR","id":"beytuessebap","lat":37.56318,"lon":43.16583,"name_en":"Beytuessebap","name_ru":"Beytuessebap","population":8354,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"biga","lat":40.22806,"lon":27.24222,"name_en":"Biga","name_ru":"Биг","population":61066,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"bigadic","lat":39.3925,"lon":28.13111,"name_en":"Bigadic","name_ru":"Bigadic","population":15242,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"bilecik","lat":40.14192,"lon":29.97932,"name_en":"Bilecik","name_ru":"Биледжик","population":74457,"stations":[],"timezone":"Europe/Istanbul"}
@@ -52267,7 +52267,7 @@
 {"airports":[],"country_code":"TR","id":"imranli","lat":39.87544,"lon":38.11358,"name_en":"Imranli","name_ru":"Imranli","population":7192,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"incek","lat":39.80701,"lon":32.69816,"name_en":"Incek","name_ru":"Incek","population":5578,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"incirliova","lat":37.85222,"lon":27.72361,"name_en":"Incirliova","name_ru":"Incirliova","population":18572,"stations":[],"timezone":"Europe/Istanbul"}
-{"airports":[],"country_code":"TR","id":"inebolu","lat":41.97893,"lon":33.76012,"name_en":"Inebolu","name_ru":"İnebolu","population":9935,"stations":[],"timezone":"Europe/Istanbul"}
+{"airports":[],"country_code":"TR","id":"inebolu","lat":41.97893,"lon":33.76012,"name_en":"Inebolu","name_ru":"Inebolu","population":9935,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"inegol","lat":40.07806,"lon":29.51333,"name_en":"Inegol","name_ru":"Инегёль","population":133959,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"inoenue","lat":37.31667,"lon":33.76667,"name_en":"Inoenue","name_ru":"Inoenue","population":5552,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"ipsala","lat":40.92115,"lon":26.38273,"name_en":"Ipsala","name_ru":"Ipsala","population":8060,"stations":[],"timezone":"Europe/Istanbul"}
@@ -52380,7 +52380,7 @@
 {"airports":[],"country_code":"TR","id":"kulu","lat":39.09513,"lon":33.07989,"name_en":"Kulu","name_ru":"Кулу","population":47037,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"kuluncak","lat":38.87656,"lon":37.66279,"name_en":"Kuluncak","name_ru":"Kuluncak","population":8495,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"kumburgaz","lat":41.03004,"lon":28.45387,"name_en":"Kumburgaz","name_ru":"Kumburgaz","population":11949,"stations":[],"timezone":"Europe/Istanbul"}
-{"airports":[],"country_code":"TR","id":"kumcati","lat":37.47334,"lon":42.31626,"name_en":"Kumcati","name_ru":"Dergyul’","population":5005,"stations":[],"timezone":"Europe/Istanbul"}
+{"airports":[],"country_code":"TR","id":"kumcati","lat":37.47334,"lon":42.31626,"name_en":"Kumcati","name_ru":"Kumcati","population":5005,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"kumru","lat":40.87444,"lon":37.26389,"name_en":"Kumru","name_ru":"Кумру","population":32174,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"kursunlu","lat":40.84101,"lon":33.26028,"name_en":"Kursunlu","name_ru":"Kursunlu","population":11956,"stations":[],"timezone":"Europe/Istanbul"}
 {"airports":[],"country_code":"TR","id":"kurtalan","lat":37.92533,"lon":41.68493,"name_en":"Kurtalan","name_ru":"Курталан","population":32114,"stations":[],"timezone":"Europe/Istanbul"}
@@ -53416,7 +53416,7 @@
 {"airports":[],"country_code":"UA","id":"lutsk","lat":50.75784,"lon":25.35024,"name_en":"Lutsk","name_ru":"Луцк","population":215986,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"lutuhyne","lat":48.40433,"lon":39.21302,"name_en":"Lutuhyne","name_ru":"Лутугино","population":17061,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"lviv","lat":49.83826,"lon":24.02324,"name_en":"Lviv","name_ru":"Львов","population":717273,"stations":[],"timezone":"Europe/Kyiv"}
-{"airports":[],"country_code":"UA","id":"lyman","lat":48.99012,"lon":37.80843,"name_en":"Lyman","name_ru":"Liman","population":20066,"stations":[],"timezone":"Europe/Kyiv"}
+{"airports":[],"country_code":"UA","id":"lyman","lat":48.99012,"lon":37.80843,"name_en":"Lyman","name_ru":"Лиман","population":20066,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"lymanivka","lat":48.93765,"lon":36.27721,"name_en":"Lymanivka","name_ru":"Лимановка","population":7038,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"lymanka","lat":46.38564,"lon":30.67736,"name_en":"Lymanka","name_ru":"Лиманка","population":13085,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"lymanske","lat":46.67952,"lon":29.97231,"name_en":"Lymanske","name_ru":"Лиманское","population":7119,"stations":[],"timezone":"Europe/Kyiv"}
@@ -53514,7 +53514,7 @@
 {"airports":[],"country_code":"UA","id":"novooleksiyivka","lat":46.22995,"lon":34.64576,"name_en":"Novooleksiyivka","name_ru":"Новоалексеевка","population":10154,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"novoozerne","lat":45.38388,"lon":33.11713,"name_en":"Novoozerne","name_ru":"Новоозёрное","population":7393,"stations":[],"timezone":"Europe/Simferopol"}
 {"airports":[],"country_code":"UA","id":"novoselytsya","lat":48.21812,"lon":26.26766,"name_en":"Novoselytsya","name_ru":"Новоселица","population":7588,"stations":[],"timezone":"Europe/Kyiv"}
-{"airports":[],"country_code":"UA","id":"novosilky","lat":50.31219,"lon":30.07539,"name_en":"Novosilky","name_ru":"Novosëlki","population":5316,"stations":[],"timezone":"Europe/Kyiv"}
+{"airports":[],"country_code":"UA","id":"novosilky","lat":50.31219,"lon":30.07539,"name_en":"Novosilky","name_ru":"Novosilky","population":5316,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"novotroyitske","lat":46.35088,"lon":34.33245,"name_en":"Novotroyitske","name_ru":"Новотроицкое","population":10647,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"novoukrayinka","lat":48.31661,"lon":31.52355,"name_en":"Novoukrayinka","name_ru":"Новоукраинка","population":16479,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"novovolynsk","lat":50.72949,"lon":24.15976,"name_en":"Novovolynsk","name_ru":"Нововолынск","population":49772,"stations":[],"timezone":"Europe/Kyiv"}
@@ -53713,7 +53713,7 @@
 {"airports":[],"country_code":"UA","id":"sorokyne","lat":48.29329,"lon":39.7332,"name_en":"Sorokyne","name_ru":"Краснодон","population":49352,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"sosnivka","lat":50.2897,"lon":24.25139,"name_en":"Sosnivka","name_ru":"Сосновка","population":10838,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"sosnytsia","lat":51.52387,"lon":32.49985,"name_en":"Sosnytsia","name_ru":"Сосница","population":7825,"stations":[],"timezone":"Europe/Kyiv"}
-{"airports":[],"country_code":"UA","id":"stanytsya-luhanska","lat":48.66247,"lon":39.48358,"name_en":"Stanytsya-Luhanska","name_ru":"Stanichno Luganskaya","population":12258,"stations":[],"timezone":"Europe/Kyiv"}
+{"airports":[],"country_code":"UA","id":"stanytsya-luhanska","lat":48.66247,"lon":39.48358,"name_en":"Stanytsya-Luhanska","name_ru":"Станица Луганская","population":12258,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"stara-synyava","lat":49.59709,"lon":27.615,"name_en":"Stara Synyava","name_ru":"Старая Синява","population":5311,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"stara-vyzhivka","lat":51.43661,"lon":24.43958,"name_en":"Stara Vyzhivka","name_ru":"Старая Выжевка","population":5058,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"stari-kuty","lat":48.27943,"lon":25.163,"name_en":"Stari Kuty","name_ru":"Старі Кути","population":5068,"stations":[],"timezone":"Europe/Kyiv"}
@@ -53798,7 +53798,7 @@
 {"airports":[],"country_code":"UA","id":"velyka-bahachka","lat":49.79819,"lon":33.72013,"name_en":"Velyka Bahachka","name_ru":"Великая Багачка","population":5488,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"velyka-berezovytsya","lat":49.49869,"lon":25.61231,"name_en":"Velyka Berezovytsya","name_ru":"Великая Березовица","population":8391,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"velyka-bilozerka","lat":47.27572,"lon":34.68457,"name_en":"Velyka Bilozerka","name_ru":"Великая Белозёрка","population":6200,"stations":[],"timezone":"Europe/Kyiv"}
-{"airports":[],"country_code":"UA","id":"velyka-dobron","lat":48.41979,"lon":22.38857,"name_en":"Velyka Dobron","name_ru":"Velikaya Dobron’","population":5607,"stations":[],"timezone":"Europe/Kyiv"}
+{"airports":[],"country_code":"UA","id":"velyka-dobron","lat":48.41979,"lon":22.38857,"name_en":"Velyka Dobron","name_ru":"Velyka Dobron","population":5607,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"velyka-dymerka","lat":50.59107,"lon":30.901,"name_en":"Velyka Dymerka","name_ru":"Великая Дымерка","population":9606,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"velyka-lepetykha","lat":47.17138,"lon":33.93147,"name_en":"Velyka Lepetykha","name_ru":"Великая Лепетиха","population":8047,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"velyka-mykhaylivka","lat":47.07847,"lon":29.85253,"name_en":"Velyka Mykhaylivka","name_ru":"Великая Михайловка","population":5303,"stations":[],"timezone":"Europe/Kyiv"}
@@ -53870,7 +53870,7 @@
 {"airports":[],"country_code":"UA","id":"yasynuvata","lat":48.12678,"lon":37.85924,"name_en":"Yasynuvata","name_ru":"Ясиноватая","population":37600,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"yavoriv","lat":49.93774,"lon":23.38355,"name_en":"Yavoriv","name_ru":"Яворов","population":12785,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"yavornytske","lat":48.40458,"lon":35.27933,"name_en":"Yavornytske","name_ru":"Яворницкое","population":8836,"stations":[],"timezone":"Europe/Kyiv"}
-{"airports":[],"country_code":"UA","id":"yedy-kuyu","lat":45.29857,"lon":35.77708,"name_en":"Yedy-Kuyu","name_ru":"Lenino","population":7426,"stations":[],"timezone":"Europe/Simferopol"}
+{"airports":[],"country_code":"UA","id":"yedy-kuyu","lat":45.29857,"lon":35.77708,"name_en":"Yedy-Kuyu","name_ru":"Ленино","population":7426,"stations":[],"timezone":"Europe/Simferopol"}
 {"airports":[],"country_code":"UA","id":"yemilchyne","lat":50.87185,"lon":27.80198,"name_en":"Yemilchyne","name_ru":"Емильчино","population":6162,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"yenakiyeve","lat":48.23857,"lon":38.20403,"name_en":"Yenakiyeve","name_ru":"Енакиево","population":76673,"stations":[],"timezone":"Europe/Kyiv"}
 {"airports":[],"country_code":"UA","id":"yevpatoriya","lat":45.20091,"lon":33.36655,"name_en":"Yevpatoriya","name_ru":"Евпатория","population":107040,"stations":[],"timezone":"Europe/Simferopol"}
@@ -60847,7 +60847,7 @@
 {"airports":[],"country_code":"UZ","id":"manghit","lat":42.11556,"lon":60.05972,"name_en":"Manghit","name_ru":"Мангит","population":33200,"stations":[],"timezone":"Asia/Samarkand"}
 {"airports":[],"country_code":"UZ","id":"margilon","lat":40.47237,"lon":71.72463,"name_en":"Marg'ilon","name_ru":"Маргилан","population":253500,"stations":[],"timezone":"Asia/Tashkent"}
 {"airports":[],"country_code":"UZ","id":"muborak","lat":39.25528,"lon":65.15278,"name_en":"Muborak","name_ru":"Муборак","population":30100,"stations":[],"timezone":"Asia/Samarkand"}
-{"airports":[],"country_code":"UZ","id":"novyy-turtkul","lat":41.55,"lon":61.01667,"name_en":"Novyy Turtkul'","name_ru":"Novyy Turtkul’","population":48908,"stations":[],"timezone":"Asia/Samarkand"}
+{"airports":[],"country_code":"UZ","id":"novyy-turtkul","lat":41.55,"lon":61.01667,"name_en":"Novyy Turtkul'","name_ru":"Novyy Turtkul'","population":48908,"stations":[],"timezone":"Asia/Samarkand"}
 {"airports":[],"country_code":"UZ","id":"nurota","lat":40.56139,"lon":65.68861,"name_en":"Nurota","name_ru":"Нурота","population":32300,"stations":[],"timezone":"Asia/Samarkand"}
 {"airports":[],"country_code":"UZ","id":"ohangaron","lat":40.90639,"lon":69.63833,"name_en":"Ohangaron","name_ru":"Ахангаран","population":37784,"stations":[],"timezone":"Asia/Tashkent"}
 {"airports":[],"country_code":"UZ","id":"olmaliq","lat":40.84472,"lon":69.59833,"name_en":"Olmaliq","name_ru":"Алмалык","population":133400,"stations":[],"timezone":"Asia/Tashkent"}
@@ -60865,7 +60865,7 @@
 {"airports":[],"country_code":"UZ","id":"qibray","lat":41.38972,"lon":69.465,"name_en":"Qibray","name_ru":"Кибрай","population":27750,"stations":[],"timezone":"Asia/Tashkent"}
 {"airports":[],"country_code":"UZ","id":"qo-rg-ontepa","lat":40.73192,"lon":72.76177,"name_en":"Qo`rg`ontepa","name_ru":"Qo`rg`ontepa","population":25861,"stations":[],"timezone":"Asia/Tashkent"}
 {"airports":[],"country_code":"UZ","id":"qoqon","lat":40.52861,"lon":70.9425,"name_en":"Qo'qon","name_ru":"Коканд","population":259700,"stations":[],"timezone":"Asia/Tashkent"}
-{"airports":[],"country_code":"UZ","id":"qorasuv","lat":40.72782,"lon":72.88577,"name_en":"Qorasuv","name_ru":"Il’ichevsk","population":33000,"stations":[],"timezone":"Asia/Tashkent"}
+{"airports":[],"country_code":"UZ","id":"qorasuv","lat":40.72782,"lon":72.88577,"name_en":"Qorasuv","name_ru":"Карасу","population":33000,"stations":[],"timezone":"Asia/Tashkent"}
 {"airports":[],"country_code":"UZ","id":"qoshkopir","lat":41.53275,"lon":60.34698,"name_en":"Qo'shko'pir","name_ru":"Qo'shko'pir","population":17800,"stations":[],"timezone":"Asia/Samarkand"}
 {"airports":[],"country_code":"UZ","id":"qunghirot","lat":43.04333,"lon":58.83944,"name_en":"Qunghirot","name_ru":"Qunghirot","population":80090,"stations":[],"timezone":"Asia/Samarkand"}
 {"airports":[],"country_code":"UZ","id":"quva","lat":40.52204,"lon":72.07292,"name_en":"Quva","name_ru":"Кува","population":46400,"stations":[],"timezone":"Asia/Tashkent"}

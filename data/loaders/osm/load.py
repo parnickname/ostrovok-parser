@@ -36,8 +36,13 @@ DESTINATIONS_FILE = LOADER_DIR.parent / "catalog" / "out" / "destinations.jsonl"
 CITIES_FILE = LOADER_DIR.parent / "geonames" / "out" / "cities.jsonl"
 
 # The public Overpass servers: when one is busy or refuses us, the next attempt goes to the next one.
+# Only full-planet servers: regional ones (overpass.osm.ch has Switzerland only) answer 0 hotels elsewhere.
 ENDPOINTS = (
     "https://overpass-api.de/api/interpreter",
+    "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "https://overpass.nchc.org.tw/api/interpreter",
+    "https://overpass.openstreetmap.fr/api/interpreter",
+    "https://lz4.overpass-api.de/api/interpreter",
     "https://overpass.private.coffee/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
 )
@@ -51,8 +56,8 @@ READ_TIMEOUT_SECONDS = 120
 RADII_KM = (10, 15, 20, 25)
 MIN_HOTELS = 15
 EARTH_RADIUS_KM = 6371.0
-ATTEMPTS = 4
-RETRY_WAIT_SECONDS = 30
+ATTEMPTS = len(ENDPOINTS)  # one attempt on every server
+RETRY_WAIT_SECONDS = 10
 PAUSE_SECONDS = 5  # the public servers ask for sequential, unhurried queries
 
 STARS = re.compile(r"^\s*([1-5])(?:\D|$)")

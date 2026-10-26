@@ -35,9 +35,11 @@
   fetched_at: null
   reason: ""
 
+# ODbL 1.0 требует атрибуции: «© участники OpenStreetMap» и ссылку на условия использования данных. Формат реестра
+# фиксирован (CFC-3), поэтому они в полях title и url, которые показывает страница «Откуда данные» (P1-DS-05.2).
 - provider: osm
-  title: OpenStreetMap (Overpass)
-  url: https://www.openstreetmap.org
+  title: © участники OpenStreetMap (Overpass API)
+  url: https://www.openstreetmap.org/copyright
   license: ODbL-1.0
   kind: real
   status: used

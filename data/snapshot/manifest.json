@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-26T16:34:20Z",
+  "built_at": "2026-10-26T16:40:14Z",
   "datasets": [
     {
       "name": "airports",
@@ -34,6 +34,13 @@
       "file": "destinations.jsonl",
       "records": 39,
       "sha256": "697ef281b34e8d0d1183d77524634954452c6868436e75d7212704feda95a3cd",
+      "schema_version": 1
+    },
+    {
+      "name": "visa",
+      "file": "visa.jsonl",
+      "records": 39601,
+      "sha256": "0ab4ba394cf46028e19607c9a70daf7178cda60826284f3b7d5d8faf995409f0",
       "schema_version": 1
     }
   ]

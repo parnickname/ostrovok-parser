@@ -178,6 +178,7 @@ def collect(destinations, cities, refresh):
             if len(hotels) >= MIN_HOTELS:
                 break
         found[destination["id"]], radii[destination["id"]] = hotels, radius
+        print(f"  {destination['id']}: {len(hotels)} named hotels within {radius} km")
     return found, radii
 
 

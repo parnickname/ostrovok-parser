@@ -2,7 +2,9 @@
 
 Input:  data/loaders/<source>/out/<dataset>.jsonl, written by the loaders.
         data/overrides/, manual corrections applied on top.
-Output: data/snapshot/<dataset>.jsonl and data/snapshot/manifest.json.
+        data/sources.yaml, the registry of sources.
+Output: data/snapshot/<dataset>.jsonl, data/snapshot/manifest.json and a copy of data/sources.yaml: the backend
+        resolves the names in `sources` by the copy inside the snapshot (CFC-3).
 
 The build is deterministic: the same input always gives byte-identical
 dataset files and therefore the same sha256 in the manifest. Only
@@ -13,6 +15,7 @@ Usage: python3 data/build.py
 
 import hashlib
 import json
+import shutil
 import sys
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -22,6 +25,7 @@ DATA_DIR = Path(__file__).resolve().parent
 LOADERS_DIR = DATA_DIR / "loaders"
 OVERRIDES_DIR = DATA_DIR / "overrides"
 SNAPSHOT_DIR = DATA_DIR / "snapshot"
+SOURCES_FILE = DATA_DIR / "sources.yaml"
 
 SCHEMA_VERSION = 1
 
@@ -144,6 +148,8 @@ def build():
     }
     manifest_text = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
     (SNAPSHOT_DIR / "manifest.json").write_bytes(manifest_text.encode("utf-8"))
+    # Not a dataset: it is not in the manifest, and the cleanup above only touches *.jsonl.
+    shutil.copyfile(SOURCES_FILE, SNAPSHOT_DIR / "sources.yaml")
     return manifest
 
 
@@ -156,6 +162,7 @@ def main():
     print(f"snapshot built: {len(manifest['datasets'])} dataset(s)")
     for d in manifest["datasets"]:
         print(f"  {d['name']}: {d['records']} records, sha256 {d['sha256'][:12]}")
+    print("  sources.yaml copied")
     return 0
 
 

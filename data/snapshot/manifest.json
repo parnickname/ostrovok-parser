@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-26T18:27:46Z",
+  "built_at": "2026-10-26T18:38:19Z",
   "datasets": [
     {
       "name": "airports",
@@ -55,6 +55,13 @@
       "file": "rail_routes.jsonl",
       "records": 122,
       "sha256": "fd77b9b673d5a73f27d7398cdb8617b901bb2e460bdb7b9aeb944a4bb76aba76",
+      "schema_version": 1
+    },
+    {
+      "name": "routes",
+      "file": "routes.jsonl",
+      "records": 7413,
+      "sha256": "8c3296126c3a3d81f3bbc3a2291b63f2e88bab3ecec250225673c8d10b7e89a7",
       "schema_version": 1
     },
     {

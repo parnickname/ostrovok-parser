@@ -1,0 +1,20 @@
+# Секреты: ключи API (Яндекс Расписания, Travelpayouts) только через переменные окружения.
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Логи
+*.log
+
+# Редакторы и ОС
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

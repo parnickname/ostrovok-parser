@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  # Формат снапшота из docs/snapshot-format.md: схемы, дубли ключей, имена в sources, манифест.
+  data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: python3 data/validate.py
+
+  # Keep a Changelog 1.1.0 с хешем коммита в каждом пункте. Только на pull request: после squash или rebase
+  # хешей ветки нет в main, и это не должно блокировать мерж.
+  changelog:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - run: python3 scripts/check-changelog.py CHANGELOG.md

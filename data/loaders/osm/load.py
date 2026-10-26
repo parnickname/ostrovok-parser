@@ -41,6 +41,11 @@ ENDPOINTS = (
     "https://overpass.private.coffee/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
 )
+# Overpass answers 406 to the default python-requests User-Agent: the client must introduce itself.
+HEADERS = {
+    "User-Agent": "ostrovok-parser/1.0 (https://github.com/parnickname/ostrovok-parser; open data snapshot builder)",
+    "Accept": "application/json",
+}
 RADII_KM = (10, 15, 20, 25)
 MIN_HOTELS = 15
 EARTH_RADIUS_KM = 6371.0
@@ -83,7 +88,7 @@ def overpass(destination_id, radius_km, lat, lon, refresh):
     for attempt in range(ATTEMPTS):
         endpoint = ENDPOINTS[attempt % len(ENDPOINTS)]
         try:
-            response = requests.post(endpoint, data={"data": query(lat, lon, radius_km)}, timeout=240)
+            response = requests.post(endpoint, data={"data": query(lat, lon, radius_km)}, headers=HEADERS, timeout=240)
         except requests.RequestException as e:
             problem = type(e).__name__
         else:

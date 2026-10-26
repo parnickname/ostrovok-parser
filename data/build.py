@@ -76,10 +76,23 @@ def write_dataset(name, records):
     }
 
 
+def fill_city_airports(datasets):
+    """Sets cities[].airports to the IATA codes of the airports whose city_id is that city.
+
+    `airports.city_id` is the single source of truth (P1-DS-04.2); loaders write `airports: []` for cities.
+    """
+    by_city = defaultdict(list)
+    for airport in datasets.get("airports", []):
+        by_city[airport["city_id"]].append(airport["iata"])
+    for city in datasets.get("cities", []):
+        city["airports"] = sorted(by_city.get(city["id"], []))
+
+
 def build():
     datasets = collect_loader_outputs()
     for name, apply_override in OVERRIDES.items():
         datasets[name] = apply_override(datasets.get(name, []), OVERRIDES_DIR)
+    fill_city_airports(datasets)
 
     SNAPSHOT_DIR.mkdir(exist_ok=True)
     # Drop datasets left over from earlier builds so the snapshot matches the manifest.

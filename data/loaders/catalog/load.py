@@ -1,11 +1,12 @@
 """Builds data/loaders/catalog/out/destinations.jsonl from the curated list destinations.csv (P1-DS-03.1).
 
-destinations.csv is written by hand: `id`, `city_id` (a city from GeoNames, P1-DS-04.1) and the Russian `name`.
+destinations.csv is written by hand: `id`, `city_id` (a city from GeoNames, P1-DS-04.1), the Russian `name`
+and `tags` (P1-DS-03.2, separated by `;`).
 Everything else comes from the data of the other loaders:
 - `country_code` is the country of the city;
 - `airports` are the airports of the city (OurAirports, P1-DS-04.2);
 - `stations` stay empty: stations of Russian cities come with P1-DS-06.2, then Sanya fills them in;
-- `tags` stay empty until P1-DS-03.2; `description` stays empty: no subtask of the plan fills it.
+- `description` stays empty: no subtask of the plan fills it.
 
 Needs data/loaders/geonames/out/cities.jsonl and data/loaders/ourairports/out/airports.jsonl.
 
@@ -26,6 +27,11 @@ AIRPORTS_FILE = LOADER_DIR.parent / "ourairports" / "out" / "airports.jsonl"
 
 # The catalog data comes from these providers (sources.yaml); the choice of destinations is manual.
 SOURCES = ["geonames", "ourairports"]
+
+# P1-DS-03.2: the tags of the catalog; each one must belong to at least MIN_PER_TAG destinations.
+# `sea` decides which destinations P1-DS-03.4 has to give a sea temperature.
+TAGS = ("sea", "warm", "mountains", "city", "nature", "kids", "ski")
+MIN_PER_TAG = 5
 
 # Q-006 (README, "Решения команды"): 30-40 destinations, at least a third of them abroad.
 MIN_SIZE, MAX_SIZE = 30, 40
@@ -58,6 +64,10 @@ def build_records(entries, cities, airports):
     for line_no, entry in enumerate(entries, start=2):
         where = f"{LIST_FILE.name}:{line_no}"
         dest_id, city_id, name = entry["id"].strip(), entry["city_id"].strip(), entry["name"].strip()
+        tags = sorted({t.strip() for t in entry["tags"].split(";") if t.strip()})
+        unknown = [t for t in tags if t not in TAGS]
+        if unknown:
+            raise LoadError(f"{where}: unknown tags {unknown}, expected some of {list(TAGS)}")
         if not dest_id or not name:
             raise LoadError(f"{where}: id and name must not be empty")
         if dest_id in seen:
@@ -74,7 +84,7 @@ def build_records(entries, cities, airports):
             "city_id": city_id,
             "name": name,
             "country_code": city["country_code"],
-            "tags": [],
+            "tags": tags,
             "airports": iatas,
             "stations": [],
             "description": "",
@@ -86,6 +96,10 @@ def build_records(entries, cities, airports):
         raise LoadError(f"{len(records)} destinations, Q-006 asks for {MIN_SIZE}-{MAX_SIZE}")
     if abroad * 3 < len(records):
         raise LoadError(f"{abroad} of {len(records)} destinations abroad, Q-006 asks for at least a third")
+    for tag in TAGS:
+        count = sum(1 for r in records if tag in r["tags"])
+        if count < MIN_PER_TAG:
+            raise LoadError(f"tag {tag!r} has {count} destinations, at least {MIN_PER_TAG} needed")
     records.sort(key=lambda r: r["id"])
     return records, abroad
 
@@ -107,6 +121,7 @@ def main():
     write_records(records)
     print(f"{len(records)} destinations written to {OUT_FILE}")
     print(f"  abroad: {abroad}, in {HOME_COUNTRY}: {len(records) - abroad}")
+    print("  per tag: " + ", ".join(f"{t} {sum(1 for r in records if t in r['tags'])}" for t in TAGS))
     return 0
 
 

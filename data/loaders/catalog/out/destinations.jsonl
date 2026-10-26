@@ -1,39 +1,39 @@
-{"airports":["ALA"],"city_id":"almaty","country_code":"KZ","description":"","id":"almaty","name":"Алматы","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["AYT"],"city_id":"antalya","country_code":"TR","description":"","id":"antalya","name":"Анталия","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["ATH"],"city_id":"athens","country_code":"GR","description":"","id":"athens","name":"Афины","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["BKK","DMK"],"city_id":"bangkok","country_code":"TH","description":"","id":"bangkok","name":"Бангкок","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["BCN"],"city_id":"barcelona","country_code":"ES","description":"","id":"barcelona","name":"Барселона","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["BUS"],"city_id":"batumi","country_code":"GE","description":"","id":"batumi","name":"Батуми","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["BJV"],"city_id":"bodrum","country_code":"TR","description":"","id":"bodrum","name":"Бодрум","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["BUD"],"city_id":"budapest","country_code":"HU","description":"","id":"budapest","name":"Будапешт","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["DPS"],"city_id":"denpasar","country_code":"ID","description":"","id":"denpasar","name":"Бали (Денпасар)","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["DWC","DXB"],"city_id":"dubai","country_code":"AE","description":"","id":"dubai","name":"Дубай","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["GDZ"],"city_id":"gelendzhik","country_code":"RU","description":"","id":"gelendzhik","name":"Геленджик","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["HRG"],"city_id":"hurghada","country_code":"EG","description":"","id":"hurghada","name":"Хургада","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["INN"],"city_id":"innsbruck","country_code":"AT","description":"","id":"innsbruck","name":"Инсбрук","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["IKT"],"city_id":"irkutsk","country_code":"RU","description":"","id":"irkutsk","name":"Иркутск (Байкал)","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["IST","SAW"],"city_id":"istanbul","country_code":"TR","description":"","id":"istanbul","name":"Стамбул","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["KGD"],"city_id":"kaliningrad","country_code":"RU","description":"","id":"kaliningrad","name":"Калининград","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["KZN"],"city_id":"kazan","country_code":"RU","description":"","id":"kazan","name":"Казань","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["LIS"],"city_id":"lisbon","country_code":"PT","description":"","id":"lisbon","name":"Лиссабон","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["MCX"],"city_id":"makhachkala","country_code":"RU","description":"","id":"makhachkala","name":"Махачкала","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["MLE"],"city_id":"male","country_code":"MV","description":"","id":"male","name":"Мале","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["MSQ"],"city_id":"minsk","country_code":"BY","description":"","id":"minsk","name":"Минск","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["DME","SVO","VKO","ZIA"],"city_id":"moscow","country_code":"RU","description":"","id":"moscow","name":"Москва","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["MMK"],"city_id":"murmansk","country_code":"RU","description":"","id":"murmansk","name":"Мурманск","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["CXR"],"city_id":"nha-trang","country_code":"VN","description":"","id":"nha-trang","name":"Нячанг","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["NOZ"],"city_id":"novokuznetsk","country_code":"RU","description":"","id":"novokuznetsk","name":"Шерегеш (Новокузнецк)","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["CDG","ORY"],"city_id":"paris","country_code":"FR","description":"","id":"paris","name":"Париж","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["HKT"],"city_id":"phuket","country_code":"TH","description":"","id":"phuket","name":"Пхукет","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["PRG"],"city_id":"prague","country_code":"CZ","description":"","id":"prague","name":"Прага","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["MRV"],"city_id":"pyatigorsk","country_code":"RU","description":"","id":"pyatigorsk","name":"Пятигорск (Кавказские Минводы)","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["CIA","FCO"],"city_id":"rome","country_code":"IT","description":"","id":"rome","name":"Рим","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["LED"],"city_id":"saint-petersburg","country_code":"RU","description":"","id":"saint-petersburg","name":"Санкт-Петербург","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["SSH"],"city_id":"sharm-el-sheikh","country_code":"EG","description":"","id":"sharm-el-sheikh","name":"Шарм-эль-Шейх","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["AER"],"city_id":"sochi","country_code":"RU","description":"","id":"sochi","name":"Сочи","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["TAS","TVT"],"city_id":"tashkent","country_code":"UZ","description":"","id":"tashkent","name":"Ташкент","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["TBS"],"city_id":"tbilisi","country_code":"GE","description":"","id":"tbilisi","name":"Тбилиси","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["HND"],"city_id":"tokyo","country_code":"JP","description":"","id":"tokyo","name":"Токио","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["VVO"],"city_id":"vladivostok","country_code":"RU","description":"","id":"vladivostok","name":"Владивосток","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["SVX"],"city_id":"yekaterinburg","country_code":"RU","description":"","id":"yekaterinburg","name":"Екатеринбург","sources":["geonames","ourairports"],"stations":[],"tags":[]}
-{"airports":["EVN"],"city_id":"yerevan","country_code":"AM","description":"","id":"yerevan","name":"Ереван","sources":["geonames","ourairports"],"stations":[],"tags":[]}
+{"airports":["ALA"],"city_id":"almaty","country_code":"KZ","description":"","id":"almaty","name":"Алматы","sources":["geonames","ourairports"],"stations":[],"tags":["city","mountains","nature","ski"]}
+{"airports":["AYT"],"city_id":"antalya","country_code":"TR","description":"","id":"antalya","name":"Анталия","sources":["geonames","ourairports"],"stations":[],"tags":["kids","sea","warm"]}
+{"airports":["ATH"],"city_id":"athens","country_code":"GR","description":"","id":"athens","name":"Афины","sources":["geonames","ourairports"],"stations":[],"tags":["city","warm"]}
+{"airports":["BKK","DMK"],"city_id":"bangkok","country_code":"TH","description":"","id":"bangkok","name":"Бангкок","sources":["geonames","ourairports"],"stations":[],"tags":["city","warm"]}
+{"airports":["BCN"],"city_id":"barcelona","country_code":"ES","description":"","id":"barcelona","name":"Барселона","sources":["geonames","ourairports"],"stations":[],"tags":["city","sea","warm"]}
+{"airports":["BUS"],"city_id":"batumi","country_code":"GE","description":"","id":"batumi","name":"Батуми","sources":["geonames","ourairports"],"stations":[],"tags":["kids","sea","warm"]}
+{"airports":["BJV"],"city_id":"bodrum","country_code":"TR","description":"","id":"bodrum","name":"Бодрум","sources":["geonames","ourairports"],"stations":[],"tags":["sea","warm"]}
+{"airports":["BUD"],"city_id":"budapest","country_code":"HU","description":"","id":"budapest","name":"Будапешт","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
+{"airports":["DPS"],"city_id":"denpasar","country_code":"ID","description":"","id":"denpasar","name":"Бали (Денпасар)","sources":["geonames","ourairports"],"stations":[],"tags":["nature","sea","warm"]}
+{"airports":["DWC","DXB"],"city_id":"dubai","country_code":"AE","description":"","id":"dubai","name":"Дубай","sources":["geonames","ourairports"],"stations":[],"tags":["city","kids","sea","warm"]}
+{"airports":["GDZ"],"city_id":"gelendzhik","country_code":"RU","description":"","id":"gelendzhik","name":"Геленджик","sources":["geonames","ourairports"],"stations":[],"tags":["kids","sea","warm"]}
+{"airports":["HRG"],"city_id":"hurghada","country_code":"EG","description":"","id":"hurghada","name":"Хургада","sources":["geonames","ourairports"],"stations":[],"tags":["kids","sea","warm"]}
+{"airports":["INN"],"city_id":"innsbruck","country_code":"AT","description":"","id":"innsbruck","name":"Инсбрук","sources":["geonames","ourairports"],"stations":[],"tags":["mountains","nature","ski"]}
+{"airports":["IKT"],"city_id":"irkutsk","country_code":"RU","description":"","id":"irkutsk","name":"Иркутск (Байкал)","sources":["geonames","ourairports"],"stations":[],"tags":["nature"]}
+{"airports":["IST","SAW"],"city_id":"istanbul","country_code":"TR","description":"","id":"istanbul","name":"Стамбул","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
+{"airports":["KGD"],"city_id":"kaliningrad","country_code":"RU","description":"","id":"kaliningrad","name":"Калининград","sources":["geonames","ourairports"],"stations":[],"tags":["city","nature"]}
+{"airports":["KZN"],"city_id":"kazan","country_code":"RU","description":"","id":"kazan","name":"Казань","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
+{"airports":["LIS"],"city_id":"lisbon","country_code":"PT","description":"","id":"lisbon","name":"Лиссабон","sources":["geonames","ourairports"],"stations":[],"tags":["city","warm"]}
+{"airports":["MCX"],"city_id":"makhachkala","country_code":"RU","description":"","id":"makhachkala","name":"Махачкала","sources":["geonames","ourairports"],"stations":[],"tags":["mountains","nature","sea","warm"]}
+{"airports":["MLE"],"city_id":"male","country_code":"MV","description":"","id":"male","name":"Мале","sources":["geonames","ourairports"],"stations":[],"tags":["nature","sea","warm"]}
+{"airports":["MSQ"],"city_id":"minsk","country_code":"BY","description":"","id":"minsk","name":"Минск","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
+{"airports":["DME","SVO","VKO","ZIA"],"city_id":"moscow","country_code":"RU","description":"","id":"moscow","name":"Москва","sources":["geonames","ourairports"],"stations":[],"tags":["city","kids"]}
+{"airports":["MMK"],"city_id":"murmansk","country_code":"RU","description":"","id":"murmansk","name":"Мурманск","sources":["geonames","ourairports"],"stations":[],"tags":["nature"]}
+{"airports":["CXR"],"city_id":"nha-trang","country_code":"VN","description":"","id":"nha-trang","name":"Нячанг","sources":["geonames","ourairports"],"stations":[],"tags":["kids","sea","warm"]}
+{"airports":["NOZ"],"city_id":"novokuznetsk","country_code":"RU","description":"","id":"novokuznetsk","name":"Шерегеш (Новокузнецк)","sources":["geonames","ourairports"],"stations":[],"tags":["mountains","nature","ski"]}
+{"airports":["CDG","ORY"],"city_id":"paris","country_code":"FR","description":"","id":"paris","name":"Париж","sources":["geonames","ourairports"],"stations":[],"tags":["city","kids"]}
+{"airports":["HKT"],"city_id":"phuket","country_code":"TH","description":"","id":"phuket","name":"Пхукет","sources":["geonames","ourairports"],"stations":[],"tags":["kids","nature","sea","warm"]}
+{"airports":["PRG"],"city_id":"prague","country_code":"CZ","description":"","id":"prague","name":"Прага","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
+{"airports":["MRV"],"city_id":"pyatigorsk","country_code":"RU","description":"","id":"pyatigorsk","name":"Пятигорск (Кавказские Минводы)","sources":["geonames","ourairports"],"stations":[],"tags":["mountains","nature","ski"]}
+{"airports":["CIA","FCO"],"city_id":"rome","country_code":"IT","description":"","id":"rome","name":"Рим","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
+{"airports":["LED"],"city_id":"saint-petersburg","country_code":"RU","description":"","id":"saint-petersburg","name":"Санкт-Петербург","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
+{"airports":["SSH"],"city_id":"sharm-el-sheikh","country_code":"EG","description":"","id":"sharm-el-sheikh","name":"Шарм-эль-Шейх","sources":["geonames","ourairports"],"stations":[],"tags":["kids","sea","warm"]}
+{"airports":["AER"],"city_id":"sochi","country_code":"RU","description":"","id":"sochi","name":"Сочи","sources":["geonames","ourairports"],"stations":[],"tags":["kids","mountains","sea","ski","warm"]}
+{"airports":["TAS","TVT"],"city_id":"tashkent","country_code":"UZ","description":"","id":"tashkent","name":"Ташкент","sources":["geonames","ourairports"],"stations":[],"tags":["city","warm"]}
+{"airports":["TBS"],"city_id":"tbilisi","country_code":"GE","description":"","id":"tbilisi","name":"Тбилиси","sources":["geonames","ourairports"],"stations":[],"tags":["city","mountains","ski"]}
+{"airports":["HND"],"city_id":"tokyo","country_code":"JP","description":"","id":"tokyo","name":"Токио","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
+{"airports":["VVO"],"city_id":"vladivostok","country_code":"RU","description":"","id":"vladivostok","name":"Владивосток","sources":["geonames","ourairports"],"stations":[],"tags":["city","nature"]}
+{"airports":["SVX"],"city_id":"yekaterinburg","country_code":"RU","description":"","id":"yekaterinburg","name":"Екатеринбург","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
+{"airports":["EVN"],"city_id":"yerevan","country_code":"AM","description":"","id":"yerevan","name":"Ереван","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}

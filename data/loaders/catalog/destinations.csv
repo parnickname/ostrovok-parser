@@ -1,40 +1,40 @@
-id,city_id,name
-sochi,sochi,Сочи
-saint-petersburg,saint-petersburg,Санкт-Петербург
-moscow,moscow,Москва
-kazan,kazan,Казань
-kaliningrad,kaliningrad,Калининград
-gelendzhik,gelendzhik,Геленджик
-pyatigorsk,pyatigorsk,Пятигорск (Кавказские Минводы)
-irkutsk,irkutsk,Иркутск (Байкал)
-murmansk,murmansk,Мурманск
-vladivostok,vladivostok,Владивосток
-yekaterinburg,yekaterinburg,Екатеринбург
-makhachkala,makhachkala,Махачкала
-novokuznetsk,novokuznetsk,Шерегеш (Новокузнецк)
-antalya,antalya,Анталия
-istanbul,istanbul,Стамбул
-bodrum,bodrum,Бодрум
-hurghada,hurghada,Хургада
-sharm-el-sheikh,sharm-el-sheikh,Шарм-эль-Шейх
-dubai,dubai,Дубай
-phuket,phuket,Пхукет
-bangkok,bangkok,Бангкок
-tbilisi,tbilisi,Тбилиси
-batumi,batumi,Батуми
-yerevan,yerevan,Ереван
-almaty,almaty,Алматы
-tashkent,tashkent,Ташкент
-minsk,minsk,Минск
-nha-trang,nha-trang,Нячанг
-male,male,Мале
-denpasar,denpasar,Бали (Денпасар)
-rome,rome,Рим
-barcelona,barcelona,Барселона
-paris,paris,Париж
-prague,prague,Прага
-athens,athens,Афины
-tokyo,tokyo,Токио
-budapest,budapest,Будапешт
-innsbruck,innsbruck,Инсбрук
-lisbon,lisbon,Лиссабон
+id,city_id,name,tags
+sochi,sochi,Сочи,kids;mountains;sea;ski;warm
+saint-petersburg,saint-petersburg,Санкт-Петербург,city
+moscow,moscow,Москва,city;kids
+kazan,kazan,Казань,city
+kaliningrad,kaliningrad,Калининград,city;nature
+gelendzhik,gelendzhik,Геленджик,kids;sea;warm
+pyatigorsk,pyatigorsk,Пятигорск (Кавказские Минводы),mountains;nature;ski
+irkutsk,irkutsk,Иркутск (Байкал),nature
+murmansk,murmansk,Мурманск,nature
+vladivostok,vladivostok,Владивосток,city;nature
+yekaterinburg,yekaterinburg,Екатеринбург,city
+makhachkala,makhachkala,Махачкала,mountains;nature;sea;warm
+novokuznetsk,novokuznetsk,Шерегеш (Новокузнецк),mountains;nature;ski
+antalya,antalya,Анталия,kids;sea;warm
+istanbul,istanbul,Стамбул,city
+bodrum,bodrum,Бодрум,sea;warm
+hurghada,hurghada,Хургада,kids;sea;warm
+sharm-el-sheikh,sharm-el-sheikh,Шарм-эль-Шейх,kids;sea;warm
+dubai,dubai,Дубай,city;kids;sea;warm
+phuket,phuket,Пхукет,kids;nature;sea;warm
+bangkok,bangkok,Бангкок,city;warm
+tbilisi,tbilisi,Тбилиси,city;mountains;ski
+batumi,batumi,Батуми,kids;sea;warm
+yerevan,yerevan,Ереван,city
+almaty,almaty,Алматы,city;mountains;nature;ski
+tashkent,tashkent,Ташкент,city;warm
+minsk,minsk,Минск,city
+nha-trang,nha-trang,Нячанг,kids;sea;warm
+male,male,Мале,nature;sea;warm
+denpasar,denpasar,Бали (Денпасар),nature;sea;warm
+rome,rome,Рим,city
+barcelona,barcelona,Барселона,city;sea;warm
+paris,paris,Париж,city;kids
+prague,prague,Прага,city
+athens,athens,Афины,city;warm
+tokyo,tokyo,Токио,city
+budapest,budapest,Будапешт,city
+innsbruck,innsbruck,Инсбрук,mountains;nature;ski
+lisbon,lisbon,Лиссабон,city;warm

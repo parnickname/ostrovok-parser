@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-26T16:18:14Z",
+  "built_at": "2026-10-26T16:32:02Z",
   "datasets": [
     {
       "name": "airports",
@@ -19,14 +19,14 @@
       "name": "climate",
       "file": "climate.jsonl",
       "records": 468,
-      "sha256": "1b00714e61eddecfb676e2864b5cbcb264c35ffde782b27a19e4b5450edbcf87",
+      "sha256": "736c0e85d1cbbb464fc5731381c14f31d588b9df5ea1842370c408ae76779ead",
       "schema_version": 1
     },
     {
       "name": "destinations",
       "file": "destinations.jsonl",
       "records": 39,
-      "sha256": "900b5acbad5a6a4ffc9564e7ad54d26b56ac58b0ba570e4e2a55f73f8fdccb65",
+      "sha256": "697ef281b34e8d0d1183d77524634954452c6868436e75d7212704feda95a3cd",
       "schema_version": 1
     }
   ]

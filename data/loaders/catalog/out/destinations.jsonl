@@ -16,7 +16,7 @@
 {"airports":["KGD"],"city_id":"kaliningrad","country_code":"RU","description":"","id":"kaliningrad","name":"Калининград","sources":["geonames","ourairports"],"stations":[],"tags":["city","nature"]}
 {"airports":["KZN"],"city_id":"kazan","country_code":"RU","description":"","id":"kazan","name":"Казань","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
 {"airports":["LIS"],"city_id":"lisbon","country_code":"PT","description":"","id":"lisbon","name":"Лиссабон","sources":["geonames","ourairports"],"stations":[],"tags":["city","warm"]}
-{"airports":["MCX"],"city_id":"makhachkala","country_code":"RU","description":"","id":"makhachkala","name":"Махачкала","sources":["geonames","ourairports"],"stations":[],"tags":["mountains","nature","sea","warm"]}
+{"airports":["MCX"],"city_id":"makhachkala","country_code":"RU","description":"","id":"makhachkala","name":"Махачкала","sources":["geonames","ourairports"],"stations":[],"tags":["mountains","nature","warm"]}
 {"airports":["MLE"],"city_id":"male","country_code":"MV","description":"","id":"male","name":"Мале","sources":["geonames","ourairports"],"stations":[],"tags":["nature","sea","warm"]}
 {"airports":["MSQ"],"city_id":"minsk","country_code":"BY","description":"","id":"minsk","name":"Минск","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
 {"airports":["DME","SVO","VKO","ZIA"],"city_id":"moscow","country_code":"RU","description":"","id":"moscow","name":"Москва","sources":["geonames","ourairports"],"stations":[],"tags":["city","kids"]}

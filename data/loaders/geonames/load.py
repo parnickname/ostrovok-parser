@@ -8,7 +8,10 @@ used without any download. Delete it or pass --refresh to fetch a new one.
 
 Selection (decision of the team, README "Решения команды"):
 - departure countries (RU, BY, KZ, UZ, AM): population >= 15000, or a capital / admin seat (PPLC, PPLA);
-- every other country: everything in cities5000, since catalog cities come from there.
+- every other country: everything in cities5000, since catalog cities come from there;
+- only the countries of data/loaders/passport-index-data/out/countries.jsonl (the 199 countries of the visa matrix,
+  P1-DS-02.1): the backend refuses a city whose country is not in `countries`, and the territories left out (Puerto
+  Rico, Guam, Svalbard and so on, 424 cities) have no visa data and are not offered as a citizenship.
 
 `airports` and `stations` are written empty: airports are filled in by P1-DS-04.2, stations by P1-DS-06.2.
 
@@ -35,6 +38,7 @@ LOADER_DIR = Path(__file__).resolve().parent
 CACHE_DIR = LOADER_DIR / "cache"
 OUT_FILE = LOADER_DIR / "out" / "cities.jsonl"
 IDS_FILE = LOADER_DIR / "ids.csv"
+COUNTRIES_FILE = LOADER_DIR.parent / "passport-index-data" / "out" / "countries.jsonl"
 
 BASE_URL = "https://download.geonames.org/export/dump/"
 CITIES_ZIP = "cities5000.zip"
@@ -97,17 +101,29 @@ def is_selected(row):
     return int(row[POPULATION] or 0) >= DEPARTURE_MIN_POPULATION or row[FEATURE_CODE] in SEAT_FEATURE_CODES
 
 
-def read_cities(lines):
-    rows = []
+def read_country_codes():
+    if not COUNTRIES_FILE.exists():
+        raise LoadError(f"{COUNTRIES_FILE} not found, run data/loaders/passport-index-data/countries.py first")
+    with COUNTRIES_FILE.open(encoding="utf-8") as f:
+        return {json.loads(line)["code"] for line in f if line.strip()}
+
+
+def read_cities(lines, country_codes):
+    """Rows of the selected cities, and the number of rows left out because their country is not in country_codes."""
+    rows, left_out = [], 0
     for line_no, line in enumerate(lines, start=1):
         if not line:
             continue
         row = line.split("\t")
         if len(row) < 19:
             raise LoadError(f"{CITIES_ZIP}:{line_no}: expected 19 columns, got {len(row)}")
-        if is_selected(row):
+        if not is_selected(row):
+            continue
+        if row[COUNTRY] in country_codes:
             rows.append(row)
-    return rows
+        else:
+            left_out += 1
+    return rows, left_out
 
 
 def read_russian_names(lines, wanted_ids):
@@ -218,7 +234,7 @@ def main():
     refresh = "--refresh" in sys.argv[1:]
     try:
         cities_zip = download(CITIES_ZIP, refresh)
-        rows = read_cities(zip_lines(cities_zip, "cities5000.txt"))
+        rows, left_out = read_cities(zip_lines(cities_zip, "cities5000.txt"), read_country_codes())
         alternate_zip = download(ALTERNATE_NAMES_ZIP, refresh)
         russian = read_russian_names(zip_lines(alternate_zip, "alternateNamesV2.txt"), {r[GEONAME_ID] for r in rows})
         ids, registry = assign_ids(rows, read_ids())
@@ -229,6 +245,7 @@ def main():
     write_records(records)
     write_ids(registry)
     print(f"{len(records)} cities written to {OUT_FILE}")
+    print(f"  left out, country not in countries.jsonl: {left_out}")
     print(f"  without a Russian name (English name used): {no_russian}")
     return 0
 

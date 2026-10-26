@@ -25,7 +25,7 @@
 {"airports":["KZN"],"city_id":"kazan","country_code":"RU","description":"","id":"kazan","name":"Казань","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
 {"airports":["LED"],"city_id":"saint-petersburg","country_code":"RU","description":"","id":"saint-petersburg","name":"Санкт-Петербург","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
 {"airports":["LIS"],"city_id":"lisbon","country_code":"PT","description":"","id":"lisbon","name":"Лиссабон","sources":["geonames","ourairports"],"stations":[],"tags":["city","warm"]}
-{"airports":["MCX"],"city_id":"makhachkala","country_code":"RU","description":"","id":"makhachkala","name":"Махачкала","sources":["geonames","ourairports"],"stations":[],"tags":["mountains","nature","sea","warm"]}
+{"airports":["MCX"],"city_id":"makhachkala","country_code":"RU","description":"","id":"makhachkala","name":"Махачкала","sources":["geonames","ourairports"],"stations":[],"tags":["mountains","nature","warm"]}
 {"airports":["MLE"],"city_id":"male","country_code":"MV","description":"","id":"male","name":"Мале","sources":["geonames","ourairports"],"stations":[],"tags":["nature","sea","warm"]}
 {"airports":["MMK"],"city_id":"murmansk","country_code":"RU","description":"","id":"murmansk","name":"Мурманск","sources":["geonames","ourairports"],"stations":[],"tags":["nature"]}
 {"airports":["MRV"],"city_id":"pyatigorsk","country_code":"RU","description":"","id":"pyatigorsk","name":"Пятигорск (Кавказские Минводы)","sources":["geonames","ourairports"],"stations":[],"tags":["mountains","nature","ski"]}

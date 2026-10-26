@@ -30,5 +30,14 @@
   `stations` пустые до `04.2` и `06.2`; у 32 302 городов нет русского названия в GeoNames, взято английское (из
   городов отправления таких 40: RU 7, UZ 33). `data/snapshot/cities.jsonl`, запись в `manifest.json`, повторная сборка
   даёт тот же `sha256`. (`5a2fe8d`, `8c5adaa`)
+- Набор аэропортов `airports`: 3 541 аэропорт с регулярными рейсами и кодом IATA, у каждого указан город, а у города —
+  список его аэропортов (Москва: `DME`, `SVO`, `VKO`, `ZIA`). Технически: загрузчик `data/loaders/ourairports/load.py`
+  (`airports.csv` с davidmegginson.github.io, кэш в `cache/`, не в git) пишет `out/airports.jsonl`; отбор —
+  `scheduled_service = yes` и непустой `iata_code`; `city_id`: город той же страны в 100 км с названием, равным
+  муниципалитету аэропорта (2 366), иначе крупнейший город в 50 км (1 013), иначе ближайший в 100 км (162); 593
+  аэропорта без города в 100 км (глухие места: Аляска, Канада, Океания, 38 в России) пропущены, потому что `city_id`
+  обязателен; `timezone` — часовой пояс ближайшего города, в OurAirports его нет. `build.py` заполняет
+  `cities[].airports` из `airports.city_id` (функция `fill_city_airports`); связи городов и аэропортов проверены в обе
+  стороны, повторная сборка даёт тот же `sha256`. (`8d16242`)
 
 [unreleased]: https://github.com/parnickname/ostrovok-parser/commits/main

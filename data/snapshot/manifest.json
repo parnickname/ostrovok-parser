@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-26T16:40:14Z",
+  "built_at": "2026-10-26T17:43:31Z",
   "datasets": [
     {
       "name": "airports",
@@ -12,7 +12,7 @@
       "name": "cities",
       "file": "cities.jsonl",
       "records": 62729,
-      "sha256": "4ba41c0dc832ef8bd05124fa8c002c1e1a07fe90947479c81b4fde7e54b76ca8",
+      "sha256": "c1fce51cb9d18206ab789654b0fb8befd8d2c622e5b3ed3917910d947123b5ff",
       "schema_version": 1
     },
     {
@@ -33,7 +33,14 @@
       "name": "destinations",
       "file": "destinations.jsonl",
       "records": 39,
-      "sha256": "697ef281b34e8d0d1183d77524634954452c6868436e75d7212704feda95a3cd",
+      "sha256": "1c9c664d3e31f928a06010aeb4b91a04c5ba0999269589c4a4cf50017d112b49",
+      "schema_version": 1
+    },
+    {
+      "name": "stations",
+      "file": "stations.jsonl",
+      "records": 696,
+      "sha256": "7cfa4d066c9e9af926eb58acf10a6952fa6720d6f27b2986d41f62510ec7db24",
       "schema_version": 1
     },
     {

@@ -5,10 +5,12 @@ and `tags` (P1-DS-03.2, separated by `;`).
 Everything else comes from the data of the other loaders:
 - `country_code` is the country of the city;
 - `airports` are the airports of the city (OurAirports, P1-DS-04.2);
-- `stations` stay empty: stations of Russian cities come with P1-DS-06.2, then Sanya fills them in;
+- `stations` are the railway stations of the city (Yandex Rasp, P1-DS-06.2, Russia only); a Russian destination
+  without a station must be listed in NO_RAILWAY;
 - `description` stays empty: no subtask of the plan fills it.
 
-Needs data/loaders/geonames/out/cities.jsonl and data/loaders/ourairports/out/airports.jsonl.
+Needs data/loaders/geonames/out/cities.jsonl, data/loaders/ourairports/out/airports.jsonl and
+data/loaders/yandex-rasp/out/stations.jsonl.
 
 Usage: python3 data/loaders/catalog/load.py
 """
@@ -24,6 +26,7 @@ LIST_FILE = LOADER_DIR / "destinations.csv"
 OUT_FILE = LOADER_DIR / "out" / "destinations.jsonl"
 CITIES_FILE = LOADER_DIR.parent / "geonames" / "out" / "cities.jsonl"
 AIRPORTS_FILE = LOADER_DIR.parent / "ourairports" / "out" / "airports.jsonl"
+STATIONS_FILE = LOADER_DIR.parent / "yandex-rasp" / "out" / "stations.jsonl"
 
 # The catalog data comes from these providers (sources.yaml); the choice of destinations is manual.
 SOURCES = ["geonames", "ourairports"]
@@ -36,6 +39,9 @@ MIN_PER_TAG = 5
 # Q-006 (README, "Решения команды"): 30-40 destinations, at least a third of them abroad.
 MIN_SIZE, MAX_SIZE = 30, 40
 HOME_COUNTRY = "RU"
+
+# P1-DS-06.2: Russian destinations that no railway reaches, so they have no station.
+NO_RAILWAY = {"gelendzhik"}
 
 
 class LoadError(Exception):
@@ -54,11 +60,14 @@ def read_list():
         return list(csv.DictReader(f))
 
 
-def build_records(entries, cities, airports):
+def build_records(entries, cities, airports, stations):
     cities_by_id = {c["id"]: c for c in cities}
     airports_by_city = defaultdict(list)
     for airport in airports:
         airports_by_city[airport["city_id"]].append(airport["iata"])
+    stations_by_city = defaultdict(list)
+    for station in stations:
+        stations_by_city[station["city_id"]].append(station["code"])
 
     records, seen = [], set()
     for line_no, entry in enumerate(entries, start=2):
@@ -77,8 +86,13 @@ def build_records(entries, cities, airports):
         if city is None:
             raise LoadError(f"{where}: city_id {city_id!r} is not in cities")
         iatas = sorted(airports_by_city.get(city_id, []))
-        if not iatas:  # no stations yet (P1-DS-06.2), so an airport is the only way to get there
-            raise LoadError(f"{where}: {dest_id!r} has no airport")
+        codes = sorted(stations_by_city.get(city_id, []))
+        if not iatas and not codes:
+            raise LoadError(f"{where}: {dest_id!r} has neither an airport nor a station")
+        if city["country_code"] == HOME_COUNTRY and not codes and dest_id not in NO_RAILWAY:
+            raise LoadError(f"{where}: {dest_id!r} has no station and is not in NO_RAILWAY")
+        if codes and dest_id in NO_RAILWAY:
+            raise LoadError(f"{where}: {dest_id!r} is in NO_RAILWAY but has stations {codes}")
         records.append({
             "id": dest_id,
             "city_id": city_id,
@@ -86,9 +100,9 @@ def build_records(entries, cities, airports):
             "country_code": city["country_code"],
             "tags": tags,
             "airports": iatas,
-            "stations": [],
+            "stations": codes,
             "description": "",
-            "sources": SOURCES,
+            "sources": SOURCES + ["yandex-rasp"] if codes else SOURCES,
         })
 
     abroad = sum(1 for r in records if r["country_code"] != HOME_COUNTRY)
@@ -114,7 +128,9 @@ def write_records(records):
 
 def main():
     try:
-        records, abroad = build_records(read_list(), read_jsonl(CITIES_FILE), read_jsonl(AIRPORTS_FILE))
+        records, abroad = build_records(
+            read_list(), read_jsonl(CITIES_FILE), read_jsonl(AIRPORTS_FILE), read_jsonl(STATIONS_FILE)
+        )
     except LoadError as e:
         print(f"catalog load failed: {e}", file=sys.stderr)
         return 1

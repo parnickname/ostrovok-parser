@@ -123,11 +123,24 @@ def fill_city_airports(datasets):
         city["airports"] = sorted(by_city.get(city["id"], []))
 
 
+def fill_city_stations(datasets):
+    """Sets cities[].stations to the codes of the stations whose city_id is that city.
+
+    `stations.city_id` is the single source of truth (P1-DS-06.2); loaders write `stations: []` for cities.
+    """
+    by_city = defaultdict(list)
+    for station in datasets.get("stations", []):
+        by_city[station["city_id"]].append(station["code"])
+    for city in datasets.get("cities", []):
+        city["stations"] = sorted(by_city.get(city["id"], []))
+
+
 def build():
     datasets = collect_loader_outputs()
     for name, apply_override in OVERRIDES.items():
         datasets[name] = apply_override(datasets.get(name, []), OVERRIDES_DIR)
     fill_city_airports(datasets)
+    fill_city_stations(datasets)
     calibration = merge_calibration(collect_calibration_parts())
     if calibration:
         datasets["calibration"] = calibration

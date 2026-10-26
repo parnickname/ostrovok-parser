@@ -1,4 +1,5 @@
 {
+  "built_at": "2026-10-26T18:10:16Z",
   "built_at": "2026-10-26T18:12:55Z",
   "datasets": [
     {
@@ -41,6 +42,13 @@
       "file": "destinations.jsonl",
       "records": 39,
       "sha256": "44b04aca6b4b3ccfb0b3eb552c6fb8ac1050bb12f8fc06f0f6c7d519bdde9bfc",
+      "schema_version": 1
+    },
+    {
+      "name": "rail_routes",
+      "file": "rail_routes.jsonl",
+      "records": 122,
+      "sha256": "fd77b9b673d5a73f27d7398cdb8617b901bb2e460bdb7b9aeb944a4bb76aba76",
       "schema_version": 1
     },
     {

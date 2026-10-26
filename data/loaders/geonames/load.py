@@ -12,9 +12,16 @@ Selection (decision of the team, README "Решения команды"):
 
 `airports` and `stations` are written empty: airports are filled in by P1-DS-04.2, stations by P1-DS-06.2.
 
+`id` of a city is fixed in ids.csv (`geonameid,id`, in git): the backend derives its price seeds and the links of
+destinations and hotels from it, so it must not change when GeoNames updates populations or the selection changes.
+The first run writes the file from the ids it computes; later runs take the id of a geonameid from the file, give
+new cities a slug that is not taken yet, and append them. Lines are never removed, even for a city that is not
+selected any more, so an id is never given to another city.
+
 Usage: python3 data/loaders/geonames/load.py [--refresh]
 """
 
+import csv
 import io
 import json
 import re
@@ -27,6 +34,7 @@ import requests
 LOADER_DIR = Path(__file__).resolve().parent
 CACHE_DIR = LOADER_DIR / "cache"
 OUT_FILE = LOADER_DIR / "out" / "cities.jsonl"
+IDS_FILE = LOADER_DIR / "ids.csv"
 
 BASE_URL = "https://download.geonames.org/export/dump/"
 CITIES_ZIP = "cities5000.zip"
@@ -123,25 +131,52 @@ def slugify(ascii_name):
     return re.sub(r"[^a-z0-9]+", "-", slug).strip("-")
 
 
-def assign_ids(rows):
-    """Slug of the ASCII name; on a clash the biggest city keeps it, the others get `-<country>`, then `-<geonameid>`.
+def read_ids():
+    """Returns {geonameid: id} from ids.csv, or {} when the file does not exist yet."""
+    if not IDS_FILE.exists():
+        return {}
+    registry = {}
+    with IDS_FILE.open(encoding="utf-8", newline="") as f:
+        for line_no, entry in enumerate(csv.DictReader(f), start=2):
+            geoname_id, city_id = entry["geonameid"].strip(), entry["id"].strip()
+            if not geoname_id.isdigit() or not city_id:
+                raise LoadError(f"{IDS_FILE.name}:{line_no}: expected a geonameid and an id")
+            if geoname_id in registry:
+                raise LoadError(f"{IDS_FILE.name}:{line_no}: geonameid {geoname_id} twice")
+            registry[geoname_id] = city_id
+    if len(set(registry.values())) != len(registry):
+        raise LoadError(f"{IDS_FILE.name}: an id belongs to two geonameids")
+    return registry
 
-    The result depends only on the committed input, so a rebuild does not change ids.
+
+def write_ids(registry):
+    IDS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    lines = ["geonameid,id"] + [f"{g},{registry[g]}" for g in sorted(registry, key=int)]
+    IDS_FILE.write_bytes(("\n".join(lines) + "\n").encode("utf-8"))
+
+
+def assign_ids(rows, registry):
+    """Returns (ids of the rows, registry with the new cities added).
+
+    A city that is in the registry keeps its id. A new one gets the slug of its ASCII name; if that is taken (by any
+    id of the registry, selected now or not) the country is appended, then the geonameid. New cities are handled
+    biggest first, so on the first run (an empty registry) the biggest city of a clash has the plain slug.
     """
-    ids = {}
-    taken = set()
-    for row in sorted(rows, key=lambda r: (-int(r[POPULATION] or 0), int(r[GEONAME_ID]))):
+    registry = dict(registry)
+    taken = set(registry.values())
+    ids = {row[GEONAME_ID]: registry[row[GEONAME_ID]] for row in rows if row[GEONAME_ID] in registry}
+    new_rows = [row for row in rows if row[GEONAME_ID] not in registry]
+    for row in sorted(new_rows, key=lambda r: (-int(r[POPULATION] or 0), int(r[GEONAME_ID]))):
         slug = slugify(row[ASCII_NAME]) or f"city-{row[GEONAME_ID]}"
         for candidate in (slug, f"{slug}-{row[COUNTRY].lower()}", f"{slug}-{row[GEONAME_ID]}"):
             if candidate not in taken:
                 break
         taken.add(candidate)
-        ids[row[GEONAME_ID]] = candidate
-    return ids
+        ids[row[GEONAME_ID]] = registry[row[GEONAME_ID]] = candidate
+    return ids, registry
 
 
-def build_records(rows, russian_names):
-    ids = assign_ids(rows)
+def build_records(rows, russian_names, ids):
     records = []
     no_russian = 0
     for row in rows:
@@ -186,11 +221,13 @@ def main():
         rows = read_cities(zip_lines(cities_zip, "cities5000.txt"))
         alternate_zip = download(ALTERNATE_NAMES_ZIP, refresh)
         russian = read_russian_names(zip_lines(alternate_zip, "alternateNamesV2.txt"), {r[GEONAME_ID] for r in rows})
-        records, no_russian = build_records(rows, russian)
+        ids, registry = assign_ids(rows, read_ids())
+        records, no_russian = build_records(rows, russian, ids)
     except LoadError as e:
         print(f"geonames load failed: {e}", file=sys.stderr)
         return 1
     write_records(records)
+    write_ids(registry)
     print(f"{len(records)} cities written to {OUT_FILE}")
     print(f"  without a Russian name (English name used): {no_russian}")
     return 0

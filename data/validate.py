@@ -4,7 +4,8 @@ Checks:
 - manifest.json lists every dataset file, and its records and sha256 match the file;
 - every record matches its dataset schema: required fields, types, formats, no unknown fields;
 - no duplicate keys (`id`, or the natural key for datasets without `id`);
-- every name in `sources` is a provider from data/sources.yaml.
+- every name in `sources` is a provider from the registry: sources.yaml in the snapshot directory (the copy the
+  backend reads), or data/sources.yaml when the snapshot has none.
 
 Fields marked `?` in CFC-3 are optional: they may be absent or null.
 
@@ -251,13 +252,16 @@ SCHEMAS = {
 # --- validation ----------------------------------------------------------------
 
 
-def load_source_names():
+def load_source_names(snapshot_dir):
     # impulse: reads only `- provider:` lines, no YAML parser (stdlib has none);
     # switch to a YAML library if validate.py needs other fields of sources.yaml.
-    if not SOURCES_FILE.exists():
+    registry = snapshot_dir / "sources.yaml"
+    if not registry.exists():
+        registry = SOURCES_FILE
+    if not registry.exists():
         return set()
     names = set()
-    for line in SOURCES_FILE.read_text(encoding="utf-8").splitlines():
+    for line in registry.read_text(encoding="utf-8").splitlines():
         m = re.match(r"^-\s+provider:\s*(\S+)\s*$", line)
         if m:
             names.add(m.group(1).strip("\"'"))
@@ -282,7 +286,7 @@ def check_record(schema, record, known_sources):
         elif name == "sources":
             for src in value:
                 if src not in known_sources:
-                    errors.append((name, f"unknown provider {src!r}, not in data/sources.yaml"))
+                    errors.append((name, f"unknown provider {src!r}, not in the sources.yaml registry"))
     return errors
 
 
@@ -378,7 +382,7 @@ def main():
     except ValueError:
         pass
 
-    known_sources = load_source_names()
+    known_sources = load_source_names(snapshot_dir)
     errors, datasets = validate_manifest(snapshot_dir)
     for path, name in datasets:
         errors.extend(validate_dataset(path, name, known_sources))

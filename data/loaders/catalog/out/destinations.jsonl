@@ -33,7 +33,7 @@
 {"airports":["AER"],"city_id":"sochi","country_code":"RU","description":"","id":"sochi","name":"Сочи","sources":["geonames","ourairports"],"stations":[],"tags":["kids","mountains","sea","ski","warm"]}
 {"airports":["TAS","TVT"],"city_id":"tashkent","country_code":"UZ","description":"","id":"tashkent","name":"Ташкент","sources":["geonames","ourairports"],"stations":[],"tags":["city","warm"]}
 {"airports":["TBS"],"city_id":"tbilisi","country_code":"GE","description":"","id":"tbilisi","name":"Тбилиси","sources":["geonames","ourairports"],"stations":[],"tags":["city","mountains","ski"]}
-{"airports":["HND"],"city_id":"tokyo","country_code":"JP","description":"","id":"tokyo","name":"Токио","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
+{"airports":["HND","NRT"],"city_id":"tokyo","country_code":"JP","description":"","id":"tokyo","name":"Токио","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
 {"airports":["VVO"],"city_id":"vladivostok","country_code":"RU","description":"","id":"vladivostok","name":"Владивосток","sources":["geonames","ourairports"],"stations":[],"tags":["city","nature"]}
 {"airports":["SVX"],"city_id":"yekaterinburg","country_code":"RU","description":"","id":"yekaterinburg","name":"Екатеринбург","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
 {"airports":["EVN"],"city_id":"yerevan","country_code":"AM","description":"","id":"yerevan","name":"Ереван","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}

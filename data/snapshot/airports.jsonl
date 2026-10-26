@@ -1,13 +1,4 @@
 {"city_id":"aalborg","country_code":"DK","iata":"AAL","lat":57.094763,"lon":9.84993,"name":"Aalborg Airport","scheduled":true,"timezone":"Europe/Copenhagen"}
-{"city_id":"aasiaat","country_code":"GL","iata":"JEG","lat":68.721802,"lon":-52.784698,"name":"Aasiaat Airport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"aasiaat","country_code":"GL","iata":"JGO","lat":69.251182,"lon":-53.514876,"name":"Qeqertarsuaq Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"aasiaat","country_code":"GL","iata":"QCU","lat":68.744273,"lon":-52.340369,"name":"Akunnaaq Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"aasiaat","country_code":"GL","iata":"QFI","lat":68.14583,"lon":-53.16916,"name":"Iginniarfik Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"aasiaat","country_code":"GL","iata":"QGQ","lat":67.940663,"lon":-53.62187,"name":"Attu Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"aasiaat","country_code":"GL","iata":"QJE","lat":68.857926,"lon":-53.123295,"name":"Kitsissuarsuit Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"aasiaat","country_code":"GL","iata":"QJI","lat":68.634253,"lon":-51.832262,"name":"Ikamiut Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"aasiaat","country_code":"GL","iata":"QPW","lat":68.312657,"lon":-53.460208,"name":"Kangaatsiaq Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"aasiaat","country_code":"GL","iata":"QRY","lat":68.140881,"lon":-53.441459,"name":"Ikerassaarsuk Heliport","scheduled":true,"timezone":"America/Nuuk"}
 {"city_id":"abadan","country_code":"IR","iata":"ABD","lat":30.367887,"lon":48.230075,"name":"Abadan Ayatollah Jami International Airport","scheduled":true,"timezone":"Asia/Tehran"}
 {"city_id":"abakan","country_code":"RU","iata":"ABA","lat":53.740002,"lon":91.385002,"name":"Abakan International Airport","scheduled":true,"timezone":"Asia/Krasnoyarsk"}
 {"city_id":"abbotsford","country_code":"CA","iata":"YXX","lat":49.025299,"lon":-122.361,"name":"Abbotsford International Airport","scheduled":true,"timezone":"America/Vancouver"}
@@ -36,7 +27,6 @@
 {"city_id":"agra","country_code":"IN","iata":"AGR","lat":27.157975,"lon":77.961025,"name":"Agra Airport / Agra Air Force Station","scheduled":true,"timezone":"Asia/Kolkata"}
 {"city_id":"agri","country_code":"TR","iata":"AJI","lat":39.655642,"lon":43.025742,"name":"Ağrı Airport","scheduled":true,"timezone":"Europe/Istanbul"}
 {"city_id":"agria","country_code":"GR","iata":"JSI","lat":39.177101,"lon":23.5037,"name":"Skiathos Island National Airport","scheduled":true,"timezone":"Europe/Athens"}
-{"city_id":"aguadilla","country_code":"PR","iata":"BQN","lat":18.4949,"lon":-67.129402,"name":"Rafael Hernández International Airport","scheduled":true,"timezone":"America/Puerto_Rico"}
 {"city_id":"aguascalientes","country_code":"MX","iata":"AGU","lat":21.699589,"lon":-102.318372,"name":"Aguascalientes International Airport","scheduled":true,"timezone":"America/Mexico_City"}
 {"city_id":"ahau","country_code":"FJ","iata":"RTA","lat":-12.482500076293945,"lon":177.0709991455078,"name":"Rotuma Airport","scheduled":true,"timezone":"Pacific/Fiji"}
 {"city_id":"ahmedabad","country_code":"IN","iata":"AMD","lat":23.0772,"lon":72.634697,"name":"Sardar Vallabh Patel International Airport","scheduled":true,"timezone":"Asia/Kolkata"}
@@ -86,7 +76,6 @@
 {"city_id":"almaty","country_code":"KZ","iata":"ALA","lat":43.354267,"lon":77.042828,"name":"Almaty International Airport","scheduled":true,"timezone":"Asia/Almaty"}
 {"city_id":"almeirim","country_code":"BR","iata":"GGF","lat":-1.479524,"lon":-52.578214,"name":"Almeirim Airport","scheduled":true,"timezone":"America/Santarem"}
 {"city_id":"almeria","country_code":"ES","iata":"LEI","lat":36.843899,"lon":-2.3701,"name":"Almería Airport","scheduled":true,"timezone":"Europe/Madrid"}
-{"city_id":"alofi","country_code":"NU","iata":"IUE","lat":-19.080109,"lon":-169.923493,"name":"Niue International Airport","scheduled":true,"timezone":"Pacific/Niue"}
 {"city_id":"alor-setar","country_code":"MY","iata":"AOR","lat":6.189670085906982,"lon":100.39800262451172,"name":"Sultan Abdul Halim Airport","scheduled":true,"timezone":"Asia/Kuala_Lumpur"}
 {"city_id":"alotau","country_code":"PG","iata":"GUR","lat":-10.3114995956,"lon":150.333999634,"name":"Gurney Airport","scheduled":true,"timezone":"Pacific/Port_Moresby"}
 {"city_id":"alpena","country_code":"US","iata":"APN","lat":45.0780983,"lon":-83.56030273,"name":"Alpena County Regional Airport","scheduled":true,"timezone":"America/Detroit"}
@@ -200,7 +189,6 @@
 {"city_id":"aurangabad","country_code":"IN","iata":"IXU","lat":19.862875,"lon":75.396312,"name":"Aurangabad Airport","scheduled":true,"timezone":"Asia/Kolkata"}
 {"city_id":"aurillac","country_code":"FR","iata":"AUR","lat":44.891399,"lon":2.42194,"name":"Aurillac airport","scheduled":true,"timezone":"Europe/Paris"}
 {"city_id":"austin","country_code":"US","iata":"AUS","lat":30.197535,"lon":-97.662015,"name":"Austin Bergstrom International Airport","scheduled":true,"timezone":"America/Chicago"}
-{"city_id":"avarua","country_code":"CK","iata":"RAR","lat":-21.2027,"lon":-159.806,"name":"Rarotonga International Airport","scheduled":true,"timezone":"Pacific/Rarotonga"}
 {"city_id":"avignon","country_code":"FR","iata":"AVN","lat":43.907299,"lon":4.90183,"name":"Avignon Caumont airport","scheduled":true,"timezone":"Europe/Paris"}
 {"city_id":"awasa","country_code":"ET","iata":"AWA","lat":7.100611,"lon":38.396455,"name":"Hawassa International Airport","scheduled":true,"timezone":"Africa/Addis_Ababa"}
 {"city_id":"ayacucho","country_code":"PE","iata":"AYP","lat":-13.1548,"lon":-74.204399,"name":"Air Force Colonel Alfredo Mendivil Duarte Airport","scheduled":true,"timezone":"America/Lima"}
@@ -274,7 +262,6 @@
 {"city_id":"barrie","country_code":"CA","iata":"YLK","lat":44.485056,"lon":-79.554663,"name":"Barrie-Lake Simcoe Regional Airport","scheduled":true,"timezone":"America/Toronto"}
 {"city_id":"basco","country_code":"PH","iata":"BSO","lat":20.4513,"lon":121.980003,"name":"Basco Airport","scheduled":true,"timezone":"Asia/Manila"}
 {"city_id":"basrah","country_code":"IQ","iata":"BSR","lat":30.549101,"lon":47.662102,"name":"Basra International Airport","scheduled":true,"timezone":"Asia/Baghdad"}
-{"city_id":"basse-terre","country_code":"GP","iata":"BBR","lat":16.013648,"lon":-61.742928,"name":"Basse-Terre Baillif Airport","scheduled":true,"timezone":"America/Guadeloupe"}
 {"city_id":"basseterre","country_code":"KN","iata":"SKB","lat":17.310845,"lon":-62.719117,"name":"Robert L. Bradshaw International Airport","scheduled":true,"timezone":"America/St_Kitts"}
 {"city_id":"bastia","country_code":"FR","iata":"BIA","lat":42.5527,"lon":9.48373,"name":"Bastia-Poretta International airport","scheduled":true,"timezone":"Europe/Paris"}
 {"city_id":"bata","country_code":"GQ","iata":"BSG","lat":1.90547,"lon":9.80568,"name":"Bata International Airport","scheduled":true,"timezone":"Africa/Malabo"}
@@ -436,7 +423,6 @@
 {"city_id":"boulder-city","country_code":"US","iata":"BLD","lat":35.947161,"lon":-114.858799,"name":"Boulder City Municipal Airport","scheduled":true,"timezone":"America/Los_Angeles"}
 {"city_id":"bournemouth","country_code":"GB","iata":"BOH","lat":50.780483,"lon":-1.839576,"name":"Bournemouth Airport","scheduled":true,"timezone":"Europe/London"}
 {"city_id":"bozeman","country_code":"US","iata":"BZN","lat":45.778853,"lon":-111.153711,"name":"Bozeman Yellowstone International Airport","scheduled":true,"timezone":"America/Denver"}
-{"city_id":"brades","country_code":"MS","iata":"MNI","lat":16.791835,"lon":-62.193204,"name":"John A. Osborne Airport","scheduled":true,"timezone":"America/Montserrat"}
 {"city_id":"bradford-us","country_code":"US","iata":"BFD","lat":41.8031005859375,"lon":-78.64009857177734,"name":"Bradford Regional Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"braganca-pt","country_code":"PT","iata":"BGC","lat":41.8578,"lon":-6.70713,"name":"Bragança Airport","scheduled":true,"timezone":"Europe/Lisbon"}
 {"city_id":"brainerd","country_code":"US","iata":"BRD","lat":46.402861,"lon":-94.129727,"name":"Brainerd Lakes Regional Airport","scheduled":true,"timezone":"America/Chicago"}
@@ -575,7 +561,6 @@
 {"city_id":"cebu-city","country_code":"PH","iata":"CEB","lat":10.309261,"lon":123.97974,"name":"Mactan Cebu International Airport","scheduled":true,"timezone":"Asia/Manila"}
 {"city_id":"cedar-city","country_code":"US","iata":"CDC","lat":37.70100021362305,"lon":-113.0989990234375,"name":"Cedar City Regional Airport","scheduled":true,"timezone":"America/Denver"}
 {"city_id":"cedar-rapids","country_code":"US","iata":"CID","lat":41.884701,"lon":-91.7108,"name":"The Eastern Iowa Airport","scheduled":true,"timezone":"America/Chicago"}
-{"city_id":"ceiba","country_code":"PR","iata":"NRR","lat":18.247262,"lon":-65.63979,"name":"José Aponte de la Torre Airport","scheduled":true,"timezone":"America/Puerto_Rico"}
 {"city_id":"ceske-budejovice","country_code":"CZ","iata":"JCL","lat":48.948171,"lon":14.42832,"name":"České Budějovice South Bohemian Airport","scheduled":true,"timezone":"Europe/Prague"}
 {"city_id":"ceuta","country_code":"ES","iata":"JCU","lat":35.892657,"lon":-5.306321,"name":"Ceuta Heliport","scheduled":true,"timezone":"Europe/Madrid"}
 {"city_id":"chachapoyas","country_code":"PE","iata":"CHH","lat":-6.201911,"lon":-77.856195,"name":"Chachapoyas Airport","scheduled":true,"timezone":"America/Lima"}
@@ -598,8 +583,6 @@
 {"city_id":"charleston-us","country_code":"US","iata":"CRW","lat":38.3731,"lon":-81.593201,"name":"Yeager Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"charlestown-kn","country_code":"KN","iata":"NEV","lat":17.2057,"lon":-62.589901,"name":"Vance W. Amory International Airport","scheduled":true,"timezone":"America/St_Kitts"}
 {"city_id":"charlotte","country_code":"US","iata":"CLT","lat":35.2140007019043,"lon":-80.94309997558594,"name":"Charlotte Douglas International Airport","scheduled":true,"timezone":"America/New_York"}
-{"city_id":"charlotte-amalie","country_code":"VI","iata":"SPB","lat":18.338204,"lon":-64.939675,"name":"Charlotte Amalie Harbor Seaplane Base","scheduled":true,"timezone":"America/St_Thomas"}
-{"city_id":"charlotte-amalie","country_code":"VI","iata":"STT","lat":18.337091,"lon":-64.977251,"name":"Cyril E. King Airport","scheduled":true,"timezone":"America/St_Thomas"}
 {"city_id":"charlottesville","country_code":"US","iata":"CHO","lat":38.13859939575195,"lon":-78.4529037475586,"name":"Charlottesville Albemarle Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"charlottetown","country_code":"CA","iata":"YYG","lat":46.288911,"lon":-63.125174,"name":"Charlottetown Airport","scheduled":true,"timezone":"America/Halifax"}
 {"city_id":"chattanooga","country_code":"US","iata":"CHA","lat":35.035301,"lon":-85.203796,"name":"Chattanooga Metropolitan Airport (Lovell Field)","scheduled":true,"timezone":"America/New_York"}
@@ -668,9 +651,6 @@
 {"city_id":"cluj-napoca","country_code":"RO","iata":"CLJ","lat":46.786042,"lon":23.685733,"name":"Avram Iancu Cluj International Airport","scheduled":true,"timezone":"Europe/Bucharest"}
 {"city_id":"cobija","country_code":"BO","iata":"CIJ","lat":-11.039109,"lon":-68.782774,"name":"Capitán Aníbal Arab Airport","scheduled":true,"timezone":"America/La_Paz"}
 {"city_id":"cochabamba","country_code":"BO","iata":"CBB","lat":-17.421105,"lon":-66.177102,"name":"Jorge Wilsterman International Airport","scheduled":true,"timezone":"America/La_Paz"}
-{"city_id":"cockburn-town","country_code":"TC","iata":"GDT","lat":21.4445,"lon":-71.142303,"name":"JAGS McCartney International Airport","scheduled":true,"timezone":"America/Grand_Turk"}
-{"city_id":"cockburn-town","country_code":"TC","iata":"SLX","lat":21.333000183099998,"lon":-71.1999969482,"name":"Salt Cay Airport","scheduled":true,"timezone":"America/Grand_Turk"}
-{"city_id":"cockburn-town","country_code":"TC","iata":"XSC","lat":21.515699,"lon":-71.528503,"name":"South Caicos Airport","scheduled":true,"timezone":"America/Grand_Turk"}
 {"city_id":"cockburn-town-bs","country_code":"BS","iata":"ZSA","lat":24.063041,"lon":-74.523233,"name":"San Salvador International Airport","scheduled":true,"timezone":"America/Nassau"}
 {"city_id":"codrington","country_code":"AG","iata":"BBQ","lat":17.621194,"lon":-61.798347,"name":"Burton-Nibbs International Airport","scheduled":true,"timezone":"America/Antigua"}
 {"city_id":"cody","country_code":"US","iata":"COD","lat":44.520199,"lon":-109.024002,"name":"Yellowstone Regional Airport","scheduled":true,"timezone":"America/Denver"}
@@ -737,8 +717,6 @@
 {"city_id":"cucuta","country_code":"CO","iata":"CUC","lat":7.92757,"lon":-72.5115,"name":"Camilo Daza International Airport","scheduled":true,"timezone":"America/Bogota"}
 {"city_id":"cuenca","country_code":"EC","iata":"CUE","lat":-2.88947,"lon":-78.984398,"name":"Mariscal Lamar Airport","scheduled":true,"timezone":"America/Guayaquil"}
 {"city_id":"cuiaba","country_code":"BR","iata":"CGB","lat":-15.6529,"lon":-56.116699,"name":"Várzea Grande–Marechal Rondon International Airport","scheduled":true,"timezone":"America/Cuiaba"}
-{"city_id":"cul-de-sac","country_code":"SX","iata":"SXM","lat":18.041,"lon":-63.108898,"name":"Princess Juliana International Airport","scheduled":true,"timezone":"America/Lower_Princes"}
-{"city_id":"culebra","country_code":"PR","iata":"CPX","lat":18.312954,"lon":-65.303893,"name":"Benjamin Rivera Noriega Airport","scheduled":true,"timezone":"America/Puerto_Rico"}
 {"city_id":"culiacan","country_code":"MX","iata":"CUL","lat":24.76504,"lon":-107.475228,"name":"Bachigualato Federal International Airport","scheduled":true,"timezone":"America/Mazatlan"}
 {"city_id":"culleredo","country_code":"ES","iata":"LCG","lat":43.302101,"lon":-8.37726,"name":"A Coruña Airport","scheduled":true,"timezone":"Europe/Madrid"}
 {"city_id":"cumana","country_code":"VE","iata":"CUM","lat":10.450333,"lon":-64.13047,"name":"Antonio José de Sucre Airport","scheduled":true,"timezone":"America/Caracas"}
@@ -756,7 +734,6 @@
 {"city_id":"daegu","country_code":"KR","iata":"TAE","lat":35.894394,"lon":128.656989,"name":"Daegu International Airport","scheduled":true,"timezone":"Asia/Seoul"}
 {"city_id":"daejeon","country_code":"KR","iata":"CJJ","lat":36.71556,"lon":127.500289,"name":"Cheongju International Airport/Cheongju Air Base (K-59/G-513)","scheduled":true,"timezone":"Asia/Seoul"}
 {"city_id":"dakar","country_code":"SN","iata":"DSS","lat":14.670878,"lon":-17.072829,"name":"Blaise Diagne International Airport","scheduled":true,"timezone":"Africa/Dakar"}
-{"city_id":"dakhla","country_code":"EH","iata":"VIL","lat":23.7183,"lon":-15.932,"name":"Dakhla Airport","scheduled":true,"timezone":"Africa/El_Aaiun"}
 {"city_id":"dalaman","country_code":"TR","iata":"DLM","lat":36.7131,"lon":28.7925,"name":"Dalaman International Airport","scheduled":true,"timezone":"Europe/Istanbul"}
 {"city_id":"dalandzadgad","country_code":"MN","iata":"DLZ","lat":43.608628,"lon":104.367734,"name":"Dalanzadgad Airport","scheduled":true,"timezone":"Asia/Ulaanbaatar"}
 {"city_id":"dalbandin","country_code":"PK","iata":"DBA","lat":28.878299713100002,"lon":64.3998031616,"name":"Dalbandin Airport","scheduled":true,"timezone":"Asia/Karachi"}
@@ -832,7 +809,6 @@
 {"city_id":"dortmund","country_code":"DE","iata":"DTM","lat":51.518299,"lon":7.61224,"name":"Dortmund Airport","scheduled":true,"timezone":"Europe/Berlin"}
 {"city_id":"dothan","country_code":"US","iata":"DHN","lat":31.321300506591797,"lon":-85.44960021972656,"name":"Dothan Regional Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"douala","country_code":"CM","iata":"DLA","lat":4.00608,"lon":9.71948,"name":"Douala International Airport","scheduled":true,"timezone":"Africa/Douala"}
-{"city_id":"douglas-im","country_code":"IM","iata":"IOM","lat":54.083081,"lon":-4.623871,"name":"Isle of Man Airport","scheduled":true,"timezone":"Europe/Isle_of_Man"}
 {"city_id":"dover-us","country_code":"US","iata":"DOV","lat":39.129501,"lon":-75.466003,"name":"Dover Civil Air Terminal/Dover Air Force Base","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"dresden","country_code":"DE","iata":"DRS","lat":51.134123,"lon":13.767831,"name":"Dresden Airport","scheduled":true,"timezone":"Europe/Berlin"}
 {"city_id":"duba","country_code":"SA","iata":"NUM","lat":27.924261,"lon":35.29358,"name":"Neom Bay Airport","scheduled":true,"timezone":"Asia/Riyadh"}
@@ -855,7 +831,6 @@
 {"city_id":"durgapur","country_code":"IN","iata":"RDP","lat":23.6225,"lon":87.243,"name":"Kazi Nazrul Islam Airport","scheduled":true,"timezone":"Asia/Kolkata"}
 {"city_id":"dushan","country_code":"CN","iata":"LLB","lat":25.4525,"lon":107.961667,"name":"Libo Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"dushanbe","country_code":"TJ","iata":"DYU","lat":38.543746,"lon":68.822977,"name":"Dushanbe International Airport","scheduled":true,"timezone":"Asia/Dushanbe"}
-{"city_id":"dzaoudzi","country_code":"YT","iata":"DZA","lat":-12.809319,"lon":45.281815,"name":"Dzaoudzi Pamandzi International Airport","scheduled":true,"timezone":"Indian/Mayotte"}
 {"city_id":"eagle-us","country_code":"US","iata":"EGE","lat":39.64260101,"lon":-106.9179993,"name":"Eagle County Regional Airport","scheduled":true,"timezone":"America/Denver"}
 {"city_id":"east-london","country_code":"ZA","iata":"ELS","lat":-33.035599,"lon":27.825899,"name":"King Phalo Airport","scheduled":true,"timezone":"Africa/Johannesburg"}
 {"city_id":"eau-claire","country_code":"US","iata":"EAU","lat":44.86579895019531,"lon":-91.48429870605469,"name":"Chippewa Valley Regional Airport","scheduled":true,"timezone":"America/Chicago"}
@@ -919,11 +894,9 @@
 {"city_id":"everett","country_code":"US","iata":"PAE","lat":47.9063,"lon":-122.281998,"name":"Seattle Paine Field International Airport","scheduled":true,"timezone":"America/Los_Angeles"}
 {"city_id":"exeter","country_code":"GB","iata":"EXT","lat":50.734261,"lon":-3.413984,"name":"Exeter International Airport","scheduled":true,"timezone":"Europe/London"}
 {"city_id":"ezhou","country_code":"CN","iata":"EHU","lat":30.341178,"lon":115.03926,"name":"Ezhou Huahu International Airport","scheduled":true,"timezone":"Asia/Shanghai"}
-{"city_id":"faaa","country_code":"PF","iata":"MOZ","lat":-17.48979,"lon":-149.761777,"name":"Moorea Temae Airport","scheduled":true,"timezone":"Pacific/Tahiti"}
 {"city_id":"fadhigaradle","country_code":"ET","iata":"HIL","lat":6.077545,"lon":44.763736,"name":"Shilavo Airport","scheduled":true,"timezone":"Africa/Addis_Ababa"}
 {"city_id":"fairbanks","country_code":"US","iata":"FAI","lat":64.815102,"lon":-147.856003,"name":"Fairbanks International Airport","scheduled":true,"timezone":"America/Anchorage"}
 {"city_id":"faisalabad","country_code":"PK","iata":"LYP","lat":31.364923,"lon":72.995319,"name":"Faisalabad International Airport","scheduled":true,"timezone":"Asia/Karachi"}
-{"city_id":"fajardo","country_code":"PR","iata":"VQS","lat":18.1348,"lon":-65.493599,"name":"Antonio Rivera Rodriguez Airport","scheduled":true,"timezone":"America/Puerto_Rico"}
 {"city_id":"fakfak","country_code":"ID","iata":"FKQ","lat":-2.920508,"lon":132.267011,"name":"Fakfak Airport","scheduled":true,"timezone":"Asia/Jayapura"}
 {"city_id":"fargo","country_code":"US","iata":"FAR","lat":46.9207,"lon":-96.815804,"name":"Hector International Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"faridabad","country_code":"IN","iata":"DXN","lat":28.179868,"lon":77.611843,"name":"Noida International Airport","scheduled":true,"timezone":"Asia/Kolkata"}
@@ -942,14 +915,12 @@
 {"city_id":"florence-4578737","country_code":"US","iata":"FLO","lat":34.18539810180664,"lon":-79.7238998413086,"name":"Florence Regional Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"florencia","country_code":"CO","iata":"FLA","lat":1.58919,"lon":-75.5644,"name":"Gustavo Artunduaga Paredes Airport","scheduled":true,"timezone":"America/Bogota"}
 {"city_id":"florianopolis","country_code":"BR","iata":"FLN","lat":-27.670279,"lon":-48.552502,"name":"Hercílio Luz International Airport","scheduled":true,"timezone":"America/Sao_Paulo"}
-{"city_id":"flying-fish-cove","country_code":"CX","iata":"XCH","lat":-10.450387,"lon":105.6911,"name":"Christmas Island International Airport","scheduled":true,"timezone":"Indian/Christmas"}
 {"city_id":"foggia","country_code":"IT","iata":"FOG","lat":41.433596,"lon":15.534566,"name":"Foggia Gino Lisa Airport","scheduled":true,"timezone":"Europe/Rome"}
 {"city_id":"fonadhoo","country_code":"MV","iata":"KDO","lat":1.8591699600219727,"lon":73.52189636230469,"name":"Kadhdhoo Airport","scheduled":true,"timezone":"Indian/Maldives"}
 {"city_id":"forde","country_code":"NO","iata":"FDE","lat":61.391102,"lon":5.75694,"name":"Førde Airport, Bringeland","scheduled":true,"timezone":"Europe/Oslo"}
 {"city_id":"forde","country_code":"NO","iata":"FRO","lat":61.583599090576,"lon":5.0247201919556,"name":"Florø Airport","scheduled":true,"timezone":"Europe/Oslo"}
 {"city_id":"formosa","country_code":"AR","iata":"FMA","lat":-26.2127,"lon":-58.2281,"name":"Formosa National Airport","scheduled":true,"timezone":"America/Argentina/Cordoba"}
 {"city_id":"fort-cavazos","country_code":"US","iata":"GRK","lat":31.0672,"lon":-97.828903,"name":"Killeen Regional Airport / Robert Gray Army Airfield","scheduled":true,"timezone":"America/Chicago"}
-{"city_id":"fort-de-france","country_code":"MQ","iata":"FDF","lat":14.591,"lon":-61.003201,"name":"Martinique Aimé Césaire International Airport","scheduled":true,"timezone":"America/Martinique"}
 {"city_id":"fort-dodge","country_code":"US","iata":"FOD","lat":42.552624,"lon":-94.191237,"name":"Fort Dodge Regional Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"fort-frances","country_code":"CA","iata":"YAG","lat":48.655749,"lon":-93.44349,"name":"Fort Frances Municipal Airport","scheduled":true,"timezone":"America/Winnipeg"}
 {"city_id":"fort-lauderdale","country_code":"US","iata":"FLL","lat":26.072599,"lon":-80.152702,"name":"Fort Lauderdale Hollywood International Airport","scheduled":true,"timezone":"America/New_York"}
@@ -1026,15 +997,12 @@
 {"city_id":"genoa","country_code":"IT","iata":"GOA","lat":44.412039,"lon":8.840732,"name":"Genoa Cristoforo Colombo Airport","scheduled":true,"timezone":"Europe/Rome"}
 {"city_id":"george","country_code":"ZA","iata":"GRJ","lat":-34.0056,"lon":22.378902,"name":"George Airport","scheduled":true,"timezone":"Africa/Johannesburg"}
 {"city_id":"george-town-bs","country_code":"BS","iata":"GGT","lat":23.562599,"lon":-75.877998,"name":"Exuma International Airport","scheduled":true,"timezone":"America/Nassau"}
-{"city_id":"george-town-ky","country_code":"KY","iata":"GCM","lat":19.292801,"lon":-81.357697,"name":"Owen Roberts International Airport","scheduled":true,"timezone":"America/Cayman"}
 {"city_id":"georgetown","country_code":"GY","iata":"GEO","lat":6.49855,"lon":-58.254101,"name":"Cheddi Jagan International Airport","scheduled":true,"timezone":"America/Guyana"}
 {"city_id":"georgetown","country_code":"GY","iata":"OGL","lat":6.805881,"lon":-58.107657,"name":"Eugene F. Correia International Airport","scheduled":true,"timezone":"America/Guyana"}
-{"city_id":"georgetown-sh","country_code":"SH","iata":"ASI","lat":-7.970179,"lon":-14.392744,"name":"RAF Ascension Island","scheduled":true,"timezone":"Atlantic/St_Helena"}
 {"city_id":"geraldton","country_code":"AU","iata":"GET","lat":-28.796101,"lon":114.707001,"name":"Geraldton Airport","scheduled":true,"timezone":"Australia/Perth"}
 {"city_id":"ghadames","country_code":"LY","iata":"LTD","lat":30.145484,"lon":9.702095,"name":"Ghadames Airport","scheduled":true,"timezone":"Africa/Tripoli"}
 {"city_id":"ghardaia","country_code":"DZ","iata":"GHA","lat":32.384102,"lon":3.79411,"name":"Noumérat - Moufdi Zakaria Airport","scheduled":true,"timezone":"Africa/Algiers"}
 {"city_id":"ghaziabad","country_code":"IN","iata":"HDO","lat":28.707701,"lon":77.358902,"name":"Hindon Airport / Hindon Air Force Station","scheduled":true,"timezone":"Asia/Kolkata"}
-{"city_id":"gibraltar","country_code":"GI","iata":"GIB","lat":36.151679,"lon":-5.34978,"name":"Gibraltar Airport","scheduled":true,"timezone":"Europe/Gibraltar"}
 {"city_id":"gijon","country_code":"ES","iata":"OVD","lat":43.563599,"lon":-6.03462,"name":"Asturias Airport","scheduled":true,"timezone":"Europe/Madrid"}
 {"city_id":"gilgit","country_code":"PK","iata":"GIL","lat":35.918800354003906,"lon":74.33360290527344,"name":"Gilgit Airport","scheduled":true,"timezone":"Asia/Karachi"}
 {"city_id":"gillette","country_code":"US","iata":"GCC","lat":44.3489,"lon":-105.539001,"name":"Northeast Wyoming Regional Airport","scheduled":true,"timezone":"America/Denver"}
@@ -1069,8 +1037,6 @@
 {"city_id":"governors-harbour","country_code":"BS","iata":"GHB","lat":25.2847,"lon":-76.331001,"name":"Governor's Harbour Airport","scheduled":true,"timezone":"America/Nassau"}
 {"city_id":"gqeberha","country_code":"ZA","iata":"PLZ","lat":-33.989715,"lon":25.617353,"name":"Chief Dawid Stuurman International Airport","scheduled":true,"timezone":"Africa/Johannesburg"}
 {"city_id":"granada","country_code":"ES","iata":"GRX","lat":37.188702,"lon":-3.77736,"name":"F.G.L. Airport Granada-Jaén Airport","scheduled":true,"timezone":"Europe/Madrid"}
-{"city_id":"grand-bourg","country_code":"GP","iata":"GBJ","lat":15.868925,"lon":-61.270087,"name":"Marie-Galante Airport","scheduled":true,"timezone":"America/Guadeloupe"}
-{"city_id":"grand-case","country_code":"MF","iata":"SFG","lat":18.100057,"lon":-63.047444,"name":"Grand Case-l'Espérance Airport","scheduled":true,"timezone":"America/Marigot"}
 {"city_id":"grand-forks","country_code":"US","iata":"GFK","lat":47.949299,"lon":-97.176102,"name":"Grand Forks International Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"grand-island","country_code":"US","iata":"GRI","lat":40.967498779296875,"lon":-98.30960083007812,"name":"Central Nebraska Regional Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"grand-junction","country_code":"US","iata":"GJT","lat":39.126663,"lon":-108.529387,"name":"Grand Junction Regional Airport","scheduled":true,"timezone":"America/Denver"}
@@ -1114,7 +1080,6 @@
 {"city_id":"gunsan","country_code":"KR","iata":"KUV","lat":35.903801,"lon":126.615997,"name":"Gunsan Airport / Gunsan Air Base","scheduled":true,"timezone":"Asia/Seoul"}
 {"city_id":"gunungsitoli","country_code":"ID","iata":"GNS","lat":1.166275,"lon":97.705196,"name":"Binaka Airport","scheduled":true,"timezone":"Asia/Jakarta"}
 {"city_id":"guolemude","country_code":"CN","iata":"GOQ","lat":36.4006,"lon":94.786102,"name":"Golmud Airport","scheduled":true,"timezone":"Asia/Shanghai"}
-{"city_id":"gustavia","country_code":"BL","iata":"SBH","lat":17.904398,"lon":-62.843333,"name":"St. Jean Airport","scheduled":true,"timezone":"America/St_Barthelemy"}
 {"city_id":"guwahati","country_code":"IN","iata":"GAU","lat":26.106654,"lon":91.585226,"name":"Lokpriya Gopinath Bordoloi International Airport","scheduled":true,"timezone":"Asia/Kolkata"}
 {"city_id":"guyuan","country_code":"CN","iata":"GYU","lat":36.078889,"lon":106.216944,"name":"Guyuan Liupanshan Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"gwadar","country_code":"PK","iata":"GWD","lat":25.296733,"lon":62.498822,"name":"New Gwadar International Airport","scheduled":true,"timezone":"Asia/Karachi"}
@@ -1126,7 +1091,6 @@
 {"city_id":"hachijo","country_code":"JP","iata":"HAC","lat":33.114843,"lon":139.785645,"name":"Hachijojima Airport","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"hadibu","country_code":"YE","iata":"SCT","lat":12.632093,"lon":53.906173,"name":"Socotra Airport","scheduled":true,"timezone":"Asia/Aden"}
 {"city_id":"haernoesand","country_code":"SE","iata":"KRF","lat":63.048599,"lon":17.7689,"name":"Kramfors-Sollefteå Höga Kusten Airport","scheduled":true,"timezone":"Europe/Stockholm"}
-{"city_id":"hagatna","country_code":"GU","iata":"GUM","lat":13.485,"lon":144.797282,"name":"Antonio B. Won Pat International Airport","scheduled":true,"timezone":"Pacific/Guam"}
 {"city_id":"hagerstown","country_code":"US","iata":"HGR","lat":39.708771,"lon":-77.728014,"name":"Hagerstown Regional Richard A Henson Field","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"haifa","country_code":"IL","iata":"HFA","lat":32.810219,"lon":35.043719,"name":"Uri Michaeli Haifa International Airport","scheduled":true,"timezone":"Asia/Jerusalem"}
 {"city_id":"haikou","country_code":"CN","iata":"HAK","lat":19.9349,"lon":110.459,"name":"Haikou Meilan International Airport","scheduled":true,"timezone":"Asia/Shanghai"}
@@ -1146,7 +1110,6 @@
 {"city_id":"hamhung","country_code":"KP","iata":"DSO","lat":39.745201,"lon":127.473999,"name":"Sondok Airport","scheduled":true,"timezone":"Asia/Pyongyang"}
 {"city_id":"hami","country_code":"CN","iata":"HMI","lat":42.8414,"lon":93.669197,"name":"Hami Airport","scheduled":true,"timezone":"Asia/Urumqi"}
 {"city_id":"hamilton","country_code":"CA","iata":"YHM","lat":43.171308,"lon":-79.929416,"name":"John C. Munro Hamilton International Airport","scheduled":true,"timezone":"America/Toronto"}
-{"city_id":"hamilton-bm","country_code":"BM","iata":"BDA","lat":32.363802,"lon":-64.67824,"name":"L.F. Wade International Airport","scheduled":true,"timezone":"Atlantic/Bermuda"}
 {"city_id":"hamilton-nz","country_code":"NZ","iata":"HLZ","lat":-37.866961,"lon":175.331952,"name":"Hamilton International Airport","scheduled":true,"timezone":"Pacific/Auckland"}
 {"city_id":"hammerfest","country_code":"NO","iata":"HAA","lat":70.486702,"lon":22.1397,"name":"Hasvik Airport","scheduled":true,"timezone":"Europe/Oslo"}
 {"city_id":"hammerfest","country_code":"NO","iata":"HFT","lat":70.679703,"lon":23.6686,"name":"Hammerfest Airport","scheduled":true,"timezone":"Europe/Oslo"}
@@ -1260,10 +1223,6 @@
 {"city_id":"illizi","country_code":"DZ","iata":"VVZ","lat":26.723499,"lon":8.62265,"name":"Illizi Takhamalt Airport","scheduled":true,"timezone":"Africa/Algiers"}
 {"city_id":"ilo","country_code":"PE","iata":"ILQ","lat":-17.695,"lon":-71.344002,"name":"General Jorge Fernandez Maldon Airport","scheduled":true,"timezone":"America/Lima"}
 {"city_id":"ilorin","country_code":"NG","iata":"ILR","lat":8.44021,"lon":4.49392,"name":"General Tunde Idiagbon International Airport","scheduled":true,"timezone":"Africa/Lagos"}
-{"city_id":"ilulissat","country_code":"GL","iata":"JAV","lat":69.243202,"lon":-51.057098,"name":"Ilulissat Airport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"ilulissat","country_code":"GL","iata":"JCH","lat":68.822816,"lon":-51.173447,"name":"Qasigiannguit Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"ilulissat","country_code":"GL","iata":"PQT","lat":69.995861,"lon":-51.300917,"name":"Qeqertaq Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"ilulissat","country_code":"GL","iata":"XIQ","lat":69.080915,"lon":-51.114315,"name":"Ilimanaq Heliport","scheduled":true,"timezone":"America/Nuuk"}
 {"city_id":"imperatriz","country_code":"BR","iata":"IMP","lat":-5.53129,"lon":-47.459999,"name":"Prefeito Renato Moreira Airport","scheduled":true,"timezone":"America/Fortaleza"}
 {"city_id":"imperial-us","country_code":"US","iata":"IPL","lat":32.83539,"lon":-115.574026,"name":"Imperial County Airport","scheduled":true,"timezone":"America/Los_Angeles"}
 {"city_id":"imphal","country_code":"IN","iata":"IMF","lat":24.76,"lon":93.896698,"name":"Bir Tikendrajit International Airport","scheduled":true,"timezone":"Asia/Kolkata"}
@@ -1332,7 +1291,6 @@
 {"city_id":"jakarta","country_code":"ID","iata":"HLP","lat":-6.266989,"lon":106.890318,"name":"Halim Perdanakusuma International Airport","scheduled":true,"timezone":"Asia/Jakarta"}
 {"city_id":"jalgaon","country_code":"IN","iata":"JLG","lat":20.962678,"lon":75.627492,"name":"Jalgaon Airport","scheduled":true,"timezone":"Asia/Kolkata"}
 {"city_id":"jambi-city","country_code":"ID","iata":"DJB","lat":-1.638685,"lon":103.645063,"name":"Sultan Thaha Airport","scheduled":true,"timezone":"Asia/Jakarta"}
-{"city_id":"jamestown-sh","country_code":"SH","iata":"HLE","lat":-15.958898,"lon":-5.646066,"name":"Saint Helena International Airport","scheduled":true,"timezone":"Atlantic/St_Helena"}
 {"city_id":"jamestown-us","country_code":"US","iata":"JMS","lat":46.92969894,"lon":-98.67819977,"name":"Jamestown Regional Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"jammu","country_code":"IN","iata":"IXJ","lat":32.688849,"lon":74.838152,"name":"Jammu Airport","scheduled":true,"timezone":"Asia/Kolkata"}
 {"city_id":"jamnagar","country_code":"IN","iata":"JGA","lat":22.465499877929688,"lon":70.01260375976562,"name":"Jamnagar Airport","scheduled":true,"timezone":"Asia/Kolkata"}
@@ -1525,7 +1483,6 @@
 {"city_id":"kingston","country_code":"JM","iata":"KIN","lat":17.935699462890625,"lon":-76.7874984741211,"name":"Norman Manley International Airport","scheduled":true,"timezone":"America/Jamaica"}
 {"city_id":"kingston","country_code":"JM","iata":"KTP","lat":17.98859977722168,"lon":-76.82379913330078,"name":"Tinson Pen Airport","scheduled":true,"timezone":"America/Jamaica"}
 {"city_id":"kingston","country_code":"JM","iata":"OCJ","lat":18.404079,"lon":-76.969754,"name":"Ian Fleming International Airport","scheduled":true,"timezone":"America/Jamaica"}
-{"city_id":"kingston-nf","country_code":"NF","iata":"NLK","lat":-29.041759,"lon":167.939474,"name":"Norfolk Island International Airport","scheduled":true,"timezone":"Pacific/Norfolk"}
 {"city_id":"kingston-upon-hull","country_code":"GB","iata":"HUY","lat":53.576152,"lon":-0.34954,"name":"Humberside Airport","scheduled":true,"timezone":"Europe/London"}
 {"city_id":"kingstown","country_code":"VC","iata":"BQU","lat":12.9884,"lon":-61.262001,"name":"J F Mitchell Airport","scheduled":true,"timezone":"America/St_Vincent"}
 {"city_id":"kingstown","country_code":"VC","iata":"MQS","lat":12.8879,"lon":-61.180199,"name":"Mustique Airport","scheduled":true,"timezone":"America/St_Vincent"}
@@ -1583,8 +1540,6 @@
 {"city_id":"kolwezi","country_code":"CD","iata":"KWZ","lat":-10.7659,"lon":25.505699,"name":"Kolwezi Airport","scheduled":true,"timezone":"Africa/Lubumbashi"}
 {"city_id":"komsomolsk-on-amur","country_code":"RU","iata":"KXK","lat":50.409,"lon":136.934006,"name":"Komsomolsk-on-Amur Airport","scheduled":true,"timezone":"Asia/Vladivostok"}
 {"city_id":"konarak","country_code":"IR","iata":"ZBR","lat":25.44319,"lon":60.382167,"name":"Chabahar Konarak International Airport","scheduled":true,"timezone":"Asia/Tehran"}
-{"city_id":"kone","country_code":"NC","iata":"KNQ","lat":-21.053551,"lon":164.838768,"name":"Koné Airport","scheduled":true,"timezone":"Pacific/Noumea"}
-{"city_id":"kone","country_code":"NC","iata":"KOC","lat":-20.546323,"lon":164.255648,"name":"Koumac Airport","scheduled":true,"timezone":"Pacific/Noumea"}
 {"city_id":"konya","country_code":"TR","iata":"KYA","lat":37.979,"lon":32.561901,"name":"Konya Airport","scheduled":true,"timezone":"Europe/Istanbul"}
 {"city_id":"korhogo","country_code":"CI","iata":"HGO","lat":9.38718,"lon":-5.55666,"name":"Korhogo Airport","scheduled":true,"timezone":"Africa/Abidjan"}
 {"city_id":"korla","country_code":"CN","iata":"KRL","lat":41.614979,"lon":86.140817,"name":"Korla Licheng Airport","scheduled":true,"timezone":"Asia/Urumqi"}
@@ -1604,7 +1559,6 @@
 {"city_id":"kozhikode","country_code":"IN","iata":"CCJ","lat":11.135996,"lon":75.955152,"name":"Calicut International Airport","scheduled":true,"timezone":"Asia/Kolkata"}
 {"city_id":"krabi","country_code":"TH","iata":"KBV","lat":8.095591,"lon":98.988955,"name":"Krabi International Airport","scheduled":true,"timezone":"Asia/Bangkok"}
 {"city_id":"krakow","country_code":"PL","iata":"KRK","lat":50.077702,"lon":19.7848,"name":"Kraków John Paul II International Airport","scheduled":true,"timezone":"Europe/Warsaw"}
-{"city_id":"kralendijk","country_code":"BQ","iata":"BON","lat":12.131,"lon":-68.268501,"name":"Flamingo International Airport","scheduled":true,"timezone":"America/Kralendijk"}
 {"city_id":"kraljevo","country_code":"RS","iata":"KVO","lat":43.817519,"lon":20.586662,"name":"Morava Airport","scheduled":true,"timezone":"Europe/Belgrade"}
 {"city_id":"krasnodar","country_code":"RU","iata":"KRR","lat":45.034465,"lon":39.174215,"name":"Krasnodar Pashkovsky International Airport","scheduled":true,"timezone":"Europe/Moscow"}
 {"city_id":"krasnoyarsk","country_code":"RU","iata":"KCY","lat":56.177584,"lon":92.545881,"name":"Krasnoyarsk Cheremshanka Airport","scheduled":true,"timezone":"Asia/Krasnoyarsk"}
@@ -1656,7 +1610,6 @@
 {"city_id":"la-romana","country_code":"DO","iata":"LRM","lat":18.452222,"lon":-68.911111,"name":"Casa De Campo International Airport","scheduled":true,"timezone":"America/Santo_Domingo"}
 {"city_id":"la-ronge","country_code":"CA","iata":"YVC","lat":55.151401519800004,"lon":-105.262001038,"name":"La Ronge Airport","scheduled":true,"timezone":"America/Regina"}
 {"city_id":"laage","country_code":"DE","iata":"RLG","lat":53.918201,"lon":12.2783,"name":"Rostock-Laage Airport","scheduled":true,"timezone":"Europe/Berlin"}
-{"city_id":"laayoune","country_code":"EH","iata":"EUN","lat":27.142467,"lon":-13.224947,"name":"Laayoune Hassan I International Airport","scheduled":true,"timezone":"Africa/El_Aaiun"}
 {"city_id":"labasa","country_code":"FJ","iata":"LBS","lat":-16.4667,"lon":179.339996,"name":"Labasa Airport","scheduled":true,"timezone":"Pacific/Fiji"}
 {"city_id":"labrador-city","country_code":"CA","iata":"YWK","lat":52.92190170288086,"lon":-66.8644027709961,"name":"Wabush Airport","scheduled":true,"timezone":"America/Goose_Bay"}
 {"city_id":"labrea","country_code":"BR","iata":"LBR","lat":-7.27897,"lon":-64.769501,"name":"Lábrea Airport","scheduled":true,"timezone":"America/Manaus"}
@@ -1714,7 +1667,6 @@
 {"city_id":"lawton","country_code":"US","iata":"LAW","lat":34.567699,"lon":-98.416603,"name":"Lawton Fort Sill Regional Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"le-havre","country_code":"FR","iata":"DOL","lat":49.365237,"lon":0.154481,"name":"Deauville Normandie airport","scheduled":true,"timezone":"Europe/Paris"}
 {"city_id":"le-puy-en-velay","country_code":"FR","iata":"LPY","lat":45.0807,"lon":3.76289,"name":"Le Puy-Loudes Airfield","scheduled":true,"timezone":"Europe/Paris"}
-{"city_id":"leava","country_code":"WF","iata":"FUT","lat":-14.311565,"lon":-178.066492,"name":"Pointe Vele Airport","scheduled":true,"timezone":"Pacific/Wallis"}
 {"city_id":"lebanon-5088597","country_code":"US","iata":"LEB","lat":43.626098632799994,"lon":-72.30419921880001,"name":"Lebanon Municipal Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"leeds","country_code":"GB","iata":"LBA","lat":53.865898,"lon":-1.66057,"name":"Leeds Bradford Airport","scheduled":true,"timezone":"Europe/London"}
 {"city_id":"leeton","country_code":"AU","iata":"NRA","lat":-34.7022018433,"lon":146.511993408,"name":"Narrandera Airport","scheduled":true,"timezone":"Australia/Sydney"}
@@ -1730,7 +1682,6 @@
 {"city_id":"lerwick","country_code":"GB","iata":"FOA","lat":60.121916,"lon":-2.053439,"name":"Foula Airfield","scheduled":true,"timezone":"Europe/London"}
 {"city_id":"lerwick","country_code":"GB","iata":"LSI","lat":59.878899,"lon":-1.29556,"name":"Sumburgh Airport","scheduled":true,"timezone":"Europe/London"}
 {"city_id":"lerwick","country_code":"GB","iata":"LWK","lat":60.1922,"lon":-1.24361,"name":"Lerwick / Tingwall Airport","scheduled":true,"timezone":"Europe/London"}
-{"city_id":"les-abymes","country_code":"GP","iata":"DSD","lat":16.296902,"lon":-61.0844,"name":"La Désirade Airport","scheduled":true,"timezone":"America/Guadeloupe"}
 {"city_id":"les-cayes","country_code":"HT","iata":"CYA","lat":18.271099,"lon":-73.7883,"name":"Antoine-Simon International Airport","scheduled":true,"timezone":"America/Port-au-Prince"}
 {"city_id":"leshan","country_code":"CN","iata":"LSG","lat":29.438627,"lon":103.749218,"name":"Leshan Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"lesquin","country_code":"FR","iata":"LIL","lat":50.566564,"lon":3.102429,"name":"Lille Airport","scheduled":true,"timezone":"Europe/Paris"}
@@ -1768,7 +1719,6 @@
 {"city_id":"linz","country_code":"AT","iata":"LNZ","lat":48.235362,"lon":14.188128,"name":"Linz-Hörsching Airport","scheduled":true,"timezone":"Europe/Vienna"}
 {"city_id":"liping","country_code":"CN","iata":"HZH","lat":26.32217,"lon":109.1499,"name":"Liping Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"lisbon","country_code":"PT","iata":"LIS","lat":38.7813,"lon":-9.13592,"name":"Lisbon Humberto Delgado Airport","scheduled":true,"timezone":"Europe/Lisbon"}
-{"city_id":"little-cayman","country_code":"KY","iata":"CYB","lat":19.687,"lon":-79.882797,"name":"Charles Kirkconnell International Airport","scheduled":true,"timezone":"America/Cayman"}
 {"city_id":"little-rock","country_code":"US","iata":"LIT","lat":34.729222,"lon":-92.223591,"name":"Bill & Hillary Clinton National Airport/Adams Field","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"liupanshui","country_code":"CN","iata":"LPF","lat":26.609417,"lon":104.979,"name":"Liupanshui Yuezhao Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"liuzhou","country_code":"CN","iata":"LZH","lat":24.2075,"lon":109.390999,"name":"Liuzhou Bailian Airport / Bailian Air Base","scheduled":true,"timezone":"Asia/Shanghai"}
@@ -1914,7 +1864,6 @@
 {"city_id":"marilia","country_code":"BR","iata":"MII","lat":-22.196899,"lon":-49.926485,"name":"Frank Miloye Milenkowichi–Marília State Airport","scheduled":true,"timezone":"America/Sao_Paulo"}
 {"city_id":"maringa","country_code":"BR","iata":"MGF","lat":-23.47606,"lon":-52.016187,"name":"Regional de Maringá - Sílvio Name Júnior Airport","scheduled":true,"timezone":"America/Sao_Paulo"}
 {"city_id":"marion-4243899","country_code":"US","iata":"MWA","lat":37.751208,"lon":-89.016568,"name":"Veterans Airport of Southern Illinois","scheduled":true,"timezone":"America/Chicago"}
-{"city_id":"maripasoula","country_code":"GF","iata":"MPY","lat":3.655907,"lon":-54.039431,"name":"Maripasoula Airport","scheduled":true,"timezone":"America/Cayenne"}
 {"city_id":"maroantsetra","country_code":"MG","iata":"WMN","lat":-15.437742,"lon":49.689081,"name":"Maroantsetra Airport","scheduled":true,"timezone":"Indian/Antananarivo"}
 {"city_id":"maroua","country_code":"CM","iata":"MVR","lat":10.451399803161621,"lon":14.257399559020996,"name":"Salak Airport","scheduled":true,"timezone":"Africa/Douala"}
 {"city_id":"marquette","country_code":"US","iata":"MQT","lat":46.351498,"lon":-87.395884,"name":"Marquette Sawyer Regional Airport","scheduled":true,"timezone":"America/Detroit"}
@@ -1933,10 +1882,8 @@
 {"city_id":"mason-city","country_code":"US","iata":"MCW","lat":43.159801,"lon":-93.329716,"name":"Mason City Municipal Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"massena","country_code":"US","iata":"MSS","lat":44.936157,"lon":-74.844304,"name":"Massena International Airport Richards Field","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"masuda","country_code":"JP","iata":"IWJ","lat":34.676399231,"lon":131.789993286,"name":"Iwami Airport","scheduled":true,"timezone":"Asia/Tokyo"}
-{"city_id":"mata-utu","country_code":"WF","iata":"WLS","lat":-13.239445,"lon":-176.19865,"name":"Hihifo Airport","scheduled":true,"timezone":"Pacific/Wallis"}
 {"city_id":"matanzas","country_code":"CU","iata":"VRA","lat":23.034401,"lon":-81.435303,"name":"Juan Gualberto Gomez International Airport","scheduled":true,"timezone":"America/Havana"}
 {"city_id":"mataram","country_code":"ID","iata":"LOP","lat":-8.759962,"lon":116.278169,"name":"Lombok International Airport","scheduled":true,"timezone":"Asia/Makassar"}
-{"city_id":"matoury","country_code":"GF","iata":"CAY","lat":4.819964,"lon":-52.361326,"name":"Cayenne – Félix Eboué Airport","scheduled":true,"timezone":"America/Cayenne"}
 {"city_id":"matsumoto","country_code":"JP","iata":"MMJ","lat":36.166801,"lon":137.923004,"name":"Shinshu-Matsumoto Airport","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"matsuyama","country_code":"JP","iata":"MYJ","lat":33.826893,"lon":132.700114,"name":"Matsuyama Airport","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"matthew-town","country_code":"BS","iata":"IGA","lat":20.975,"lon":-73.666901,"name":"Inagua Airport","scheduled":true,"timezone":"America/Nassau"}
@@ -1947,7 +1894,6 @@
 {"city_id":"maun","country_code":"BW","iata":"MUB","lat":-19.970491,"lon":23.431409,"name":"Maun International Airport","scheduled":true,"timezone":"Africa/Gaborone"}
 {"city_id":"mawlamyine","country_code":"MM","iata":"MNU","lat":16.444700241088867,"lon":97.66069793701172,"name":"Mawlamyine Airport","scheduled":true,"timezone":"Asia/Yangon"}
 {"city_id":"may-cadera","country_code":"ET","iata":"HUE","lat":13.83012,"lon":36.88237,"name":"Humera Airport","scheduled":true,"timezone":"Africa/Addis_Ababa"}
-{"city_id":"mayagueez","country_code":"PR","iata":"MAZ","lat":18.255699,"lon":-67.148499,"name":"Eugenio Maria De Hostos Airport","scheduled":true,"timezone":"America/Puerto_Rico"}
 {"city_id":"mazar-e-sharif","country_code":"AF","iata":"MZR","lat":36.70412,"lon":67.210459,"name":"Mazar-i-Sharif International Airport","scheduled":true,"timezone":"Asia/Kabul"}
 {"city_id":"mazatlan","country_code":"MX","iata":"MZT","lat":23.162823,"lon":-106.264517,"name":"General Rafael Buelna International Airport","scheduled":true,"timezone":"America/Mazatlan"}
 {"city_id":"mbandaka","country_code":"CD","iata":"MDK","lat":0.0226000007242,"lon":18.2887001038,"name":"Mbandaka Airport","scheduled":true,"timezone":"Africa/Kinshasa"}
@@ -1963,7 +1909,6 @@
 {"city_id":"medellin","country_code":"CO","iata":"MDE","lat":6.16454,"lon":-75.4231,"name":"Jose Maria Córdova International Airport","scheduled":true,"timezone":"America/Bogota"}
 {"city_id":"medford","country_code":"US","iata":"MFR","lat":42.374199,"lon":-122.873001,"name":"Rogue Valley International-Medford Airport","scheduled":true,"timezone":"America/Los_Angeles"}
 {"city_id":"medicine-hat","country_code":"CA","iata":"YXH","lat":50.018902,"lon":-110.721001,"name":"Medicine Hat Regional Airport","scheduled":true,"timezone":"America/Edmonton"}
-{"city_id":"meharrize","country_code":"EH","iata":"SMW","lat":26.731987,"lon":-11.683655,"name":"Smara Airport","scheduled":true,"timezone":"Africa/El_Aaiun"}
 {"city_id":"meizhou","country_code":"CN","iata":"MXZ","lat":24.263425,"lon":116.097857,"name":"Meizhou Meixian Changgangji International Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"mekele","country_code":"ET","iata":"MQX","lat":13.4674,"lon":39.533501,"name":"Mekele Alula Aba Nega Airport","scheduled":true,"timezone":"Africa/Addis_Ababa"}
 {"city_id":"melbourne","country_code":"AU","iata":"MBW","lat":-37.977765,"lon":145.099799,"name":"Melbourne Moorabbin Airport","scheduled":true,"timezone":"Australia/Melbourne"}
@@ -2006,7 +1951,6 @@
 {"city_id":"minneapolis","country_code":"US","iata":"MSP","lat":44.880081,"lon":-93.221741,"name":"Minneapolis–Saint Paul International Airport / Wold–Chamberlain Field","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"minot","country_code":"US","iata":"MOT","lat":48.25801,"lon":-101.279123,"name":"Minot International Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"minsk","country_code":"BY","iata":"MSQ","lat":53.888071,"lon":28.039964,"name":"Minsk National Airport","scheduled":true,"timezone":"Europe/Minsk"}
-{"city_id":"miquelon","country_code":"PM","iata":"MQC","lat":47.095501,"lon":-56.380299,"name":"Miquelon Airport","scheduled":true,"timezone":"America/Miquelon"}
 {"city_id":"miri","country_code":"MY","iata":"MYY","lat":4.32201,"lon":113.987,"name":"Miri Airport","scheduled":true,"timezone":"Asia/Kuching"}
 {"city_id":"mirny","country_code":"RU","iata":"MJZ","lat":62.534698486328125,"lon":114.03900146484375,"name":"Mirny Airport","scheduled":true,"timezone":"Asia/Yakutsk"}
 {"city_id":"misawa","country_code":"JP","iata":"MSJ","lat":40.703201,"lon":141.367996,"name":"Misawa Airport / Misawa Air Base","scheduled":true,"timezone":"Asia/Tokyo"}
@@ -2033,7 +1977,6 @@
 {"city_id":"monroe","country_code":"US","iata":"MLU","lat":32.510899,"lon":-92.037697,"name":"Monroe Regional Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"monrovia","country_code":"LR","iata":"MLW","lat":6.28906,"lon":-10.7587,"name":"Spriggs Payne Airport","scheduled":true,"timezone":"Africa/Monrovia"}
 {"city_id":"monrovia","country_code":"LR","iata":"ROB","lat":6.23379,"lon":-10.3623,"name":"Roberts International Airport","scheduled":true,"timezone":"Africa/Monrovia"}
-{"city_id":"mont-dore","country_code":"NC","iata":"ILP","lat":-22.5889,"lon":167.455994,"name":"Île des Pins Airport","scheduled":true,"timezone":"Pacific/Noumea"}
 {"city_id":"mont-joli","country_code":"CA","iata":"YYY","lat":48.60860061645508,"lon":-68.20809936523438,"name":"Mont Joli Airport","scheduled":true,"timezone":"America/Toronto"}
 {"city_id":"montego-bay","country_code":"JM","iata":"MBJ","lat":18.50342,"lon":-77.91323,"name":"Sangster International Airport","scheduled":true,"timezone":"America/Jamaica"}
 {"city_id":"monterey","country_code":"US","iata":"MRY","lat":36.586777,"lon":-121.844183,"name":"Monterey Regional Airport","scheduled":true,"timezone":"America/Los_Angeles"}
@@ -2154,7 +2097,6 @@
 {"city_id":"napili-honokowai","country_code":"US","iata":"MKK","lat":21.152901,"lon":-157.095993,"name":"Molokai Airport","scheduled":true,"timezone":"Pacific/Honolulu"}
 {"city_id":"naples","country_code":"IT","iata":"NAP","lat":40.886002,"lon":14.2908,"name":"Naples International Airport","scheduled":true,"timezone":"Europe/Rome"}
 {"city_id":"narathiwat","country_code":"TH","iata":"NAW","lat":6.5199198722839355,"lon":101.74299621582031,"name":"Narathiwat Airport","scheduled":true,"timezone":"Asia/Bangkok"}
-{"city_id":"narita","country_code":"JP","iata":"NRT","lat":35.76858,"lon":140.388714,"name":"Narita International Airport","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"narrabri","country_code":"AU","iata":"NAA","lat":-30.3192005157,"lon":149.82699585,"name":"Narrabri Airport","scheduled":true,"timezone":"Australia/Sydney"}
 {"city_id":"naryan-mar","country_code":"RU","iata":"NNM","lat":67.639999,"lon":53.121899,"name":"Naryan Mar Airport","scheduled":true,"timezone":"Europe/Kirov"}
 {"city_id":"nashik","country_code":"IN","iata":"ISK","lat":20.119101,"lon":73.912903,"name":"Nashik International Airport","scheduled":true,"timezone":"Asia/Kolkata"}
@@ -2244,8 +2186,6 @@
 {"city_id":"norwich","country_code":"GB","iata":"NWI","lat":52.6758,"lon":1.28278,"name":"Norwich Airport","scheduled":true,"timezone":"Europe/London"}
 {"city_id":"nouadhibou","country_code":"MR","iata":"NDB","lat":20.932404,"lon":-17.030199,"name":"Nouadhibou International Airport","scheduled":true,"timezone":"Africa/Nouakchott"}
 {"city_id":"nouakchott","country_code":"MR","iata":"NKC","lat":18.31,"lon":-15.969722,"name":"Nouakchott–Oumtounsy International Airport","scheduled":true,"timezone":"Africa/Nouakchott"}
-{"city_id":"noumea","country_code":"NC","iata":"GEA","lat":-22.257706,"lon":166.472822,"name":"Nouméa Magenta Airport","scheduled":true,"timezone":"Pacific/Noumea"}
-{"city_id":"noumea","country_code":"NC","iata":"NOU","lat":-22.014601,"lon":166.212997,"name":"La Tontouta International Airport","scheduled":true,"timezone":"Pacific/Noumea"}
 {"city_id":"novokuznetsk","country_code":"RU","iata":"NOZ","lat":53.811401,"lon":86.877197,"name":"Spichenkovo Airport","scheduled":true,"timezone":"Asia/Novokuznetsk"}
 {"city_id":"novosibirsk","country_code":"RU","iata":"OVB","lat":55.019756,"lon":82.618675,"name":"Novosibirsk Tolmachevo Airport","scheduled":true,"timezone":"Asia/Novosibirsk"}
 {"city_id":"novyy-urengoy","country_code":"RU","iata":"NUX","lat":66.06939697265625,"lon":76.52030181884766,"name":"Novy Urengoy Airport","scheduled":true,"timezone":"Asia/Yekaterinburg"}
@@ -2258,7 +2198,6 @@
 {"city_id":"nukualofa","country_code":"TO","iata":"TBU","lat":-21.241438,"lon":-175.149164,"name":"Fua'amotu International Airport","scheduled":true,"timezone":"Pacific/Tongatapu"}
 {"city_id":"nukus","country_code":"UZ","iata":"NCU","lat":42.4884,"lon":59.623299,"name":"Nukus International Airport","scheduled":true,"timezone":"Asia/Samarkand"}
 {"city_id":"nuremberg","country_code":"DE","iata":"NUE","lat":49.498699,"lon":11.078056,"name":"Nuremberg Airport","scheduled":true,"timezone":"Europe/Berlin"}
-{"city_id":"nuuk","country_code":"GL","iata":"GOH","lat":64.191066,"lon":-51.67914,"name":"Nuuk International Airport","scheduled":true,"timezone":"America/Nuuk"}
 {"city_id":"nyagan","country_code":"RU","iata":"NYA","lat":62.110001,"lon":65.614998,"name":"Nyagan Airport","scheduled":true,"timezone":"Asia/Yekaterinburg"}
 {"city_id":"nyala","country_code":"SD","iata":"UYL","lat":12.0535,"lon":24.9562,"name":"Nyala Airport","scheduled":true,"timezone":"Africa/Khartoum"}
 {"city_id":"nyaung-u","country_code":"MM","iata":"NYU","lat":21.178800582885742,"lon":94.9301986694336,"name":"Bagan Airport","scheduled":true,"timezone":"Asia/Yangon"}
@@ -2298,9 +2237,6 @@
 {"city_id":"oral","country_code":"KZ","iata":"URA","lat":51.151976,"lon":51.543652,"name":"Manshuk Mametova International Airport","scheduled":true,"timezone":"Asia/Oral"}
 {"city_id":"orange-walk","country_code":"BZ","iata":"ORZ","lat":18.046767,"lon":-88.583858,"name":"H.E Alfredo Martinez (Tower Hill) Airstrip","scheduled":true,"timezone":"America/Belize"}
 {"city_id":"oranjemund","country_code":"NA","iata":"OMD","lat":-28.585318,"lon":16.44638,"name":"Oranjemund Airport","scheduled":true,"timezone":"Africa/Windhoek"}
-{"city_id":"oranjestad","country_code":"AW","iata":"AUA","lat":12.501056,"lon":-70.014281,"name":"Queen Beatrix International Airport","scheduled":true,"timezone":"America/Aruba"}
-{"city_id":"oranjestad-bq","country_code":"BQ","iata":"EUX","lat":17.4965,"lon":-62.979401,"name":"F. D. Roosevelt Airport","scheduled":true,"timezone":"America/Kralendijk"}
-{"city_id":"oranjestad-bq","country_code":"BQ","iata":"SAB","lat":17.64533,"lon":-63.220514,"name":"Juancho E. Yrausquin Airport","scheduled":true,"timezone":"America/Kralendijk"}
 {"city_id":"ordos","country_code":"CN","iata":"DSN","lat":39.493514,"lon":109.8599,"name":"Ordos Ejin Horo International Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"ordu","country_code":"TR","iata":"OGU","lat":40.966872,"lon":38.085995,"name":"Ordu–Giresun Airport","scheduled":true,"timezone":"Europe/Istanbul"}
 {"city_id":"orenburg","country_code":"RU","iata":"REN","lat":51.792668,"lon":55.457229,"name":"Orenburg Central Airport","scheduled":true,"timezone":"Asia/Yekaterinburg"}
@@ -2343,7 +2279,6 @@
 {"city_id":"paernu","country_code":"EE","iata":"EPU","lat":58.41899871826172,"lon":24.47279930114746,"name":"Pärnu Airport","scheduled":true,"timezone":"Europe/Tallinn"}
 {"city_id":"pagadian","country_code":"PH","iata":"PAG","lat":7.825632,"lon":123.459635,"name":"Pagadian Airport","scheduled":true,"timezone":"Asia/Manila"}
 {"city_id":"page","country_code":"US","iata":"PGA","lat":36.924234,"lon":-111.447716,"name":"Page Municipal Airport","scheduled":true,"timezone":"America/Phoenix"}
-{"city_id":"pago-pago","country_code":"AS","iata":"PPG","lat":-14.331,"lon":-170.710007,"name":"Pago Pago International Airport","scheduled":true,"timezone":"Pacific/Pago_Pago"}
 {"city_id":"pakse","country_code":"LA","iata":"PKZ","lat":15.133973,"lon":105.779871,"name":"Pakse International Airport","scheduled":true,"timezone":"Asia/Vientiane"}
 {"city_id":"palanga","country_code":"LT","iata":"PLQ","lat":55.973202,"lon":21.093901,"name":"Palanga International Airport","scheduled":true,"timezone":"Europe/Vilnius"}
 {"city_id":"palangkaraya","country_code":"ID","iata":"PKY","lat":-2.227146,"lon":113.943388,"name":"Tjilik Riwut Airport","scheduled":true,"timezone":"Asia/Pontianak"}
@@ -2369,7 +2304,6 @@
 {"city_id":"pante-makasar","country_code":"TL","iata":"OEC","lat":-9.198419,"lon":124.337873,"name":"Oecusse Route of the Sandalwood International Airport","scheduled":true,"timezone":"Asia/Dili"}
 {"city_id":"pantelleria","country_code":"IT","iata":"PNL","lat":36.816502,"lon":11.9689,"name":"Pantelleria Airport","scheduled":true,"timezone":"Europe/Rome"}
 {"city_id":"panzhihua","country_code":"CN","iata":"PZI","lat":26.54,"lon":101.79852,"name":"Panzhihua Bao'anying Airport","scheduled":true,"timezone":"Asia/Shanghai"}
-{"city_id":"papeete","country_code":"PF","iata":"PPT","lat":-17.553472,"lon":-149.606936,"name":"Fa'a'ā International Airport","scheduled":true,"timezone":"Pacific/Tahiti"}
 {"city_id":"paphos","country_code":"CY","iata":"PFO","lat":34.717999,"lon":32.485699,"name":"Paphos International Airport","scheduled":true,"timezone":"Asia/Nicosia"}
 {"city_id":"paracatu","country_code":"BR","iata":"PYT","lat":-17.242599,"lon":-46.883099,"name":"Pedro Rabelo de Souza Airport","scheduled":true,"timezone":"America/Sao_Paulo"}
 {"city_id":"paragominas","country_code":"BR","iata":"JPE","lat":-3.019798,"lon":-47.316474,"name":"Nagib Demachki Airport","scheduled":true,"timezone":"America/Belem"}
@@ -2452,14 +2386,11 @@
 {"city_id":"pocatello","country_code":"US","iata":"PIH","lat":42.9098014831543,"lon":-112.59600067138672,"name":"Pocatello Regional Airport","scheduled":true,"timezone":"America/Boise"}
 {"city_id":"podgorica","country_code":"ME","iata":"TGD","lat":42.359402,"lon":19.2519,"name":"Podgorica Airport / Podgorica Golubovci Airbase","scheduled":true,"timezone":"Europe/Podgorica"}
 {"city_id":"pohang","country_code":"KR","iata":"KPO","lat":35.987955,"lon":129.420383,"name":"Pohang Airport (G-815/K-3)","scheduled":true,"timezone":"Asia/Seoul"}
-{"city_id":"poindimie","country_code":"NC","iata":"TOU","lat":-20.790127,"lon":165.259524,"name":"Touho Airport","scheduled":true,"timezone":"Pacific/Noumea"}
-{"city_id":"pointe-a-pitre","country_code":"GP","iata":"PTP","lat":16.265443,"lon":-61.532754,"name":"Maryse Condé International Airport","scheduled":true,"timezone":"America/Guadeloupe"}
 {"city_id":"pointe-noire","country_code":"CG","iata":"PNR","lat":-4.81603,"lon":11.8866,"name":"Antonio Agostinho-Neto International Airport","scheduled":true,"timezone":"Africa/Brazzaville"}
 {"city_id":"poitiers","country_code":"FR","iata":"PIS","lat":46.5877,"lon":0.306666,"name":"Poitiers-Biard Airport","scheduled":true,"timezone":"Europe/Paris"}
 {"city_id":"pokhara","country_code":"NP","iata":"PHH","lat":28.1838,"lon":84.0147,"name":"Pokhara International Airport","scheduled":true,"timezone":"Asia/Kathmandu"}
 {"city_id":"pokhara","country_code":"NP","iata":"PKR","lat":28.200621,"lon":83.981203,"name":"Pokhara Domestic Airport","scheduled":true,"timezone":"Asia/Kathmandu"}
 {"city_id":"polokwane","country_code":"ZA","iata":"PTG","lat":-23.845269,"lon":29.458615,"name":"Polokwane International Airport","scheduled":true,"timezone":"Africa/Johannesburg"}
-{"city_id":"ponce","country_code":"PR","iata":"PSE","lat":18.008301,"lon":-66.563004,"name":"Mercedita International Airport","scheduled":true,"timezone":"America/Puerto_Rico"}
 {"city_id":"ponta-delgada","country_code":"PT","iata":"PDL","lat":37.7411994934,"lon":-25.6979007721,"name":"João Paulo II Airport","scheduled":true,"timezone":"Atlantic/Azores"}
 {"city_id":"ponta-grossa","country_code":"BR","iata":"PGZ","lat":-25.184476,"lon":-50.143822,"name":"Ponta Grossa Airport - Comandante Antonio Amilton Beraldo","scheduled":true,"timezone":"America/Sao_Paulo"}
 {"city_id":"ponta-pora","country_code":"BR","iata":"PMG","lat":-22.549601,"lon":-55.702599,"name":"Ponta Porã Airport","scheduled":true,"timezone":"America/Campo_Grande"}
@@ -2522,8 +2453,6 @@
 {"city_id":"prince-rupert","country_code":"CA","iata":"YPR","lat":54.286098480199996,"lon":-130.445007324,"name":"Prince Rupert Airport","scheduled":true,"timezone":"America/Vancouver"}
 {"city_id":"pristina","country_code":"XK","iata":"PRN","lat":42.5728,"lon":21.035801,"name":"Priština Adem Jashari International Airport","scheduled":true,"timezone":"Europe/Belgrade"}
 {"city_id":"providence","country_code":"US","iata":"PVD","lat":41.725038,"lon":-71.425668,"name":"Rhode Island T. F. Green International Airport","scheduled":true,"timezone":"America/New_York"}
-{"city_id":"providenciales","country_code":"TC","iata":"NCA","lat":21.916094,"lon":-71.942954,"name":"North Caicos Airport","scheduled":true,"timezone":"America/Grand_Turk"}
-{"city_id":"providenciales","country_code":"TC","iata":"PLS","lat":21.773697,"lon":-72.268321,"name":"Providenciales International Airport","scheduled":true,"timezone":"America/Grand_Turk"}
 {"city_id":"provo","country_code":"US","iata":"PVU","lat":40.218894,"lon":-111.722445,"name":"Provo Municipal Airport","scheduled":true,"timezone":"America/Denver"}
 {"city_id":"pskov","country_code":"RU","iata":"PKV","lat":57.781316,"lon":28.39384,"name":"Princess Olga Pskov International Airport","scheduled":true,"timezone":"Europe/Moscow"}
 {"city_id":"pucallpa","country_code":"PE","iata":"PCL","lat":-8.378064,"lon":-74.574495,"name":"Cap FAP David Abenzur Rengifo International Airport","scheduled":true,"timezone":"America/Lima"}
@@ -2571,17 +2500,6 @@
 {"city_id":"pyongyang","country_code":"KP","iata":"FNJ","lat":39.224098,"lon":125.669998,"name":"Pyongyang Sunan International Airport","scheduled":true,"timezone":"Asia/Pyongyang"}
 {"city_id":"qaisumah","country_code":"SA","iata":"AQI","lat":28.335726,"lon":46.127108,"name":"Qaisumah–Hafar Al-Batin International Airport","scheduled":true,"timezone":"Asia/Riyadh"}
 {"city_id":"qamdo","country_code":"CN","iata":"BPX","lat":30.553600311279297,"lon":97.1082992553711,"name":"Qamdo Bangda Airport","scheduled":true,"timezone":"Asia/Shanghai"}
-{"city_id":"qaqortoq","country_code":"GL","iata":"JJU","lat":60.76383,"lon":-46.065001,"name":"Qaqortoq Airport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"qaqortoq","country_code":"GL","iata":"JNN","lat":60.141884,"lon":-45.232977,"name":"Nanortalik Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"qaqortoq","country_code":"GL","iata":"JNS","lat":60.917283,"lon":-46.059923,"name":"Narsaq Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"qaqortoq","country_code":"GL","iata":"LLU","lat":60.46445,"lon":-45.56917,"name":"Alluitsup Paa Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"qaqortoq","country_code":"GL","iata":"QFG","lat":60.61972,"lon":-45.914062,"name":"Eqalugaarsuit Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"qaqortoq","country_code":"GL","iata":"QFX","lat":60.99229,"lon":-45.431428,"name":"Igaliku Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"qaqortoq","country_code":"GL","iata":"QJH","lat":60.780959,"lon":-47.156249,"name":"Qassimiut Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"qaqortoq","country_code":"GL","iata":"QOQ","lat":60.537778,"lon":-46.024722,"name":"Saarloq Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"qaqortoq","country_code":"GL","iata":"QUW","lat":60.597376,"lon":-45.382445,"name":"Ammassivik Heliport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"qaqortoq","country_code":"GL","iata":"UAK","lat":61.15958,"lon":-45.42469,"name":"Narsarsuaq Airport","scheduled":true,"timezone":"America/Nuuk"}
-{"city_id":"qaqortoq","country_code":"GL","iata":"XEQ","lat":60.194305,"lon":-44.813447,"name":"Tasiusaq Heliport","scheduled":true,"timezone":"America/Nuuk"}
 {"city_id":"qarshi","country_code":"UZ","iata":"KSQ","lat":38.802246,"lon":65.773068,"name":"Karshi Airport","scheduled":true,"timezone":"Asia/Samarkand"}
 {"city_id":"qeshm","country_code":"IR","iata":"GSM","lat":26.754639,"lon":55.902353,"name":"Qeshm International Airport","scheduled":true,"timezone":"Asia/Tehran"}
 {"city_id":"qianjiang-cn","country_code":"CN","iata":"JIQ","lat":29.5133333333,"lon":108.831111111,"name":"Qianjiang Wulingshan Airport","scheduled":true,"timezone":"Asia/Shanghai"}
@@ -2667,8 +2585,6 @@
 {"city_id":"riyadh","country_code":"SA","iata":"RUH","lat":24.9576,"lon":46.698799,"name":"King Khalid International Airport","scheduled":true,"timezone":"Asia/Riyadh"}
 {"city_id":"rize","country_code":"TR","iata":"RZV","lat":41.179766,"lon":40.848802,"name":"Rize–Artvin Airport","scheduled":true,"timezone":"Europe/Istanbul"}
 {"city_id":"rizhao","country_code":"CN","iata":"RIZ","lat":35.405033,"lon":119.324403,"name":"Rizhao Shanzihe Airport","scheduled":true,"timezone":"Asia/Shanghai"}
-{"city_id":"road-town","country_code":"VG","iata":"EIS","lat":18.445492,"lon":-64.541707,"name":"Terrance B. Lettsome International Airport","scheduled":true,"timezone":"America/Tortola"}
-{"city_id":"road-town","country_code":"VG","iata":"VIJ","lat":18.446634,"lon":-64.427932,"name":"Virgin Gorda Airport","scheduled":true,"timezone":"America/Tortola"}
 {"city_id":"roanoke","country_code":"US","iata":"ROA","lat":37.3255,"lon":-79.975403,"name":"Roanoke–Blacksburg Regional Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"roberval","country_code":"CA","iata":"YRJ","lat":48.519665,"lon":-72.265735,"name":"Roberval Airport","scheduled":true,"timezone":"America/Toronto"}
 {"city_id":"rochester","country_code":"US","iata":"ROC","lat":43.1189,"lon":-77.672401,"name":"Frederick Douglass Greater Rochester International Airport","scheduled":true,"timezone":"America/New_York"}
@@ -2717,23 +2633,12 @@
 {"city_id":"saidpur","country_code":"BD","iata":"SPD","lat":25.759199,"lon":88.908897,"name":"Saidpur Airport","scheduled":true,"timezone":"Asia/Dhaka"}
 {"city_id":"saint-augustine","country_code":"US","iata":"UST","lat":29.9592,"lon":-81.339798,"name":"Northeast Florida Regional Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"saint-cloud","country_code":"US","iata":"STC","lat":45.5466,"lon":-94.059898,"name":"Saint Cloud Regional Airport","scheduled":true,"timezone":"America/Chicago"}
-{"city_id":"saint-croix","country_code":"VI","iata":"SSB","lat":17.747908,"lon":-64.707928,"name":"Christiansted Harbor Seaplane Base","scheduled":true,"timezone":"America/St_Thomas"}
-{"city_id":"saint-croix","country_code":"VI","iata":"STX","lat":17.701413,"lon":-64.802608,"name":"Henry E. Rohlsen Airport","scheduled":true,"timezone":"America/St_Thomas"}
-{"city_id":"saint-francois-gp","country_code":"GP","iata":"SFC","lat":16.257799,"lon":-61.262501,"name":"St-François Airport","scheduled":true,"timezone":"America/Guadeloupe"}
 {"city_id":"saint-george","country_code":"US","iata":"SGU","lat":37.036389,"lon":-113.510306,"name":"St George Regional Airport","scheduled":true,"timezone":"America/Denver"}
 {"city_id":"saint-georges-gd","country_code":"GD","iata":"GND","lat":12.003996,"lon":-61.785302,"name":"Maurice Bishop International Airport","scheduled":true,"timezone":"America/Grenada"}
-{"city_id":"saint-helier","country_code":"JE","iata":"JER","lat":49.207901,"lon":-2.19551,"name":"Jersey Airport","scheduled":true,"timezone":"Europe/Jersey"}
 {"city_id":"saint-john","country_code":"CA","iata":"YSJ","lat":45.31610107421875,"lon":-65.89029693603516,"name":"Saint John Airport","scheduled":true,"timezone":"America/Moncton"}
 {"city_id":"saint-johns","country_code":"AG","iata":"ANU","lat":17.1367,"lon":-61.792702,"name":"V. C. Bird International Airport","scheduled":true,"timezone":"America/Antigua"}
-{"city_id":"saint-laurent-du-maroni","country_code":"GF","iata":"LDX","lat":5.481891,"lon":-54.034964,"name":"Saint-Laurent-du-Maroni Airport","scheduled":true,"timezone":"America/Cayenne"}
-{"city_id":"saint-peter-port","country_code":"GG","iata":"GCI","lat":49.435001,"lon":-2.60197,"name":"Guernsey Airport","scheduled":true,"timezone":"Europe/Guernsey"}
 {"city_id":"saint-petersburg","country_code":"RU","iata":"LED","lat":59.800301,"lon":30.262501,"name":"Pulkovo Airport","scheduled":true,"timezone":"Europe/Moscow"}
-{"city_id":"saint-pierre","country_code":"RE","iata":"ZSE","lat":-21.319362,"lon":55.422506,"name":"Saint-Pierre Pierrefonds Airport","scheduled":true,"timezone":"Indian/Reunion"}
-{"city_id":"saint-pierre-pm","country_code":"PM","iata":"FSP","lat":46.762651,"lon":-56.17499,"name":"Saint-Pierre Pointe-Blanche Airport","scheduled":true,"timezone":"America/Miquelon"}
 {"city_id":"saint-tropez","country_code":"FR","iata":"LTT","lat":43.205399,"lon":6.482,"name":"La Môle Airport","scheduled":true,"timezone":"Europe/Paris"}
-{"city_id":"sainte-marie","country_code":"RE","iata":"RUN","lat":-20.890087,"lon":55.518894,"name":"Roland Garros Airport","scheduled":true,"timezone":"Indian/Reunion"}
-{"city_id":"saipan","country_code":"MP","iata":"SPN","lat":15.119384,"lon":145.728848,"name":"Saipan International Airport","scheduled":true,"timezone":"Pacific/Saipan"}
-{"city_id":"saipan","country_code":"MP","iata":"TIQ","lat":14.999207,"lon":145.619355,"name":"Francisco Manglona Borja / Tinian International Airport","scheduled":true,"timezone":"Pacific/Saipan"}
 {"city_id":"sakakah","country_code":"SA","iata":"AJF","lat":29.783301,"lon":40.100905,"name":"Al-Jawf International Airport","scheduled":true,"timezone":"Asia/Riyadh"}
 {"city_id":"sakon-nakhon","country_code":"TH","iata":"SNO","lat":17.195100784301758,"lon":104.11900329589844,"name":"Sakon Nakhon Airport","scheduled":true,"timezone":"Asia/Bangkok"}
 {"city_id":"sal-rei","country_code":"CV","iata":"BVC","lat":16.136499,"lon":-22.888901,"name":"Aristides Pereira International Airport","scheduled":true,"timezone":"Atlantic/Cape_Verde"}
@@ -2782,9 +2687,6 @@
 {"city_id":"san-jose-del-cabo","country_code":"MX","iata":"SJD","lat":23.151919,"lon":-109.720731,"name":"Los Cabos International Airport","scheduled":true,"timezone":"America/Mazatlan"}
 {"city_id":"san-jose-del-guaviare","country_code":"CO","iata":"SJE","lat":2.57969,"lon":-72.6394,"name":"Jorge E. Gonzalez Torres Airport","scheduled":true,"timezone":"America/Bogota"}
 {"city_id":"san-jose-ph","country_code":"PH","iata":"SJI","lat":12.361499786399998,"lon":121.04699707,"name":"San Jose Airport","scheduled":true,"timezone":"Asia/Manila"}
-{"city_id":"san-jose-village","country_code":"MP","iata":"ROP","lat":14.173267,"lon":145.241103,"name":"Rota International Airport","scheduled":true,"timezone":"Pacific/Saipan"}
-{"city_id":"san-juan","country_code":"PR","iata":"SIG","lat":18.45680046081543,"lon":-66.09809875488281,"name":"Fernando Luis Ribas Dominicci Airport","scheduled":true,"timezone":"America/Puerto_Rico"}
-{"city_id":"san-juan","country_code":"PR","iata":"SJU","lat":18.4394,"lon":-66.001801,"name":"Luis Munoz Marin International Airport","scheduled":true,"timezone":"America/Puerto_Rico"}
 {"city_id":"san-juan-ar","country_code":"AR","iata":"UAQ","lat":-31.571501,"lon":-68.418198,"name":"Domingo Faustino Sarmiento Airport","scheduled":true,"timezone":"America/Argentina/San_Juan"}
 {"city_id":"san-luis","country_code":"AR","iata":"LUQ","lat":-33.273201,"lon":-66.3564,"name":"Brigadier Mayor D Cesar Raul Ojeda Airport","scheduled":true,"timezone":"America/Argentina/San_Luis"}
 {"city_id":"san-luis-obispo","country_code":"US","iata":"SBP","lat":35.236801147499996,"lon":-120.641998291,"name":"San Luis County Regional Airport","scheduled":true,"timezone":"America/Los_Angeles"}
@@ -2948,7 +2850,6 @@
 {"city_id":"sioux-city","country_code":"US","iata":"SUX","lat":42.397605,"lon":-96.382237,"name":"Sioux Gateway Airport / Brigadier General Bud Day Field","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"sioux-falls","country_code":"US","iata":"FSD","lat":43.585463,"lon":-96.741152,"name":"Sioux Falls Regional Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"sioux-lookout","country_code":"CA","iata":"YXL","lat":50.11389923095703,"lon":-91.9052963256836,"name":"Sioux Lookout Airport","scheduled":true,"timezone":"America/Winnipeg"}
-{"city_id":"sisimiut","country_code":"GL","iata":"JHS","lat":66.951302,"lon":-53.729301,"name":"Sisimiut Airport","scheduled":true,"timezone":"America/Nuuk"}
 {"city_id":"sitiawan","country_code":"MY","iata":"PKG","lat":4.244719982147217,"lon":100.5530014038086,"name":"Pulau Pangkor Airport","scheduled":true,"timezone":"Asia/Kuala_Lumpur"}
 {"city_id":"sitka","country_code":"US","iata":"AGN","lat":57.497097,"lon":-134.56722,"name":"Angoon Seaplane Base","scheduled":true,"timezone":"America/Sitka"}
 {"city_id":"sitka","country_code":"US","iata":"CYM","lat":57.5149,"lon":-134.945999,"name":"Chatham Seaplane Base","scheduled":true,"timezone":"America/Sitka"}
@@ -2996,12 +2897,9 @@
 {"city_id":"springfield","country_code":"US","iata":"SGF","lat":37.245047,"lon":-93.388596,"name":"Springfield Branson National Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"springfield-4250542","country_code":"US","iata":"SPI","lat":39.844101,"lon":-89.677902,"name":"Abraham Lincoln Capital Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"srinagar","country_code":"IN","iata":"SXR","lat":33.987099,"lon":74.7742,"name":"Srinagar International Airport","scheduled":true,"timezone":"Asia/Kolkata"}
-{"city_id":"st-anne","country_code":"GG","iata":"ACI","lat":49.706104,"lon":-2.21472,"name":"Alderney Airport","scheduled":true,"timezone":"Europe/Guernsey"}
 {"city_id":"st-johns","country_code":"CA","iata":"YYT","lat":47.618599,"lon":-52.7519,"name":"St. John's International Airport","scheduled":true,"timezone":"America/St_Johns"}
 {"city_id":"st-louis","country_code":"US","iata":"STL","lat":38.748697,"lon":-90.370003,"name":"St. Louis Lambert International Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"st-petersburg","country_code":"US","iata":"SRQ","lat":27.394631,"lon":-82.554359,"name":"Sarasota Bradenton International Airport","scheduled":true,"timezone":"America/New_York"}
-{"city_id":"stanley-fk","country_code":"FK","iata":"MPN","lat":-51.822642,"lon":-58.445777,"name":"Mount Pleasant Airport / RAF Mount Pleasant","scheduled":true,"timezone":"Atlantic/Stanley"}
-{"city_id":"stanley-fk","country_code":"FK","iata":"PSY","lat":-51.685699,"lon":-57.777599,"name":"Port Stanley Airport","scheduled":true,"timezone":"Atlantic/Stanley"}
 {"city_id":"starkville","country_code":"US","iata":"GTR","lat":33.450298,"lon":-88.5914,"name":"Golden Triangle Regional Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"state-college","country_code":"US","iata":"SCE","lat":40.849374,"lon":-77.84852,"name":"State College Regional Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"stavanger","country_code":"NO","iata":"SVG","lat":58.876701,"lon":5.63778,"name":"Stavanger Airport, Sola","scheduled":true,"timezone":"Europe/Oslo"}
@@ -3045,8 +2943,6 @@
 {"city_id":"sylhet","country_code":"BD","iata":"ZYL","lat":24.963993,"lon":91.864749,"name":"Osmany International Airport","scheduled":true,"timezone":"Asia/Dhaka"}
 {"city_id":"syracuse","country_code":"US","iata":"SYR","lat":43.11119842529297,"lon":-76.1063003540039,"name":"Syracuse Hancock International Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"szczecin","country_code":"PL","iata":"SZZ","lat":53.584702,"lon":14.9022,"name":"Solidarity Szczecin–Goleniów Airport","scheduled":true,"timezone":"Europe/Warsaw"}
-{"city_id":"ta-u","country_code":"AS","iata":"FTI","lat":-14.216131,"lon":-169.423771,"name":"Fitiuta Airport","scheduled":true,"timezone":"Pacific/Pago_Pago"}
-{"city_id":"ta-u","country_code":"AS","iata":"OFU","lat":-14.1844,"lon":-169.669998,"name":"Ofu Airport","scheduled":true,"timezone":"Pacific/Pago_Pago"}
 {"city_id":"tabarka","country_code":"TN","iata":"TBJ","lat":36.98,"lon":8.87694,"name":"Tabarka-Aïn Draham International Airport","scheduled":true,"timezone":"Africa/Tunis"}
 {"city_id":"tabatinga","country_code":"BR","iata":"TBT","lat":-4.25567,"lon":-69.935799,"name":"Tabatinga International Airport","scheduled":true,"timezone":"America/Manaus"}
 {"city_id":"tabora","country_code":"TZ","iata":"TBO","lat":-5.07639,"lon":32.833302,"name":"Tabora Airport","scheduled":true,"timezone":"Africa/Dar_es_Salaam"}
@@ -3059,14 +2955,9 @@
 {"city_id":"tacloban","country_code":"PH","iata":"TAC","lat":11.227761,"lon":125.027783,"name":"Daniel Z. Romualdez Airport","scheduled":true,"timezone":"Asia/Manila"}
 {"city_id":"tacna","country_code":"PE","iata":"TCQ","lat":-18.053300857500002,"lon":-70.2758026123,"name":"Coronel FAP Carlos Ciriani Santa Rosa International Airport","scheduled":true,"timezone":"America/Lima"}
 {"city_id":"tacoma","country_code":"US","iata":"TIW","lat":47.267407,"lon":-122.577295,"name":"Tacoma Narrows Airport","scheduled":true,"timezone":"America/Los_Angeles"}
-{"city_id":"tadine","country_code":"NC","iata":"MEE","lat":-21.482438,"lon":168.038465,"name":"Maré Airport","scheduled":true,"timezone":"Pacific/Noumea"}
-{"city_id":"tadine","country_code":"NC","iata":"TGJ","lat":-21.096407,"lon":167.80379,"name":"Tiga Airport","scheduled":true,"timezone":"Pacific/Noumea"}
 {"city_id":"tahuna","country_code":"ID","iata":"NAH","lat":3.68478,"lon":125.527162,"name":"Naha Airport","scheduled":true,"timezone":"Asia/Makassar"}
 {"city_id":"taichung","country_code":"TW","iata":"RMQ","lat":24.2647,"lon":120.621002,"name":"Taichung International Airport / Ching Chuang Kang Air Base","scheduled":true,"timezone":"Asia/Taipei"}
 {"city_id":"taif","country_code":"SA","iata":"TIF","lat":21.484739,"lon":40.544074,"name":"Taif International Airport","scheduled":true,"timezone":"Asia/Riyadh"}
-{"city_id":"taiohae","country_code":"PF","iata":"NHV","lat":-8.7956,"lon":-140.229004,"name":"Nuku Hiva Airport","scheduled":true,"timezone":"Pacific/Marquesas"}
-{"city_id":"taiohae","country_code":"PF","iata":"UAH","lat":-8.936228,"lon":-139.554062,"name":"Ua Huka Airport","scheduled":true,"timezone":"Pacific/Marquesas"}
-{"city_id":"taiohae","country_code":"PF","iata":"UAP","lat":-9.35167,"lon":-140.078003,"name":"Ua Pou Airport","scheduled":true,"timezone":"Pacific/Marquesas"}
 {"city_id":"taipei","country_code":"TW","iata":"TSA","lat":25.067244,"lon":121.552822,"name":"Taipei Songshan International Airport","scheduled":true,"timezone":"Asia/Taipei"}
 {"city_id":"taitung","country_code":"TW","iata":"TTT","lat":22.754856,"lon":121.101794,"name":"Taitung Airport","scheduled":true,"timezone":"Asia/Taipei"}
 {"city_id":"taiyuan","country_code":"CN","iata":"TYN","lat":37.746899,"lon":112.627998,"name":"Taiyuan Wusu International Airport","scheduled":true,"timezone":"Asia/Shanghai"}
@@ -3136,7 +3027,6 @@
 {"city_id":"thandwe","country_code":"MM","iata":"SNW","lat":18.4606990814209,"lon":94.30010223388672,"name":"Thandwe Airport","scheduled":true,"timezone":"Asia/Yangon"}
 {"city_id":"thanh-hoa","country_code":"VN","iata":"THD","lat":19.901667,"lon":105.467778,"name":"Tho Xuan Airport","scheduled":true,"timezone":"Asia/Bangkok"}
 {"city_id":"the-pas","country_code":"CA","iata":"YQD","lat":53.97140121459961,"lon":-101.09100341796875,"name":"The Pas Airport","scheduled":true,"timezone":"America/Winnipeg"}
-{"city_id":"the-valley","country_code":"AI","iata":"AXA","lat":18.204773,"lon":-63.05383,"name":"Clayton J. Lloyd International Airport","scheduled":true,"timezone":"America/Anguilla"}
 {"city_id":"thessaloniki","country_code":"GR","iata":"SKG","lat":40.51928,"lon":22.970009,"name":"Thessaloniki Macedonia International Airport","scheduled":true,"timezone":"Europe/Athens"}
 {"city_id":"thief-river-falls","country_code":"US","iata":"TVF","lat":48.065701,"lon":-96.184998,"name":"Thief River Falls Regional Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"thinadhoo","country_code":"MV","iata":"FMT","lat":0.192647,"lon":73.196755,"name":"Faresmaathoda Airport","scheduled":true,"timezone":"Indian/Maldives"}
@@ -3173,6 +3063,7 @@
 {"city_id":"tokoname","country_code":"JP","iata":"NGO","lat":34.858398,"lon":136.804993,"name":"Chubu Centrair International Airport","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"tokushima","country_code":"JP","iata":"TKS","lat":34.132559,"lon":134.607816,"name":"Tokushima Awaodori Airport / JMSDF Tokushima Air Base","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"tokyo","country_code":"JP","iata":"HND","lat":35.549678,"lon":139.786958,"name":"Tokyo Haneda International Airport","scheduled":true,"timezone":"Asia/Tokyo"}
+{"city_id":"tokyo","country_code":"JP","iata":"NRT","lat":35.76858,"lon":140.388714,"name":"Narita International Airport","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"tolanaro","country_code":"MG","iata":"FTU","lat":-25.038099,"lon":46.9561,"name":"Tôlanaro Airport","scheduled":true,"timezone":"Indian/Antananarivo"}
 {"city_id":"toledo","country_code":"US","iata":"TOL","lat":41.5868,"lon":-83.8078,"name":"Eugene F. Kranz Toledo Express Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"toledo-br","country_code":"BR","iata":"TOW","lat":-24.6863,"lon":-53.697498,"name":"Toledo - Luiz Dalcanale Filho Municipal Airport","scheduled":true,"timezone":"America/Sao_Paulo"}
@@ -3189,7 +3080,6 @@
 {"city_id":"toronto","country_code":"CA","iata":"YTZ","lat":43.627852,"lon":-79.39553,"name":"Billy Bishop Toronto City Airport","scheduled":true,"timezone":"America/Toronto"}
 {"city_id":"toronto","country_code":"CA","iata":"YYZ","lat":43.675935,"lon":-79.629421,"name":"Toronto Pearson International Airport","scheduled":true,"timezone":"America/Toronto"}
 {"city_id":"torreon","country_code":"MX","iata":"TRC","lat":25.562265,"lon":-103.404608,"name":"Francisco Sarabia Tinoco International Airport","scheduled":true,"timezone":"America/Monterrey"}
-{"city_id":"torshavn","country_code":"FO","iata":"FAE","lat":62.063256,"lon":-7.275782,"name":"Vágar Airport","scheduled":true,"timezone":"Atlantic/Faroe"}
 {"city_id":"tottori-shi","country_code":"JP","iata":"TTJ","lat":35.530058,"lon":134.165023,"name":"Tottori Sand Dunes Conan Airport","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"touggourt","country_code":"DZ","iata":"TGR","lat":33.067799,"lon":6.08867,"name":"Touggourt Sidi Madhi Airport","scheduled":true,"timezone":"Africa/Algiers"}
 {"city_id":"toulon","country_code":"FR","iata":"TLN","lat":43.097301,"lon":6.14603,"name":"Toulon-Hyères Airport","scheduled":true,"timezone":"Europe/Paris"}
@@ -3288,7 +3178,6 @@
 {"city_id":"ust-kamenogorsk","country_code":"KZ","iata":"UKK","lat":50.035033,"lon":82.496057,"name":"Oskemen International Airport","scheduled":true,"timezone":"Asia/Almaty"}
 {"city_id":"ust-kut","country_code":"RU","iata":"UKX","lat":56.856701,"lon":105.730003,"name":"Ust-Kut Airport","scheduled":true,"timezone":"Asia/Irkutsk"}
 {"city_id":"utrik","country_code":"MH","iata":"UTK","lat":11.222219,"lon":169.851429,"name":"Utirik Airport","scheduled":true,"timezone":"Pacific/Majuro"}
-{"city_id":"uturoa","country_code":"PF","iata":"RFP","lat":-16.7229,"lon":-151.466003,"name":"Raiatea Airport","scheduled":true,"timezone":"Pacific/Tahiti"}
 {"city_id":"uyo","country_code":"NG","iata":"QUO","lat":4.8725,"lon":8.093,"name":"Akwa Ibom International Airport","scheduled":true,"timezone":"Africa/Lagos"}
 {"city_id":"vaasa","country_code":"FI","iata":"VAA","lat":63.05023,"lon":21.762543,"name":"Vaasa Airport","scheduled":true,"timezone":"Europe/Helsinki"}
 {"city_id":"vadodara","country_code":"IN","iata":"BDQ","lat":22.336201,"lon":73.226303,"name":"Vadodara International Airport","scheduled":true,"timezone":"Asia/Kolkata"}
@@ -3299,9 +3188,6 @@
 {"city_id":"vadso","country_code":"NO","iata":"VDS","lat":70.0653,"lon":29.8447,"name":"Vadsø Airport","scheduled":true,"timezone":"Europe/Oslo"}
 {"city_id":"vaesteras","country_code":"SE","iata":"VST","lat":59.589401,"lon":16.6336,"name":"Stockholm Västerås Airport","scheduled":true,"timezone":"Europe/Stockholm"}
 {"city_id":"vaexjoe","country_code":"SE","iata":"VXO","lat":56.929100036621094,"lon":14.727999687194824,"name":"Växjö Kronoberg Airport","scheduled":true,"timezone":"Europe/Stockholm"}
-{"city_id":"vaitoare","country_code":"PF","iata":"BOB","lat":-16.444400787353516,"lon":-151.75100708007812,"name":"Bora Bora Airport","scheduled":true,"timezone":"Pacific/Tahiti"}
-{"city_id":"vaitoare","country_code":"PF","iata":"HUH","lat":-16.687084,"lon":-151.021593,"name":"Huahine-Fare Airport","scheduled":true,"timezone":"Pacific/Tahiti"}
-{"city_id":"vaitoare","country_code":"PF","iata":"MAU","lat":-16.42650032043457,"lon":-152.24400329589844,"name":"Maupiti Airport","scheduled":true,"timezone":"Pacific/Tahiti"}
 {"city_id":"val-dor-ca","country_code":"CA","iata":"YVO","lat":48.0532989502,"lon":-77.7827987671,"name":"Val-d'Or Airport","scheduled":true,"timezone":"America/Toronto"}
 {"city_id":"valdivia","country_code":"CL","iata":"ZAL","lat":-39.6500015259,"lon":-73.0860977173,"name":"Pichoy Airport","scheduled":true,"timezone":"America/Santiago"}
 {"city_id":"valdosta","country_code":"US","iata":"VLD","lat":30.782499313354492,"lon":-83.27670288085938,"name":"Valdosta Regional Airport","scheduled":true,"timezone":"America/New_York"}
@@ -3394,8 +3280,6 @@
 {"city_id":"watertown-us","country_code":"US","iata":"ART","lat":43.991901,"lon":-76.021698,"name":"Watertown International Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"wau","country_code":"SS","iata":"WUU","lat":7.72583,"lon":27.975,"name":"Wau Airport","scheduled":true,"timezone":"Africa/Juba"}
 {"city_id":"wausau","country_code":"US","iata":"CWA","lat":44.777448,"lon":-89.670238,"name":"Central Wisconsin Airport","scheduled":true,"timezone":"America/Chicago"}
-{"city_id":"we","country_code":"NC","iata":"LIF","lat":-20.774563,"lon":167.239328,"name":"Lifou Airport","scheduled":true,"timezone":"Pacific/Noumea"}
-{"city_id":"we","country_code":"NC","iata":"UVE","lat":-20.640932,"lon":166.573024,"name":"Ouvéa Airport","scheduled":true,"timezone":"Pacific/Noumea"}
 {"city_id":"weeze","country_code":"DE","iata":"NRN","lat":51.601362,"lon":6.141228,"name":"Weeze (Niederrhein) Airport","scheduled":true,"timezone":"Europe/Berlin"}
 {"city_id":"weifang","country_code":"CN","iata":"WEF","lat":36.646702,"lon":119.119003,"name":"Weifang Nanyuan Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"weihai","country_code":"CN","iata":"WEH","lat":37.187099,"lon":122.228996,"name":"Weihai Dashuibo Airport","scheduled":true,"timezone":"Asia/Shanghai"}
@@ -3406,7 +3290,6 @@
 {"city_id":"wenquan-cn","country_code":"CN","iata":"YIE","lat":47.3106,"lon":119.9117,"name":"Arxan Yi'ershi Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"wenshan-city","country_code":"CN","iata":"WNH","lat":23.5583,"lon":104.3255,"name":"Wenshan Puzhehei Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"wenzhou","country_code":"CN","iata":"WNZ","lat":27.910572,"lon":120.853465,"name":"Wenzhou Longwan International Airport","scheduled":true,"timezone":"Asia/Shanghai"}
-{"city_id":"west-island","country_code":"CC","iata":"CCK","lat":-12.192218,"lon":96.834103,"name":"Cocos (Keeling) Islands Airport","scheduled":true,"timezone":"Indian/Cocos"}
 {"city_id":"west-lafayette","country_code":"US","iata":"LAF","lat":40.412875,"lon":-86.939363,"name":"Purdue University Airport","scheduled":true,"timezone":"America/Indiana/Indianapolis"}
 {"city_id":"west-palm-beach","country_code":"US","iata":"DJT","lat":26.683201,"lon":-80.095596,"name":"President Donald J. Trump International Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"westerland","country_code":"DE","iata":"GWT","lat":54.9132,"lon":8.34047,"name":"Westerland Sylt Airport","scheduled":true,"timezone":"Europe/Berlin"}
@@ -3425,7 +3308,6 @@
 {"city_id":"wichita-falls","country_code":"US","iata":"SPS","lat":33.9888,"lon":-98.491898,"name":"Wichita Falls Municipal Airport / Sheppard Air Force Base","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"wick","country_code":"GB","iata":"WIC","lat":58.4589,"lon":-3.09306,"name":"Wick John O'Groats Airport","scheduled":true,"timezone":"Europe/London"}
 {"city_id":"wilhelmshaven","country_code":"DE","iata":"AGE","lat":53.782544,"lon":7.919584,"name":"Wangerooge Airport","scheduled":true,"timezone":"Europe/Berlin"}
-{"city_id":"willemstad","country_code":"CW","iata":"CUR","lat":12.1889,"lon":-68.959801,"name":"Hato International Airport","scheduled":true,"timezone":"America/Curacao"}
 {"city_id":"williams-lake","country_code":"CA","iata":"YWL","lat":52.1831016541,"lon":-122.054000854,"name":"Williams Lake Airport","scheduled":true,"timezone":"America/Vancouver"}
 {"city_id":"williamsport","country_code":"US","iata":"IPT","lat":41.242126,"lon":-76.92245,"name":"Williamsport Regional Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"williston","country_code":"US","iata":"XWA","lat":48.260863,"lon":-103.75116,"name":"Williston Basin International Airport","scheduled":true,"timezone":"America/Chicago"}

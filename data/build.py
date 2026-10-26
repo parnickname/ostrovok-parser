@@ -2,7 +2,9 @@
 
 Input:  data/loaders/<source>/out/<dataset>.jsonl, written by the loaders.
         data/overrides/, manual corrections applied on top.
-Output: data/snapshot/<dataset>.jsonl and data/snapshot/manifest.json.
+        data/sources.yaml, the registry of sources.
+Output: data/snapshot/<dataset>.jsonl, data/snapshot/manifest.json and a copy of data/sources.yaml: the backend
+        resolves the names in `sources` by the copy inside the snapshot (CFC-3).
 
 The build is deterministic: the same input always gives byte-identical
 dataset files and therefore the same sha256 in the manifest. Only
@@ -11,8 +13,10 @@ dataset files and therefore the same sha256 in the manifest. Only
 Usage: python3 data/build.py
 """
 
+import csv
 import hashlib
 import json
+import shutil
 import sys
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -22,12 +26,12 @@ DATA_DIR = Path(__file__).resolve().parent
 LOADERS_DIR = DATA_DIR / "loaders"
 OVERRIDES_DIR = DATA_DIR / "overrides"
 SNAPSHOT_DIR = DATA_DIR / "snapshot"
+SOURCES_FILE = DATA_DIR / "sources.yaml"
 
 SCHEMA_VERSION = 1
 
-# Dataset name -> function(records, overrides_dir) -> records.
+# Dataset name -> function(records, overrides_dir) -> records, defined below.
 # Each override is added by the subtask that introduces it (visa.csv: P1-DS-02.4).
-OVERRIDES = {}
 
 
 class BuildError(Exception):
@@ -89,6 +93,37 @@ def write_dataset(name, records):
     }
 
 
+def apply_city_names(records, overrides_dir):
+    """Sets `name_ru` of the cities listed in overrides/city_names_ru.csv (`id,name_ru,comment`).
+
+    For the cities that must have a Russian name but have none in GeoNames. An id that is not in `cities` is an
+    error: an override that no longer fits must not stay silently.
+    """
+    path = overrides_dir / "city_names_ru.csv"
+    if not path.exists():
+        return records
+    shown = path.relative_to(DATA_DIR.parent).as_posix()
+    names = {}
+    with path.open(encoding="utf-8", newline="") as f:
+        for line_no, row in enumerate(csv.DictReader(f), start=2):
+            city_id, name = (row["id"] or "").strip(), (row["name_ru"] or "").strip()
+            if not city_id or not name:
+                raise BuildError(f"{shown}:{line_no}: id and name_ru must not be empty")
+            if city_id in names:
+                raise BuildError(f"{shown}:{line_no}: city {city_id!r} twice")
+            names[city_id] = name
+    by_id = {r["id"]: r for r in records}
+    for city_id, name in names.items():
+        if city_id not in by_id:
+            raise BuildError(f"{shown}: city {city_id!r} is not in cities")
+        by_id[city_id]["name_ru"] = name
+    return records
+
+
+# impulse: one override per dataset is enough now; make it a list if a dataset needs several.
+OVERRIDES = {"cities": apply_city_names}
+
+
 def merge_calibration(parts):
     """Merges the parts of the single `calibration` object (CFC-3) written by several loaders (P1-DS-07).
 
@@ -144,6 +179,8 @@ def build():
     }
     manifest_text = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
     (SNAPSHOT_DIR / "manifest.json").write_bytes(manifest_text.encode("utf-8"))
+    # Not a dataset: it is not in the manifest, and the cleanup above only touches *.jsonl.
+    shutil.copyfile(SOURCES_FILE, SNAPSHOT_DIR / "sources.yaml")
     return manifest
 
 
@@ -156,6 +193,7 @@ def main():
     print(f"snapshot built: {len(manifest['datasets'])} dataset(s)")
     for d in manifest["datasets"]:
         print(f"  {d['name']}: {d['records']} records, sha256 {d['sha256'][:12]}")
+    print("  sources.yaml copied")
     return 0
 
 

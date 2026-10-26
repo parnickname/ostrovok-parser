@@ -46,6 +46,8 @@ HEADERS = {
     "User-Agent": "ostrovok-parser/1.0 (https://github.com/parnickname/ostrovok-parser; open data snapshot builder)",
     "Accept": "application/json",
 }
+CONNECT_TIMEOUT_SECONDS = 15
+READ_TIMEOUT_SECONDS = 120
 RADII_KM = (10, 15, 20, 25)
 MIN_HOTELS = 15
 EARTH_RADIUS_KM = 6371.0
@@ -73,7 +75,7 @@ def read_jsonl(path):
 def query(lat, lon, radius_km):
     around = f"(around:{radius_km * 1000},{lat},{lon})"
     return (
-        "[out:json][timeout:180];("
+        "[out:json][timeout:90];("
         f'node["tourism"="hotel"]{around};way["tourism"="hotel"]{around};relation["tourism"="hotel"]{around};'
         ");out center tags;"
     )
@@ -87,8 +89,14 @@ def overpass(destination_id, radius_km, lat, lon, refresh):
     label = f"{destination_id} within {radius_km} km"
     for attempt in range(ATTEMPTS):
         endpoint = ENDPOINTS[attempt % len(ENDPOINTS)]
+        print(f"  {label}: asking {endpoint.split('/')[2]} (attempt {attempt + 1} of {ATTEMPTS})", flush=True)
         try:
-            response = requests.post(endpoint, data={"data": query(lat, lon, radius_km)}, headers=HEADERS, timeout=240)
+            response = requests.post(
+                endpoint,
+                data={"data": query(lat, lon, radius_km)},
+                headers=HEADERS,
+                timeout=(CONNECT_TIMEOUT_SECONDS, READ_TIMEOUT_SECONDS),
+            )
         except requests.RequestException as e:
             problem = type(e).__name__
         else:
@@ -111,7 +119,7 @@ def overpass(destination_id, radius_km, lat, lon, refresh):
                 problem = f"HTTP {response.status_code}"
         if attempt + 1 == ATTEMPTS:
             raise LoadError(f"{label}: no answer after {ATTEMPTS} attempts, last problem: {problem}")
-        print(f"  {label}: {problem} from {endpoint}, trying the next server in {RETRY_WAIT_SECONDS} s")
+        print(f"  {label}: {problem} from {endpoint.split('/')[2]}, next attempt in {RETRY_WAIT_SECONDS} s", flush=True)
         time.sleep(RETRY_WAIT_SECONDS)
 
 
@@ -183,7 +191,7 @@ def collect(destinations, cities, refresh):
             if len(hotels) >= MIN_HOTELS:
                 break
         found[destination["id"]], radii[destination["id"]] = hotels, radius
-        print(f"  {destination['id']}: {len(hotels)} named hotels within {radius} km")
+        print(f"  {destination['id']}: {len(hotels)} named hotels within {radius} km", flush=True)
     return found, radii
 
 

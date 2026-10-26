@@ -2104,7 +2104,7 @@
 {"city_id":"linkoeping","country_code":"SE","iata":"NRK","lat":58.586299896240234,"lon":16.250600814819336,"name":"Norrköping Airport","scheduled":true,"timezone":"Europe/Stockholm"}
 {"city_id":"kirkwall","country_code":"GB","iata":"NRL","lat":59.3675003052,"lon":-2.43443989754,"name":"North Ronaldsay Airport","scheduled":true,"timezone":"Europe/London"}
 {"city_id":"weeze","country_code":"DE","iata":"NRN","lat":51.601362,"lon":6.141228,"name":"Weeze (Niederrhein) Airport","scheduled":true,"timezone":"Europe/Berlin"}
-{"city_id":"narita","country_code":"JP","iata":"NRT","lat":35.76858,"lon":140.388714,"name":"Narita International Airport","scheduled":true,"timezone":"Asia/Tokyo"}
+{"city_id":"tokyo","country_code":"JP","iata":"NRT","lat":35.76858,"lon":140.388714,"name":"Narita International Airport","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"alice-town","country_code":"BS","iata":"NSB","lat":25.767,"lon":-79.25,"name":"Bimini North Seaplane Base","scheduled":true,"timezone":"America/Nassau"}
 {"city_id":"nowshahr","country_code":"IR","iata":"NSH","lat":36.664286,"lon":51.46273,"name":"Nowshahr Airport","scheduled":true,"timezone":"Asia/Tehran"}
 {"city_id":"yaounde","country_code":"CM","iata":"NSI","lat":3.72256,"lon":11.5533,"name":"Yaoundé Nsimalen International Airport","scheduled":true,"timezone":"Africa/Douala"}

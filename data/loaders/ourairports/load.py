@@ -17,6 +17,11 @@ OurAirports has no time zone, so `timezone` is taken from the nearest city of th
 3. the nearest city of the same country within MATCH_RADIUS_KM.
 An airport without a city in reach is skipped and reported: `city_id` is required and must resolve.
 
+A row of data/overrides/airport_city.csv (`iata,city_id,comment`) replaces that choice for one airport, and its
+`timezone` is then the time zone of that city. It is for airports of a big city that sit in a smaller municipality,
+like NRT: Narita, not Tokyo. The loader fails when the airport is not in the selection, the city does not exist or is
+in another country than the airport.
+
 `cities.airports[]` is derived from `airports.city_id` by data/build.py, this loader does not touch cities.
 
 Usage: python3 data/loaders/ourairports/load.py [--refresh]
@@ -37,6 +42,7 @@ LOADER_DIR = Path(__file__).resolve().parent
 CACHE_DIR = LOADER_DIR / "cache"
 OUT_FILE = LOADER_DIR / "out" / "airports.jsonl"
 CITIES_FILE = LOADER_DIR.parent / "geonames" / "out" / "cities.jsonl"
+OVERRIDES_FILE = LOADER_DIR.parent.parent / "overrides" / "airport_city.csv"
 
 AIRPORTS_URL = "https://davidmegginson.github.io/ourairports-data/airports.csv"
 AIRPORTS_CSV = "airports.csv"
@@ -133,12 +139,42 @@ def nearest_timezone(airport, cities):
     return min(cities, key=lambda c: (distance_km(lat, lon, c["lat"], c["lon"]), c["id"]))["timezone"]
 
 
-def build_records(airports, cities_by_country):
+def read_overrides():
+    """Returns {iata: city_id} from data/overrides/airport_city.csv; no file, no overrides."""
+    if not OVERRIDES_FILE.exists():
+        return {}
+    overrides = {}
+    with OVERRIDES_FILE.open(encoding="utf-8", newline="") as f:
+        for line_no, row in enumerate(csv.DictReader(f), start=2):
+            iata, city_id = (row["iata"] or "").strip(), (row["city_id"] or "").strip()
+            if not iata or not city_id:
+                raise LoadError(f"{OVERRIDES_FILE.name}:{line_no}: iata and city_id must not be empty")
+            if iata in overrides:
+                raise LoadError(f"{OVERRIDES_FILE.name}:{line_no}: airport {iata} twice")
+            overrides[iata] = city_id
+    return overrides
+
+
+def build_records(airports, cities_by_country, overrides=None):
+    overrides = dict(overrides or {})
+    cities_by_id = {c["id"]: c for cities in cities_by_country.values() for c in cities}
     records, rules, skipped = [], defaultdict(int), []
     for airport in airports:
         country = airport["iso_country"]
         cities = cities_by_country.get(country, [])
-        city, rule = pick_city(airport, cities)
+        if airport["iata_code"] in overrides:
+            city_id = overrides.pop(airport["iata_code"])
+            city = cities_by_id.get(city_id)
+            if city is None:
+                raise LoadError(f"{OVERRIDES_FILE.name}: {airport['iata_code']}: city {city_id!r} is not in cities")
+            if city["country_code"] != country:
+                raise LoadError(
+                    f"{OVERRIDES_FILE.name}: {airport['iata_code']} is in {country}, city {city_id!r} in {city['country_code']}"
+                )
+            rule, timezone = "override", city["timezone"]
+        else:
+            city, rule = pick_city(airport, cities)
+            timezone = None
         if city is None:
             skipped.append(airport)
             continue
@@ -152,9 +188,11 @@ def build_records(airports, cities_by_country):
             "lon": float(airport["longitude_deg"]),
             # impulse: the time zone of the nearest city, wrong for an airport on the other side of a zone
             # border from its nearest city; remove if validation against a time zone dataset shows such cases.
-            "timezone": nearest_timezone(airport, cities),
+            "timezone": timezone or nearest_timezone(airport, cities),
             "scheduled": True,
         })
+    if overrides:
+        raise LoadError(f"{OVERRIDES_FILE.name}: not in the selection of airports: {', '.join(sorted(overrides))}")
     records.sort(key=lambda r: r["iata"])
     return records, rules, skipped
 
@@ -171,7 +209,7 @@ def main():
     refresh = "--refresh" in sys.argv[1:]
     try:
         airports = read_airports(download(refresh))
-        records, rules, skipped = build_records(airports, read_cities())
+        records, rules, skipped = build_records(airports, read_cities(), read_overrides())
     except LoadError as e:
         print(f"ourairports load failed: {e}", file=sys.stderr)
         return 1

@@ -16,7 +16,7 @@
 {"airports":["EVN"],"city_id":"yerevan","country_code":"AM","description":"","id":"yerevan","name":"Ереван","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
 {"airports":["GDZ"],"city_id":"gelendzhik","country_code":"RU","description":"","id":"gelendzhik","name":"Геленджик","sources":["geonames","ourairports"],"stations":[],"tags":["kids","sea","warm"]}
 {"airports":["HKT"],"city_id":"phuket","country_code":"TH","description":"","id":"phuket","name":"Пхукет","sources":["geonames","ourairports"],"stations":[],"tags":["kids","nature","sea","warm"]}
-{"airports":["HND"],"city_id":"tokyo","country_code":"JP","description":"","id":"tokyo","name":"Токио","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
+{"airports":["HND","NRT"],"city_id":"tokyo","country_code":"JP","description":"","id":"tokyo","name":"Токио","sources":["geonames","ourairports"],"stations":[],"tags":["city"]}
 {"airports":["HRG"],"city_id":"hurghada","country_code":"EG","description":"","id":"hurghada","name":"Хургада","sources":["geonames","ourairports"],"stations":[],"tags":["kids","sea","warm"]}
 {"airports":["IKT"],"city_id":"irkutsk","country_code":"RU","description":"","id":"irkutsk","name":"Иркутск (Байкал)","sources":["geonames","ourairports"],"stations":[],"tags":["nature"]}
 {"airports":["INN"],"city_id":"innsbruck","country_code":"AT","description":"","id":"innsbruck","name":"Инсбрук","sources":["geonames","ourairports"],"stations":[],"tags":["mountains","nature","ski"]}

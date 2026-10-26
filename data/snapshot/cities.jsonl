@@ -1100,7 +1100,7 @@
 {"airports":["HMO"],"country_code":"MX","id":"hermosillo","lat":29.08874,"lon":-110.96677,"name_en":"Hermosillo","name_ru":"Эрмосильо","population":812229,"stations":[],"timezone":"America/Hermosillo"}
 {"airports":["HMS"],"country_code":"ID","id":"muara-teweh","lat":-0.94734,"lon":114.8962,"name_en":"Muara Teweh","name_ru":"Muara Teweh","population":46652,"stations":[],"timezone":"Asia/Pontianak"}
 {"airports":["HNA"],"country_code":"JP","id":"hanamaki","lat":39.38333,"lon":141.11667,"name_en":"Hanamaki","name_ru":"Ханамаки","population":94691,"stations":[],"timezone":"Asia/Tokyo"}
-{"airports":["HND"],"country_code":"JP","id":"tokyo","lat":35.6895,"lon":139.69171,"name_en":"Tokyo","name_ru":"Токио","population":9733276,"stations":[],"timezone":"Asia/Tokyo"}
+{"airports":["HND","NRT"],"country_code":"JP","id":"tokyo","lat":35.6895,"lon":139.69171,"name_en":"Tokyo","name_ru":"Токио","population":9733276,"stations":[],"timezone":"Asia/Tokyo"}
 {"airports":["HNL"],"country_code":"US","id":"honolulu","lat":21.30694,"lon":-157.85833,"name_en":"Honolulu","name_ru":"Гонолулу","population":350964,"stations":[],"timezone":"Pacific/Honolulu"}
 {"airports":["HNM","OGG"],"country_code":"US","id":"kahului","lat":20.88933,"lon":-156.47293,"name_en":"Kahului","name_ru":"Кахулуи","population":26337,"stations":[],"timezone":"Pacific/Honolulu"}
 {"airports":["HNY"],"country_code":"CN","id":"hengyang","lat":26.88946,"lon":112.61888,"name_en":"Hengyang","name_ru":"Хэнъян","population":1075516,"stations":[],"timezone":"Asia/Shanghai"}
@@ -1952,7 +1952,6 @@
 {"airports":["NRA"],"country_code":"AU","id":"leeton","lat":-34.55105,"lon":146.40483,"name_en":"Leeton","name_ru":"Литон","population":8634,"stations":[],"timezone":"Australia/Sydney"}
 {"airports":["NRD"],"country_code":"DE","id":"norderney","lat":53.70803,"lon":7.15716,"name_en":"Norderney","name_ru":"Norderney","population":5949,"stations":[],"timezone":"Europe/Berlin"}
 {"airports":["NRN"],"country_code":"DE","id":"weeze","lat":51.62678,"lon":6.19792,"name_en":"Weeze","name_ru":"Веце","population":10131,"stations":[],"timezone":"Europe/Berlin"}
-{"airports":["NRT"],"country_code":"JP","id":"narita","lat":35.78333,"lon":140.31667,"name_en":"Narita","name_ru":"Нарита","population":132906,"stations":[],"timezone":"Asia/Tokyo"}
 {"airports":["NSH"],"country_code":"IR","id":"nowshahr","lat":36.64852,"lon":51.49621,"name_en":"Nowshahr","name_ru":"Nowshahr","population":40000,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":["NSI"],"country_code":"CM","id":"yaounde","lat":3.86667,"lon":11.51667,"name_en":"Yaounde","name_ru":"Яунде","population":1299369,"stations":[],"timezone":"Africa/Douala"}
 {"airports":["NSK"],"country_code":"RU","id":"norilsk","lat":69.3535,"lon":88.2027,"name_en":"Norilsk","name_ru":"Норильск","population":140800,"stations":[],"timezone":"Asia/Krasnoyarsk"}
@@ -37796,6 +37795,7 @@
 {"airports":[],"country_code":"JP","id":"nara-shi","lat":34.68505,"lon":135.80485,"name_en":"Nara-shi","name_ru":"Нара","population":367353,"stations":[],"timezone":"Asia/Tokyo"}
 {"airports":[],"country_code":"JP","id":"narashino","lat":35.68184,"lon":140.04152,"name_en":"Narashino","name_ru":"Нарашино","population":176197,"stations":[],"timezone":"Asia/Tokyo"}
 {"airports":[],"country_code":"JP","id":"narimasu","lat":35.78355,"lon":139.6323,"name_en":"Narimasu","name_ru":"Narimasu","population":30203,"stations":[],"timezone":"Asia/Tokyo"}
+{"airports":[],"country_code":"JP","id":"narita","lat":35.78333,"lon":140.31667,"name_en":"Narita","name_ru":"Нарита","population":132906,"stations":[],"timezone":"Asia/Tokyo"}
 {"airports":[],"country_code":"JP","id":"naruto","lat":35.6,"lon":140.41667,"name_en":"Naruto","name_ru":"Naruto","population":25696,"stations":[],"timezone":"Asia/Tokyo"}
 {"airports":[],"country_code":"JP","id":"narutocho-mitsuishi","lat":34.19933,"lon":134.60932,"name_en":"Narutocho-mitsuishi","name_ru":"Narutocho-mitsuishi","population":64082,"stations":[],"timezone":"Asia/Tokyo"}
 {"airports":[],"country_code":"JP","id":"nasu","lat":37.04209,"lon":140.09379,"name_en":"Nasu","name_ru":"Nasu","population":23956,"stations":[],"timezone":"Asia/Tokyo"}

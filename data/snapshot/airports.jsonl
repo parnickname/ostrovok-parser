@@ -2097,7 +2097,6 @@
 {"city_id":"napili-honokowai","country_code":"US","iata":"MKK","lat":21.152901,"lon":-157.095993,"name":"Molokai Airport","scheduled":true,"timezone":"Pacific/Honolulu"}
 {"city_id":"naples","country_code":"IT","iata":"NAP","lat":40.886002,"lon":14.2908,"name":"Naples International Airport","scheduled":true,"timezone":"Europe/Rome"}
 {"city_id":"narathiwat","country_code":"TH","iata":"NAW","lat":6.5199198722839355,"lon":101.74299621582031,"name":"Narathiwat Airport","scheduled":true,"timezone":"Asia/Bangkok"}
-{"city_id":"narita","country_code":"JP","iata":"NRT","lat":35.76858,"lon":140.388714,"name":"Narita International Airport","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"narrabri","country_code":"AU","iata":"NAA","lat":-30.3192005157,"lon":149.82699585,"name":"Narrabri Airport","scheduled":true,"timezone":"Australia/Sydney"}
 {"city_id":"naryan-mar","country_code":"RU","iata":"NNM","lat":67.639999,"lon":53.121899,"name":"Naryan Mar Airport","scheduled":true,"timezone":"Europe/Kirov"}
 {"city_id":"nashik","country_code":"IN","iata":"ISK","lat":20.119101,"lon":73.912903,"name":"Nashik International Airport","scheduled":true,"timezone":"Asia/Kolkata"}
@@ -3064,6 +3063,7 @@
 {"city_id":"tokoname","country_code":"JP","iata":"NGO","lat":34.858398,"lon":136.804993,"name":"Chubu Centrair International Airport","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"tokushima","country_code":"JP","iata":"TKS","lat":34.132559,"lon":134.607816,"name":"Tokushima Awaodori Airport / JMSDF Tokushima Air Base","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"tokyo","country_code":"JP","iata":"HND","lat":35.549678,"lon":139.786958,"name":"Tokyo Haneda International Airport","scheduled":true,"timezone":"Asia/Tokyo"}
+{"city_id":"tokyo","country_code":"JP","iata":"NRT","lat":35.76858,"lon":140.388714,"name":"Narita International Airport","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"tolanaro","country_code":"MG","iata":"FTU","lat":-25.038099,"lon":46.9561,"name":"Tôlanaro Airport","scheduled":true,"timezone":"Indian/Antananarivo"}
 {"city_id":"toledo","country_code":"US","iata":"TOL","lat":41.5868,"lon":-83.8078,"name":"Eugene F. Kranz Toledo Express Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"toledo-br","country_code":"BR","iata":"TOW","lat":-24.6863,"lon":-53.697498,"name":"Toledo - Luiz Dalcanale Filho Municipal Airport","scheduled":true,"timezone":"America/Sao_Paulo"}

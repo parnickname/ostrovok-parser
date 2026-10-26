@@ -41,10 +41,10 @@ ENDPOINTS = (
     "https://overpass-api.de/api/interpreter",
     "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
     "https://overpass.nchc.org.tw/api/interpreter",
-    "https://overpass.openstreetmap.fr/api/interpreter",
     "https://lz4.overpass-api.de/api/interpreter",
     "https://overpass.private.coffee/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
+    "https://overpass.openstreetmap.fr/api/interpreter",  # its data was months older than the others' in 2026-10
 )
 # Overpass answers 406 to the default python-requests User-Agent: the client must introduce itself.
 HEADERS = {

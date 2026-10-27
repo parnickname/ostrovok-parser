@@ -12,8 +12,9 @@ The API key is read like in load.py. Every answer is cached in data/loaders/yand
 so a rebuild gives the same result; pass --refresh to ask the API again.
 
 Per pair of stations (`from_station`, `to_station`, both in stations.jsonl):
-- `departures` — the distinct departure times, HH:MM, local time of the departure station;
-- `train_numbers` — the distinct train numbers;
+- `departures` and `train_numbers` — parallel arrays of one length: `departures[i]` (HH:MM, local time of the
+  departure station) is the departure of the train `train_numbers[i]`; every distinct (time, train) pair once,
+  sorted by time, then by number; one time repeats when several trains leave at it;
 - `duration_min` — the median travel time of the trains, in minutes.
 A train arriving at or leaving from a station that is not in stations.jsonl is skipped: the backend needs both
 ends to resolve.
@@ -122,7 +123,7 @@ def fetch(settlement_from, settlement_to, refresh, key):
 
 def aggregate(segments, known_stations):
     """Groups train segments by (from station, to station)."""
-    groups = defaultdict(lambda: {"departures": set(), "train_numbers": set(), "durations": []})
+    groups = defaultdict(lambda: {"trains": set(), "durations": []})
     for seg in segments:
         src, dst = seg["from"]["code"], seg["to"]["code"]
         if src not in known_stations or dst not in known_stations or not seg.get("departure"):
@@ -130,17 +131,17 @@ def aggregate(segments, known_stations):
         group = groups[(src, dst)]
         # impulse: all trains of the schedule are taken, seasonal ones too ("только 26 октября");
         # filter by `days` when the agent starts offering exact dates.
-        group["departures"].add(seg["departure"][:5])
-        group["train_numbers"].add(seg["thread"]["number"])
+        group["trains"].add((seg["departure"][:5], seg["thread"]["number"]))
         group["durations"].append(seg["duration"])
     records = []
     for (src, dst), group in groups.items():
+        trains = sorted(group["trains"])
         records.append({
             "from_station": src,
             "to_station": dst,
             "duration_min": max(1, round(statistics.median(group["durations"]) / 60)),
-            "departures": sorted(group["departures"]),
-            "train_numbers": sorted(group["train_numbers"]),
+            "departures": [time for time, _ in trains],
+            "train_numbers": [number for _, number in trains],
         })
     return records
 

@@ -76,7 +76,7 @@ data/
 | `climate` | `destination_id`, `month`, `temp_max_c`, `temp_min_c`, `precipitation_mm`, `sea_temp_c?` | `P1-DS-03` | оценка погоды для подбора |
 | `hotels` | `id`, `destination_id`, `name`, `lat`, `lon`, `stars?`, `check_in_time?`, `check_out_time?`, `pets?`, `osm_id`, `sources` | `P1-DS-05` | `lodging` провайдер `osm` |
 | `routes` | `from_iata`, `to_iata`, `distance_km`, `direct` | `P1-DS-06` | `transport`, время в пути |
-| `rail_routes` | `from_station`, `to_station`, `duration_min`, `departures[]` (`HH:MM`), `train_numbers[]` | `P1-DS-06` | `transport`, ж/д |
+| `rail_routes` | `from_station`, `to_station`, `duration_min`, `departures[]` (`HH:MM`), `train_numbers[]`; `departures[i]` — отправление поезда `train_numbers[i]`, массивы одной длины | `P1-DS-06` | `transport`, ж/д |
 | `calibration` | одна строка, один объект; поля — в блоке ниже | `P1-DS-07` | синтетика цен во всех провайдерах |
 
 Структура `calibration` (все деньги в рублях; уровень цен страны — множитель к российскому):

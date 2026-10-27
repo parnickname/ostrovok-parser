@@ -7,7 +7,7 @@ loaded, when the snapshot has changed. A scheduled GitHub Actions workflow (.git
 opens a pull request with the difference.
 
 Groups:
-- weekly: what changes every week: the visa matrix, train schedules, flights and fares, exchange rates;
+- weekly: what changes every week: the visa matrix, stations and train schedules, flights and fares, exchange rates;
 - monthly: everything else that is loaded from the net (maps, cities, airports, hotels, climate, statistics) and the
   weekly steps with it;
 - all: the same as monthly.
@@ -61,8 +61,10 @@ STEPS = [
     Step("loaders/geonames/load.py", MONTHLY, ["geonames"]),
     Step("loaders/wikidata/load.py", MONTHLY, ["wikidata"], refresh=False),
     Step("loaders/ourairports/load.py", MONTHLY, ["ourairports"]),
-    Step("loaders/yandex-rasp/load.py", MONTHLY, ["yandex-rasp"], secret="YANDEX_RASP_API_KEY"),
-    Step("loaders/catalog/load.py", MONTHLY, [], refresh=False),
+    # The stations list (one request) is weekly, because rail.py takes the settlement codes from it and a clean runner
+    # has no cache; the catalog follows it (offline) so that destinations[].stations never lag behind stations.
+    Step("loaders/yandex-rasp/load.py", WEEKLY, ["yandex-rasp"], secret="YANDEX_RASP_API_KEY"),
+    Step("loaders/catalog/load.py", WEEKLY, [], refresh=False),
     Step("loaders/open-meteo/load.py", MONTHLY, ["open-meteo"]),
     Step("loaders/open-meteo/load_sea.py", MONTHLY, ["open-meteo"]),
     Step("loaders/osm/load.py", MONTHLY, ["osm"]),

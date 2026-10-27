@@ -1,1 +1,1 @@
-{"bed_price_rub":{"2":1865,"3":2495,"4":3243,"5":7244},"sources":["rosstat","synthetic"],"transfer":{"pets_surcharge_rub":300,"public_rub_per_person":40,"shuttle_rub_per_person":205,"taxi_base_rub":142,"taxi_rub_per_km":47}}
+{"bed_price_rub":{"2":1865,"3":2495,"4":3242,"5":7242},"rail":{"rub_per_hour":199},"sources":["rosstat","synthetic"],"transfer":{"pets_surcharge_rub":300,"public_rub_per_person":40,"shuttle_rub_per_person":205,"taxi_base_rub":142,"taxi_rub_per_km":47}}

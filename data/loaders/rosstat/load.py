@@ -1,8 +1,9 @@
-"""Builds hotel bed prices by stars into data/loaders/rosstat/out/calibration.jsonl (P1-DS-07.1, Russia).
+"""Builds hotel bed prices by stars (P1-DS-07.1, Russia) and transfer tariffs (P1-DS-07.4) into
+data/loaders/rosstat/out/calibration.jsonl.
 
 Source: Rosstat, average consumer prices of 2025 (https://rosstat.gov.ru/statistics/price,
-sred_potreb_cen_2025.xlsx): one sheet per month, the row of the Russian Federation (code 643), the columns
-"Проживание в гостинице 2*", "3*" and "4*-5*, сутки с человека". The xlsx is read with the standard library.
+sred_potreb_cen_2025.xlsx): one sheet per month, the row of the Russian Federation (code 643), the columns in
+COLUMNS. The xlsx is read with the standard library.
 The download is cached in data/loaders/rosstat/cache/ (not in git); a file placed there by hand is used without any
 download. Delete it or pass --refresh to fetch a new one.
 
@@ -12,8 +13,17 @@ download. Delete it or pass --refresh to fetch a new one.
   from 4* to 5*, and the Rosstat price to be the mean of the two: P45 = P3 * (q + q^2) / 2, so
   q = (-1 + sqrt(1 + 8 * P45 / P3)) / 2, "4" = P3 * q, "5" = P3 * q^2.
 
-The output is a part of the single `calibration` object (CFC-3): `bed_price_rub` and `sources`. data/build.py merges
-it with the parts of the other loaders (P1-DS-07).
+`transfer` — one tariff for all catalog cities; the backend multiplies it by `country_price_level` (the city
+coefficient of 07.4). Means of the twelve months, whole rubles:
+- `taxi_rub_per_km` — "Проезд в такси, в расчете на 1 км пути";
+- `public_rub_per_person` — "Проезд в городском автобусе, поездка";
+- `shuttle_rub_per_person` — "Проезд в междугороднем автобусе, в расчете на 50 км пути": an airport shuttle is a bus
+  ride of about that length;
+- `taxi_base_rub` and `pets_surcharge_rub` — no open source gives them, they are set by hand (provider `synthetic`):
+  the base fare is TAXI_BASE_KM kilometres at the Rosstat rate, the pet surcharge is PETS_SURCHARGE_RUB.
+
+The output is a part of the single `calibration` object (CFC-3): `bed_price_rub`, `transfer` and `sources`.
+data/build.py merges it with the parts of the other loaders (P1-DS-07).
 
 Usage: python3 data/loaders/rosstat/load.py [--refresh]
 """
@@ -42,7 +52,13 @@ COLUMNS = {
     "2": "Проживание в гостинице 2*",
     "3": "Проживание в гостинице 3*",
     "45": "Проживание в гостинице 4*-5*",
+    "taxi_km": "Проезд в такси, в расчете на 1 км пути",
+    "bus": "Проезд в городском автобусе",
+    "intercity_50km": "Проезд в междугороднем автобусе, в расчете на 50 км пути",
 }
+# impulse: hand-set transfer parameters, no open source has them; replace when a taxi tariff source is accepted.
+TAXI_BASE_KM = 3
+PETS_SURCHARGE_RUB = 300
 NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
 REL_NS = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id"
 
@@ -137,7 +153,18 @@ def build_record(prices):
     # replace with separate prices when a source gives 4* and 5* apart.
     q = (-1 + math.sqrt(1 + 8 * p45 / p3)) / 2
     beds = {"2": mean["2"], "3": p3, "4": p3 * q, "5": p3 * q * q}
-    return {"bed_price_rub": {k: round(v) for k, v in beds.items()}, "sources": ["rosstat"]}
+    transfer = {
+        "taxi_base_rub": round(mean["taxi_km"] * TAXI_BASE_KM),
+        "taxi_rub_per_km": round(mean["taxi_km"]),
+        "pets_surcharge_rub": PETS_SURCHARGE_RUB,
+        "shuttle_rub_per_person": round(mean["intercity_50km"]),
+        "public_rub_per_person": round(mean["bus"]),
+    }
+    return {
+        "bed_price_rub": {k: round(v) for k, v in beds.items()},
+        "transfer": transfer,
+        "sources": ["rosstat", "synthetic"],
+    }
 
 
 def main():
@@ -150,7 +177,9 @@ def main():
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     line = json.dumps(record, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n"
     OUT_FILE.write_bytes(line.encode("utf-8"))
-    print(f"bed_price_rub written to {OUT_FILE}: {record['bed_price_rub']}")
+    print(f"calibration part written to {OUT_FILE}")
+    print(f"  bed_price_rub: {record['bed_price_rub']}")
+    print(f"  transfer: {record['transfer']}")
     return 0
 
 

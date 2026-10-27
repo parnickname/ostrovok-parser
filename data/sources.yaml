@@ -12,27 +12,27 @@
   kind: real
   status: used
   used_for: [прогноз погоды, климат по месяцам, температура моря, световой день, качество воздуха и пыльца]
-  fetched_at: null
+  fetched_at: 2026-10-26T16:32:10Z
   reason: ""
 
 - provider: ourairports
   title: OurAirports
   url: https://ourairports.com/data/
-  license: ""
+  license: "Public Domain"
   kind: real
   status: used
   used_for: [аэропорты, коды IATA, координаты]
-  fetched_at: null
+  fetched_at: 2026-10-26T17:32:15Z
   reason: ""
 
 - provider: geonames
   title: GeoNames
   url: https://www.geonames.org
-  license: ""
+  license: CC-BY-4.0
   kind: real
   status: used
   used_for: [города, население, часовые пояса]
-  fetched_at: null
+  fetched_at: 2026-10-26T17:31:00Z
   reason: ""
 
 # ODbL 1.0 требует атрибуции: «© участники OpenStreetMap» и ссылку на условия использования данных. Формат реестра
@@ -44,7 +44,7 @@
   kind: real
   status: used
   used_for: [отели, звёзды, время заезда и выезда, животные и доступность, пляжи]
-  fetched_at: null
+  fetched_at: 2026-10-26T18:26:39Z
   reason: ""
 
 - provider: foursquare-os-places
@@ -150,11 +150,11 @@
 - provider: yandex-rasp
   title: API Яндекс Расписаний
   url: https://yandex.ru/dev/rasp/
-  license: ""
+  license: "условия использования API Яндекс Расписаний"
   kind: real
   status: used
   used_for: [расписания поездов, самолётов и электричек по России]
-  fetched_at: null
+  fetched_at: 2026-10-26T18:10:30Z
   reason: ""
 
 - provider: trainline-stations
@@ -204,7 +204,7 @@
   kind: real
   status: used
   used_for: [визовый режим по всем паспортам]
-  fetched_at: null
+  fetched_at: 2026-10-26T16:40:28Z
   reason: ""
 
 - provider: wheretoemigrate
@@ -230,11 +230,11 @@
 - provider: cbr
   title: ЦБ РФ
   url: https://www.cbr.ru
-  license: ""
+  license: "официальная информация, ст. 1259 ГК РФ"
   kind: real
   status: used
   used_for: [курсы валют]
-  fetched_at: null
+  fetched_at: 2026-10-26T18:09:58Z
   reason: ""
 
 - provider: frankfurter
@@ -250,11 +250,11 @@
 - provider: nager-date
   title: Nager.Date
   url: https://date.nager.at
-  license: ""
+  license: MIT
   kind: real
   status: used
   used_for: [праздники]
-  fetched_at: null
+  fetched_at: 2026-10-27T11:11:09Z
   reason: ""
 
 - provider: isdayoff
@@ -300,11 +300,11 @@
 - provider: rosstat
   title: Росстат и ЕМИСС, средние потребительские цены
   url: https://rosstat.gov.ru
-  license: ""
+  license: "официальная информация, ст. 1259 ГК РФ"
   kind: real
   status: used
   used_for: [средние цены на проживание для калибровки]
-  fetched_at: null
+  fetched_at: 2026-10-27T11:15:56Z
   reason: ""
 
 - provider: world-bank
@@ -314,7 +314,7 @@
   kind: real
   status: used
   used_for: [уровень цен стран каталога для калибровки]
-  fetched_at: null
+  fetched_at: 2026-10-27T11:14:29Z
   reason: ""
 
 - provider: wikimedia-pageviews
@@ -360,21 +360,21 @@
 - provider: hotel-booking-demand
   title: Hotel Booking Demand
   url: https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
-  license: ""
+  license: CC-BY-4.0
   kind: real
   status: used
   used_for: [отмены и сезонность бронирований для калибровки]
-  fetched_at: null
+  fetched_at: 2026-10-27T11:11:09Z
   reason: ""
 
 - provider: tourist-tax
   title: Туристический налог (решения муниципалитетов, ФНС)
   url: https://www.nalog.gov.ru
-  license: ""
+  license: "официальная информация, ст. 1259 ГК РФ"
   kind: real
   status: used
   used_for: [туристический налог по городам России]
-  fetched_at: null
+  fetched_at: 2026-10-26T18:22:19Z
   reason: ""
 
 - provider: faker
@@ -412,7 +412,7 @@
 - provider: synthetic
   title: Синтетические данные
   url: ""
-  license: ""
+  license: "собственные данные проекта"
   kind: synthetic
   status: used
   used_for: [цены на ночь с сезонностью, наличие номеров, питание, условия отмены, правила для животных и детей, цены на авиабилеты и ж/д, трансферы]

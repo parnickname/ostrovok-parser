@@ -64,6 +64,10 @@ class LoadError(Exception):
     pass
 
 
+class UnknownOrigin(LoadError):
+    """The API does not know the airport (HTTP 400): a small airport without a code in Aviasales."""
+
+
 def read_token():
     token = os.environ.get(TOKEN_VAR, "").strip()
     if not token and ENV_FILE.exists():
@@ -105,6 +109,8 @@ def fetch(token, origin, month):
             response = requests.get(API_URL, params=params, headers={"X-Access-Token": token}, timeout=TIMEOUT_SECONDS)
             if response.status_code in (401, 403):
                 raise LoadError(f"the API refused the token (HTTP {response.status_code})")
+            if response.status_code == 400:
+                raise UnknownOrigin(f"{origin}: HTTP 400 {response.text[:200]!r}")
             if response.status_code == 429 or response.status_code >= 500:
                 raise requests.RequestException(f"HTTP {response.status_code}")
             response.raise_for_status()
@@ -112,6 +118,8 @@ def fetch(token, origin, month):
             if not body.get("success", False):
                 raise LoadError(f"{origin} {month}: {body.get('error') or body}")
             return body.get("data", [])
+        except UnknownOrigin:
+            raise
         except (requests.RequestException, ValueError) as e:
             if attempt == ATTEMPTS:
                 raise LoadError(f"{origin} {month}: {type(e).__name__}: {e}") from None
@@ -181,14 +189,30 @@ def main():
         departures = sorted(a["iata"] for a in airports if a["country_code"] in DEPARTURE_COUNTRIES)
         wanted_months = months(date.today())
 
+        done, skipped = [], []
+
         def tickets_of(origin):
             tickets = []
-            for month in wanted_months:
-                tickets.extend(fetch(token, origin, month))
-                time.sleep(PAUSE_SECONDS)
+            try:
+                for month in wanted_months:
+                    tickets.extend(fetch(token, origin, month))
+                    time.sleep(PAUSE_SECONDS)
+            except UnknownOrigin as e:
+                skipped.append(origin)
+                print(f"  skipped {e}", flush=True)
+                return []
+            done.append(origin)
+            print(f"  {len(done)}/{len(departures)} {origin}: {len(tickets)} direct tickets", flush=True)
             return tickets
 
+        print(f"{len(departures)} departure airports, months {', '.join(wanted_months)}; about "
+              f"{len(departures) * len(wanted_months) * PAUSE_SECONDS // 60} minutes", flush=True)
+
         pairs, prices = collect(tickets_of, departures)
+        if len(skipped) > len(departures) // 2:
+            raise LoadError(f"the API refused {len(skipped)} of {len(departures)} airports, the request is wrong")
+        if skipped:
+            print(f"{len(skipped)} airports unknown to the API: {', '.join(skipped)}")
         fare = airfare(prices, by_iata)
     except LoadError as e:
         print(f"travelpayouts load failed: {e}", file=sys.stderr)

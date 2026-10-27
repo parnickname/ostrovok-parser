@@ -14,7 +14,7 @@ Groups:
 
 A step that needs a secret (Yandex Rasp key, Travelpayouts token) is skipped with a message when the secret is not
 set: the data it wrote last time stays. Any other failed step stops the script with exit code 1 and the snapshot is
-not touched. Handmade inputs (destinations.csv, descriptions.csv, tourist-tax/rates.csv, overrides/) are not loaded
+not touched, except for an optional step (Rosstat), whose failure is a warning. Handmade inputs (destinations.csv, descriptions.csv, tourist-tax/rates.csv, overrides/) are not loaded
 and need no step.
 
 Usage: python3 data/refresh.py [--group weekly|monthly|all] [--dry-run]
@@ -40,12 +40,13 @@ WEEKLY, MONTHLY = "weekly", "monthly"
 
 
 class Step:
-    def __init__(self, script, group, providers, refresh=True, secret=None):
+    def __init__(self, script, group, providers, refresh=True, secret=None, optional=False):
         self.script = script
         self.group = group
         self.providers = providers  # names in sources.yaml whose `fetched_at` this step moves
         self.refresh = refresh  # the loader takes --refresh: it must not reuse its cache
         self.secret = secret  # environment variable the loader cannot work without
+        self.optional = optional  # a failure is a warning: the source may be closed to the runner, the old data stays
 
     @property
     def name(self):
@@ -71,7 +72,9 @@ STEPS = [
     Step("loaders/cbr/load.py", WEEKLY, ["cbr"]),
     Step("loaders/world-bank/load.py", MONTHLY, ["world-bank"]),
     Step("loaders/ine-es/load.py", MONTHLY, ["ine-es"], refresh=False),
-    Step("loaders/rosstat/load.py", MONTHLY, ["rosstat"]),
+    # rosstat.gov.ru has a certificate of a Russian CA and may not answer outside Russia: run the loader by hand then
+    # (download the xlsx into loaders/rosstat/cache/), the data of the last run stays.
+    Step("loaders/rosstat/load.py", MONTHLY, ["rosstat"], optional=True),
     Step("loaders/hotel-booking-demand/load.py", MONTHLY, ["hotel-booking-demand", "nager-date"]),
     Step("loaders/tourist-tax/load.py", MONTHLY, [], refresh=False),
     Step("loaders/synthetic/load.py", WEEKLY, [], refresh=False),
@@ -139,6 +142,9 @@ def main():
             continue
         command = [sys.executable, str(DATA_DIR / step.script)] + (["--refresh"] if step.refresh else [])
         if run(command) != 0:
+            if step.optional:
+                print(f"warning: {step.name} failed, the data of the last run stays", file=sys.stderr, flush=True)
+                continue
             print(f"refresh failed at {step.name}", file=sys.stderr)
             return 1
         loaded.update(step.providers)

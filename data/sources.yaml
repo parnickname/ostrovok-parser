@@ -184,7 +184,7 @@
   kind: real
   status: used
   used_for: [уровень цен на авиабилеты для калибровки, прямые рейсы в routes]
-  fetched_at: null
+  fetched_at: 2026-10-27T15:42:03Z
   reason: ""
 
 - provider: duffel
@@ -314,7 +314,7 @@
   kind: real
   status: used
   used_for: [средние цены на проживание (2*, 3*, уровень 4*-5*), тарифы на такси и автобус, цена проезда в поезде для калибровки]
-  fetched_at: 2026-10-27T11:15:56Z
+  fetched_at: 2026-10-27T15:48:58Z
   reason: ""
 
 - provider: ine-es
@@ -335,16 +335,6 @@
   status: used
   used_for: [уровень цен стран каталога для калибровки]
   fetched_at: 2026-10-27T11:14:29Z
-  reason: ""
-
-- provider: direct-flight-rule
-  title: "Правило прямого рейса: оба аэропорта large_airport в OurAirports и расстояние меньше 6000 км"
-  url: ""
-  license: "собственные данные проекта"
-  kind: derived
-  status: used
-  used_for: [расстояние в routes; признак прямого рейса, пока нет токена Travelpayouts, потом его заменяют реальные рейсы aviasales-data-api]
-  fetched_at: null
   reason: ""
 
 - provider: wikimedia-pageviews
@@ -460,6 +450,16 @@
   reason: ""
 
 # --- Рассмотренные и не взятые ------------------------------------------------
+
+- provider: direct-flight-rule
+  title: "Правило прямого рейса: оба аэропорта large_airport в OurAirports и расстояние меньше 6000 км"
+  url: ""
+  license: "собственные данные проекта"
+  kind: derived
+  status: considered
+  used_for: []
+  fetched_at: null
+  reason: "заменено реальными прямыми рейсами из Aviasales Data API (P1-DS-06.4): по правилу прямыми были 2765 маршрутов из 7413, по данным рейсов 840"
 
 - provider: tripadvisor-content-api
   title: TripAdvisor Content API

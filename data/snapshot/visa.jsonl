@@ -1101,7 +1101,6 @@
 {"days":180,"destination":"AM","passport":"QA","sources":["passport-index-data"],"status":"visa_free"}
 {"days":180,"destination":"AM","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
 {"days":180,"destination":"AM","passport":"RS","sources":["passport-index-data"],"status":"visa_free"}
-{"days":180,"destination":"AM","passport":"RU","sources":["passport-index-data"],"status":"visa_free"}
 {"days":180,"destination":"AM","passport":"SA","sources":["passport-index-data"],"status":"visa_free"}
 {"days":180,"destination":"AM","passport":"SE","sources":["passport-index-data"],"status":"visa_free"}
 {"days":180,"destination":"AM","passport":"SG","sources":["passport-index-data"],"status":"visa_free"}
@@ -2976,7 +2975,7 @@
 {"days":30,"destination":"EG","passport":"PY","sources":["passport-index-data"],"status":"visa_on_arrival"}
 {"days":30,"destination":"EG","passport":"RO","sources":["passport-index-data"],"status":"visa_on_arrival"}
 {"days":30,"destination":"EG","passport":"RS","sources":["passport-index-data"],"status":"visa_on_arrival"}
-{"days":30,"destination":"EG","passport":"RU","sources":["passport-index-data"],"status":"visa_on_arrival"}
+{"days":30,"destination":"EG","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_on_arrival"}
 {"days":30,"destination":"EG","passport":"SB","sources":["passport-index-data"],"status":"visa_on_arrival"}
 {"days":30,"destination":"EG","passport":"SC","sources":["passport-index-data"],"status":"visa_on_arrival"}
 {"days":30,"destination":"EG","passport":"SE","sources":["passport-index-data"],"status":"visa_on_arrival"}
@@ -3312,7 +3311,7 @@
 {"days":30,"destination":"ID","passport":"QA","sources":["passport-index-data"],"status":"visa_on_arrival"}
 {"days":30,"destination":"ID","passport":"RO","sources":["passport-index-data"],"status":"visa_on_arrival"}
 {"days":30,"destination":"ID","passport":"RS","sources":["passport-index-data"],"status":"visa_on_arrival"}
-{"days":30,"destination":"ID","passport":"RU","sources":["passport-index-data"],"status":"visa_on_arrival"}
+{"days":30,"destination":"ID","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_free"}
 {"days":30,"destination":"ID","passport":"RW","sources":["passport-index-data"],"status":"visa_on_arrival"}
 {"days":30,"destination":"ID","passport":"SA","sources":["passport-index-data"],"status":"visa_on_arrival"}
 {"days":30,"destination":"ID","passport":"SC","sources":["passport-index-data"],"status":"visa_on_arrival"}
@@ -7555,7 +7554,6 @@
 {"days":360,"destination":"GE","passport":"QA","sources":["passport-index-data"],"status":"visa_free"}
 {"days":360,"destination":"GE","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
 {"days":360,"destination":"GE","passport":"RS","sources":["passport-index-data"],"status":"visa_free"}
-{"days":360,"destination":"GE","passport":"RU","sources":["passport-index-data"],"status":"visa_free"}
 {"days":360,"destination":"GE","passport":"SA","sources":["passport-index-data"],"status":"visa_free"}
 {"days":360,"destination":"GE","passport":"SC","sources":["passport-index-data"],"status":"visa_free"}
 {"days":360,"destination":"GE","passport":"SE","sources":["passport-index-data"],"status":"visa_free"}
@@ -7578,6 +7576,7 @@
 {"days":360,"destination":"PW","passport":"FM","sources":["passport-index-data"],"status":"visa_free"}
 {"days":360,"destination":"PW","passport":"MH","sources":["passport-index-data"],"status":"visa_free"}
 {"days":360,"destination":"PW","passport":"US","sources":["passport-index-data"],"status":"visa_free"}
+{"days":365,"destination":"GE","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_free"}
 {"days":42,"destination":"LC","passport":"AD","sources":["passport-index-data"],"status":"visa_free"}
 {"days":42,"destination":"LC","passport":"AR","sources":["passport-index-data"],"status":"visa_free"}
 {"days":42,"destination":"LC","passport":"AU","sources":["passport-index-data"],"status":"visa_free"}
@@ -7963,7 +7962,7 @@
 {"days":45,"destination":"VN","passport":"NO","sources":["passport-index-data"],"status":"visa_free"}
 {"days":45,"destination":"VN","passport":"PL","sources":["passport-index-data"],"status":"visa_free"}
 {"days":45,"destination":"VN","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
-{"days":45,"destination":"VN","passport":"RU","sources":["passport-index-data"],"status":"visa_free"}
+{"days":45,"destination":"VN","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_free"}
 {"days":45,"destination":"VN","passport":"SE","sources":["passport-index-data"],"status":"visa_free"}
 {"days":45,"destination":"VN","passport":"SI","sources":["passport-index-data"],"status":"visa_free"}
 {"days":45,"destination":"VN","passport":"SK","sources":["passport-index-data"],"status":"visa_free"}
@@ -8300,7 +8299,7 @@
 {"days":60,"destination":"TH","passport":"PT","sources":["passport-index-data"],"status":"visa_free"}
 {"days":60,"destination":"TH","passport":"QA","sources":["passport-index-data"],"status":"visa_free"}
 {"days":60,"destination":"TH","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
-{"days":60,"destination":"TH","passport":"RU","sources":["passport-index-data"],"status":"visa_free"}
+{"days":60,"destination":"TH","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_free"}
 {"days":60,"destination":"TH","passport":"SA","sources":["passport-index-data"],"status":"visa_free"}
 {"days":60,"destination":"TH","passport":"SE","sources":["passport-index-data"],"status":"visa_free"}
 {"days":60,"destination":"TH","passport":"SG","sources":["passport-index-data"],"status":"visa_free"}
@@ -8321,7 +8320,7 @@
 {"days":60,"destination":"TN","passport":"BG","sources":["passport-index-data"],"status":"visa_free"}
 {"days":60,"destination":"TO","passport":"AE","sources":["passport-index-data"],"status":"visa_free"}
 {"days":60,"destination":"TR","passport":"MK","sources":["passport-index-data"],"status":"visa_free"}
-{"days":60,"destination":"TR","passport":"RU","sources":["passport-index-data"],"status":"visa_free"}
+{"days":60,"destination":"TR","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_free"}
 {"days":60,"destination":"UZ","passport":"KG","sources":["passport-index-data"],"status":"visa_free"}
 {"days":7,"destination":"CD","passport":"AD","sources":["passport-index-data"],"status":"e_visa"}
 {"days":7,"destination":"CD","passport":"AE","sources":["passport-index-data"],"status":"e_visa"}
@@ -8641,7 +8640,7 @@
 {"days":90,"destination":"AE","passport":"PY","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"AE","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"AE","passport":"RS","sources":["passport-index-data"],"status":"visa_free"}
-{"days":90,"destination":"AE","passport":"RU","sources":["passport-index-data"],"status":"visa_free"}
+{"days":90,"destination":"AE","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_free"}
 {"days":90,"destination":"AE","passport":"SB","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"AE","passport":"SC","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"AE","passport":"SE","sources":["passport-index-data"],"status":"visa_free"}
@@ -13953,7 +13952,6 @@
 {"days":90,"destination":"KZ","passport":"KN","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"KZ","passport":"MD","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"KZ","passport":"MN","sources":["passport-index-data"],"status":"visa_free"}
-{"days":90,"destination":"KZ","passport":"RU","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"KZ","passport":"SM","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"KZ","passport":"TR","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"KZ","passport":"UA","sources":["passport-index-data"],"status":"visa_free"}
@@ -15445,7 +15443,7 @@
 {"days":90,"destination":"MU","passport":"ZM","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"MU","passport":"ZW","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"MV","passport":"IN","sources":["passport-index-data"],"status":"visa_free"}
-{"days":90,"destination":"MV","passport":"RU","sources":["passport-index-data"],"status":"visa_free"}
+{"days":90,"destination":"MV","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_free"}
 {"days":90,"destination":"MW","passport":"AG","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"MW","passport":"BB","sources":["passport-index-data"],"status":"visa_free"}
 {"days":90,"destination":"MW","passport":"BN","sources":["passport-index-data"],"status":"visa_free"}
@@ -20286,6 +20284,7 @@
 {"destination":"AM","passport":"NP","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"AM","passport":"PK","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"AM","passport":"PS","sources":["passport-index-data"],"status":"visa_required"}
+{"destination":"AM","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_free"}
 {"destination":"AM","passport":"RW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"AM","passport":"SC","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"AM","passport":"SD","sources":["passport-index-data"],"status":"visa_required"}
@@ -20617,7 +20616,7 @@
 {"destination":"AT","passport":"PT","sources":["passport-index-data"],"status":"visa_free"}
 {"destination":"AT","passport":"QA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"AT","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
-{"destination":"AT","passport":"RU","sources":["passport-index-data"],"status":"visa_required"}
+{"destination":"AT","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_required"}
 {"destination":"AT","passport":"RW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"AT","passport":"SA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"AT","passport":"SD","sources":["passport-index-data"],"status":"visa_required"}
@@ -22615,7 +22614,7 @@
 {"destination":"BY","passport":"PS","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"BY","passport":"PW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"BY","passport":"PY","sources":["passport-index-data"],"status":"e_visa"}
-{"destination":"BY","passport":"RU","sources":["passport-index-data"],"status":"visa_free"}
+{"destination":"BY","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_free"}
 {"destination":"BY","passport":"RW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"BY","passport":"SB","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"BY","passport":"SD","sources":["passport-index-data"],"status":"visa_required"}
@@ -24527,7 +24526,7 @@
 {"destination":"CZ","passport":"PT","sources":["passport-index-data"],"status":"visa_free"}
 {"destination":"CZ","passport":"QA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"CZ","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
-{"destination":"CZ","passport":"RU","sources":["passport-index-data"],"status":"visa_required"}
+{"destination":"CZ","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_required"}
 {"destination":"CZ","passport":"RW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"CZ","passport":"SA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"CZ","passport":"SD","sources":["passport-index-data"],"status":"visa_required"}
@@ -25684,7 +25683,7 @@
 {"destination":"ES","passport":"PT","sources":["passport-index-data"],"status":"visa_free"}
 {"destination":"ES","passport":"QA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"ES","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
-{"destination":"ES","passport":"RU","sources":["passport-index-data"],"status":"visa_required"}
+{"destination":"ES","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_required"}
 {"destination":"ES","passport":"RW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"ES","passport":"SA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"ES","passport":"SD","sources":["passport-index-data"],"status":"visa_required"}
@@ -26046,7 +26045,7 @@
 {"destination":"FR","passport":"PT","sources":["passport-index-data"],"status":"visa_free"}
 {"destination":"FR","passport":"QA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"FR","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
-{"destination":"FR","passport":"RU","sources":["passport-index-data"],"status":"visa_required"}
+{"destination":"FR","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_required"}
 {"destination":"FR","passport":"RW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"FR","passport":"SA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"FR","passport":"SD","sources":["passport-index-data"],"status":"visa_required"}
@@ -26907,7 +26906,7 @@
 {"destination":"GR","passport":"PT","sources":["passport-index-data"],"status":"visa_free"}
 {"destination":"GR","passport":"QA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"GR","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
-{"destination":"GR","passport":"RU","sources":["passport-index-data"],"status":"visa_required"}
+{"destination":"GR","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_required"}
 {"destination":"GR","passport":"RW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"GR","passport":"SA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"GR","passport":"SD","sources":["passport-index-data"],"status":"visa_required"}
@@ -27615,7 +27614,7 @@
 {"destination":"HU","passport":"PT","sources":["passport-index-data"],"status":"visa_free"}
 {"destination":"HU","passport":"QA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"HU","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
-{"destination":"HU","passport":"RU","sources":["passport-index-data"],"status":"visa_required"}
+{"destination":"HU","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_required"}
 {"destination":"HU","passport":"RW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"HU","passport":"SA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"HU","passport":"SD","sources":["passport-index-data"],"status":"visa_required"}
@@ -28473,7 +28472,7 @@
 {"destination":"IT","passport":"PT","sources":["passport-index-data"],"status":"visa_free"}
 {"destination":"IT","passport":"QA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"IT","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
-{"destination":"IT","passport":"RU","sources":["passport-index-data"],"status":"visa_required"}
+{"destination":"IT","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_required"}
 {"destination":"IT","passport":"RW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"IT","passport":"SA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"IT","passport":"SD","sources":["passport-index-data"],"status":"visa_required"}
@@ -28771,7 +28770,7 @@
 {"destination":"JP","passport":"PK","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"JP","passport":"PS","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"JP","passport":"PW","sources":["passport-index-data"],"status":"visa_required"}
-{"destination":"JP","passport":"RU","sources":["passport-index-data"],"status":"visa_required"}
+{"destination":"JP","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_required"}
 {"destination":"JP","passport":"RW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"JP","passport":"SA","sources":["passport-index-data"],"status":"e_visa"}
 {"destination":"JP","passport":"SB","sources":["passport-index-data"],"status":"visa_required"}
@@ -29609,6 +29608,7 @@
 {"destination":"KZ","passport":"PS","sources":["passport-index-data"],"status":"e_visa"}
 {"destination":"KZ","passport":"PW","sources":["passport-index-data"],"status":"e_visa"}
 {"destination":"KZ","passport":"PY","sources":["passport-index-data"],"status":"e_visa"}
+{"destination":"KZ","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_free"}
 {"destination":"KZ","passport":"RW","sources":["passport-index-data"],"status":"e_visa"}
 {"destination":"KZ","passport":"SB","sources":["passport-index-data"],"status":"e_visa"}
 {"destination":"KZ","passport":"SD","sources":["passport-index-data"],"status":"e_visa"}
@@ -34308,7 +34308,7 @@
 {"destination":"PT","passport":"PT","sources":["passport-index-data"],"status":"home"}
 {"destination":"PT","passport":"QA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"PT","passport":"RO","sources":["passport-index-data"],"status":"visa_free"}
-{"destination":"PT","passport":"RU","sources":["passport-index-data"],"status":"visa_required"}
+{"destination":"PT","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_required"}
 {"destination":"PT","passport":"RW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"PT","passport":"SA","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"PT","passport":"SD","sources":["passport-index-data"],"status":"visa_required"}
@@ -38721,7 +38721,7 @@
 {"destination":"UZ","passport":"PG","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"UZ","passport":"PK","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"UZ","passport":"PS","sources":["passport-index-data"],"status":"visa_required"}
-{"destination":"UZ","passport":"RU","sources":["passport-index-data"],"status":"visa_free"}
+{"destination":"UZ","passport":"RU","sources":["passport-index-data","mid-ru"],"status":"visa_free"}
 {"destination":"UZ","passport":"RW","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"UZ","passport":"SD","sources":["passport-index-data"],"status":"visa_required"}
 {"destination":"UZ","passport":"SL","sources":["passport-index-data"],"status":"visa_required"}

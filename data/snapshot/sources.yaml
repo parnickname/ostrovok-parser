@@ -219,12 +219,12 @@
 
 - provider: mid-ru
   title: Консульский департамент МИД России
-  url: https://www.kdmid.ru
-  license: ""
+  url: https://www.kdmid.ru/info-for-traveling-abroad/reference-information-for-traveling-abroad/list-of-countries-with-simplified-entry/
+  license: "официальная информация, ст. 1259 ГК РФ"
   kind: real
   status: used
   used_for: [сверка визового режима для паспорта РФ]
-  fetched_at: null
+  fetched_at: 2026-06-10T11:07:46Z
   reason: ""
 
 - provider: cbr

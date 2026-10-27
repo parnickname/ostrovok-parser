@@ -120,8 +120,49 @@ def apply_city_names(records, overrides_dir):
     return records
 
 
+VISA_STATUSES = {"home", "visa_free", "visa_on_arrival", "eta", "e_visa", "visa_required", "no_admission"}
+VISA_CHECKED_SOURCE = "mid-ru"
+
+
+def apply_visa(records, overrides_dir):
+    """Applies overrides/visa.csv (`passport,destination,status,days,comment`, P1-DS-02.4).
+
+    Every row is a pair checked against the reference of the Consular Department of the Russian Foreign Ministry:
+    `status` and `days` (empty — no `days`) replace the values of the pair, and `mid-ru` is added to its `sources`.
+    A pair that is not in `visa`, a duplicate, an unknown status or a bad `days` is an error.
+    """
+    path = overrides_dir / "visa.csv"
+    if not path.exists():
+        return records
+    shown = path.relative_to(DATA_DIR.parent).as_posix()
+    by_pair = {(r["passport"], r["destination"]): r for r in records}
+    seen = set()
+    with path.open(encoding="utf-8", newline="") as f:
+        for line_no, row in enumerate(csv.DictReader(f), start=2):
+            pair = ((row["passport"] or "").strip(), (row["destination"] or "").strip())
+            status, days = (row["status"] or "").strip(), (row["days"] or "").strip()
+            if pair in seen:
+                raise BuildError(f"{shown}:{line_no}: pair {pair} twice")
+            seen.add(pair)
+            if pair not in by_pair:
+                raise BuildError(f"{shown}:{line_no}: pair {pair} is not in visa")
+            if status not in VISA_STATUSES:
+                raise BuildError(f"{shown}:{line_no}: unknown status {status!r}")
+            if days and (not days.isdigit() or int(days) < 1):
+                raise BuildError(f"{shown}:{line_no}: days must be a positive integer, got {days!r}")
+            record = by_pair[pair]
+            record["status"] = status
+            if days:
+                record["days"] = int(days)
+            else:
+                record.pop("days", None)
+            if VISA_CHECKED_SOURCE not in record["sources"]:
+                record["sources"] = record["sources"] + [VISA_CHECKED_SOURCE]
+    return records
+
+
 # impulse: one override per dataset is enough now; make it a list if a dataset needs several.
-OVERRIDES = {"cities": apply_city_names}
+OVERRIDES = {"cities": apply_city_names, "visa": apply_visa}
 
 
 def merge_calibration(parts):

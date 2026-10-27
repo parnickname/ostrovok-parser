@@ -1,0 +1,1 @@
+{"airfare":{"base_rub":2500,"long_from_km":2000,"rub_per_km_long":4.3,"rub_per_km_short":3.94,"transfer_minutes":120},"sources":["aviasales-data-api","synthetic"]}

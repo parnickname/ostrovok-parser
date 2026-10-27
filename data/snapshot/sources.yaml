@@ -179,12 +179,12 @@
 
 - provider: aviasales-data-api
   title: Aviasales Data API (Travelpayouts)
-  url: https://support.travelpayouts.com/hc/ru/articles/203956163
-  license: "условия Travelpayouts Data API (бесплатно после регистрации, нужен токен)"
+  url: https://support.travelpayouts.com/hc/ru/articles/203956083
+  license: "не открытая лицензия: доступ по правилам партнёрской сети Travelpayouts (ред. 28.11.2025), бесплатно партнёрам с подключённой программой Aviasales и токеном; данные из кэша поисков за 2-7 дней, рекомендованы для информирования пользователей и контентных страниц; хранение и перепубликация данных в правилах не описаны, поэтому в репозитории только производные факты (пары аэропортов с прямым рейсом и медианы цены за км), без цен и ссылок на отдельные билеты; лимит метода 600 запросов в минуту"
   kind: real
   status: used
   used_for: [уровень цен на авиабилеты для калибровки, прямые рейсы в routes]
-  fetched_at: 2026-10-27T15:42:03Z
+  fetched_at: 2026-10-27T16:18:40Z
   reason: ""
 
 - provider: duffel
@@ -214,7 +214,7 @@
   kind: real
   status: used
   used_for: [визовый режим по всем паспортам]
-  fetched_at: 2026-10-26T16:40:28Z
+  fetched_at: 2026-10-27T16:18:40Z
   reason: ""
 
 - provider: wheretoemigrate
@@ -244,7 +244,7 @@
   kind: real
   status: used
   used_for: [курсы валют]
-  fetched_at: 2026-10-26T18:09:58Z
+  fetched_at: 2026-10-27T16:18:40Z
   reason: ""
 
 - provider: frankfurter
@@ -318,9 +318,9 @@
   reason: ""
 
 - provider: ine-es
-  title: INE (Испания), Coyuntura Turística Hotelera
-  url: https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176963&menu=ultiDatos&idp=1254735576863
-  license: "повторное использование со ссылкой на источник (aviso legal INE)"
+  title: INE (Испания), Coyuntura Turística Hotelera. Fuente: INE
+  url: https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736177015&menu=ultiDatos&idp=1254735576863
+  license: CC-BY-4.0
   kind: real
   status: used
   used_for: [соотношение цен отелей 3, 4 и 5 звёзд для калибровки]

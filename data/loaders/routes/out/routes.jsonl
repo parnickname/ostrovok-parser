@@ -863,7 +863,7 @@
 {"direct":false,"distance_km":5785,"from_iata":"CEK","to_iata":"MLE"}
 {"direct":false,"distance_km":2082,"from_iata":"CEK","to_iata":"MMK"}
 {"direct":true,"distance_km":1798,"from_iata":"CEK","to_iata":"MRV"}
-{"direct":true,"distance_km":2141,"from_iata":"CEK","to_iata":"MSQ"}
+{"direct":false,"distance_km":2141,"from_iata":"CEK","to_iata":"MSQ"}
 {"direct":false,"distance_km":1635,"from_iata":"CEK","to_iata":"NOZ"}
 {"direct":false,"distance_km":6146,"from_iata":"CEK","to_iata":"NRT"}
 {"direct":false,"distance_km":3987,"from_iata":"CEK","to_iata":"ORY"}

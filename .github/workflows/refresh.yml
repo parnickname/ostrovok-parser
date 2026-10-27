@@ -60,13 +60,14 @@ jobs:
             echo "Nothing changed, no pull request."
             exit 0
           fi
-          branch="data-refresh/$(date -u +%Y-%m-%d)-$GROUP"
+          # Имя уникально для запуска: ветка прошлого запуска может ещё лежать на GitHub, а перезаписывать её нельзя.
+          branch="data-refresh/$(date -u +%Y-%m-%d)-$GROUP-run$GITHUB_RUN_NUMBER"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$branch"
           git add -A data
           git commit -m "chore(data): $GROUP refresh of the snapshot"
-          git push --force-with-lease origin "$branch"
+          git push origin "$branch"
           gh pr create --base main --head "$branch" \
             --title "chore(data): $GROUP refresh of the snapshot ($(date -u +%Y-%m-%d))" \
             --body "Автоматическая пересборка снапшота: \`python3 data/refresh.py --group $GROUP\`. Загрузчики отработали, \`build.py\` и \`validate.py\` прошли. Что изменилось — в diff наборов \`data/snapshot/\` и \`fetched_at\` в \`data/sources.yaml\`." \

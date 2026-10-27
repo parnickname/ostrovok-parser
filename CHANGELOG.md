@@ -356,5 +356,10 @@
   только `HND`. Технически: `data/overrides/airport_city.csv` (`iata,city_id,comment`) читает
   `data/loaders/ourairports/load.py` до выбора города; часовой пояс аэропорта берётся у города правки; загрузчик падает,
   если аэропорта нет в выборке, города нет или он в другой стране. (`1c58b52`)
+- Снапшот после слияния PR #29: в `calibration.jsonl` и `manifest.json` оказалось по два варианта, и `validate.py` в CI
+  падал. Причина: старая ветка SsaF7 влилась после PR #31, и git склеил построчно два варианта одной строки.
+  Технически: снапшот пересобран `build.py` (одна запись `calibration` с реальными `airfare`, `rail` и ценами 4*, 5*);
+  в `data/.gitattributes` файлы снапшота помечены `-merge`, чтобы слияние, затронувшее их с обеих сторон, давало
+  конфликт, а не молчаливую склейку; решается пересборкой. (`cc01ae4`)
 
 [unreleased]: https://github.com/parnickname/ostrovok-parser/commits/main

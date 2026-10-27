@@ -1,2 +1,8 @@
 # Snapshot files keep LF on every OS, otherwise sha256 in manifest.json would not match.
 snapshot/** text eol=lf
+
+# Снапшот собирается build.py. Если обе ветки поменяли файл, git должен показать конфликт, а не склеить
+# построчно (так в calibration.jsonl оказалось два объекта); решается пересборкой: python3 data/build.py.
+snapshot/*.jsonl -merge
+snapshot/manifest.json -merge
+snapshot/sources.yaml -merge

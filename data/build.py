@@ -7,8 +7,8 @@ Output: data/snapshot/<dataset>.jsonl, data/snapshot/manifest.json and a copy of
         resolves the names in `sources` by the copy inside the snapshot (CFC-3).
 
 The build is deterministic: the same input always gives byte-identical
-dataset files and therefore the same sha256 in the manifest. Only
-`built_at` changes between runs.
+dataset files and therefore the same sha256 in the manifest. `built_at`
+changes only when some dataset has changed.
 
 Usage: python3 data/build.py
 """
@@ -16,6 +16,8 @@ Usage: python3 data/build.py
 import csv
 import hashlib
 import json
+import math
+import re
 import shutil
 import sys
 from collections import defaultdict
@@ -93,12 +95,34 @@ def write_dataset(name, records):
     }
 
 
-def apply_city_names(records, overrides_dir):
-    """Sets `name_ru` of the cities listed in overrides/city_names_ru.csv (`id,name_ru,comment`).
+WIKIDATA_NAMES_FILE = LOADERS_DIR / "wikidata" / "city_names_ru.csv"
+CYRILLIC = re.compile(r"[А-Яа-яЁё]")
 
-    For the cities that must have a Russian name but have none in GeoNames. An id that is not in `cities` is an
-    error: an override that no longer fits must not stay silently.
+
+def apply_wikidata_city_names(records):
+    """Sets `name_ru` from Wikidata (P1-DS-04.3) for the cities whose GeoNames name has no Cyrillic.
+
+    The file is `id,name_ru`, written by data/loaders/wikidata/load.py. A name never replaces a Cyrillic one.
     """
+    if not WIKIDATA_NAMES_FILE.exists():
+        return records
+    with WIKIDATA_NAMES_FILE.open(encoding="utf-8", newline="") as f:
+        names = {row["id"]: row["name_ru"] for row in csv.DictReader(f)}
+    for record in records:
+        name = names.get(record["id"])
+        if name and not CYRILLIC.search(record["name_ru"]):
+            record["name_ru"] = name
+    return records
+
+
+def apply_city_names(records, overrides_dir):
+    """Sets `name_ru` of the cities: first from Wikidata, then from overrides/city_names_ru.csv (`id,name_ru,comment`).
+
+    The manual file is for the cities that must have a Russian name but have none in GeoNames and Wikidata, and it
+    wins over both. An id that is not in `cities` is an error: an override that no longer fits must not stay
+    silently.
+    """
+    records = apply_wikidata_city_names(records)
     path = overrides_dir / "city_names_ru.csv"
     if not path.exists():
         return records
@@ -165,25 +189,44 @@ def apply_visa(records, overrides_dir):
 OVERRIDES = {"cities": apply_city_names, "visa": apply_visa}
 
 
+FALLBACK_CALIBRATION_LOADER = "synthetic"
+
+
 def merge_calibration(parts):
     """Merges the parts of the single `calibration` object (CFC-3) written by several loaders (P1-DS-07).
 
     Each loader writes its own partial object to its out/calibration.jsonl. The top-level keys of the parts must
-    not overlap; `sources` of all parts are united.
+    not overlap; `sources` of all parts are united. The exception is the part of the loader `synthetic`: it holds
+    estimates for what no source gives yet (`airfare` until P1-DS-07.3 has its token, `rail` until P1-DS-07.7 has
+    run), so a key of another loader replaces its estimate. A part of `synthetic` all of whose keys are replaced
+    does not add its `sources`.
     """
     merged = {}
     owner = {}
+    fallback = {}
     for source, part in parts:
         for key, value in part.items():
             if key == "sources":
+                continue
+            if source == FALLBACK_CALIBRATION_LOADER:
+                fallback[key] = value
                 continue
             if key in owner:
                 raise BuildError(f"calibration: key {key!r} is given by both {owner[key]} and {source}")
             owner[key] = source
             merged[key] = value
-    sources = sorted({name for _, part in parts for name in part.get("sources", [])})
+    estimates_used = False
+    for key, value in fallback.items():
+        if key not in merged:
+            merged[key] = value
+            estimates_used = True
+    sources = set()
+    for source, part in parts:
+        if source == FALLBACK_CALIBRATION_LOADER and not estimates_used:
+            continue
+        sources.update(part.get("sources", []))
     if sources:
-        merged["sources"] = sources
+        merged["sources"] = sorted(sources)
     return [merged] if merged else []
 
 
@@ -211,10 +254,67 @@ def fill_city_stations(datasets):
         city["stations"] = sorted(by_city.get(city["id"], []))
 
 
+# P1-DS-05.3: OSM draws one hotel as several objects (a point and a building) and the biggest cities have thousands.
+HOTEL_DUPLICATE_RADIUS_M = 200
+HOTELS_PER_DESTINATION_MAX = 300
+EARTH_RADIUS_M = 6371000.0
+
+
+def hotel_distance_m(a, b):
+    p1, p2 = math.radians(a["lat"]), math.radians(b["lat"])
+    h = math.sin((p2 - p1) / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(math.radians(b["lon"] - a["lon"]) / 2) ** 2
+    return 2 * EARTH_RADIUS_M * math.asin(math.sqrt(h))
+
+
+def hotel_rank(record):
+    """Smaller is better: the record with more of the optional fields filled in, then the smaller `id`."""
+    filled = sum(record.get(field) is not None for field in ("stars", "check_in_time", "check_out_time", "pets"))
+    return (-filled, record["id"])
+
+
+def prepare_hotels(records):
+    """Removes duplicate hotels and caps the hotels of a destination (P1-DS-05.3).
+
+    A duplicate is a hotel of the same destination with the same name (letters and digits, case ignored) within
+    HOTEL_DUPLICATE_RADIUS_M of another one; of such a group the best-filled record stays (hotel_rank). Then at most
+    HOTELS_PER_DESTINATION_MAX hotels stay per destination, the best-filled first. `id` of a kept hotel never changes.
+    """
+    groups = defaultdict(list)
+    for record in sorted(records, key=hotel_rank):
+        groups[(record["destination_id"], re.sub(r"[\W_]+", "", record["name"].casefold()))].append(record)
+    kept = []
+    for group in groups.values():
+        # The best record of a group first: it removes every record within the radius of one already kept.
+        stay = []
+        for record in group:
+            if all(hotel_distance_m(record, other) > HOTEL_DUPLICATE_RADIUS_M for other in stay):
+                stay.append(record)
+        kept.extend(stay)
+    by_destination = defaultdict(list)
+    for record in kept:
+        by_destination[record["destination_id"]].append(record)
+    result = []
+    for destination in sorted(by_destination):
+        result.extend(sorted(by_destination[destination], key=hotel_rank)[:HOTELS_PER_DESTINATION_MAX])
+    return result
+
+
+def read_manifest():
+    path = SNAPSHOT_DIR / "manifest.json"
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+
+
 def build():
     datasets = collect_loader_outputs()
     for name, apply_override in OVERRIDES.items():
         datasets[name] = apply_override(datasets.get(name, []), OVERRIDES_DIR)
+    if "hotels" in datasets:
+        datasets["hotels"] = prepare_hotels(datasets["hotels"])
     fill_city_airports(datasets)
     fill_city_stations(datasets)
     calibration = merge_calibration(collect_calibration_parts())
@@ -231,6 +331,10 @@ def build():
         "built_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "datasets": [write_dataset(name, datasets[name]) for name in sorted(datasets)],
     }
+    previous = read_manifest()
+    if previous and previous["datasets"] == manifest["datasets"]:
+        # Nothing changed: keep the date, so that a scheduled rebuild (data/refresh.py) leaves no difference in git.
+        manifest["built_at"] = previous["built_at"]
     manifest_text = json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
     (SNAPSHOT_DIR / "manifest.json").write_bytes(manifest_text.encode("utf-8"))
     # Not a dataset: it is not in the manifest, and the cleanup above only touches *.jsonl.

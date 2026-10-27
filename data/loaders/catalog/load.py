@@ -7,7 +7,9 @@ Everything else comes from the data of the other loaders:
 - `airports` are the airports of the city (OurAirports, P1-DS-04.2);
 - `stations` are the railway stations of the city (Yandex Rasp, P1-DS-06.2, Russia only); a Russian destination
   without a station must be listed in NO_RAILWAY;
-- `description` stays empty: no subtask of the plan fills it.
+- `description` is the text of descriptions.csv (`id`, `description`, P1-DS-03.5), one or two sentences per
+  destination, written by an AI model (provider `ai-text`); to generate them again, rewrite the file, the loader
+  only checks it.
 
 Needs data/loaders/geonames/out/cities.jsonl, data/loaders/ourairports/out/airports.jsonl and
 data/loaders/yandex-rasp/out/stations.jsonl.
@@ -17,12 +19,14 @@ Usage: python3 data/loaders/catalog/load.py
 
 import csv
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
 
 LOADER_DIR = Path(__file__).resolve().parent
 LIST_FILE = LOADER_DIR / "destinations.csv"
+DESCRIPTIONS_FILE = LOADER_DIR / "descriptions.csv"
 OUT_FILE = LOADER_DIR / "out" / "destinations.jsonl"
 CITIES_FILE = LOADER_DIR.parent / "geonames" / "out" / "cities.jsonl"
 AIRPORTS_FILE = LOADER_DIR.parent / "ourairports" / "out" / "airports.jsonl"
@@ -30,6 +34,10 @@ STATIONS_FILE = LOADER_DIR.parent / "yandex-rasp" / "out" / "stations.jsonl"
 
 # The catalog data comes from these providers (sources.yaml); the choice of destinations is manual.
 SOURCES = ["geonames", "ourairports"]
+
+# P1-DS-03.5: the text of a description, one or two sentences.
+DESCRIPTION_MAX_CHARS = 300
+DESCRIPTION_SOURCE = "ai-text"
 
 # P1-DS-03.2: the tags of the catalog; each one must belong to at least MIN_PER_TAG destinations.
 # `sea` decides which destinations P1-DS-03.4 has to give a sea temperature.
@@ -60,7 +68,27 @@ def read_list():
         return list(csv.DictReader(f))
 
 
-def build_records(entries, cities, airports, stations):
+def read_descriptions():
+    with DESCRIPTIONS_FILE.open(encoding="utf-8", newline="") as f:
+        rows = list(csv.DictReader(f))
+    descriptions = {}
+    for line_no, row in enumerate(rows, start=2):
+        where = f"{DESCRIPTIONS_FILE.name}:{line_no}"
+        dest_id, text = (row["id"] or "").strip(), (row["description"] or "").strip()
+        if dest_id in descriptions:
+            raise LoadError(f"{where}: duplicate id {dest_id!r}")
+        if not text:
+            raise LoadError(f"{where}: empty description of {dest_id!r}")
+        if len(text) > DESCRIPTION_MAX_CHARS:
+            raise LoadError(f"{where}: description of {dest_id!r} is {len(text)} characters, at most {DESCRIPTION_MAX_CHARS}")
+        sentences = len(re.findall(r"[.!?](?:\s|$)", text))
+        if not 1 <= sentences <= 2:
+            raise LoadError(f"{where}: description of {dest_id!r} has {sentences} sentences, one or two expected")
+        descriptions[dest_id] = text
+    return descriptions
+
+
+def build_records(entries, cities, airports, stations, descriptions):
     cities_by_id = {c["id"]: c for c in cities}
     airports_by_city = defaultdict(list)
     for airport in airports:
@@ -93,6 +121,8 @@ def build_records(entries, cities, airports, stations):
             raise LoadError(f"{where}: {dest_id!r} has no station and is not in NO_RAILWAY")
         if codes and dest_id in NO_RAILWAY:
             raise LoadError(f"{where}: {dest_id!r} is in NO_RAILWAY but has stations {codes}")
+        if dest_id not in descriptions:
+            raise LoadError(f"{where}: {dest_id!r} has no row in {DESCRIPTIONS_FILE.name}")
         records.append({
             "id": dest_id,
             "city_id": city_id,
@@ -101,10 +131,13 @@ def build_records(entries, cities, airports, stations):
             "tags": tags,
             "airports": iatas,
             "stations": codes,
-            "description": "",
-            "sources": SOURCES + ["yandex-rasp"] if codes else SOURCES,
+            "description": descriptions[dest_id],
+            "sources": SOURCES + (["yandex-rasp"] if codes else []) + [DESCRIPTION_SOURCE],
         })
 
+    unused = sorted(set(descriptions) - seen)
+    if unused:
+        raise LoadError(f"{DESCRIPTIONS_FILE.name}: descriptions of unknown destinations {unused}")
     abroad = sum(1 for r in records if r["country_code"] != HOME_COUNTRY)
     if not MIN_SIZE <= len(records) <= MAX_SIZE:
         raise LoadError(f"{len(records)} destinations, Q-006 asks for {MIN_SIZE}-{MAX_SIZE}")
@@ -129,7 +162,8 @@ def write_records(records):
 def main():
     try:
         records, abroad = build_records(
-            read_list(), read_jsonl(CITIES_FILE), read_jsonl(AIRPORTS_FILE), read_jsonl(STATIONS_FILE)
+            read_list(), read_jsonl(CITIES_FILE), read_jsonl(AIRPORTS_FILE), read_jsonl(STATIONS_FILE),
+            read_descriptions(),
         )
     except LoadError as e:
         print(f"catalog load failed: {e}", file=sys.stderr)

@@ -17,6 +17,7 @@ data/
   reports/             отчёты сверки источников (например, visa-diff.md)
   sources.yaml         реестр источников: и взятых, и рассмотренных
   build.py             собирает snapshot/ из loaders/ и overrides/
+  refresh.py           перезагружает источники, собирает и проверяет снапшот (запускается по расписанию)
   validate.py          проверяет snapshot/ по схемам из CFC-3
   snapshot/            manifest.json и <набор>.jsonl — то, что читает бэкенд
 docs/
@@ -24,6 +25,7 @@ docs/
   snapshot-format.md   контракт формата снапшота (CFC-3, CFC-5, статусы виз)
 scripts/check-changelog.py   проверка CHANGELOG.md
 .github/workflows/ci.yml     проверки: validate.py и changelog
+.github/workflows/refresh.yml  регулярная пересборка: раз в неделю и раз в месяц, результат — pull request
 ```
 
 ## Быстрый старт
@@ -35,8 +37,7 @@ python3 -m pip install -r data/requirements.txt
 python3 data/build.py && python3 data/validate.py     # на Windows: python
 ```
 
-Сборка детерминирована: без изменений входных данных `sha256` наборов в `manifest.json` не меняется, меняется только
-`built_at`. Файлы в `snapshot/` всегда с переводами строк LF (`data/.gitattributes`), иначе `sha256` разойдётся.
+Сборка детерминирована: без изменений входных данных `sha256` наборов и `built_at` в `manifest.json` не меняются. Файлы в `snapshot/` всегда с переводами строк LF (`data/.gitattributes`), иначе `sha256` разойдётся.
 
 ## Что на выходе
 
@@ -115,10 +116,34 @@ python3 data/build.py && python3 data/validate.py     # на Windows: python
 порядок такой: коммит с работой, затем отдельный коммит `docs(changelog): …` с записью и хешем первого. Проверка:
 `python3 scripts/check-changelog.py CHANGELOG.md`; в CI она идёт на каждом PR.
 
+## Регулярная пересборка
+
+Источники меняются, а снапшот без нашего участия — нет, поэтому `data/refresh.py` перезагружает их по расписанию
+(`.github/workflows/refresh.yml`):
+
+| Группа | Когда | Что |
+|---|---|---|
+| `weekly` | по понедельникам | визовая матрица, расписания поездов, прямые рейсы и цены на билеты (Travelpayouts), курсы ЦБ |
+| `monthly` | первого числа месяца | всё, что загружается из сети: города, аэропорты, вокзалы, отели, климат, статистика Росстата и Всемирного банка |
+
+```bash
+python3 data/refresh.py --group weekly      # или monthly, all; --dry-run только печатает шаги
+```
+
+Скрипт запускает загрузчики в порядке зависимостей, затем `build.py` и `validate.py`, а если наборы изменились, ставит
+свежий `fetched_at` у перезагруженных источников в `sources.yaml`. Без изменений в источниках в git ничего не меняется
+(`built_at` в манифесте тоже). Шаг, которому нужен ключ или токен, пропускается, если секрета нет. Рабочий процесс
+открывает pull request в `main`, мержит человек; бэкенд получает новый снапшот так же, как раньше, с релизом.
+
+Что нужно один раз настроить в репозитории: в Settings → Actions → General права «Read and write» и «Allow GitHub
+Actions to create and approve pull requests», в Settings → Secrets → Actions секреты `YANDEX_RASP_API_KEY` и
+`TRAVELPAYOUTS_TOKEN`. Вручную рабочий процесс запускается из вкладки Actions («Run workflow»).
+
 ## Ключи и секреты
 
-Ключи API (Яндекс Расписания для `06.2`–`06.3`, токен Travelpayouts для `07.3`) читаются из переменных окружения и
-никогда не попадают в git: `.env` в `.gitignore`.
+Ключи API (Яндекс Расписания для `06.2`–`06.3`, токен Travelpayouts для `07.3` и `06.4`) читаются из переменных
+окружения (`YANDEX_RASP_API_KEY`, `TRAVELPAYOUTS_TOKEN`) или из файла `.env` и никогда не попадают в git: `.env` в
+`.gitignore`. Токен Travelpayouts: регистрация на https://www.travelpayouts.com бесплатная, токен — в личном кабинете (профиль, раздел API).
 
 ## Простое и временное
 

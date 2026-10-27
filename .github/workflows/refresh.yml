@@ -1,0 +1,73 @@
+name: Refresh data
+
+# Регулярная пересборка снапшота (P1-DS-01.5): data/refresh.py перезагружает источники, собирает и проверяет снапшот,
+# а если он изменился, открывает pull request в main. Мержит человек: снапшот, как и раньше, уходит бэкенду с релизом.
+#
+# Нужно один раз:
+#   Settings -> Actions -> General -> Workflow permissions: «Read and write» и «Allow GitHub Actions to create and
+#   approve pull requests»;
+#   Settings -> Secrets and variables -> Actions: YANDEX_RASP_API_KEY и TRAVELPAYOUTS_TOKEN. Без секрета шаг
+#   пропускается, остаются данные прошлого запуска.
+# Проверки CI на pull request, открытый токеном GITHUB_TOKEN, сами не запускаются: refresh.py уже прогнал build и
+# validate; чтобы CI всё же прошёл, закройте и откройте pull request заново (или используйте токен приложения).
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"   # каждый понедельник: визы, расписания поездов, рейсы и цены, курсы
+    - cron: "41 3 1 * *"   # первого числа месяца: всё остальное (города, аэропорты, отели, климат, статистика)
+  workflow_dispatch:
+    inputs:
+      group:
+        description: "Что перезагрузить"
+        type: choice
+        options: [weekly, monthly, all]
+        default: weekly
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      GROUP: ${{ github.event_name == 'workflow_dispatch' && inputs.group || (github.event.schedule == '41 3 1 * *' && 'monthly' || 'weekly') }}
+      YANDEX_RASP_API_KEY: ${{ secrets.YANDEX_RASP_API_KEY }}
+      TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: data/requirements.txt
+      - run: python3 -m pip install -r data/requirements.txt
+      # pdftotext читает выпуски INE для data/loaders/ine-es (на образе ubuntu-latest он обычно есть).
+      - run: command -v pdftotext || (sudo apt-get update && sudo apt-get install -y poppler-utils)
+      - name: Refresh (${{ env.GROUP }})
+        run: python3 data/refresh.py --group "$GROUP"
+      - name: Open a pull request
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing changed, no pull request."
+            exit 0
+          fi
+          branch="data-refresh/$(date -u +%Y-%m-%d)-$GROUP"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add -A data
+          git commit -m "chore(data): $GROUP refresh of the snapshot"
+          git push --force-with-lease origin "$branch"
+          gh pr create --base main --head "$branch" \
+            --title "chore(data): $GROUP refresh of the snapshot ($(date -u +%Y-%m-%d))" \
+            --body "Автоматическая пересборка снапшота: \`python3 data/refresh.py --group $GROUP\`. Загрузчики отработали, \`build.py\` и \`validate.py\` прошли. Что изменилось — в diff наборов \`data/snapshot/\` и \`fetched_at\` в \`data/sources.yaml\`." \
+            || echo "A pull request for $branch exists already."

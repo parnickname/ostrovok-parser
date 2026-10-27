@@ -1157,6 +1157,7 @@
 {"direct":false,"distance_km":2138,"from_iata":"PKV","to_iata":"TBS"}
 {"direct":false,"distance_km":2139,"from_iata":"CSY","to_iata":"BUD"}
 {"direct":false,"distance_km":2140,"from_iata":"ASF","to_iata":"KGD"}
+{"direct":false,"distance_km":2141,"from_iata":"CEK","to_iata":"MSQ"}
 {"direct":false,"distance_km":2141,"from_iata":"SCO","to_iata":"DWC"}
 {"direct":false,"distance_km":2142,"from_iata":"MCX","to_iata":"HRG"}
 {"direct":false,"distance_km":2142,"from_iata":"SGC","to_iata":"DME"}
@@ -6895,7 +6896,6 @@
 {"direct":true,"distance_km":2135,"from_iata":"VKO","to_iata":"AYT"}
 {"direct":true,"distance_km":2136,"from_iata":"SGC","to_iata":"SVO"}
 {"direct":true,"distance_km":214,"from_iata":"UUD","to_iata":"IKT"}
-{"direct":true,"distance_km":2141,"from_iata":"CEK","to_iata":"MSQ"}
 {"direct":true,"distance_km":2142,"from_iata":"PEE","to_iata":"EVN"}
 {"direct":true,"distance_km":2146,"from_iata":"KGD","to_iata":"AYT"}
 {"direct":true,"distance_km":2155,"from_iata":"MRV","to_iata":"TAS"}

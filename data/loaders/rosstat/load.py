@@ -9,9 +9,11 @@ download. Delete it or pass --refresh to fetch a new one.
 
 `bed_price_rub` — price per guest per night on the Russian level, whole rubles:
 - "2", "3" — the mean of the twelve months of 2025;
-- "4", "5" — Rosstat gives one price for 4*-5*. The price is assumed to grow by the same factor q from 3* to 4* and
-  from 4* to 5*, and the Rosstat price to be the mean of the two: P45 = P3 * (q + q^2) / 2, so
-  q = (-1 + sqrt(1 + 8 * P45 / P3)) / 2, "4" = P3 * q, "5" = P3 * q^2.
+- "4", "5" — Rosstat gives one price for 4*-5*, so the shape of the ladder comes from the Spanish INE (P1-DS-07.8,
+  data/loaders/ine-es/adr_by_stars.csv): the mean over the twelve months of ADR(4*) / ADR(3*) is r43 and of
+  ADR(5*) / ADR(4*) is r54; "4" = P3 * r43, "5" = "4" * r54. The Rosstat price of 4*-5* only checks the result: it must
+  be the mean of the two prices weighted by the share s of 5* hotels, P45 = (1 - s) * P4 + s * P5, and the loader
+  fails when s is outside 0..MAX_FIVE_STAR_SHARE and prints s otherwise.
 
 `transfer` — one tariff for all catalog cities; the backend multiplies it by `country_price_level` (the city
 coefficient of 07.4). Means of the twelve months, whole rubles:
@@ -36,6 +38,7 @@ Needs data/loaders/yandex-rasp/out/stations.jsonl and rail_routes.jsonl (for the
 Usage: python3 data/loaders/rosstat/load.py [--refresh]
 """
 
+import csv
 import json
 import math
 import re
@@ -47,6 +50,7 @@ from xml.etree import ElementTree
 import requests
 
 LOADER_DIR = Path(__file__).resolve().parent
+ADR_FILE = LOADER_DIR.parent / "ine-es" / "adr_by_stars.csv"
 STATIONS_FILE = LOADER_DIR.parent / "yandex-rasp" / "out" / "stations.jsonl"
 RAIL_ROUTES_FILE = LOADER_DIR.parent / "yandex-rasp" / "out" / "rail_routes.jsonl"
 CACHE_DIR = LOADER_DIR / "cache"
@@ -68,6 +72,8 @@ COLUMNS = {
     "rail_platzkart": "Проезд в плацкартном вагоне скорого нефирменного поезда дальнего следования",
     "rail_kupe": "Проезд в купейном вагоне скорого нефирменного поезда дальнего следования",
 }
+# The share of 5* hotels among the 4*-5* hotels that the Rosstat price of 4*-5* may imply.
+MAX_FIVE_STAR_SHARE = 0.5
 # Rosstat prices of a train ticket are per 100 km of the way.
 RAIL_PRICE_KM = 100
 # impulse: the length of the railway is taken as the great-circle distance times a typical factor, the track length
@@ -189,13 +195,33 @@ def mean_train_speed_kmh(stations, rail_routes):
     return km / hours
 
 
-def build_record(prices, train_speed_kmh):
+def star_ratios():
+    """Returns (r43, r54): how many times a room of 4* costs more than 3*, and 5* more than 4*, in Spain (INE)."""
+    if not ADR_FILE.exists():
+        raise LoadError(f"{ADR_FILE} not found, run data/loaders/ine-es/load.py first")
+    with ADR_FILE.open(encoding="utf-8", newline="") as f:
+        rows = [{k: float(v) for k, v in row.items() if k != "month"} for row in csv.DictReader(f)]
+    if not rows:
+        raise LoadError(f"{ADR_FILE} is empty")
+    r43 = sum(r["adr_4"] / r["adr_3"] for r in rows) / len(rows)
+    r54 = sum(r["adr_5"] / r["adr_4"] for r in rows) / len(rows)
+    return r43, r54
+
+
+def build_record(prices, train_speed_kmh, ratios):
     mean = {key: sum(values) / len(values) for key, values in prices.items()}
     p3, p45 = mean["3"], mean["45"]
-    # impulse: 4* and 5* split from the single Rosstat price 4*-5* by an even growth factor;
-    # replace with separate prices when a source gives 4* and 5* apart.
-    q = (-1 + math.sqrt(1 + 8 * p45 / p3)) / 2
-    beds = {"2": mean["2"], "3": p3, "4": p3 * q, "5": p3 * q * q}
+    r43, r54 = ratios
+    p4 = p3 * r43
+    p5 = p4 * r54
+    five_star_share = (p45 - p4) / (p5 - p4)
+    if not 0 <= five_star_share <= MAX_FIVE_STAR_SHARE:
+        raise LoadError(
+            f"Rosstat 4*-5* price {p45:.0f} does not fit 4* {p4:.0f} and 5* {p5:.0f}: the share of 5* would be "
+            f"{five_star_share:.2f}, expected 0..{MAX_FIVE_STAR_SHARE}"
+        )
+    print(f"  4* = 3* x {r43:.3f}, 5* = 4* x {r54:.3f}; the 4*-5* price of Rosstat implies {five_star_share:.0%} of 5*")
+    beds = {"2": mean["2"], "3": p3, "4": p4, "5": p5}
     transfer = {
         "taxi_base_rub": round(mean["taxi_km"] * TAXI_BASE_KM),
         "taxi_rub_per_km": round(mean["taxi_km"]),
@@ -216,7 +242,7 @@ def main():
     refresh = "--refresh" in sys.argv[1:]
     try:
         speed = mean_train_speed_kmh(read_jsonl(STATIONS_FILE), read_jsonl(RAIL_ROUTES_FILE))
-        record = build_record(monthly_prices(download(refresh)), speed)
+        record = build_record(monthly_prices(download(refresh)), speed, star_ratios())
     except LoadError as e:
         print(f"rosstat load failed: {e}", file=sys.stderr)
         return 1

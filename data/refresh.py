@@ -70,6 +70,7 @@ STEPS = [
     Step("loaders/routes/load.py", WEEKLY, [], refresh=False),
     Step("loaders/cbr/load.py", WEEKLY, ["cbr"]),
     Step("loaders/world-bank/load.py", MONTHLY, ["world-bank"]),
+    Step("loaders/ine-es/load.py", MONTHLY, ["ine-es"], refresh=False),
     Step("loaders/rosstat/load.py", MONTHLY, ["rosstat"]),
     Step("loaders/hotel-booking-demand/load.py", MONTHLY, ["hotel-booking-demand", "nager-date"]),
     Step("loaders/tourist-tax/load.py", MONTHLY, [], refresh=False),

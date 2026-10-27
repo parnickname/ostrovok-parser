@@ -50,6 +50,8 @@ jobs:
           cache: pip
           cache-dependency-path: data/requirements.txt
       - run: python3 -m pip install -r data/requirements.txt
+      # pdftotext читает выпуски INE для data/loaders/ine-es (на образе ubuntu-latest он обычно есть).
+      - run: command -v pdftotext || (sudo apt-get update && sudo apt-get install -y poppler-utils)
       - name: Refresh (${{ env.GROUP }})
         run: python3 data/refresh.py --group "$GROUP"
       - name: Open a pull request

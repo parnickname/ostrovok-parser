@@ -313,8 +313,18 @@
   license: "официальная информация, ст. 1259 ГК РФ"
   kind: real
   status: used
-  used_for: [средние цены на проживание, тарифы на такси и автобус, цена проезда в поезде для калибровки]
+  used_for: [средние цены на проживание (2*, 3*, уровень 4*-5*), тарифы на такси и автобус, цена проезда в поезде для калибровки]
   fetched_at: 2026-10-27T11:15:56Z
+  reason: ""
+
+- provider: ine-es
+  title: INE (Испания), Coyuntura Turística Hotelera
+  url: https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736176963&menu=ultiDatos&idp=1254735576863
+  license: "повторное использование со ссылкой на источник (aviso legal INE)"
+  kind: real
+  status: used
+  used_for: [соотношение цен отелей 3, 4 и 5 звёзд для калибровки]
+  fetched_at: 2026-10-27T00:00:00Z
   reason: ""
 
 - provider: world-bank

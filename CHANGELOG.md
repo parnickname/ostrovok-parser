@@ -206,7 +206,7 @@
   стране с цитатой МИД — в `data/overrides/visa.csv` (`passport,destination,status,days,comment`), `data/build.py`
   применяет их функцией `apply_visa` (подключена в `OVERRIDES`) и добавляет `mid-ru` в `sources` сверенных пар;
   сборка падает на паре, которой нет в `visa`, дубле, неизвестном статусе или неверном `days`. У `mid-ru` в
-  `data/sources.yaml` указаны страница справки, лицензия и дата архивной копии. (`5f4f270`)
+  `data/sources.yaml` указаны страница справки, лицензия и дата архивной копии. (`5f4f270`, `ca7dbdc`)
 
 ### Изменено
 

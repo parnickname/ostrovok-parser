@@ -3,14 +3,15 @@
 Pairs: every airport of a departure city (README, "Решения команды": a city of RU, BY, KZ, UZ or AM with an
 airport) to every airport of every catalog destination, except a destination in the departure city itself.
 
-No open data about flights is in the registry (OpenFlights is rejected: not updated since 2014), so the routes are
-derived (provider `direct-flight-rule` in sources.yaml):
-- `distance_km` — great-circle distance between the airports, rounded to whole kilometres;
-- `direct` — true when both airports are `large_airport` in OurAirports and the distance is below
-  DIRECT_MAX_KM (rule proposed by the backend, review round 2, item 3), false otherwise.
+`direct` comes from real flights (P1-DS-06.4): data/loaders/travelpayouts/direct_flights.csv, the pairs of airports with
+a direct flight in the Aviasales Data API (provider `aviasales-data-api`). The file is written by the Travelpayouts
+loader, which needs a token. While the file does not exist, `direct` is a guess (provider `direct-flight-rule` in
+sources.yaml): true when both airports are `large_airport` in OurAirports and the distance is below DIRECT_MAX_KM
+(rule proposed by the backend, review round 2, item 3). Delete the guess when the file is in git.
+`distance_km` is the great-circle distance between the airports, rounded to whole kilometres.
 CFC-3 has no `sources` field in `routes`, so the mark lives in the registry, here, in CHANGELOG and in the PR.
 
-The airport type comes from OurAirports airports.csv, pinned to a commit of davidmegginson/ourairports-data so a
+For the guess, the airport type comes from OurAirports airports.csv, pinned to a commit of davidmegginson/ourairports-data so a
 rebuild gives the same result; cached in data/loaders/routes/cache/ (not in git), a file placed there by hand is
 used without any download. Delete it or pass --refresh to fetch it again.
 
@@ -32,6 +33,7 @@ CACHE_DIR = LOADER_DIR / "cache"
 OUT_FILE = LOADER_DIR / "out" / "routes.jsonl"
 AIRPORTS_FILE = LOADER_DIR.parent / "ourairports" / "out" / "airports.jsonl"
 DESTINATIONS_FILE = LOADER_DIR.parent / "catalog" / "out" / "destinations.jsonl"
+DIRECT_FILE = LOADER_DIR.parent / "travelpayouts" / "direct_flights.csv"
 
 TYPES_COMMIT = "51db9e043efd4b8639a15f7f5f693e815459cb22"
 TYPES_URL = f"https://raw.githubusercontent.com/davidmegginson/ourairports-data/{TYPES_COMMIT}/airports.csv"
@@ -40,8 +42,8 @@ TYPES_FILE = "airports.csv"
 # README, "Решения команды": Q-007 and "Город отправления".
 DEPARTURE_COUNTRIES = {"RU", "BY", "KZ", "UZ", "AM"}
 EARTH_RADIUS_KM = 6371.0
-# impulse: a direct flight is guessed from airport size and distance, not from schedules;
-# replace with flight data when a current open source of routes is accepted into the registry.
+# impulse: until direct_flights.csv exists a direct flight is guessed from airport size and distance, not from
+# flights; remove the guess when the file is in git.
 DIRECT_TYPE = "large_airport"
 DIRECT_MAX_KM = 6000
 
@@ -89,9 +91,21 @@ def distance_km(lat1, lon1, lat2, lon2):
     return 2 * EARTH_RADIUS_KM * math.asin(math.sqrt(a))
 
 
-def build_records(airports, destinations, types):
+def read_direct_pairs():
+    """Returns the set of (from_iata, to_iata) with a direct flight, or None while the file does not exist."""
+    if not DIRECT_FILE.exists():
+        return None
+    with DIRECT_FILE.open(encoding="utf-8", newline="") as f:
+        pairs = {(row["from_iata"], row["to_iata"]) for row in csv.DictReader(f)}
+    if not pairs:
+        raise LoadError(f"{DIRECT_FILE} has no pairs")
+    return pairs
+
+
+def build_records(airports, destinations, types, direct_pairs):
+    """`types` is needed only for the guess, i.e. when `direct_pairs` is None."""
     by_iata = {a["iata"]: a for a in airports}
-    missing = sorted(iata for iata in by_iata if iata not in types)
+    missing = sorted(iata for iata in by_iata if iata not in types) if direct_pairs is None else []
     if missing:
         raise LoadError(f"{TYPES_FILE}: no type for airports {missing[:10]}")
     departures = [a for a in airports if a["country_code"] in DEPARTURE_COUNTRIES]
@@ -110,8 +124,10 @@ def build_records(airports, destinations, types):
                     "from_iata": source["iata"],
                     "to_iata": to_iata,
                     "distance_km": distance,
-                    "direct": types[source["iata"]] == DIRECT_TYPE and types[to_iata] == DIRECT_TYPE
-                    and distance < DIRECT_MAX_KM,
+                    "direct": (key in direct_pairs) if direct_pairs is not None else (
+                        types[source["iata"]] == DIRECT_TYPE and types[to_iata] == DIRECT_TYPE
+                        and distance < DIRECT_MAX_KM
+                    ),
                 }
     return [records[k] for k in sorted(records)], departures
 
@@ -134,7 +150,9 @@ def main():
     try:
         airports = read_jsonl(AIRPORTS_FILE)
         destinations = read_jsonl(DESTINATIONS_FILE)
-        records, departures = build_records(airports, destinations, read_types(download(refresh)))
+        direct_pairs = read_direct_pairs()
+        types = {} if direct_pairs is not None else read_types(download(refresh))
+        records, departures = build_records(airports, destinations, types, direct_pairs)
         check_pairs(records, departures, destinations)
     except LoadError as e:
         print(f"routes load failed: {e}", file=sys.stderr)
@@ -147,7 +165,7 @@ def main():
     cities = len({a["city_id"] for a in departures})
     print(f"{len(records)} routes written to {OUT_FILE}")
     print(f"  from {len(departures)} airports of {cities} departure cities to {len(destinations)} destinations")
-    print(f"  direct: {sum(r['direct'] for r in records)}")
+    print(f"  direct: {sum(r['direct'] for r in records)} ({'Aviasales flights' if direct_pairs else 'guess by the rule'})")
     return 0
 
 

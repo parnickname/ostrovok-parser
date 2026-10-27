@@ -87,6 +87,16 @@
   fetched_at: null
   reason: ""
 
+- provider: wikidata
+  title: Wikidata
+  url: https://www.wikidata.org
+  license: CC0-1.0
+  kind: real
+  status: used
+  used_for: [русские названия городов]
+  fetched_at: null
+  reason: ""
+
 - provider: wikimedia-commons
   title: Wikimedia Commons
   url: https://commons.wikimedia.org
@@ -169,11 +179,11 @@
 
 - provider: aviasales-data-api
   title: Aviasales Data API (Travelpayouts)
-  url: ""
-  license: ""
+  url: https://support.travelpayouts.com/hc/ru/articles/203956163
+  license: "условия Travelpayouts Data API (бесплатно после регистрации, нужен токен)"
   kind: real
   status: used
-  used_for: [уровень цен на авиабилеты для калибровки]
+  used_for: [уровень цен на авиабилеты для калибровки, прямые рейсы в routes]
   fetched_at: null
   reason: ""
 
@@ -212,10 +222,10 @@
   url: ""
   license: ""
   kind: real
-  status: used
-  used_for: [сверка визового режима]
+  status: considered
+  used_for: []
   fetched_at: null
-  reason: ""
+  reason: "сервис про эмиграцию (ВНЖ, рабочие визы, стоимость жизни), туристической матрицы «паспорт — страна» нет; паспорт РФ сверен со справкой МИД (mid-ru), решение команды 2026-10-27"
 
 - provider: mid-ru
   title: Консульский департамент МИД России
@@ -303,7 +313,7 @@
   license: "официальная информация, ст. 1259 ГК РФ"
   kind: real
   status: used
-  used_for: [средние цены на проживание для калибровки]
+  used_for: [средние цены на проживание, тарифы на такси и автобус, цена проезда в поезде для калибровки]
   fetched_at: 2026-10-27T11:15:56Z
   reason: ""
 
@@ -323,7 +333,7 @@
   license: "собственные данные проекта"
   kind: derived
   status: used
-  used_for: [признак прямого рейса и расстояние в routes]
+  used_for: [расстояние в routes; признак прямого рейса, пока нет токена Travelpayouts, потом его заменяют реальные рейсы aviasales-data-api]
   fetched_at: null
   reason: ""
 
@@ -418,6 +428,16 @@
   reason: ""
 
 # --- Что генерируем -------------------------------------------------------------
+
+- provider: ai-text
+  title: Тексты описаний направлений, написанные ИИ
+  url: ""
+  license: "собственные данные проекта"
+  kind: synthetic
+  status: used
+  used_for: [описания направлений]
+  fetched_at: 2026-10-27T00:00:00Z
+  reason: ""
 
 - provider: synthetic
   title: Синтетические данные

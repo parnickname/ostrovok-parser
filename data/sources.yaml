@@ -317,6 +317,16 @@
   fetched_at: 2026-10-27T11:14:29Z
   reason: ""
 
+- provider: direct-flight-rule
+  title: "Правило прямого рейса: оба аэропорта large_airport в OurAirports и расстояние меньше 6000 км"
+  url: ""
+  license: "собственные данные проекта"
+  kind: derived
+  status: used
+  used_for: [признак прямого рейса и расстояние в routes]
+  fetched_at: null
+  reason: ""
+
 - provider: wikimedia-pageviews
   title: Wikimedia Pageviews
   url: https://pageviews.wmcloud.org

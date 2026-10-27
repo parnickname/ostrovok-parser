@@ -2,7 +2,7 @@
 
 Source: the monthly press release "Coyuntura Turística Hotelera" of the Spanish National Statistics Institute (INE,
 https://www.ine.es/dyngs/Prensa/CTHmmyy.pdf). It gives the ADR, the mean revenue per occupied room, of hotels of five,
-four and three stars. INE allows reuse with a reference to the source (https://www.ine.es/ine/aviso_legal.htm).
+four and three stars. The data are open under CC BY 4.0 with attribution to INE (https://www.ine.es/dyngs/DAB/en/index.htm?cid=1722).
 
 Rosstat gives one price for 4*-5* hotels, and the backend needs both (P1-DS-07.1). No open data gives the prices of
 hotels by stars for all the countries of the catalog; the Spanish ratios are taken as the shape of the price ladder

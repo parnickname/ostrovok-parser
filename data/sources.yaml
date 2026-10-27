@@ -179,8 +179,8 @@
 
 - provider: aviasales-data-api
   title: Aviasales Data API (Travelpayouts)
-  url: https://support.travelpayouts.com/hc/ru/articles/203956163
-  license: "условия Travelpayouts Data API (бесплатно после регистрации, нужен токен)"
+  url: https://support.travelpayouts.com/hc/ru/articles/203956083
+  license: "условия доступа к API данных Aviasales: бесплатно партнёрам Travelpayouts с подключённой программой Aviasales, нужен токен; данные из кэша поисков за 2-7 дней, рекомендуются для информирования пользователей и контентных страниц; перепубликация данных в условиях доступа не описана, общие правила Travelpayouts не проверены"
   kind: real
   status: used
   used_for: [уровень цен на авиабилеты для калибровки, прямые рейсы в routes]

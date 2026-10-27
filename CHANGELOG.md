@@ -392,5 +392,9 @@
   с указанием источника, по странице открытых данных INE), а ссылка вела на опрос по сельскому туризму вместо
   отельного. Технически: `data/sources.yaml` (`url` на отельную операцию, `license: CC-BY-4.0`, в `title` указание
   источника «Fuente: INE»), копия в `data/snapshot/sources.yaml`, комментарий в `data/loaders/ine-es/load.py`. (`1d4eaa9`)
+- Плановая пересборка отработала, но не смогла открыть PR: пуш в `data-refresh/<дата>-<группа>` отклонён (`stale info`), потому что
+  ветка первого запуска уже лежала на GitHub. Технически: `.github/workflows/refresh.yml` — в имя ветки добавлен номер запуска
+  (`data-refresh/<дата>-<группа>-run<N>`), `git push` без `--force-with-lease`; результат неудачного запуска пропал, нужен
+  повторный запуск после мержа. (`5f1a80f`)
 
 [unreleased]: https://github.com/parnickname/ostrovok-parser/commits/main

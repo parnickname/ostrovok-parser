@@ -307,6 +307,16 @@
   fetched_at: null
   reason: ""
 
+- provider: world-bank
+  title: Всемирный банк, World Development Indicators
+  url: https://data.worldbank.org
+  license: CC-BY-4.0
+  kind: real
+  status: used
+  used_for: [уровень цен стран каталога для калибровки]
+  fetched_at: null
+  reason: ""
+
 - provider: wikimedia-pageviews
   title: Wikimedia Pageviews
   url: https://pageviews.wmcloud.org

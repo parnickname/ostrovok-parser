@@ -109,7 +109,9 @@ def fetch(settlement_from, settlement_to, refresh, key):
                 break
             except (requests.RequestException, ValueError) as e:
                 # The message of a requests error may contain the URL with the key, so only the type is shown.
-                print(f"  {settlement_from} -> {settlement_to}: attempt {attempt} failed: {type(e).__name__}")
+                status = getattr(getattr(e, "response", None), "status_code", None)
+                print(f"  {settlement_from} -> {settlement_to}: attempt {attempt} failed: {type(e).__name__}"
+                      + (f", HTTP {status}" if status else ""))
         else:
             raise LoadError(f"search {settlement_from} -> {settlement_to}: {ATTEMPTS} attempts failed")
         segments.extend(page.get("segments", []))

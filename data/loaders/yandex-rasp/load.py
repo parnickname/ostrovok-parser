@@ -95,7 +95,9 @@ def download(refresh):
             gzip.decompress(content)  # a cut-off answer fails here
         except (requests.RequestException, OSError, EOFError) as e:
             # The message of a requests error may contain the URL with the key, so only the type is shown.
-            print(f"  attempt {attempt} of {DOWNLOAD_ATTEMPTS} failed: {type(e).__name__}")
+            status = getattr(getattr(e, "response", None), "status_code", None)
+            print(f"  attempt {attempt} of {DOWNLOAD_ATTEMPTS} failed: {type(e).__name__}"
+                  + (f", HTTP {status}" if status else ""))
             continue
         part = path.with_suffix(path.suffix + ".part")
         part.write_bytes(content)

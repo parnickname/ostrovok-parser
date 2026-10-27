@@ -181,12 +181,19 @@ def main():
         departures = sorted(a["iata"] for a in airports if a["country_code"] in DEPARTURE_COUNTRIES)
         wanted_months = months(date.today())
 
+        done = []
+
         def tickets_of(origin):
             tickets = []
             for month in wanted_months:
                 tickets.extend(fetch(token, origin, month))
                 time.sleep(PAUSE_SECONDS)
+            done.append(origin)
+            print(f"  {len(done)}/{len(departures)} {origin}: {len(tickets)} direct tickets", flush=True)
             return tickets
+
+        print(f"{len(departures)} departure airports, months {', '.join(wanted_months)}; about "
+              f"{len(departures) * len(wanted_months) * PAUSE_SECONDS // 60} minutes", flush=True)
 
         pairs, prices = collect(tickets_of, departures)
         fare = airfare(prices, by_iata)

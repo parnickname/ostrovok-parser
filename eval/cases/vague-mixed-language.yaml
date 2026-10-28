@@ -1,0 +1,23 @@
+# Смесь английского и русского; «без визы» включает visa_free_only.
+id: vague-mixed-language
+split: dev
+tags:
+- vague
+- mixed_language
+turns:
+- message: want to chill somewhere warm in January, бюджет небольшой, и без визы пожалуйста
+- answer_clarify: first
+expect:
+  stage: inspire
+  constraints:
+    preferences.visa_free_only: true
+  destination:
+    tags_any:
+    - warm
+    visa_status_in:
+    - home
+    - visa_free
+    - visa_on_arrival
+  checks_without_fail: true
+  order: none
+  max_clarifications: 2

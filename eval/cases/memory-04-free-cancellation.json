@@ -1,6 +1,9 @@
 {
   "id": "memory-04-free-cancellation",
   "split": "dev",
+  "tags": [
+    "memory"
+  ],
   "kind": "memory",
   "profile_key": "free_cancellation",
   "owner": "eval-memory-04-free-cancellation",
@@ -23,13 +26,13 @@
       "expect": {
         "assumptions": [
           {
-            "key": "free_cancellation",
+            "field": "preferences.free_cancellation",
             "value": true,
-            "source": "profile"
+            "origin": "profile"
           }
         ],
         "constraints": {
-          "rate_refundable": true
+          "preferences.free_cancellation": true
         },
         "must_not_ask": [
           "free_cancellation"

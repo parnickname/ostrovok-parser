@@ -1,0 +1,21 @@
+# «С нами едет собака» — пример изменения из спеки; незатронутое остаётся.
+id: change-add-dog
+split: dev
+tags:
+- change
+- pets
+turns:
+- message: Из Москвы в Санкт-Петербург на 3 ночи в декабре, нас двое
+- answer_clarify: first
+- select: recommended
+- message: с нами едет собака
+expect:
+  stage: assemble
+  constraints:
+    destination: saint-petersburg
+    adults: 2
+    dates.nights: 3
+    pets: true
+  checks_without_fail: true
+  order: none
+  max_clarifications: 2

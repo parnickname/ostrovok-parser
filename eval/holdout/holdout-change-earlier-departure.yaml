@@ -1,0 +1,18 @@
+# Holdout: до фазы 4 не копируется в репозиторий бэкенда, текст запроса нигде не пересказывается.
+id: holdout-change-earlier-departure
+split: holdout
+tags:
+- change
+turns:
+- message: С 1 по 8 марта в Дубай вдвоём из Москвы
+- answer_clarify: first
+- select: recommended
+- message: мы улетаем на день раньше, возвращаемся как было
+expect:
+  stage: assemble
+  constraints:
+    destination: dubai
+    adults: 2
+  checks_without_fail: true
+  order: none
+  max_clarifications: 2

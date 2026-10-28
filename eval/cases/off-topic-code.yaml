@@ -1,0 +1,10 @@
+# Вне темы: просьба написать код.
+id: off-topic-code
+split: dev
+tags:
+- off_topic
+turns:
+- message: Напиши функцию на Python, которая сортирует список чисел по возрастанию
+expect:
+  order: none
+  max_clarifications: 1

@@ -1,0 +1,21 @@
+# Цель фазы 2: ранний заезд. Ответ агента не оцениваем: проверяем состояние, заказ остаётся оплаченным, число ночей прежнее.
+id: early-checkin-after-purchase
+split: dev
+tags:
+- phase2
+- change
+turns:
+- message: Из Москвы в Сочи на неделю в июне, нас двое
+- answer_clarify: first
+- select: recommended
+- checkout: true
+- message: можно заехать в отель в 10 утра, мы прилетаем рано?
+expect:
+  stage: post_purchase
+  constraints:
+    destination: sochi
+    adults: 2
+    dates.nights: 7
+  checks_without_fail: true
+  order: paid
+  max_clarifications: 2

@@ -1,0 +1,20 @@
+# Размытый запрос без направления и дат: агент предлагает направления, а не требует всё уточнить.
+id: vague-warm-cheap
+split: dev
+tags:
+- vague
+turns:
+- message: хочу куда-нибудь, где тепло и недорого, сам не знаю куда
+- answer_clarify: first
+expect:
+  stage: inspire
+  destination:
+    tags_any:
+    - warm
+    visa_status_in:
+    - home
+    - visa_free
+    - visa_on_arrival
+  checks_without_fail: true
+  order: none
+  max_clarifications: 2

@@ -1,0 +1,19 @@
+# Поездка и два вопроса в одном сообщении. Визовый статус из снапшота: Грузия для паспорта РФ visa_free.
+id: multi-visa-and-weather
+split: dev
+tags:
+- multi_intent
+turns:
+- message: Хочу в Тбилиси в декабре на 4 ночи. Нужна ли виза и какая там будет погода?
+- answer_clarify: first
+expect:
+  stage: search
+  constraints:
+    destination: tbilisi
+    dates.nights: 4
+  destination:
+    visa_status_in:
+    - visa_free
+  checks_without_fail: true
+  order: none
+  max_clarifications: 2

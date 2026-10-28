@@ -1,6 +1,10 @@
 {
   "id": "memory-02-pets",
   "split": "dev",
+  "tags": [
+    "memory",
+    "pets"
+  ],
   "kind": "memory",
   "profile_key": "pets",
   "owner": "eval-memory-02-pets",
@@ -23,12 +27,13 @@
       "expect": {
         "assumptions": [
           {
-            "key": "pets",
+            "field": "pets",
             "value": true,
-            "source": "profile"
+            "origin": "profile"
           }
         ],
         "constraints": {
+          "pets": true,
           "exclude_hotels_with": {
             "pets": false
           }

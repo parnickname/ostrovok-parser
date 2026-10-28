@@ -1,0 +1,28 @@
+# Цель фазы 1: поездка от запроса до оплаты. Направление и города есть в снапшоте (moscow, sochi, у обоих есть аэропорты и вокзалы).
+id: moscow-sochi-june-checkout
+split: dev
+tags:
+- phase1
+- domestic
+turns:
+- message: Хочу из Москвы в Сочи на неделю в начале июня, нас двое, отель с завтраком
+- answer_clarify: first
+- select: recommended
+- checkout: true
+expect:
+  stage: checkout
+  constraints:
+    origin: moscow
+    destination: sochi
+    adults: 2
+    dates.nights: 7
+    preferences.meal: breakfast
+  components:
+  - outbound
+  - return
+  - stay
+  - transfer_arrival
+  - transfer_departure
+  checks_without_fail: true
+  order: paid
+  max_clarifications: 2

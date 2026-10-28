@@ -1,0 +1,45 @@
+{
+  "id": "memory-01-origin",
+  "split": "dev",
+  "kind": "memory",
+  "profile_key": "origin",
+  "owner": "eval-memory-01-origin",
+  "sessions": [
+    {
+      "turns": [
+        {
+          "role": "user",
+          "text": "Привет! Я живу в Казани. Подбери мне поездку в Санкт-Петербург на 2–4 декабря."
+        }
+      ]
+    },
+    {
+      "turns": [
+        {
+          "role": "user",
+          "text": "Хочу тёплое море в январе на неделю, куда лучше поехать?"
+        }
+      ],
+      "expect": {
+        "assumptions": [
+          {
+            "key": "origin",
+            "value": "kazan",
+            "source": "profile"
+          }
+        ],
+        "constraints": {
+          "origin_city_id": "kazan"
+        },
+        "must_not_ask": [
+          "origin"
+        ],
+        "must_not_carry_over": [
+          "destination",
+          "dates"
+        ]
+      }
+    }
+  ],
+  "note": "Город отправления — устойчивое предпочтение. Санкт-Петербург и даты 2–4 декабря — разовые условия первой поездки, во вторую сессию они не переходят. Из Казани есть авиа до направлений с тегами sea и warm."
+}

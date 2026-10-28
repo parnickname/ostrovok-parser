@@ -24,6 +24,7 @@ docs/
   data.md              задачи P1-DS-01…08 с подзадачами и распределением по людям
   data-phase2.md       задачи P2-DS-01…03 (фаза 2) и их распределение
   snapshot-format.md   контракт формата снапшота (CFC-3, CFC-5, статусы виз)
+eval/cases/                  диалоги для проверки памяти (P2-DS-03.1), формат — eval/README.md
 scripts/check-changelog.py   проверка CHANGELOG.md
 .github/workflows/ci.yml     проверки: validate.py и changelog
 .github/workflows/refresh.yml  регулярная пересборка: раз в неделю и раз в месяц, результат — pull request
@@ -76,8 +77,8 @@ python3 data/build.py && python3 data/validate.py     # на Windows: python
 
 | Кто | Задачи |
 |---|---|
-| Parnick | `P2-DS-01.0` формат и проверки `calibration` версии 2, `P2-DS-01.1` ранний заезд, `P2-DS-01.2` смена дат, `P2-DS-02.1` проверка каталога |
-| Саня | `P2-DS-03.1` диалоги для проверки памяти |
+| Parnick | `P2-DS-01.0` формат и проверки `calibration` версии 2, `P2-DS-01.1` ранний заезд, `P2-DS-01.2` смена дат, `P2-DS-02.1` проверка каталога, `P2-DS-03.1` диалоги для проверки памяти |
+| Саня | — |
 
 Состояние на 2026-10-27: все подзадачи `P1-DS-01…08` выполнены (статусы в [docs/data.md](docs/data.md)), снапшот из
 одиннадцати наборов собирается и проходит `validate.py`, `build.py` кладёт в него копию `sources.yaml`. Данные

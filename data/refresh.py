@@ -55,7 +55,7 @@ class Step:
 
 
 # The order is the order of the dependencies: cities -> airports -> stations -> catalog -> everything that reads the
-# catalog. Catalog, tourist-tax and synthetic read no net, they follow what they read.
+# catalog. Catalog, tourist-tax, synthetic and hotel-policy read no net, they follow what they read.
 STEPS = [
     Step("loaders/passport-index-data/countries.py", MONTHLY, ["passport-index-data"]),
     Step("loaders/passport-index-data/visa.py", WEEKLY, ["passport-index-data"]),
@@ -84,6 +84,7 @@ STEPS = [
     Step("loaders/hotel-booking-demand/load.py", MONTHLY, ["hotel-booking-demand", "nager-date"]),
     Step("loaders/tourist-tax/load.py", MONTHLY, [], refresh=False),
     Step("loaders/synthetic/load.py", WEEKLY, [], refresh=False),
+    Step("loaders/hotel-policy/load.py", WEEKLY, [], refresh=False),
 ]
 
 

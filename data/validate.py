@@ -7,6 +7,8 @@ Checks:
 - every name in `sources` is a provider from the registry: sources.yaml in the snapshot directory (the copy the
   backend reads), or data/sources.yaml when the snapshot has none.
 
+The blocks `early_checkin` and `date_change` of `calibration` (CFC-10) are checked when present.
+
 Fields marked `?` in CFC-3 are optional: they may be absent or null.
 
 Usage: python3 data/validate.py [snapshot_dir]   (default: data/snapshot)
@@ -244,8 +246,25 @@ SCHEMAS = {
             "train_numbers": (list_of(string), R),
         },
     },
-    # One object; its inner structure is specified by P1-DS-07.
-    "calibration": {"key": (), "fields": None, "single": True},
+    # One object; its inner structure is specified by P1-DS-07. Only the blocks of CFC-10 (P2-DS-01.0) are checked
+    # field by field, and only where they are present: the other keys are not validated yet.
+    "calibration": {
+        "key": (),
+        "fields": None,
+        "single": True,
+        "blocks": {
+            "early_checkin": {
+                "earliest": (hhmm, R),
+                "price_share": (number(0, 1), R),
+                "sources": (sources, R),
+            },
+            "date_change": {
+                "fee_share_refundable": (number(0, 1), R),
+                "fee_share_nonrefundable": (number(0, 1), R),
+                "sources": (sources, R),
+            },
+        },
+    },
 }
 
 
@@ -320,6 +339,16 @@ def validate_dataset(path, name, known_sources):
         if schema["fields"] is not None:
             for field, problem in check_record(schema, record, known_sources):
                 errors.append(f"{shown}:{line_no}: {field}: {problem}")
+
+        for block, fields in schema.get("blocks", {}).items():
+            if block not in record:
+                continue
+            value = record[block]
+            if not isinstance(value, dict):
+                errors.append(f"{shown}:{line_no}: {block}: expected an object")
+                continue
+            for field, problem in check_record({"fields": fields}, value, known_sources):
+                errors.append(f"{shown}:{line_no}: {block}.{field}: {problem}")
 
         if schema["key"]:
             key = tuple(json.dumps(record.get(k)) for k in schema["key"])

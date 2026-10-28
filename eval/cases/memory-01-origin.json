@@ -1,6 +1,10 @@
 {
   "id": "memory-01-origin",
   "split": "dev",
+  "tags": [
+    "memory",
+    "vague"
+  ],
   "kind": "memory",
   "profile_key": "origin",
   "owner": "eval-memory-01-origin",
@@ -23,13 +27,13 @@
       "expect": {
         "assumptions": [
           {
-            "key": "origin",
+            "field": "origin",
             "value": "kazan",
-            "source": "profile"
+            "origin": "profile"
           }
         ],
         "constraints": {
-          "origin_city_id": "kazan"
+          "origin": "kazan"
         },
         "must_not_ask": [
           "origin"

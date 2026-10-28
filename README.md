@@ -25,7 +25,7 @@ docs/
   data-phase2.md       задачи P2-DS-01…03 (фаза 2) и их распределение
   data-phase3.md       задачи P3-DS-01…03 (фаза 3, набор eval) и их распределение
   snapshot-format.md   контракт формата снапшота (CFC-3, CFC-5, статусы виз)
-eval/cases/                  диалоги для проверки памяти (P2-DS-03.1), формат — eval/README.md
+eval/cases/, eval/holdout/    набор eval (фаза 3): dev и holdout по CFC-11, диалоги памяти — eval/README.md
 scripts/check-changelog.py   проверка CHANGELOG.md
 .github/workflows/ci.yml     проверки: validate.py и changelog
 .github/workflows/refresh.yml  регулярная пересборка: раз в неделю и раз в месяц, результат — pull request

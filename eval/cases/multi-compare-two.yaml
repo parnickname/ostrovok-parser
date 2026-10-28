@@ -1,0 +1,20 @@
+# Два направления в одном запросе: сравнение, а не выбор одного.
+id: multi-compare-two
+split: dev
+tags:
+- multi_intent
+- compare
+turns:
+- message: Сравни Анталью и Хургаду на неделю в ноябре, мы вдвоём
+- answer_clarify: first
+expect:
+  stage: compare
+  constraints:
+    adults: 2
+    dates.nights: 7
+  destination:
+    tags_any:
+    - sea
+  checks_without_fail: true
+  order: none
+  max_clarifications: 2

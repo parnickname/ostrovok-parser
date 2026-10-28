@@ -1,6 +1,10 @@
 {
   "id": "memory-03-family",
   "split": "dev",
+  "tags": [
+    "memory",
+    "kids"
+  ],
   "kind": "memory",
   "profile_key": "child_ages",
   "owner": "eval-memory-03-family",
@@ -23,17 +27,17 @@
       "expect": {
         "assumptions": [
           {
-            "key": "adults",
+            "field": "adults",
             "value": 2,
-            "source": "profile"
+            "origin": "profile"
           },
           {
-            "key": "child_ages",
+            "field": "child_ages",
             "value": [
               4,
               9
             ],
-            "source": "profile"
+            "origin": "profile"
           }
         ],
         "constraints": {

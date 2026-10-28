@@ -1,0 +1,26 @@
+# Только поезд: в rail_routes снапшота есть Москва — Казань. Трансферы не проверяем: одно ожидание на случай.
+id: moscow-kazan-rail-weekend
+split: dev
+tags:
+- phase1
+- rail
+turns:
+- message: Хочу из Москвы в Казань на выходные 14–16 ноября, только поездом
+- answer_clarify: first
+- select: recommended
+- checkout: true
+expect:
+  stage: checkout
+  constraints:
+    origin: moscow
+    destination: kazan
+    dates.nights: 2
+    preferences.transport_modes:
+    - rail
+  components:
+  - outbound
+  - return
+  - stay
+  checks_without_fail: true
+  order: paid
+  max_clarifications: 2

@@ -1,0 +1,25 @@
+# Опечатки и разговорная форма: «к мору на нидельку» — море, семь ночей.
+id: vague-typos-sea-week
+split: dev
+tags:
+- vague
+- typos
+- sea
+turns:
+- message: хачу к мору на нидельку в декабре, дишево, нас двое
+- answer_clarify: first
+expect:
+  stage: inspire
+  constraints:
+    adults: 2
+    dates.nights: 7
+  destination:
+    tags_any:
+    - sea
+    visa_status_in:
+    - home
+    - visa_free
+    - visa_on_arrival
+  checks_without_fail: true
+  order: none
+  max_clarifications: 2

@@ -1,0 +1,17 @@
+# Первая реплика вне темы, вторая — поездка: агент возвращается к задаче и не создаёт заказ.
+id: off-topic-then-trip
+split: dev
+tags:
+- off_topic
+- multi_intent
+turns:
+- message: Расскажи анекдот про кота
+- message: Ладно, тогда хочу из Москвы в Сочи на выходные
+expect:
+  stage: search
+  constraints:
+    origin: moscow
+    destination: sochi
+  checks_without_fail: true
+  order: none
+  max_clarifications: 2

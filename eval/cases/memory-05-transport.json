@@ -1,6 +1,10 @@
 {
   "id": "memory-05-transport",
   "split": "dev",
+  "tags": [
+    "memory",
+    "rail"
+  ],
   "kind": "memory",
   "profile_key": "transport_modes",
   "owner": "eval-memory-05-transport",
@@ -23,16 +27,16 @@
       "expect": {
         "assumptions": [
           {
-            "key": "transport_modes",
+            "field": "preferences.transport_modes",
             "value": [
-              "train"
+              "rail"
             ],
-            "source": "profile"
+            "origin": "profile"
           }
         ],
         "constraints": {
-          "transport_modes": [
-            "train"
+          "preferences.transport_modes": [
+            "rail"
           ]
         },
         "must_not_ask": [

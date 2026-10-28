@@ -1,0 +1,10 @@
+# Holdout: до фазы 4 не копируется в репозиторий бэкенда, текст запроса нигде не пересказывается.
+id: holdout-off-topic-film
+split: holdout
+tags:
+- off_topic
+turns:
+- message: Посоветуй какой-нибудь фильм на вечер
+expect:
+  order: none
+  max_clarifications: 1

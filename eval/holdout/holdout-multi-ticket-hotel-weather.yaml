@@ -1,0 +1,18 @@
+# Holdout: до фазы 4 не копируется в репозиторий бэкенда, текст запроса нигде не пересказывается.
+id: holdout-multi-ticket-hotel-weather
+split: holdout
+tags:
+- multi_intent
+turns:
+- message: Билеты Казань — Сочи туда-обратно и отель на пять ночей в мае, и ещё скажи, какая там будет погода
+- answer_clarify: first
+- select: recommended
+expect:
+  stage: assemble
+  constraints:
+    origin: kazan
+    destination: sochi
+    dates.nights: 5
+  checks_without_fail: true
+  order: none
+  max_clarifications: 2

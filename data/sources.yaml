@@ -439,6 +439,16 @@
   fetched_at: 2026-10-27T00:00:00Z
   reason: ""
 
+- provider: hotel-chain-rules
+  title: Ранний заезд в отеле: оценка по практике отелей (значения CFC-10)
+  url: ""
+  license: "собственные данные проекта"
+  kind: derived
+  status: used
+  used_for: [ранний заезд: самое раннее время и доля цены ночи]
+  fetched_at: 2026-10-28T00:00:00Z
+  reason: ""
+
 - provider: synthetic
   title: Синтетические данные
   url: ""

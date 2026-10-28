@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-28T14:24:02Z",
+  "built_at": "2026-10-28T14:29:15Z",
   "datasets": [
     {
       "name": "airports",
@@ -12,8 +12,8 @@
       "name": "calibration",
       "file": "calibration.jsonl",
       "records": 1,
-      "sha256": "870a8cb00b5fc054881ae6c90d443c97d34960e73f68dabd53f5ca65cbe7d810",
-      "schema_version": 1
+      "sha256": "fdb2c69beafeeb6d35b346acd81e6bcc06b8ad290d6ccc16357d0ad0b85cbb69",
+      "schema_version": 2
     },
     {
       "name": "cities",

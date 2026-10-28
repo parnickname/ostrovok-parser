@@ -23,6 +23,7 @@ data/
 docs/
   data.md              задачи P1-DS-01…08 с подзадачами и распределением по людям
   data-phase2.md       задачи P2-DS-01…03 (фаза 2) и их распределение
+  data-phase3.md       задачи P3-DS-01…03 (фаза 3, набор eval) и их распределение
   snapshot-format.md   контракт формата снапшота (CFC-3, CFC-5, статусы виз)
 eval/cases/                  диалоги для проверки памяти (P2-DS-03.1), формат — eval/README.md
 scripts/check-changelog.py   проверка CHANGELOG.md
@@ -79,6 +80,13 @@ python3 data/build.py && python3 data/validate.py     # на Windows: python
 |---|---|
 | Parnick | `P2-DS-01.0` формат и проверки `calibration` версии 2, `P2-DS-01.1` ранний заезд, `P2-DS-01.2` смена дат, `P2-DS-02.1` проверка каталога, `P2-DS-03.1` диалоги для проверки памяти |
 | Саня | — |
+
+Фаза 3 ([docs/data-phase3.md](docs/data-phase3.md)), набор eval в `eval/cases/`:
+
+| Кто | Задачи |
+|---|---|
+| Parnick | `P3-DS-01.1` первые 10 случаев и формат, `P3-DS-01.2` теги `vague`, `multi_intent`, `change`, `off_topic`, `P3-DS-02.1` holdout этих тегов, `P3-DS-03.1` провалы из-за каталога, отелей, климата, калибровки |
+| Саня | `P3-DS-01.2` теги `foreign_citizen`, `visa`, `injection`, `P3-DS-02.1` holdout этих тегов, `P3-DS-03.1` провалы из-за виз, маршрутов, поездов |
 
 Состояние на 2026-10-28: все подзадачи `P1-DS-01…08` и `P2-DS-01…03` выполнены (статусы в [docs/data.md](docs/data.md)
 и [docs/data-phase2.md](docs/data-phase2.md)), снапшот из одиннадцати наборов собирается и проходит `validate.py`,

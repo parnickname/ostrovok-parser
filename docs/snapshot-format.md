@@ -102,6 +102,19 @@ data/
 - `tourist_tax_rub_per_night` — по `id` города, только где налог введён;
 - `fx_rub` — курсы ЦБ РФ на дату сборки, справочно.
 
+Блоки фазы 2 (CFC-10) добавляются в тот же объект; когда в `calibration` есть оба, `schema_version` набора в манифесте равен 2, без них 1:
+
+```json
+{
+  "early_checkin": {"earliest": "10:00", "price_share": 0.5, "sources": ["..."]},
+  "date_change": {"fee_share_refundable": 0.0, "fee_share_nonrefundable": 0.2, "sources": ["..."]}
+}
+```
+
+- `early_checkin.earliest` — самое раннее время подтверждённого раннего заезда, `HH:MM`; `price_share` — цена услуги как доля цены ночи, от 0 до 1;
+- `date_change.fee_share_refundable` и `fee_share_nonrefundable` — сбор за смену дат для возвратного и невозвратного тарифа, доля от 0 до 1;
+- `sources` в блоке — непустой список имён из `sources.yaml`.
+
 Типы и проверки — `internal/dataset/dataset.go`; бэкенд не стартует, если нет 12 сезонных множителей, цены для 2–5 звёзд или уровня цен страны любого направления.
 
 Проверки:

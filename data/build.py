@@ -31,6 +31,8 @@ SNAPSHOT_DIR = DATA_DIR / "snapshot"
 SOURCES_FILE = DATA_DIR / "sources.yaml"
 
 SCHEMA_VERSION = 1
+# P2-DS-01.0: `calibration` with both blocks of CFC-10 has schema_version 2, without them 1 (the backend reads both).
+CALIBRATION_V2_BLOCKS = ("early_checkin", "date_change")
 
 # Dataset name -> function(records, overrides_dir) -> records, defined below.
 # Each override is added by the subtask that introduces it (visa.csv: P1-DS-02.4).
@@ -82,6 +84,12 @@ def canonical_line(record):
     return json.dumps(record, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
 
+def schema_version(name, records):
+    if name == "calibration" and records and all(block in records[0] for block in CALIBRATION_V2_BLOCKS):
+        return 2
+    return SCHEMA_VERSION
+
+
 def write_dataset(name, records):
     lines = sorted(canonical_line(r) for r in records)
     content = "".join(line + "\n" for line in lines).encode("utf-8")
@@ -91,7 +99,7 @@ def write_dataset(name, records):
         "file": f"{name}.jsonl",
         "records": len(lines),
         "sha256": hashlib.sha256(content).hexdigest(),
-        "schema_version": SCHEMA_VERSION,
+        "schema_version": schema_version(name, records),
     }
 
 

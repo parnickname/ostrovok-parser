@@ -1,0 +1,37 @@
+# Пример из CFC-11 (спека 0005): размытый запрос с ребёнком и изменением условий, сценарий до оплаты.
+id: sea-november-kids
+split: dev
+tags:
+- vague
+- change
+- kids
+- sea
+turns:
+- message: хочу к тёплому морю в ноябре, недорого, с ребёнком, без долгих перелётов
+- answer_clarify: first
+- select: recommended
+- message: а если на два дня позже
+- checkout: true
+expect:
+  stage: checkout
+  constraints:
+    child_ages_len: 1
+    preferences.moods:
+    - sea
+    - warm
+  destination:
+    tags_any:
+    - sea
+    visa_status_in:
+    - home
+    - visa_free
+    - visa_on_arrival
+  components:
+  - outbound
+  - return
+  - stay
+  - transfer_arrival
+  - transfer_departure
+  checks_without_fail: true
+  order: paid
+  max_clarifications: 2

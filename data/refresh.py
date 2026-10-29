@@ -7,7 +7,7 @@ loaded, when the snapshot has changed. A scheduled GitHub Actions workflow (.git
 opens a pull request with the difference.
 
 Groups:
-- weekly: what changes every week: the visa matrix, train schedules, flights and fares, exchange rates;
+- weekly: what changes every week: the visa matrix, stations and train schedules, flights and fares, exchange rates;
 - monthly: everything else that is loaded from the net (maps, cities, airports, hotels, climate, statistics) and the
   weekly steps with it;
 - all: the same as monthly.
@@ -40,12 +40,13 @@ WEEKLY, MONTHLY = "weekly", "monthly"
 
 
 class Step:
-    def __init__(self, script, group, providers, refresh=True, secret=None, optional=False):
+    def __init__(self, script, group, providers, refresh=True, secret=None, optional=False, needs=None):
         self.script = script
         self.group = group
         self.providers = providers  # names in sources.yaml whose `fetched_at` this step moves
         self.refresh = refresh  # the loader takes --refresh: it must not reuse its cache
         self.secret = secret  # environment variable the loader cannot work without
+        self.needs = needs  # script of a step that must have run in this refresh, else this one is skipped
         self.optional = optional  # a failure is a warning: the source may be closed to the runner, the old data stays
 
     @property
@@ -54,7 +55,7 @@ class Step:
 
 
 # The order is the order of the dependencies: cities -> airports -> stations -> catalog -> everything that reads the
-# catalog. Catalog, tourist-tax and synthetic read no net, they follow what they read.
+# catalog. Catalog, tourist-tax, synthetic and hotel-policy read no net, they follow what they read.
 STEPS = [
     Step("loaders/passport-index-data/countries.py", MONTHLY, ["passport-index-data"]),
     Step("loaders/passport-index-data/visa.py", WEEKLY, ["passport-index-data"]),
@@ -62,12 +63,17 @@ STEPS = [
     Step("loaders/wikidata/load.py", MONTHLY, ["wikidata"], refresh=False),
     Step("loaders/ourairports/load.py", MONTHLY, ["ourairports"]),
     Step("loaders/wikidata/airports.py", MONTHLY, ["wikidata"], refresh=False),
-    Step("loaders/yandex-rasp/load.py", MONTHLY, ["yandex-rasp"], secret="YANDEX_RASP_API_KEY"),
-    Step("loaders/catalog/load.py", MONTHLY, [], refresh=False),
+    # The stations list (one request) is weekly, because rail.py takes the settlement codes from it and a clean runner
+    # has no cache; the catalog follows it (offline) so that destinations[].stations never lag behind stations.
+    # Yandex may refuse the addresses of the GitHub runners (the first run got HTTP errors): then the stations and
+    # the schedules of the last run stay.
+    Step("loaders/yandex-rasp/load.py", WEEKLY, ["yandex-rasp"], secret="YANDEX_RASP_API_KEY", optional=True),
+    Step("loaders/catalog/load.py", WEEKLY, [], refresh=False),
     Step("loaders/open-meteo/load.py", MONTHLY, ["open-meteo"]),
     Step("loaders/open-meteo/load_sea.py", MONTHLY, ["open-meteo"]),
     Step("loaders/osm/load.py", MONTHLY, ["osm"]),
-    Step("loaders/yandex-rasp/rail.py", WEEKLY, ["yandex-rasp"], secret="YANDEX_RASP_API_KEY"),
+    Step("loaders/yandex-rasp/rail.py", WEEKLY, ["yandex-rasp"], secret="YANDEX_RASP_API_KEY", optional=True,
+         needs="loaders/yandex-rasp/load.py"),
     Step("loaders/travelpayouts/load.py", WEEKLY, ["aviasales-data-api"], refresh=False, secret="TRAVELPAYOUTS_TOKEN"),
     Step("loaders/routes/load.py", WEEKLY, [], refresh=False),
     Step("loaders/cbr/load.py", WEEKLY, ["cbr"]),
@@ -79,6 +85,7 @@ STEPS = [
     Step("loaders/hotel-booking-demand/load.py", MONTHLY, ["hotel-booking-demand", "nager-date"]),
     Step("loaders/tourist-tax/load.py", MONTHLY, [], refresh=False),
     Step("loaders/synthetic/load.py", WEEKLY, [], refresh=False),
+    Step("loaders/hotel-policy/load.py", WEEKLY, [], refresh=False),
 ]
 
 
@@ -137,7 +144,11 @@ def main():
 
     before = dataset_hashes()
     loaded = set()
+    ran = set()
     for step in steps:
+        if step.needs and step.needs not in ran:
+            print(f"skipped {step.name}: {step.needs} has not run, the data of the last run stays", flush=True)
+            continue
         if step.secret and not has_secret(step.secret):
             print(f"skipped {step.name}: {step.secret} is not set, the data of the last run stays", flush=True)
             continue
@@ -149,6 +160,7 @@ def main():
             print(f"refresh failed at {step.name}", file=sys.stderr)
             return 1
         loaded.update(step.providers)
+        ran.add(step.script)
 
     if run([sys.executable, str(DATA_DIR / "build.py")]) != 0 or run([sys.executable, str(DATA_DIR / "validate.py")]) != 0:
         print("refresh failed: the new snapshot does not build or validate", file=sys.stderr)

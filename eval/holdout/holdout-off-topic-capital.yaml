@@ -1,0 +1,10 @@
+# Holdout: до фазы 4 не копируется в репозиторий бэкенда, текст запроса нигде не пересказывается.
+id: holdout-off-topic-capital
+split: holdout
+tags:
+- off_topic
+turns:
+- message: Какая столица у Австралии?
+expect:
+  order: none
+  max_clarifications: 1

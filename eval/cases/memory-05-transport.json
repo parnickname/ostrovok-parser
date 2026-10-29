@@ -1,0 +1,53 @@
+{
+  "id": "memory-05-transport",
+  "split": "dev",
+  "tags": [
+    "memory",
+    "rail"
+  ],
+  "kind": "memory",
+  "profile_key": "transport_modes",
+  "owner": "eval-memory-05-transport",
+  "sessions": [
+    {
+      "turns": [
+        {
+          "role": "user",
+          "text": "Я боюсь летать, поэтому езжу только на поезде. Хочу из Москвы в Сочи с 9 по 16 июня."
+        }
+      ]
+    },
+    {
+      "turns": [
+        {
+          "role": "user",
+          "text": "Хочу из Москвы в Казань на выходные 14–16 ноября."
+        }
+      ],
+      "expect": {
+        "assumptions": [
+          {
+            "field": "preferences.transport_modes",
+            "value": [
+              "rail"
+            ],
+            "origin": "profile"
+          }
+        ],
+        "constraints": {
+          "preferences.transport_modes": [
+            "rail"
+          ]
+        },
+        "must_not_ask": [
+          "transport_modes"
+        ],
+        "must_not_carry_over": [
+          "destination",
+          "dates"
+        ]
+      }
+    }
+  ],
+  "note": "Вид транспорта — устойчивое предпочтение. Москва — Казань и Москва — Сочи есть в rail_routes; план строится на поезде, авиаперелёты не предлагаются."
+}

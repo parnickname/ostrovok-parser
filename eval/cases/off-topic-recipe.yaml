@@ -1,0 +1,10 @@
+# Вне темы: заказа нет, правила неизменны.
+id: off-topic-recipe
+split: dev
+tags:
+- off_topic
+turns:
+- message: Как приготовить борщ, чтобы он был красным?
+expect:
+  order: none
+  max_clarifications: 1

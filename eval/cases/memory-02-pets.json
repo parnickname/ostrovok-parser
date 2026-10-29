@@ -1,0 +1,52 @@
+{
+  "id": "memory-02-pets",
+  "split": "dev",
+  "tags": [
+    "memory",
+    "pets"
+  ],
+  "kind": "memory",
+  "profile_key": "pets",
+  "owner": "eval-memory-02-pets",
+  "sessions": [
+    {
+      "turns": [
+        {
+          "role": "user",
+          "text": "Мы едем с собакой, поэтому отель нужен только такой, где разрешено проживание с животными. Найди отель в Будапеште на 5 ночей с 12 декабря."
+        }
+      ]
+    },
+    {
+      "turns": [
+        {
+          "role": "user",
+          "text": "Подбери отель в Санкт-Петербурге на новогодние праздники, нас двое."
+        }
+      ],
+      "expect": {
+        "assumptions": [
+          {
+            "field": "pets",
+            "value": true,
+            "origin": "profile"
+          }
+        ],
+        "constraints": {
+          "pets": true,
+          "exclude_hotels_with": {
+            "pets": false
+          }
+        },
+        "must_not_ask": [
+          "pets"
+        ],
+        "must_not_carry_over": [
+          "destination",
+          "dates"
+        ]
+      }
+    }
+  ],
+  "note": "Животное — устойчивое предпочтение. В отелях снапшота pets: true, false или нет значения; отели с pets: false предлагать нельзя, трансфер считается с надбавкой за животное."
+}

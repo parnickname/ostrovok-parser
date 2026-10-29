@@ -1,0 +1,24 @@
+# Holdout: до фазы 4 не копируется в репозиторий бэкенда, текст запроса нигде не пересказывается.
+id: holdout-vague-family-summer
+split: holdout
+tags:
+- vague
+- kids
+turns:
+- message: хочется летом куда-нибудь на воду всей семьёй, детям три и семь, если честно не знаю что выбрать
+- answer_clarify: first
+expect:
+  stage: inspire
+  constraints:
+    child_ages_len: 2
+  destination:
+    tags_any:
+    - sea
+    - kids
+    visa_status_in:
+    - home
+    - visa_free
+    - visa_on_arrival
+  checks_without_fail: true
+  order: none
+  max_clarifications: 2

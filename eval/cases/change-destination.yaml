@@ -1,0 +1,20 @@
+# Смена направления патчем: даты, число ночей и состав переносятся.
+id: change-destination
+split: dev
+tags:
+- change
+turns:
+- message: Из Москвы в Сочи на 5 ночей в октябре, вдвоём
+- answer_clarify: first
+- select: recommended
+- message: а давай лучше в Калининград, остальное так же
+expect:
+  stage: assemble
+  constraints:
+    origin: moscow
+    destination: kaliningrad
+    adults: 2
+    dates.nights: 5
+  checks_without_fail: true
+  order: none
+  max_clarifications: 2

@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-10-29T01:35:27Z",
+  "built_at": "2026-10-29T02:36:28Z",
   "datasets": [
     {
       "name": "airports",
@@ -12,8 +12,8 @@
       "name": "calibration",
       "file": "calibration.jsonl",
       "records": 1,
-      "sha256": "0bcf0bb16107e713f92a4261fbe8ece9f46fc33ea345d51168cd94a26e86d9dd",
-      "schema_version": 1
+      "sha256": "fdb2c69beafeeb6d35b346acd81e6bcc06b8ad290d6ccc16357d0ad0b85cbb69",
+      "schema_version": 2
     },
     {
       "name": "cities",
@@ -61,7 +61,7 @@
       "name": "routes",
       "file": "routes.jsonl",
       "records": 7413,
-      "sha256": "7df43840adfb4ec64bba796755567ffcc46b5b5bbb682a8f680bcfaece4781fa",
+      "sha256": "cb82c216d2fc75af6168daa2a244219645c9046729041aa09852b2fe4ce2499f",
       "schema_version": 1
     },
     {

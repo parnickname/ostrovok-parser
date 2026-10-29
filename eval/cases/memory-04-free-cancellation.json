@@ -1,0 +1,48 @@
+{
+  "id": "memory-04-free-cancellation",
+  "split": "dev",
+  "tags": [
+    "memory"
+  ],
+  "kind": "memory",
+  "profile_key": "free_cancellation",
+  "owner": "eval-memory-04-free-cancellation",
+  "sessions": [
+    {
+      "turns": [
+        {
+          "role": "user",
+          "text": "Планы у нас часто меняются, поэтому бронируй мне только с бесплатной отменой. Найди отель в Сочи на 3 ночи с 5 марта."
+        }
+      ]
+    },
+    {
+      "turns": [
+        {
+          "role": "user",
+          "text": "Найди мне отель в Казани на 20–22 февраля."
+        }
+      ],
+      "expect": {
+        "assumptions": [
+          {
+            "field": "preferences.free_cancellation",
+            "value": true,
+            "origin": "profile"
+          }
+        ],
+        "constraints": {
+          "preferences.free_cancellation": true
+        },
+        "must_not_ask": [
+          "free_cancellation"
+        ],
+        "must_not_carry_over": [
+          "destination",
+          "dates"
+        ]
+      }
+    }
+  ],
+  "note": "Бесплатная отмена — устойчивое предпочтение. Во второй сессии все предложенные тарифы возвратные; невозвратные не показываются."
+}

@@ -1,0 +1,62 @@
+{
+  "id": "memory-03-family",
+  "split": "dev",
+  "tags": [
+    "memory",
+    "kids"
+  ],
+  "kind": "memory",
+  "profile_key": "child_ages",
+  "owner": "eval-memory-03-family",
+  "sessions": [
+    {
+      "turns": [
+        {
+          "role": "user",
+          "text": "Мы летим вдвоём с женой и с детьми: сыну 4 года, дочке 9 лет. Куда в мае съездить на море, чтобы детям было интересно?"
+        }
+      ]
+    },
+    {
+      "turns": [
+        {
+          "role": "user",
+          "text": "Подбери отель в Анталье на 7 ночей в августе."
+        }
+      ],
+      "expect": {
+        "assumptions": [
+          {
+            "field": "adults",
+            "value": 2,
+            "origin": "profile"
+          },
+          {
+            "field": "child_ages",
+            "value": [
+              4,
+              9
+            ],
+            "origin": "profile"
+          }
+        ],
+        "constraints": {
+          "adults": 2,
+          "child_ages": [
+            4,
+            9
+          ]
+        },
+        "must_not_ask": [
+          "adults",
+          "child_ages"
+        ],
+        "must_not_carry_over": [
+          "destination",
+          "dates"
+        ]
+      }
+    }
+  ],
+  "note": "Состав семьи — устойчивое предпочтение. Май и море — разовое условие первой поездки; Анталья в каталоге с тегом kids."
+}

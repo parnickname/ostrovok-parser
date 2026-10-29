@@ -1,0 +1,26 @@
+# В одном сообщении билеты, отель и трансфер: итоговый план содержит все компоненты.
+id: multi-flight-hotel-transfer
+split: dev
+tags:
+- multi_intent
+turns:
+- message: Мне нужны билеты Москва — Стамбул, отель на 5 ночей в декабре ближе к центру и трансфер из аэропорта, нас двое
+- answer_clarify: first
+- select: recommended
+- checkout: true
+expect:
+  stage: checkout
+  constraints:
+    origin: moscow
+    destination: istanbul
+    adults: 2
+    dates.nights: 5
+  components:
+  - outbound
+  - return
+  - stay
+  - transfer_arrival
+  - transfer_departure
+  checks_without_fail: true
+  order: paid
+  max_clarifications: 2

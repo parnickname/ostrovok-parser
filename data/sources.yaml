@@ -93,7 +93,7 @@
   license: CC0-1.0
   kind: real
   status: used
-  used_for: [русские названия городов]
+  used_for: [русские названия городов, русские названия аэропортов]
   fetched_at: null
   reason: ""
 
@@ -318,7 +318,7 @@
   reason: ""
 
 - provider: ine-es
-  title: INE (Испания), Coyuntura Turística Hotelera. Fuente: INE
+  title: "INE (Испания), Coyuntura Turística Hotelera. Fuente: INE"
   url: https://www.ine.es/dyngs/INEbase/en/operacion.htm?c=Estadistica_C&cid=1254736177015&menu=ultiDatos&idp=1254735576863
   license: CC-BY-4.0
   kind: real
@@ -445,7 +445,7 @@
   license: "официальная информация, ст. 1259 ГК РФ"
   kind: real
   status: used
-  used_for: [ранний заезд: предельная доля цены (п. 33), сбор за позднюю отмену и смену дат: не более суток (п. 16)]
+  used_for: ["ранний заезд: предельная доля цены (п. 33)", "сбор за позднюю отмену и смену дат: не более суток (п. 16)"]
   fetched_at: 2026-10-28T00:00:00Z
   reason: ""
 

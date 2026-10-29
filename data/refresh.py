@@ -62,6 +62,7 @@ STEPS = [
     Step("loaders/geonames/load.py", MONTHLY, ["geonames"]),
     Step("loaders/wikidata/load.py", MONTHLY, ["wikidata"], refresh=False),
     Step("loaders/ourairports/load.py", MONTHLY, ["ourairports"]),
+    Step("loaders/wikidata/airports.py", MONTHLY, ["wikidata"], refresh=False),
     # The stations list (one request) is weekly, because rail.py takes the settlement codes from it and a clean runner
     # has no cache; the catalog follows it (offline) so that destinations[].stations never lag behind stations.
     # Yandex may refuse the addresses of the GitHub runners (the first run got HTTP errors): then the stations and

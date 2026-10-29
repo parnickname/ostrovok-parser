@@ -9,7 +9,8 @@ Russian labels of the items with its IATA code. A label is taken only when it is
 spaces, hyphens, apostrophes, full stops and «» quotes, like city names (load.py): labels with Latin letters, brackets
 or commas are disambiguations or typos and are skipped. A code whose items have different good labels is skipped too:
 there is no telling which of them is the airport. Many labels are a bare name («Шереметьево», «Минск»), which in a
-transfer title reads as the city: a label without the word «аэропорт» gets «Аэропорт » in front.
+transfer title reads as the city: a label without the word «аэропорт» gets «Аэропорт » in front, and a
+name starts with a capital letter.
 
 The result, `iata,name_ru` for the airports that got a name, is data/loaders/wikidata/airport_names_ru.csv, in git
 (Wikidata labels change, the snapshot must not change with them until the loader is run again). data/build.py adds it
@@ -79,7 +80,9 @@ def good_label(label):
 
 
 def airport_name(label):
-    return label if "аэропорт" in label.lower() else "Аэропорт " + label
+    name = label if "аэропорт" in label.lower() else "Аэропорт " + label
+    # Some labels start in lower case («международный аэропорт Жуковский»); the name starts a title.
+    return name[0].upper() + name[1:]
 
 
 def main():

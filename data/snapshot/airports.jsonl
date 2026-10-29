@@ -1,7 +1,7 @@
 {"city_id":"aalborg","country_code":"DK","iata":"AAL","lat":57.094763,"lon":9.84993,"name":"Aalborg Airport","scheduled":true,"timezone":"Europe/Copenhagen"}
 {"city_id":"abadan","country_code":"IR","iata":"ABD","lat":30.367887,"lon":48.230075,"name":"Abadan Ayatollah Jami International Airport","name_ru":"Международный аэропорт Абадана","scheduled":true,"timezone":"Asia/Tehran"}
 {"city_id":"abakan","country_code":"RU","iata":"ABA","lat":53.740002,"lon":91.385002,"name":"Abakan International Airport","name_ru":"Аэропорт Абакан","scheduled":true,"timezone":"Asia/Krasnoyarsk"}
-{"city_id":"abbotsford","country_code":"CA","iata":"YXX","lat":49.025299,"lon":-122.361,"name":"Abbotsford International Airport","name_ru":"аэропорт Абботсфорд","scheduled":true,"timezone":"America/Vancouver"}
+{"city_id":"abbotsford","country_code":"CA","iata":"YXX","lat":49.025299,"lon":-122.361,"name":"Abbotsford International Airport","name_ru":"Аэропорт Абботсфорд","scheduled":true,"timezone":"America/Vancouver"}
 {"city_id":"aberdeen","country_code":"GB","iata":"ABZ","lat":57.2019,"lon":-2.19778,"name":"Aberdeen International Airport","name_ru":"Аэропорт Абердин","scheduled":true,"timezone":"Europe/London"}
 {"city_id":"aberdeen-us","country_code":"US","iata":"ABR","lat":45.449100494384766,"lon":-98.42179870605469,"name":"Aberdeen Regional Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"abha","country_code":"SA","iata":"AHB","lat":18.2404,"lon":42.656601,"name":"Abha International Airport","name_ru":"Аэропорт Абха","scheduled":true,"timezone":"Asia/Riyadh"}
@@ -1915,7 +1915,7 @@
 {"city_id":"melbourne","country_code":"AU","iata":"MEB","lat":-37.7281,"lon":144.901993,"name":"Melbourne Essendon Airport","name_ru":"Аэропорт Эссендон","scheduled":true,"timezone":"Australia/Melbourne"}
 {"city_id":"melbourne","country_code":"AU","iata":"MEL","lat":-37.670732,"lon":144.837898,"name":"Melbourne Airport","name_ru":"Аэропорт Мельбурн","scheduled":true,"timezone":"Australia/Melbourne"}
 {"city_id":"melbourne-us","country_code":"US","iata":"MLB","lat":28.102009,"lon":-80.641088,"name":"Melbourne Orlando International Airport","scheduled":true,"timezone":"America/New_York"}
-{"city_id":"melilla","country_code":"ES","iata":"MLN","lat":35.2798,"lon":-2.95626,"name":"Melilla Airport","name_ru":"аэропорт Мелилья","scheduled":true,"timezone":"Africa/Ceuta"}
+{"city_id":"melilla","country_code":"ES","iata":"MLN","lat":35.2798,"lon":-2.95626,"name":"Melilla Airport","name_ru":"Аэропорт Мелилья","scheduled":true,"timezone":"Africa/Ceuta"}
 {"city_id":"memmingen","country_code":"DE","iata":"FMM","lat":47.988092,"lon":10.238248,"name":"Memmingen Allgau Airport","name_ru":"Аэропорт Мемминген","scheduled":true,"timezone":"Europe/Berlin"}
 {"city_id":"memphis","country_code":"US","iata":"MEM","lat":35.043845,"lon":-89.97634,"name":"Frederick W. Smith International Airport","name_ru":"Международный аэропорт Мемфиса","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"mendi-pg","country_code":"PG","iata":"MDU","lat":-6.14774,"lon":143.656998,"name":"Mendi Airport","scheduled":true,"timezone":"Pacific/Port_Moresby"}
@@ -2007,7 +2007,7 @@
 {"city_id":"moscow","country_code":"RU","iata":"DME","lat":55.408798,"lon":37.9063,"name":"Domodedovo International Airport","name_ru":"Аэропорт Домодедово","scheduled":true,"timezone":"Europe/Moscow"}
 {"city_id":"moscow","country_code":"RU","iata":"SVO","lat":55.977486,"lon":37.386677,"name":"Sheremetyevo International Airport","name_ru":"Аэропорт Шереметьево","scheduled":true,"timezone":"Europe/Moscow"}
 {"city_id":"moscow","country_code":"RU","iata":"VKO","lat":55.591499,"lon":37.261501,"name":"Vnukovo International Airport","name_ru":"Аэропорт Внуково","scheduled":true,"timezone":"Europe/Moscow"}
-{"city_id":"moscow","country_code":"RU","iata":"ZIA","lat":55.553299,"lon":38.150002,"name":"Zhukovsky International Airport","name_ru":"международный аэропорт Жуковский","scheduled":true,"timezone":"Europe/Moscow"}
+{"city_id":"moscow","country_code":"RU","iata":"ZIA","lat":55.553299,"lon":38.150002,"name":"Zhukovsky International Airport","name_ru":"Международный аэропорт Жуковский","scheduled":true,"timezone":"Europe/Moscow"}
 {"city_id":"mosjoen","country_code":"NO","iata":"MJF","lat":65.783997,"lon":13.2149,"name":"Mosjøen Airport, Kjærstad","scheduled":true,"timezone":"Europe/Oslo"}
 {"city_id":"mosjoen","country_code":"NO","iata":"SSJ","lat":65.956802,"lon":12.4689,"name":"Sandnessjøen Airport, Stokka","scheduled":true,"timezone":"Europe/Oslo"}
 {"city_id":"mossamedes","country_code":"AO","iata":"MSZ","lat":-15.2612,"lon":12.1468,"name":"Welwitschia Mirabilis International Airport","scheduled":true,"timezone":"Africa/Luanda"}
@@ -2528,7 +2528,7 @@
 {"city_id":"quzhou","country_code":"CN","iata":"JUZ","lat":28.96613,"lon":118.898793,"name":"Quzhou Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"rabat","country_code":"MA","iata":"RBA","lat":34.051498,"lon":-6.75152,"name":"Rabat-Salé Airport","scheduled":true,"timezone":"Africa/Casablanca"}
 {"city_id":"rach-gia","country_code":"VN","iata":"VKG","lat":9.95802997234,"lon":105.132379532,"name":"Rach Gia Airport","name_ru":"Аэропорт Ратьзя","scheduled":true,"timezone":"Asia/Ho_Chi_Minh"}
-{"city_id":"radom","country_code":"PL","iata":"RDO","lat":51.38937,"lon":21.214742,"name":"Warsaw Radom Airport","name_ru":"аэропорт Варшава-Радом","scheduled":true,"timezone":"Europe/Warsaw"}
+{"city_id":"radom","country_code":"PL","iata":"RDO","lat":51.38937,"lon":21.214742,"name":"Warsaw Radom Airport","name_ru":"Аэропорт Варшава-Радом","scheduled":true,"timezone":"Europe/Warsaw"}
 {"city_id":"rafsanjan","country_code":"IR","iata":"RJN","lat":30.298345,"lon":56.048979,"name":"Rafsanjan Airport","scheduled":true,"timezone":"Asia/Tehran"}
 {"city_id":"rahim-yar-khan","country_code":"PK","iata":"RYK","lat":28.383899688720703,"lon":70.27960205078125,"name":"Shaikh Zaid Airport","scheduled":true,"timezone":"Asia/Karachi"}
 {"city_id":"raipur","country_code":"IN","iata":"RPR","lat":21.180401,"lon":81.7388,"name":"Swami Vivekananda Airport","name_ru":"Аэропорт имени Свами Вивекананда","scheduled":true,"timezone":"Asia/Kolkata"}
@@ -2958,11 +2958,11 @@
 {"city_id":"tahuna","country_code":"ID","iata":"NAH","lat":3.68478,"lon":125.527162,"name":"Naha Airport","scheduled":true,"timezone":"Asia/Makassar"}
 {"city_id":"taichung","country_code":"TW","iata":"RMQ","lat":24.2647,"lon":120.621002,"name":"Taichung International Airport / Ching Chuang Kang Air Base","scheduled":true,"timezone":"Asia/Taipei"}
 {"city_id":"taif","country_code":"SA","iata":"TIF","lat":21.484739,"lon":40.544074,"name":"Taif International Airport","name_ru":"Аэропорт Эт-Таиф","scheduled":true,"timezone":"Asia/Riyadh"}
-{"city_id":"taipei","country_code":"TW","iata":"TSA","lat":25.067244,"lon":121.552822,"name":"Taipei Songshan International Airport","name_ru":"аэропорт Тайбэй-Соншан","scheduled":true,"timezone":"Asia/Taipei"}
+{"city_id":"taipei","country_code":"TW","iata":"TSA","lat":25.067244,"lon":121.552822,"name":"Taipei Songshan International Airport","name_ru":"Аэропорт Тайбэй-Соншан","scheduled":true,"timezone":"Asia/Taipei"}
 {"city_id":"taitung","country_code":"TW","iata":"TTT","lat":22.754856,"lon":121.101794,"name":"Taitung Airport","scheduled":true,"timezone":"Asia/Taipei"}
 {"city_id":"taiyuan","country_code":"CN","iata":"TYN","lat":37.746899,"lon":112.627998,"name":"Taiyuan Wusu International Airport","name_ru":"Аэропорт Тайюань","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"taiz","country_code":"YE","iata":"TAI","lat":13.686,"lon":44.139099,"name":"Taiz International Airport","scheduled":true,"timezone":"Asia/Aden"}
-{"city_id":"taizhou-cn","country_code":"CN","iata":"HYN","lat":28.562201,"lon":121.429001,"name":"Taizhou Luqiao Airport","name_ru":"аэропорт Луцяо","scheduled":true,"timezone":"Asia/Shanghai"}
+{"city_id":"taizhou-cn","country_code":"CN","iata":"HYN","lat":28.562201,"lon":121.429001,"name":"Taizhou Luqiao Airport","name_ru":"Аэропорт Луцяо","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"takamatsu","country_code":"JP","iata":"TAK","lat":34.214963,"lon":134.015454,"name":"Takamatsu Airport","name_ru":"Аэропорт Такамацу","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"talara","country_code":"PE","iata":"TYL","lat":-4.57664,"lon":-81.254097,"name":"Captain Victor Montes Arias International Airport","scheduled":true,"timezone":"America/Lima"}
 {"city_id":"taldykorgan","country_code":"KZ","iata":"TDK","lat":45.12255,"lon":78.442758,"name":"Taldykorgan Airport","scheduled":true,"timezone":"Asia/Almaty"}
@@ -3013,7 +3013,7 @@
 {"city_id":"tegucigalpa","country_code":"HN","iata":"TGU","lat":14.0609,"lon":-87.217201,"name":"Toncontín Airport","name_ru":"Международный аэропорт Тонконтин","scheduled":true,"timezone":"America/Tegucigalpa"}
 {"city_id":"tehran","country_code":"IR","iata":"IKA","lat":35.416099548339844,"lon":51.152198791503906,"name":"Imam Khomeini International Airport","name_ru":"Международный аэропорт имени Имама Хомейни","scheduled":true,"timezone":"Asia/Tehran"}
 {"city_id":"tehran","country_code":"IR","iata":"THR","lat":35.689175,"lon":51.314392,"name":"Mehrabad International Airport","name_ru":"Аэропорт Мехрабад","scheduled":true,"timezone":"Asia/Tehran"}
-{"city_id":"tel-aviv","country_code":"IL","iata":"TLV","lat":32.011398,"lon":34.8867,"name":"Ben Gurion International Airport","name_ru":"аэропорт имени Бен-Гуриона","scheduled":true,"timezone":"Asia/Jerusalem"}
+{"city_id":"tel-aviv","country_code":"IL","iata":"TLV","lat":32.011398,"lon":34.8867,"name":"Ben Gurion International Airport","name_ru":"Аэропорт имени Бен-Гуриона","scheduled":true,"timezone":"Asia/Jerusalem"}
 {"city_id":"temuco","country_code":"CL","iata":"ZCO","lat":-38.9259,"lon":-72.6515,"name":"La Araucanía International Airport","scheduled":true,"timezone":"America/Santiago"}
 {"city_id":"tepi","country_code":"ET","iata":"TIE","lat":7.2024,"lon":35.415,"name":"Tippi Airport","scheduled":true,"timezone":"Africa/Addis_Ababa"}
 {"city_id":"tepic","country_code":"MX","iata":"TPQ","lat":21.419833,"lon":-104.842472,"name":"Amado Nervo National Airport","scheduled":true,"timezone":"America/Mazatlan"}

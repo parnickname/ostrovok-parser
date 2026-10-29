@@ -70,7 +70,7 @@ data/
 | `countries` | `code`, `name_ru`, `name_en` | `P1-DS-02` | `catalog.ListCountries` |
 | `visa` | `passport`, `destination`, `status`, `days?`, `sources` | `P1-DS-02` | `catalog.GetVisaRequirement`, фильтр подбора |
 | `cities` | `id`, `name_ru`, `name_en`, `country_code`, `lat`, `lon`, `timezone`, `population`, `airports[]`, `stations[]` | `P1-DS-04` | `catalog.SearchPlaces`, город отправления |
-| `airports` | `iata`, `name`, `city_id`, `country_code`, `lat`, `lon`, `timezone`, `scheduled` | `P1-DS-04` | `transport` |
+| `airports` | `iata`, `name`, `name_ru?`, `city_id`, `country_code`, `lat`, `lon`, `timezone`, `scheduled` | `P1-DS-04` | `transport`, названия в трансферах и поиске мест (`name_ru`, без него `name`) |
 | `stations` | `code`, `name`, `city_id`, `lat`, `lon` (только Россия) | `P1-DS-06` | `transport` |
 | `destinations` | `id`, `city_id`, `name`, `country_code`, `tags[]`, `airports[]`, `stations[]`, `description`, `sources` | `P1-DS-03` | `catalog.SearchDestinations` |
 | `climate` | `destination_id`, `month`, `temp_max_c`, `temp_min_c`, `precipitation_mm`, `sea_temp_c?` | `P1-DS-03` | оценка погоды для подбора |

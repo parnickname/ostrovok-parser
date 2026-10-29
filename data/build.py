@@ -185,8 +185,28 @@ def apply_visa(records, overrides_dir):
     return records
 
 
+WIKIDATA_AIRPORT_NAMES_FILE = LOADERS_DIR / "wikidata" / "airport_names_ru.csv"
+
+
+def apply_airport_names(records, overrides_dir):
+    """Sets `name_ru` of the airports from Wikidata (backend issue 13); airports without one keep only `name`.
+
+    The file is `iata,name_ru`, written by data/loaders/wikidata/airports.py. A code that is not in `airports` is
+    skipped: the file is from the last loader run, the airports may have changed since.
+    """
+    if not WIKIDATA_AIRPORT_NAMES_FILE.exists():
+        return records
+    with WIKIDATA_AIRPORT_NAMES_FILE.open(encoding="utf-8", newline="") as f:
+        names = {row["iata"]: row["name_ru"] for row in csv.DictReader(f)}
+    for record in records:
+        name = names.get(record["iata"])
+        if name:
+            record["name_ru"] = name
+    return records
+
+
 # impulse: one override per dataset is enough now; make it a list if a dataset needs several.
-OVERRIDES = {"cities": apply_city_names, "visa": apply_visa}
+OVERRIDES = {"cities": apply_city_names, "visa": apply_visa, "airports": apply_airport_names}
 
 
 FALLBACK_CALIBRATION_LOADER = "synthetic"

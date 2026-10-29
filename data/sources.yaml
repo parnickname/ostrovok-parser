@@ -93,7 +93,7 @@
   license: CC0-1.0
   kind: real
   status: used
-  used_for: [русские названия городов]
+  used_for: [русские названия городов, русские названия аэропортов]
   fetched_at: null
   reason: ""
 

@@ -61,6 +61,7 @@ STEPS = [
     Step("loaders/geonames/load.py", MONTHLY, ["geonames"]),
     Step("loaders/wikidata/load.py", MONTHLY, ["wikidata"], refresh=False),
     Step("loaders/ourairports/load.py", MONTHLY, ["ourairports"]),
+    Step("loaders/wikidata/airports.py", MONTHLY, ["wikidata"], refresh=False),
     Step("loaders/yandex-rasp/load.py", MONTHLY, ["yandex-rasp"], secret="YANDEX_RASP_API_KEY"),
     Step("loaders/catalog/load.py", MONTHLY, [], refresh=False),
     Step("loaders/open-meteo/load.py", MONTHLY, ["open-meteo"]),

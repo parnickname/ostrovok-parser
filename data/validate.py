@@ -166,6 +166,7 @@ SCHEMAS = {
         "fields": {
             "iata": (iata, R),
             "name": (string, R),
+            "name_ru": (string, O),
             "city_id": (string, R),
             "country_code": (country, R),
             "lat": (lat, R),

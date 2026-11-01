@@ -225,6 +225,7 @@ geonameid,id
 92537,qalat-salih
 92615,qeladize
 93709,mandali
+93726,qaryat-manarat-shabak
 94220,koysinceq
 94298,kifri
 94591,khanaqin
@@ -1383,6 +1384,7 @@ geonameid,id
 161407,yangala
 161611,nohur
 161616,balkanabat
+161647,mehinli
 161707,tuerkmenistan
 161772,hurmantgoekje
 161825,kelejar
@@ -3844,6 +3846,7 @@ geonameid,id
 444473,dar-as-salam
 444987,takaba
 444998,qorof
+445592,khaznah-tabah
 445694,akra
 446208,khasnahzan
 446732,khalifan
@@ -9039,6 +9042,7 @@ geonameid,id
 1142330,istalif
 1142404,eslam-qaleh
 1142545,imam-sahib
+1143814,dasht-e-qalah
 1143838,dasht-e-archi
 1143874,darzab
 1143901,markaz-e-hukumat-e-darweshan
@@ -9688,6 +9692,7 @@ geonameid,id
 1188852,samonta-bazar
 1189056,sakhipur
 1189638,raojan
+1190121,ramdasdi
 1191139,phultala
 1191152,phuljhuri
 1191368,palang
@@ -9699,6 +9704,7 @@ geonameid,id
 1194041,mohammadpur
 1194575,matuail
 1195434,maijdi
+1196287,lakshmipur-bd
 1196292,lakshmipur
 1197895,kesabpur
 1198268,kashimpur
@@ -22998,6 +23004,7 @@ geonameid,id
 2301464,duayaw-nkwanta
 2301529,domaa-ahenkro
 2301639,dome
+2301715,dixcove
 2302002,damongo
 2302357,cape-coast
 2302541,buduburam
@@ -28625,6 +28632,7 @@ geonameid,id
 2745634,venray
 2745641,venlo
 2745673,velsen-zuid
+2745674,velsen-noord
 2745677,velp
 2745702,veldhuizen
 2745706,veldhoven
@@ -28691,6 +28699,7 @@ geonameid,id
 2747720,schagen
 2747751,sassenheim
 2747758,sappemeer
+2747760,santpoort-noord
 2747792,ruurlo
 2747870,rozenburg
 2747891,rotterdam
@@ -28898,6 +28907,7 @@ geonameid,id
 2755669,geertruidenberg
 2755794,gaanderen
 2755845,franeker
+2755996,etten-leur
 2756039,ermelo-nl
 2756059,epe-nl
 2756065,enter
@@ -28918,6 +28928,7 @@ geonameid,id
 2756429,ede-nl
 2756431,edam
 2756444,echt
+2756504,duivendrecht
 2756507,duiven
 2756539,druten
 2756543,drunen
@@ -28977,6 +28988,7 @@ geonameid,id
 2758686,bolnes
 2758759,boekel
 2758765,bodegraven
+2758804,bloemendaal
 2758831,blerick
 2758838,bleiswijk
 2758868,blaricum
@@ -32164,6 +32176,7 @@ geonameid,id
 2943560,bruchsal
 2943573,bruchkoebel
 2943587,bruchhausen-vilsen
+2943818,brombach
 2943855,broitzem
 2944079,brilon
 2944126,brieselang
@@ -56733,6 +56746,7 @@ geonameid,id
 7476237,natona
 7483743,puthia
 7483813,natore
+7488270,biral
 7492424,manzariyeh
 7496732,krasnaya-glinka
 7499201,port-perry
@@ -62728,3 +62742,6 @@ geonameid,id
 13715585,anantabati
 13715595,japan
 13715696,sejong-kr
+13731792,lasjan
+13731844,coopers-camp
+13731884,al-muwaffaqiyah

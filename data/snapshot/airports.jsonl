@@ -827,7 +827,7 @@
 {"city_id":"dunhuang","country_code":"CN","iata":"DNH","lat":40.161953,"lon":94.812827,"name":"Dunhuang Mogao International Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"dunmore-town","country_code":"BS","iata":"ELH","lat":25.475823,"lon":-76.680784,"name":"North Eleuthera Airport","scheduled":true,"timezone":"America/Nassau"}
 {"city_id":"durango-us","country_code":"US","iata":"DRO","lat":37.151501,"lon":-107.753998,"name":"Durango La Plata County Airport","scheduled":true,"timezone":"America/Denver"}
-{"city_id":"durban","country_code":"ZA","iata":"DUR","lat":-29.6144444444,"lon":31.1197222222,"name":"King Shaka International Airport","scheduled":true,"timezone":"Africa/Johannesburg"}
+{"city_id":"durban","country_code":"ZA","iata":"DUR","lat":-29.613381,"lon":31.117942,"name":"King Shaka International Airport","scheduled":true,"timezone":"Africa/Johannesburg"}
 {"city_id":"durgapur","country_code":"IN","iata":"RDP","lat":23.6225,"lon":87.243,"name":"Kazi Nazrul Islam Airport","scheduled":true,"timezone":"Asia/Kolkata"}
 {"city_id":"dushan","country_code":"CN","iata":"LLB","lat":25.4525,"lon":107.961667,"name":"Libo Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"dushanbe","country_code":"TJ","iata":"DYU","lat":38.543746,"lon":68.822977,"name":"Dushanbe International Airport","name_ru":"Аэропорт Душанбе","scheduled":true,"timezone":"Asia/Dushanbe"}
@@ -1796,7 +1796,7 @@
 {"city_id":"madurai","country_code":"IN","iata":"IXM","lat":9.83450984955,"lon":78.09339904790001,"name":"Madurai Airport","scheduled":true,"timezone":"Asia/Kolkata"}
 {"city_id":"mae-hong-son","country_code":"TH","iata":"HGN","lat":19.3013,"lon":97.9758,"name":"Mae Hong Son Airport","name_ru":"Аэропорт Мэхонгсон","scheduled":true,"timezone":"Asia/Bangkok"}
 {"city_id":"mae-sot","country_code":"TH","iata":"MAQ","lat":16.699899673461914,"lon":98.54509735107422,"name":"Mae Sot Airport","name_ru":"Аэропорт Мэсот","scheduled":true,"timezone":"Asia/Bangkok"}
-{"city_id":"mafikeng","country_code":"ZA","iata":"MBD","lat":-25.798400878900004,"lon":25.548000335699996,"name":"Mmabatho International Airport","scheduled":true,"timezone":"Africa/Johannesburg"}
+{"city_id":"mafikeng","country_code":"ZA","iata":"MBD","lat":-25.798401,"lon":25.548,"name":"George Dick Montshioa Airport","scheduled":true,"timezone":"Africa/Johannesburg"}
 {"city_id":"magadan","country_code":"RU","iata":"GDX","lat":59.9109992980957,"lon":150.72000122070312,"name":"Sokol Airport","scheduled":true,"timezone":"Asia/Magadan"}
 {"city_id":"magnitogorsk","country_code":"RU","iata":"MQF","lat":53.391991,"lon":58.755235,"name":"Magnitogorsk International Airport","name_ru":"Международный аэропорт Магнитогорск","scheduled":true,"timezone":"Asia/Yekaterinburg"}
 {"city_id":"magong","country_code":"TW","iata":"MZG","lat":23.568701,"lon":119.627998,"name":"Penghu Magong Airport","scheduled":true,"timezone":"Asia/Taipei"}
@@ -2938,6 +2938,7 @@
 {"city_id":"surrey","country_code":"CA","iata":"YBW","lat":48.75,"lon":-123.233002,"name":"Bedwell Harbour Seaplane Base","scheduled":true,"timezone":"America/Vancouver"}
 {"city_id":"sydney","country_code":"AU","iata":"LBH","lat":-33.5871,"lon":151.3234,"name":"Palm Beach Seaplane Base","scheduled":true,"timezone":"Australia/Sydney"}
 {"city_id":"sydney","country_code":"AU","iata":"SYD","lat":-33.946098,"lon":151.177002,"name":"Sydney Kingsford Smith International Airport","name_ru":"Аэропорт Сидней","scheduled":true,"timezone":"Australia/Sydney"}
+{"city_id":"sydney","country_code":"AU","iata":"WSI","lat":-33.883461,"lon":150.712981,"name":"Western Sydney International (Nancy-Bird Walton) Airport","scheduled":true,"timezone":"Australia/Sydney"}
 {"city_id":"sydney-ca","country_code":"CA","iata":"YQY","lat":46.161072,"lon":-60.049759,"name":"Sydney / J.A. Douglas McCurdy Airport","scheduled":true,"timezone":"America/Glace_Bay"}
 {"city_id":"syktyvkar","country_code":"RU","iata":"SCW","lat":61.64699935913086,"lon":50.84510040283203,"name":"Syktyvkar Airport","name_ru":"Аэропорт Сыктывкар","scheduled":true,"timezone":"Europe/Moscow"}
 {"city_id":"sylhet","country_code":"BD","iata":"ZYL","lat":24.963993,"lon":91.864749,"name":"Osmany International Airport","name_ru":"Аэропорт Силхет","scheduled":true,"timezone":"Asia/Dhaka"}

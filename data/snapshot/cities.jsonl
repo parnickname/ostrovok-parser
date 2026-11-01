@@ -1524,7 +1524,7 @@
 {"airports":["LBD"],"country_code":"TJ","id":"khujand","lat":40.28256,"lon":69.62216,"name_en":"Khujand","name_ru":"Худжанд","population":191000,"stations":[],"timezone":"Asia/Dushanbe"}
 {"airports":["LBE"],"country_code":"US","id":"latrobe","lat":40.32118,"lon":-79.37948,"name_en":"Latrobe","name_ru":"Латроб","population":8081,"stations":[],"timezone":"America/New_York"}
 {"airports":["LBF"],"country_code":"US","id":"north-platte","lat":41.12389,"lon":-100.76542,"name_en":"North Platte","name_ru":"Норт-Платт","population":24194,"stations":[],"timezone":"America/Chicago"}
-{"airports":["LBH","SYD"],"country_code":"AU","id":"sydney","lat":-33.86785,"lon":151.20732,"name_en":"Sydney","name_ru":"Сидней","population":5638830,"stations":[],"timezone":"Australia/Sydney"}
+{"airports":["LBH","SYD","WSI"],"country_code":"AU","id":"sydney","lat":-33.86785,"lon":151.20732,"name_en":"Sydney","name_ru":"Сидней","population":5638830,"stations":[],"timezone":"Australia/Sydney"}
 {"airports":["LBJ"],"country_code":"ID","id":"labuan-bajo","lat":-8.4964,"lon":119.8877,"name_en":"Labuan Bajo","name_ru":"Лабуанбаджо","population":188724,"stations":[],"timezone":"Asia/Makassar"}
 {"airports":["LBL"],"country_code":"US","id":"liberal","lat":37.04308,"lon":-100.921,"name_en":"Liberal","name_ru":"Либеральная","population":20746,"stations":[],"timezone":"America/Chicago"}
 {"airports":["LBR"],"country_code":"BR","id":"labrea","lat":-7.26435,"lon":-64.79638,"name_en":"Labrea","name_ru":"Лабреа","population":46882,"stations":[],"timezone":"America/Manaus"}
@@ -3162,6 +3162,7 @@
 {"airports":[],"country_code":"AF","id":"chiras","lat":35.41674,"lon":65.98234,"name_en":"Chiras","name_ru":"Chiras","population":12779,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"darzab","lat":35.97744,"lon":65.37828,"name_en":"Darzab","name_ru":"Дарзаб","population":9642,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"dasht-e-archi","lat":37.13333,"lon":69.16667,"name_en":"Dasht-e Archi","name_ru":"Dasht-e Archi","population":8263,"stations":[],"timezone":"Asia/Kabul"}
+{"airports":[],"country_code":"AF","id":"dasht-e-qalah","lat":37.1539,"lon":69.4435,"name_en":"Dasht-e Qal'ah","name_ru":"Дашт-е-Кала","population":41659,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"eslam-qaleh","lat":34.66667,"lon":61.06667,"name_en":"Eslam Qaleh","name_ru":"Ислам-Кала","population":18086,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"farah","lat":32.37451,"lon":62.11638,"name_en":"Farah","name_ru":"Фарах","population":43561,"stations":[],"timezone":"Asia/Kabul"}
 {"airports":[],"country_code":"AF","id":"farkhar","lat":36.57288,"lon":69.85783,"name_en":"Farkhar","name_ru":"Фарихар","population":10480,"stations":[],"timezone":"Asia/Kabul"}
@@ -4699,11 +4700,12 @@
 {"airports":[],"country_code":"BD","id":"bheramara","lat":24.02452,"lon":88.99234,"name_en":"Bheramara","name_ru":"Бхерамара","population":38159,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"bhola","lat":22.68759,"lon":90.64403,"name_en":"Bhola","name_ru":"Бхола","population":99079,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"bibir-hat","lat":22.68347,"lon":91.79058,"name_en":"Bibir Hat","name_ru":"Фатикчхари","population":89030,"stations":[],"timezone":"Asia/Dhaka"}
+{"airports":[],"country_code":"BD","id":"biral","lat":25.63212,"lon":88.54776,"name_en":"Biral","name_ru":"Biral","population":13848,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"bogura","lat":24.85098,"lon":89.37108,"name_en":"Bogura","name_ru":"Богра","population":421858,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"brahmanbaria","lat":23.97464,"lon":91.11228,"name_en":"Brahmanbaria","name_ru":"Брахманбария","population":279485,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"burhanuddin","lat":22.49518,"lon":90.72391,"name_en":"Burhanuddin","name_ru":"Бурхануддин","population":45670,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"burirchar","lat":22.13991,"lon":90.20636,"name_en":"Burirchar","name_ru":"Burirchar","population":29542,"stations":[],"timezone":"Asia/Dhaka"}
-{"airports":[],"country_code":"BD","id":"chandpur","lat":23.22714,"lon":90.65433,"name_en":"Chandpur","name_ru":"Чандпур","population":203000,"stations":[],"timezone":"Asia/Dhaka"}
+{"airports":[],"country_code":"BD","id":"chandpur","lat":23.22714,"lon":90.65433,"name_en":"Chandpur","name_ru":"Чандпур","population":212203,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"char-bhadrasan","lat":23.30916,"lon":90.22698,"name_en":"Char Bhadrasan","name_ru":"Чарбхадрасан","population":34423,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"charamaddi","lat":22.642,"lon":90.42598,"name_en":"Charamaddi","name_ru":"Charamaddi","population":18122,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"chhagalnaiya","lat":23.02475,"lon":91.51091,"name_en":"Chhagalnaiya","name_ru":"Чхагалнайя","population":39335,"stations":[],"timezone":"Asia/Dhaka"}
@@ -4746,6 +4748,7 @@
 {"airports":[],"country_code":"BD","id":"kushtia","lat":23.9028,"lon":89.11943,"name_en":"Kushtia","name_ru":"Куштия","population":135724,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"laksham","lat":23.24018,"lon":91.12143,"name_en":"Laksham","name_ru":"Лакшам","population":82290,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"lakshmipur","lat":22.9443,"lon":90.83005,"name_en":"Lakshmipur","name_ru":"Лакшмипур","population":61703,"stations":[],"timezone":"Asia/Dhaka"}
+{"airports":[],"country_code":"BD","id":"lakshmipur-bd","lat":23.17581,"lon":90.65326,"name_en":"Lakshmipur","name_ru":"Lakshmipur","population":7334,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"lalmohan","lat":22.33774,"lon":90.73708,"name_en":"Lalmohan","name_ru":"Лалмохан","population":42220,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"lalmonirhat","lat":25.91719,"lon":89.44595,"name_en":"Lalmonirhat","name_ru":"Лалмониргат","population":65127,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"lama","lat":21.77439,"lon":92.21907,"name_en":"Lama","name_ru":"Lama","population":22648,"stations":[],"timezone":"Asia/Dhaka"}
@@ -4795,6 +4798,7 @@
 {"airports":[],"country_code":"BD","id":"pirojpur","lat":22.57965,"lon":89.97521,"name_en":"Pirojpur","name_ru":"Pirojpur","population":54418,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"puthia","lat":24.36537,"lon":88.83431,"name_en":"Puthia","name_ru":"Путхия","population":159406,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"raipur-bd","lat":23.0391,"lon":90.76808,"name_en":"Raipur","name_ru":"Райпур","population":64652,"stations":[],"timezone":"Asia/Dhaka"}
+{"airports":[],"country_code":"BD","id":"ramdasdi","lat":23.19833,"lon":90.64914,"name_en":"Ramdasdi","name_ru":"Ramdasdi","population":10895,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"ramganj","lat":23.1006,"lon":90.84989,"name_en":"Ramganj","name_ru":"Рамгандж","population":55241,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"rangamati","lat":22.64317,"lon":92.19186,"name_en":"Rangamati","name_ru":"Рангамати","population":106069,"stations":[],"timezone":"Asia/Dhaka"}
 {"airports":[],"country_code":"BD","id":"rangpur","lat":25.74664,"lon":89.25166,"name_en":"Rangpur","name_ru":"Рангпур","population":1031388,"stations":[],"timezone":"Asia/Dhaka"}
@@ -16627,6 +16631,7 @@
 {"airports":[],"country_code":"DE","id":"brieselang","lat":52.58856,"lon":12.99466,"name_en":"Brieselang","name_ru":"Бризеланг","population":10379,"stations":[],"timezone":"Europe/Berlin"}
 {"airports":[],"country_code":"DE","id":"brilon","lat":51.39462,"lon":8.57146,"name_en":"Brilon","name_ru":"Брилон","population":27030,"stations":[],"timezone":"Europe/Berlin"}
 {"airports":[],"country_code":"DE","id":"broitzem","lat":52.23463,"lon":10.47718,"name_en":"Broitzem","name_ru":"Broitzem","population":5853,"stations":[],"timezone":"Europe/Berlin"}
+{"airports":[],"country_code":"DE","id":"brombach","lat":47.63307,"lon":7.69511,"name_en":"Brombach","name_ru":"Brombach","population":7033,"stations":[],"timezone":"Europe/Berlin"}
 {"airports":[],"country_code":"DE","id":"bruchhausen-vilsen","lat":52.82931,"lon":8.99066,"name_en":"Bruchhausen-Vilsen","name_ru":"Бруххаузен-Фильзен","population":6205,"stations":[],"timezone":"Europe/Berlin"}
 {"airports":[],"country_code":"DE","id":"bruchkoebel","lat":50.17853,"lon":8.92315,"name_en":"Bruchkoebel","name_ru":"Брухкёбель","population":20509,"stations":[],"timezone":"Europe/Berlin"}
 {"airports":[],"country_code":"DE","id":"bruchmuhlbach-miesau","lat":49.38333,"lon":7.43333,"name_en":"Bruchmuhlbach-Miesau","name_ru":"Брухмюльбах-Мизау","population":7800,"stations":[],"timezone":"Europe/Berlin"}
@@ -23731,7 +23736,7 @@
 {"airports":[],"country_code":"GB","id":"britwell","lat":51.53577,"lon":-0.62774,"name_en":"Britwell","name_ru":"Britwell","population":7800,"stations":[],"timezone":"Europe/London"}
 {"airports":[],"country_code":"GB","id":"brixham","lat":50.39431,"lon":-3.51585,"name_en":"Brixham","name_ru":"Бриксам","population":16693,"stations":[],"timezone":"Europe/London"}
 {"airports":[],"country_code":"GB","id":"brixton-hill","lat":51.45213,"lon":-0.123,"name_en":"Brixton Hill","name_ru":"Brixton Hill","population":12458,"stations":[],"timezone":"Europe/London"}
-{"airports":[],"country_code":"GB","id":"brixworth","lat":52.32912,"lon":-0.9035,"name_en":"Brixworth","name_ru":"Бриксворф","population":5228,"stations":[],"timezone":"Europe/London"}
+{"airports":[],"country_code":"GB","id":"brixworth","lat":52.32912,"lon":-0.9035,"name_en":"Brixworth","name_ru":"Бриксуорт","population":5228,"stations":[],"timezone":"Europe/London"}
 {"airports":[],"country_code":"GB","id":"broadfield","lat":51.09714,"lon":-0.20664,"name_en":"Broadfield","name_ru":"Broadfield","population":13000,"stations":[],"timezone":"Europe/London"}
 {"airports":[],"country_code":"GB","id":"broadstairs","lat":51.35845,"lon":1.44185,"name_en":"Broadstairs","name_ru":"Бродстейрс","population":23283,"stations":[],"timezone":"Europe/London"}
 {"airports":[],"country_code":"GB","id":"broadstone","lat":50.75717,"lon":-1.99406,"name_en":"Broadstone","name_ru":"Бродстоун","population":10289,"stations":[],"timezone":"Europe/London"}
@@ -25314,6 +25319,7 @@
 {"airports":[],"country_code":"GH","id":"cape-coast","lat":5.10535,"lon":-1.2466,"name_en":"Cape Coast","name_ru":"Кейп-Кост","population":212426,"stations":[],"timezone":"Africa/Accra"}
 {"airports":[],"country_code":"GH","id":"dambai","lat":8.06616,"lon":0.17947,"name_en":"Dambai","name_ru":"Dambai","population":22445,"stations":[],"timezone":"Africa/Accra"}
 {"airports":[],"country_code":"GH","id":"damongo","lat":9.08296,"lon":-1.81884,"name_en":"Damongo","name_ru":"Дамонго","population":23544,"stations":[],"timezone":"Africa/Accra"}
+{"airports":[],"country_code":"GH","id":"dixcove","lat":4.79505,"lon":-1.94691,"name_en":"Dixcove","name_ru":"Диксков","population":7000,"stations":[],"timezone":"Africa/Accra"}
 {"airports":[],"country_code":"GH","id":"domaa-ahenkro","lat":7.27386,"lon":-2.87348,"name_en":"Domaa-Ahenkro","name_ru":"Domaa-Ahenkro","population":37354,"stations":[],"timezone":"Africa/Accra"}
 {"airports":[],"country_code":"GH","id":"dome","lat":5.65003,"lon":-0.2361,"name_en":"Dome","name_ru":"Дом","population":48285,"stations":[],"timezone":"Africa/Accra"}
 {"airports":[],"country_code":"GH","id":"duayaw-nkwanta","lat":7.17487,"lon":-2.09961,"name_en":"Duayaw-Nkwanta","name_ru":"Duayaw-Nkwanta","population":17000,"stations":[],"timezone":"Africa/Accra"}
@@ -28874,6 +28880,7 @@
 {"airports":[],"country_code":"IN","id":"colva","lat":15.27976,"lon":73.92285,"name_en":"Colva","name_ru":"Колва","population":12000,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"contai","lat":21.77985,"lon":87.74892,"name_en":"Contai","name_ru":"Контаи","population":88702,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"coonoor","lat":11.34979,"lon":76.79375,"name_en":"Coonoor","name_ru":"Кунур","population":45494,"stations":[],"timezone":"Asia/Kolkata"}
+{"airports":[],"country_code":"IN","id":"coopers-camp","lat":23.16614,"lon":88.58949,"name_en":"Cooper's Camp","name_ru":"Cooper's Camp","population":23119,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"corlim","lat":15.49611,"lon":73.93387,"name_en":"Corlim","name_ru":"Corlim","population":6568,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"cortalim","lat":15.40247,"lon":73.90881,"name_en":"Cortalim","name_ru":"Cortalim","population":9080,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"covelong","lat":12.78653,"lon":80.25065,"name_en":"Covelong","name_ru":"Covelong","population":8124,"stations":[],"timezone":"Asia/Kolkata"}
@@ -30804,6 +30811,7 @@
 {"airports":[],"country_code":"IN","id":"lar-in","lat":26.20394,"lon":83.96906,"name_en":"Lar","name_ru":"Lar","population":26688,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"laruara","lat":25.45398,"lon":86.12121,"name_en":"Laruara","name_ru":"Laruara","population":9376,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"lasalgaon","lat":20.1427,"lon":74.23946,"name_en":"Lasalgaon","name_ru":"Lasalgaon","population":17360,"stations":[],"timezone":"Asia/Kolkata"}
+{"airports":[],"country_code":"IN","id":"lasjan","lat":34.0425,"lon":74.86976,"name_en":"Lasjan","name_ru":"Lasjan","population":5281,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"lassodyameri","lat":22.7832,"lon":75.91256,"name_en":"Lassodyameri","name_ru":"Lassodyameri","population":10225,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"latehar","lat":23.74423,"lon":84.49984,"name_en":"Latehar","name_ru":"Латехар","population":26981,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"lateri","lat":24.06091,"lon":77.41044,"name_en":"Lateri","name_ru":"Lateri","population":18844,"stations":[],"timezone":"Asia/Kolkata"}
@@ -31568,7 +31576,7 @@
 {"airports":[],"country_code":"IN","id":"naraina","lat":26.79069,"lon":75.20608,"name_en":"Naraina","name_ru":"Naraina","population":17048,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"naraingarh","lat":30.47798,"lon":77.12804,"name_en":"Naraingarh","name_ru":"Нараингарх","population":22832,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"naraini","lat":25.19033,"lon":80.475,"name_en":"Naraini","name_ru":"Нараини","population":15077,"stations":[],"timezone":"Asia/Kolkata"}
-{"airports":[],"country_code":"IN","id":"narainpur","lat":19.71794,"lon":81.24437,"name_en":"Narainpur","name_ru":"Narainpur","population":22106,"stations":[],"timezone":"Asia/Kolkata"}
+{"airports":[],"country_code":"IN","id":"narainpur","lat":19.71794,"lon":81.24437,"name_en":"Narayanpur","name_ru":"Narayanpur","population":22106,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"narakal","lat":10.03833,"lon":76.2221,"name_en":"Narakal","name_ru":"Narakal","population":23760,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"naranammalpuram","lat":8.75985,"lon":77.73986,"name_en":"Naranammalpuram","name_ru":"Naranammalpuram","population":17094,"stations":[],"timezone":"Asia/Kolkata"}
 {"airports":[],"country_code":"IN","id":"naranapuram","lat":9.45052,"lon":77.83524,"name_en":"Naranapuram","name_ru":"Naranapuram","population":11665,"stations":[],"timezone":"Asia/Kolkata"}
@@ -33924,6 +33932,7 @@
 {"airports":[],"country_code":"IQ","id":"al-miqdadiyah","lat":33.97861,"lon":44.93694,"name_en":"Al Miqdadiyah","name_ru":"Муктадия","population":155968,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"al-mishkhab","lat":31.80437,"lon":44.4893,"name_en":"Al Mishkhab","name_ru":"Эль-Мишхаб","population":23189,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"al-musayab","lat":32.77872,"lon":44.29005,"name_en":"Al-Musayab","name_ru":"Аль-Эль-Мусайибе","population":101873,"stations":[],"timezone":"Asia/Baghdad"}
+{"airports":[],"country_code":"IQ","id":"al-muwaffaqiyah","lat":36.35645,"lon":43.32992,"name_en":"Al-Muwaffaqiyah","name_ru":"Al-Muwaffaqiyah","population":10896,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"al-qaim","lat":34.39251,"lon":40.98945,"name_en":"Al Qa'im","name_ru":"Эль-Каим","population":74100,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"al-qasim","lat":32.29799,"lon":44.68282,"name_en":"Al-Qasim","name_ru":"Аль-Касим","population":93546,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"al-qurnah","lat":31.01547,"lon":47.43362,"name_en":"Al Qurnah","name_ru":"Эль-Курна","population":134174,"stations":[],"timezone":"Asia/Baghdad"}
@@ -33965,6 +33974,7 @@
 {"airports":[],"country_code":"IQ","id":"khalis","lat":33.80809,"lon":44.53343,"name_en":"Khalis","name_ru":"Аль-Халиса","population":70046,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"khanaqin","lat":34.3482,"lon":45.39065,"name_en":"Khanaqin","name_ru":"Ханакин","population":175000,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"khasnahzan","lat":36.2009,"lon":44.14235,"name_en":"Khasnahzan","name_ru":"Хаснахзан","population":146639,"stations":[],"timezone":"Asia/Baghdad"}
+{"airports":[],"country_code":"IQ","id":"khaznah-tabah","lat":36.36306,"lon":43.35824,"name_en":"Khaznah Tabah","name_ru":"Khaznah Tabah","population":14075,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"kifri","lat":34.68963,"lon":44.96057,"name_en":"Kifri","name_ru":"Кифри","population":30143,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"koysinceq","lat":36.08289,"lon":44.62873,"name_en":"Koysinceq","name_ru":"Кёй-Санджак","population":44987,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"kufa","lat":32.05114,"lon":44.44017,"name_en":"Kufa","name_ru":"Эль-Куфа","population":110000,"stations":[],"timezone":"Asia/Baghdad"}
@@ -33978,6 +33988,7 @@
 {"airports":[],"country_code":"IQ","id":"pirmam","lat":36.38522,"lon":44.19703,"name_en":"Pirmam","name_ru":"Pirmam","population":38686,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"qalat-salih","lat":31.52802,"lon":47.29362,"name_en":"Qal'at Salih","name_ru":"Калъат-Салих","population":39698,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"qalat-sukkar","lat":31.8632,"lon":46.07321,"name_en":"Qal'at Sukkar","name_ru":"Калат Суккар","population":110000,"stations":[],"timezone":"Asia/Baghdad"}
+{"airports":[],"country_code":"IQ","id":"qaryat-manarat-shabak","lat":36.31701,"lon":43.33102,"name_en":"Qaryat Manarat Shabak","name_ru":"Qaryat Manarat Shabak","population":7745,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"qeladize","lat":36.18254,"lon":45.13017,"name_en":"Qeladize","name_ru":"Келадизе","population":140688,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"ramadi","lat":33.42056,"lon":43.30778,"name_en":"Ramadi","name_ru":"Эр-Рамади","population":223500,"stations":[],"timezone":"Asia/Baghdad"}
 {"airports":[],"country_code":"IQ","id":"ranyah","lat":36.25511,"lon":44.88239,"name_en":"Ranyah","name_ru":"Ранья","population":114173,"stations":[],"timezone":"Asia/Baghdad"}
@@ -34028,7 +34039,6 @@
 {"airports":[],"country_code":"IR","id":"ajab-shir","lat":37.4776,"lon":45.8943,"name_en":"Ajab Shir","name_ru":"Эджебшир","population":29675,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"ajab-shir-military-garrison","lat":37.49129,"lon":45.92604,"name_en":"Ajab Shir Military Garrison","name_ru":"Ajab Shir Military Garrison","population":5423,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"akbarabad","lat":29.24609,"lon":52.78081,"name_en":"Akbarabad","name_ru":"Акбарабад","population":5817,"stations":[],"timezone":"Asia/Tehran"}
-{"airports":[],"country_code":"IR","id":"akbarabad-ir","lat":29.24607,"lon":52.78084,"name_en":"Akbarabad","name_ru":"Akbarabad","population":5817,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"akhand","lat":27.4361,"lon":52.75,"name_en":"Akhand","name_ru":"Эхенд","population":6775,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"alard","lat":35.51296,"lon":51.05959,"name_en":"Alard","name_ru":"Alard","population":11616,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"alavijeh","lat":33.0548,"lon":51.08331,"name_en":"Alavijeh","name_ru":"Элевидже","population":14550,"stations":[],"timezone":"Asia/Tehran"}
@@ -34160,7 +34170,7 @@
 {"airports":[],"country_code":"IR","id":"borazjan","lat":29.2699,"lon":51.2188,"name_en":"Borazjan","name_ru":"Боразджан","population":110567,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"borujen","lat":31.96523,"lon":51.2873,"name_en":"Borujen","name_ru":"Боруджен","population":57071,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"borujerd","lat":33.8973,"lon":48.7516,"name_en":"Borujerd","name_ru":"Боруджерд","population":251958,"stations":[],"timezone":"Asia/Tehran"}
-{"airports":[],"country_code":"IR","id":"boshruyeh","lat":33.86845,"lon":57.42885,"name_en":"Boshruyeh","name_ru":"Бошруйе","population":15318,"stations":[],"timezone":"Asia/Tehran"}
+{"airports":[],"country_code":"IR","id":"boshruyeh","lat":33.86845,"lon":57.42885,"name_en":"Boshruyeh","name_ru":"Бошруйе","population":16426,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"bostan","lat":31.71945,"lon":47.99118,"name_en":"Bostan","name_ru":"Бостан","population":8476,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"bostanabad","lat":37.84633,"lon":46.83542,"name_en":"Bostanabad","name_ru":"Бостанабад","population":21734,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"buin-zahra","lat":35.7669,"lon":50.0578,"name_en":"Bu'in Zahra","name_ru":"Bu'in Zahra","population":20823,"stations":[],"timezone":"Asia/Tehran"}
@@ -34250,7 +34260,7 @@
 {"airports":[],"country_code":"IR","id":"evaz","lat":27.7622,"lon":54.00417,"name_en":"Evaz","name_ru":"Эвез","population":19987,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"eyn-e-do","lat":31.3456,"lon":48.60063,"name_en":"'Eyn-e Do","name_ru":"'Eyn-e Do","population":17653,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"eyvan","lat":33.8272,"lon":46.3097,"name_en":"Eyvan","name_ru":"Эйван","population":31299,"stations":[],"timezone":"Asia/Tehran"}
-{"airports":[],"country_code":"IR","id":"falavarjan","lat":32.5553,"lon":51.50973,"name_en":"Falavarjan","name_ru":"Фелаверджан","population":49843,"stations":[],"timezone":"Asia/Tehran"}
+{"airports":[],"country_code":"IR","id":"falavarjan","lat":32.5553,"lon":51.50973,"name_en":"Falavarjan","name_ru":"Фелаверджан","population":37704,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"famenin","lat":35.11593,"lon":48.97336,"name_en":"Famenin","name_ru":"Фаменин","population":14208,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"fannuj","lat":26.57527,"lon":59.64144,"name_en":"Fannuj","name_ru":"Феннудж","population":13000,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"faradonbeh","lat":32.0084,"lon":51.2121,"name_en":"Faradonbeh","name_ru":"Ферадомбе","population":13317,"stations":[],"timezone":"Asia/Tehran"}
@@ -34472,7 +34482,7 @@
 {"airports":[],"country_code":"IR","id":"lalejin","lat":34.9746,"lon":48.4758,"name_en":"Lalejin","name_ru":"Лаледжин","population":14916,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"lali","lat":32.32981,"lon":49.09324,"name_en":"Lali","name_ru":"Лали","population":18473,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"landeh","lat":30.98215,"lon":50.4206,"name_en":"Landeh","name_ru":"Ленде","population":12772,"stations":[],"timezone":"Asia/Tehran"}
-{"airports":[],"country_code":"IR","id":"langarud","lat":37.19548,"lon":50.15263,"name_en":"Langarud","name_ru":"Ленгеруд","population":68148,"stations":[],"timezone":"Asia/Tehran"}
+{"airports":[],"country_code":"IR","id":"langarud","lat":37.19548,"lon":50.15263,"name_en":"Langarud","name_ru":"Ленгеруд","population":79445,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"lapui","lat":29.80046,"lon":52.65291,"name_en":"Lapu'i","name_ru":"Лапуи","population":8985,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"larim","lat":36.7187,"lon":52.93811,"name_en":"Larim","name_ru":"Larim","population":5300,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"lashkarabad","lat":35.85534,"lon":50.7462,"name_en":"Lashkarabad","name_ru":"Лешкерабад","population":7198,"stations":[],"timezone":"Asia/Tehran"}
@@ -34528,7 +34538,7 @@
 {"airports":[],"country_code":"IR","id":"mehraban","lat":38.0813,"lon":47.13169,"name_en":"Mehraban","name_ru":"Mehraban","population":12937,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"mehran","lat":33.1222,"lon":46.1646,"name_en":"Mehran","name_ru":"Мехран","population":11831,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"mehrestan","lat":27.131,"lon":61.67445,"name_en":"Mehrestan","name_ru":"Заболи","population":12245,"stations":[],"timezone":"Asia/Tehran"}
-{"airports":[],"country_code":"IR","id":"meshgin-shahr","lat":38.399,"lon":47.682,"name_en":"Meshgin Shahr","name_ru":"Мешгиншехр","population":74109,"stations":[],"timezone":"Asia/Tehran"}
+{"airports":[],"country_code":"IR","id":"meshgin-shahr","lat":38.399,"lon":47.682,"name_en":"Meshgin Shahr","name_ru":"Мешгиншехр","population":90987,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"meshkin-dasht","lat":35.74988,"lon":50.94376,"name_en":"Meshkin Dasht","name_ru":"Meshkin Dasht","population":62005,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"meybod","lat":32.25014,"lon":54.01658,"name_en":"Meybod","name_ru":"Мейбод","population":51874,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"meymanatabad","lat":35.499,"lon":51.162,"name_en":"Meymanatabad","name_ru":"Meymanatabad","population":5821,"stations":[],"timezone":"Asia/Tehran"}
@@ -34607,7 +34617,6 @@
 {"airports":[],"country_code":"IR","id":"pakdasht","lat":35.47854,"lon":51.6834,"name_en":"Pakdasht","name_ru":"Пакдашт","population":236319,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"parand","lat":35.47195,"lon":50.97547,"name_en":"Parand","name_ru":"Паранд","population":97464,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"parandak","lat":35.36183,"lon":50.68209,"name_en":"Parandak","name_ru":"Парандак","population":6886,"stations":[],"timezone":"Asia/Tehran"}
-{"airports":[],"country_code":"IR","id":"parandak-6666853","lat":35.4951,"lon":51.0426,"name_en":"Parandak","name_ru":"Parandak","population":5038,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"parandak-ir","lat":35.512,"lon":51.0532,"name_en":"Parandak","name_ru":"Parandak","population":5038,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"pardanjan","lat":32.25283,"lon":50.599,"name_en":"Pardanjan","name_ru":"Pardanjan","population":8699,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"pardis","lat":35.74687,"lon":51.81222,"name_en":"Pardis","name_ru":"Пардис","population":114249,"stations":[],"timezone":"Asia/Tehran"}
@@ -34818,7 +34827,7 @@
 {"airports":[],"country_code":"IR","id":"tis","lat":25.3569,"lon":60.6209,"name_en":"Tis","name_ru":"Тис","population":6348,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"tonekabon","lat":36.81626,"lon":50.87376,"name_en":"Tonekabon","name_ru":"Тонекабон","population":37501,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"torbat-e-heydariyeh","lat":35.27401,"lon":59.21949,"name_en":"Torbat-e Heydariyeh","name_ru":"Торбете-Хейдерие","population":140019,"stations":[],"timezone":"Asia/Tehran"}
-{"airports":[],"country_code":"IR","id":"torbat-e-jam","lat":35.244,"lon":60.6225,"name_en":"Torbat-e Jam","name_ru":"Торбете-Джам","population":58928,"stations":[],"timezone":"Asia/Tehran"}
+{"airports":[],"country_code":"IR","id":"torbat-e-jam","lat":35.244,"lon":60.6225,"name_en":"Torbat-e Jam","name_ru":"Торбете-Джам","population":100449,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"torkalaki","lat":32.24367,"lon":48.84688,"name_en":"Torkalaki","name_ru":"Торкалеки","population":5688,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"torkaman","lat":37.5853,"lon":47.3896,"name_en":"Torkaman","name_ru":"Торкеман","population":7443,"stations":[],"timezone":"Asia/Tehran"}
 {"airports":[],"country_code":"IR","id":"torqabeh","lat":36.3104,"lon":59.3735,"name_en":"Torqabeh","name_ru":"Торкабе","population":20998,"stations":[],"timezone":"Asia/Tehran"}
@@ -39119,7 +39128,6 @@
 {"airports":[],"country_code":"KR","id":"sanji","lat":33.51667,"lon":126.53333,"name_en":"Sanji","name_ru":"Sanji","population":8866,"stations":[],"timezone":"Asia/Seoul"}
 {"airports":[],"country_code":"KR","id":"santyoku","lat":37.44056,"lon":129.17083,"name_en":"Santyoku","name_ru":"Самчхок","population":42145,"stations":[],"timezone":"Asia/Seoul"}
 {"airports":[],"country_code":"KR","id":"sejong","lat":36.59245,"lon":127.29223,"name_en":"Sejong","name_ru":"Сежон","population":394630,"stations":[],"timezone":"Asia/Seoul"}
-{"airports":[],"country_code":"KR","id":"sejong-kr","lat":36.48039,"lon":127.28821,"name_en":"Sejong","name_ru":"Sejong","population":0,"stations":[],"timezone":"Asia/Seoul"}
 {"airports":[],"country_code":"KR","id":"seodong","lat":33.48443,"lon":126.49252,"name_en":"Seodong","name_ru":"Seodong","population":42569,"stations":[],"timezone":"Asia/Seoul"}
 {"airports":[],"country_code":"KR","id":"seogwipo","lat":33.25333,"lon":126.56181,"name_en":"Seogwipo","name_ru":"Согвипхо","population":178552,"stations":[],"timezone":"Asia/Seoul"}
 {"airports":[],"country_code":"KR","id":"seonghwan","lat":36.91556,"lon":127.13139,"name_en":"Seonghwan","name_ru":"Seonghwan","population":29239,"stations":[],"timezone":"Asia/Seoul"}
@@ -41994,7 +42002,6 @@
 {"airports":[],"country_code":"MX","id":"san-pedro-buenavista","lat":16.08333,"lon":-93.11667,"name_en":"San Pedro Buenavista","name_ru":"Сан Педро Буенависта","population":8390,"stations":[],"timezone":"America/Mexico_City"}
 {"airports":[],"country_code":"MX","id":"san-pedro-cahro","lat":20.11548,"lon":-102.65328,"name_en":"San Pedro Cahro","name_ru":"Сан Педро Каро","population":11987,"stations":[],"timezone":"America/Mexico_City"}
 {"airports":[],"country_code":"MX","id":"san-pedro-cholula","lat":19.26444,"lon":-99.48639,"name_en":"San Pedro Cholula","name_ru":"Сан Педро Чолула","population":8941,"stations":[],"timezone":"America/Mexico_City"}
-{"airports":[],"country_code":"MX","id":"san-pedro-cholula-mx","lat":19.26464,"lon":-99.48645,"name_en":"San Pedro Cholula","name_ru":"Сан Педро Чочула","population":8798,"stations":[],"timezone":"America/Mexico_City"}
 {"airports":[],"country_code":"MX","id":"san-pedro-de-los-banos","lat":19.66958,"lon":-99.83572,"name_en":"San Pedro de los Banos","name_ru":"Сан Педро де лос Баньос","population":12149,"stations":[],"timezone":"America/Mexico_City"}
 {"airports":[],"country_code":"MX","id":"san-pedro-garza-garcia","lat":25.66158,"lon":-100.4034,"name_en":"San Pedro Garza Garcia","name_ru":"Сан Педро Гарза Гаркиа","population":132128,"stations":[],"timezone":"America/Monterrey"}
 {"airports":[],"country_code":"MX","id":"san-pedro-itzican","lat":20.31724,"lon":-102.95406,"name_en":"San Pedro Itzican","name_ru":"Сан Педро Итсикан","population":5199,"stations":[],"timezone":"America/Mexico_City"}
@@ -42176,7 +42183,6 @@
 {"airports":[],"country_code":"MX","id":"tecali","lat":18.9006,"lon":-97.97064,"name_en":"Tecali","name_ru":"Текали","population":5156,"stations":[],"timezone":"America/Mexico_City"}
 {"airports":[],"country_code":"MX","id":"tecalitlan","lat":19.47156,"lon":-103.30708,"name_en":"Tecalitlan","name_ru":"Текалитлан","population":12411,"stations":[],"timezone":"America/Mexico_City"}
 {"airports":[],"country_code":"MX","id":"tecamac-de-felipe-villanueva","lat":19.71306,"lon":-98.96833,"name_en":"Tecamac de Felipe Villanueva","name_ru":"Текамак де Фелипе Вильянуева","population":15911,"stations":[],"timezone":"America/Mexico_City"}
-{"airports":[],"country_code":"MX","id":"tecamac-de-felipe-villanueva-mx","lat":19.71197,"lon":-98.96854,"name_en":"Tecamac de Felipe Villanueva","name_ru":"Текамак","population":15244,"stations":[],"timezone":"America/Mexico_City"}
 {"airports":[],"country_code":"MX","id":"tecamachalco","lat":18.88352,"lon":-97.73344,"name_en":"Tecamachalco","name_ru":"Текамачалко","population":28679,"stations":[],"timezone":"America/Mexico_City"}
 {"airports":[],"country_code":"MX","id":"tecate","lat":32.566,"lon":-116.63187,"name_en":"Tecate","name_ru":"Текате","population":64764,"stations":[],"timezone":"America/Tijuana"}
 {"airports":[],"country_code":"MX","id":"tecax","lat":20.2052,"lon":-89.28522,"name_en":"Tecax","name_ru":"Текаш","population":25751,"stations":[],"timezone":"America/Merida"}
@@ -43678,7 +43684,7 @@
 {"airports":[],"country_code":"NI","id":"waspan","lat":14.74189,"lon":-83.9717,"name_en":"Waspan","name_ru":"Waspan","population":6403,"stations":[],"timezone":"America/Managua"}
 {"airports":[],"country_code":"NI","id":"wiwili","lat":13.62679,"lon":-85.8254,"name_en":"Wiwili","name_ru":"Wiwili","population":6955,"stations":[],"timezone":"America/Managua"}
 {"airports":[],"country_code":"NL","id":"aalburg","lat":51.75482,"lon":5.13156,"name_en":"Aalburg","name_ru":"Албюрг","population":6588,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"aalsmeer","lat":52.25917,"lon":4.75972,"name_en":"Aalsmeer","name_ru":"Алсмер","population":22991,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"aalsmeer","lat":52.25917,"lon":4.75972,"name_en":"Aalsmeer","name_ru":"Алсмер","population":13730,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"aalten","lat":51.925,"lon":6.58056,"name_en":"Aalten","name_ru":"Алтен","population":19141,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"aarle-rixtel","lat":51.50976,"lon":5.63839,"name_en":"Aarle-Rixtel","name_ru":"Aarle-Rixtel","population":5125,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"abcoude","lat":52.2725,"lon":4.96944,"name_en":"Abcoude","name_ru":"Абкауде","population":6920,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -43706,7 +43712,7 @@
 {"airports":[],"country_code":"NL","id":"baarle-nassau","lat":51.4475,"lon":4.92917,"name_en":"Baarle-Nassau","name_ru":"Baarle-Nassau","population":6845,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"baarlo","lat":51.33083,"lon":6.09444,"name_en":"Baarlo","name_ru":"Барло","population":5215,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"baarn","lat":52.21167,"lon":5.2875,"name_en":"Baarn","name_ru":"Баан","population":24584,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"badhoevedorp","lat":52.33723,"lon":4.78523,"name_en":"Badhoevedorp","name_ru":"Бадхуведорп","population":15080,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"badhoevedorp","lat":52.33723,"lon":4.78523,"name_en":"Badhoevedorp","name_ru":"Бадхуведорп","population":15625,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"barendrecht","lat":51.85667,"lon":4.53472,"name_en":"Barendrecht","name_ru":"Барендрехт","population":38672,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"barneveld","lat":52.14,"lon":5.58472,"name_en":"Barneveld","name_ru":"Барневелд","population":35095,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"bathmen","lat":52.25,"lon":6.2875,"name_en":"Bathmen","name_ru":"Bathmen","population":5815,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -43717,7 +43723,7 @@
 {"airports":[],"country_code":"NL","id":"belfeld","lat":51.3125,"lon":6.11528,"name_en":"Belfeld","name_ru":"Belfeld","population":5575,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"bemmel","lat":51.89167,"lon":5.89861,"name_en":"Bemmel","name_ru":"Бемел","population":12020,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"beneden-leeuwen","lat":51.8825,"lon":5.51528,"name_en":"Beneden-Leeuwen","name_ru":"Beneden-Leeuwen","population":6925,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"bennebroek","lat":52.32083,"lon":4.59861,"name_en":"Bennebroek","name_ru":"Беннебрук","population":5140,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"bennebroek","lat":52.32083,"lon":4.59861,"name_en":"Bennebroek","name_ru":"Беннебрук","population":5410,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"bennekom","lat":51.99833,"lon":5.67639,"name_en":"Bennekom","name_ru":"Беннеком","population":15160,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"benthuizen","lat":52.0775,"lon":4.54444,"name_en":"Benthuizen","name_ru":"Benthuizen","population":18959,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"bergen-nl","lat":52.66917,"lon":4.70417,"name_en":"Bergen","name_ru":"Берген","population":29715,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -43732,9 +43738,10 @@
 {"airports":[],"country_code":"NL","id":"biddinghuizen","lat":52.455,"lon":5.69306,"name_en":"Biddinghuizen","name_ru":"Биддингхёйзен","population":5010,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"bilthoven","lat":52.13,"lon":5.20139,"name_en":"Bilthoven","name_ru":"Билтховен","population":23248,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"bladel","lat":51.36833,"lon":5.22083,"name_en":"Bladel","name_ru":"Бладел","population":9785,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"blaricum","lat":52.2725,"lon":5.24167,"name_en":"Blaricum","name_ru":"Бларикюм","population":5060,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"blaricum","lat":52.2725,"lon":5.24167,"name_en":"Blaricum","name_ru":"Бларикюм","population":12940,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"bleiswijk","lat":52.01083,"lon":4.53194,"name_en":"Bleiswijk","name_ru":"Блейсвейк","population":10549,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"blerick","lat":51.37167,"lon":6.14861,"name_en":"Blerick","name_ru":"Blerick","population":15820,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"bloemendaal","lat":52.4025,"lon":4.62222,"name_en":"Bloemendaal","name_ru":"Bloemendaal","population":6705,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"bodegraven","lat":52.0825,"lon":4.75,"name_en":"Bodegraven","name_ru":"Бодегравен","population":19395,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"boekel","lat":51.60333,"lon":5.675,"name_en":"Boekel","name_ru":"Букел","population":5480,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"bolnes","lat":51.895,"lon":4.57917,"name_en":"Bolnes","name_ru":"Bolnes","population":7650,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -43796,6 +43803,7 @@
 {"airports":[],"country_code":"NL","id":"drunen","lat":51.68583,"lon":5.13333,"name_en":"Drunen","name_ru":"Дрюнен","population":18320,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"druten","lat":51.88833,"lon":5.60556,"name_en":"Druten","name_ru":"Druten","population":6270,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"duiven","lat":51.94667,"lon":6.01389,"name_en":"Duiven","name_ru":"Дёйвен","population":25469,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"duivendrecht","lat":52.32941,"lon":4.93964,"name_en":"Duivendrecht","name_ru":"Duivendrecht","population":5665,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"echt","lat":51.10583,"lon":5.87361,"name_en":"Echt","name_ru":"Эхт","population":7760,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"edam","lat":52.51215,"lon":5.04805,"name_en":"Edam","name_ru":"Эдам","population":7380,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"ede-nl","lat":52.03333,"lon":5.65833,"name_en":"Ede","name_ru":"Эде","population":67670,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -43815,6 +43823,7 @@
 {"airports":[],"country_code":"NL","id":"enter","lat":52.29417,"lon":6.57778,"name_en":"Enter","name_ru":"Ентер","population":7545,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"epe-nl","lat":52.3475,"lon":5.98333,"name_en":"Epe","name_ru":"Эпе","population":33385,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"ermelo-nl","lat":52.29833,"lon":5.62222,"name_en":"Ermelo","name_ru":"Эрмело","population":10255,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"etten-leur","lat":51.57056,"lon":4.63726,"name_en":"Etten-Leur","name_ru":"Эттен-Лёр","population":43869,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"franeker","lat":53.18546,"lon":5.54123,"name_en":"Franeker","name_ru":"Франекер","population":12996,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"gaanderen","lat":51.92859,"lon":6.34634,"name_en":"Gaanderen","name_ru":"Gaanderen","population":5575,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"geertruidenberg","lat":51.70167,"lon":4.85694,"name_en":"Geertruidenberg","name_ru":"Гетруденберг","population":20941,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -43904,12 +43913,12 @@
 {"airports":[],"country_code":"NL","id":"klundert","lat":51.665,"lon":4.53472,"name_en":"Klundert","name_ru":"Клундерт","population":5405,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"kollum","lat":53.27695,"lon":6.15293,"name_en":"Kollum","name_ru":"Kollum","population":5529,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"koog-aan-de-zaan","lat":52.4604,"lon":4.80463,"name_en":"Koog aan de Zaan","name_ru":"Ког-ан-де-Зан","population":11306,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"kortenhoef","lat":52.23917,"lon":5.10694,"name_en":"Kortenhoef","name_ru":"Кортенхов","population":6250,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"kortenhoef","lat":52.23917,"lon":5.10694,"name_en":"Kortenhoef","name_ru":"Кортенхов","population":6570,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"krimpen-aan-den-ijssel","lat":51.91667,"lon":4.60278,"name_en":"Krimpen aan den IJssel","name_ru":"Кримпен-ан-ден-Эйссел","population":29017,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"krommenie","lat":52.49917,"lon":4.7625,"name_en":"Krommenie","name_ru":"Кроммени","population":17240,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"kudelstaart","lat":52.23417,"lon":4.75139,"name_en":"Kudelstaart","name_ru":"Куделстарт","population":9250,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"kudelstaart","lat":52.23417,"lon":4.75139,"name_en":"Kudelstaart","name_ru":"Куделстарт","population":9235,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"landsmeer","lat":52.43083,"lon":4.91528,"name_en":"Landsmeer","name_ru":"Ландсмер","population":10438,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"laren","lat":52.25667,"lon":5.22778,"name_en":"Laren","name_ru":"Ларен","population":11508,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"laren","lat":52.25667,"lon":5.22778,"name_en":"Laren","name_ru":"Ларен","population":11547,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"leek","lat":53.1625,"lon":6.37639,"name_en":"Leek","name_ru":"Лек","population":19651,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"leerdam","lat":51.89333,"lon":5.09167,"name_en":"Leerdam","name_ru":"Лердам","population":20758,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"leersum","lat":52.01167,"lon":5.42778,"name_en":"Leersum","name_ru":"Лерсюм","population":6385,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -43923,13 +43932,13 @@
 {"airports":[],"country_code":"NL","id":"leusden-zuid","lat":52.1175,"lon":5.40556,"name_en":"Leusden-Zuid","name_ru":"Leusden-Zuid","population":5210,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"lichtenvoorde","lat":51.98667,"lon":6.56667,"name_en":"Lichtenvoorde","name_ru":"Лихтенворде","population":19590,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"liesveld","lat":51.9325,"lon":4.83194,"name_en":"Liesveld","name_ru":"Liesveld","population":9767,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"limmen","lat":52.56917,"lon":4.69444,"name_en":"Limmen","name_ru":"Лиммен","population":7300,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"limmen","lat":52.56917,"lon":4.69444,"name_en":"Limmen","name_ru":"Лиммен","population":7790,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"lindenheuvel","lat":50.98509,"lon":5.81667,"name_en":"Lindenheuvel","name_ru":"Lindenheuvel","population":8040,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"lisse","lat":52.26,"lon":4.55694,"name_en":"Lisse","name_ru":"Лиссе","population":22321,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"lochem","lat":52.15917,"lon":6.41111,"name_en":"Lochem","name_ru":"Лохем","population":12360,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"loenen-aan-de-vecht","lat":52.21,"lon":5.02222,"name_en":"Loenen aan de Vecht","name_ru":"Loenen aan de Vecht","population":8222,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"loon-op-zand","lat":51.6275,"lon":5.075,"name_en":"Loon op Zand","name_ru":"Лон-оп-Занд","population":23000,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"loosdrecht","lat":52.207,"lon":5.071,"name_en":"Loosdrecht","name_ru":"Лусдрихт","population":8600,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"loosdrecht","lat":52.207,"lon":5.071,"name_en":"Loosdrecht","name_ru":"Лусдрихт","population":9410,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"lopik","lat":51.9725,"lon":4.94861,"name_en":"Lopik","name_ru":"Lopik","population":14013,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"losser","lat":52.26083,"lon":7.00417,"name_en":"Losser","name_ru":"Лоссер","population":22431,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"lunteren","lat":52.085,"lon":5.62222,"name_en":"Lunteren","name_ru":"Люнтерен","population":12510,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -43951,16 +43960,16 @@
 {"airports":[],"country_code":"NL","id":"mill","lat":51.68833,"lon":5.77917,"name_en":"Mill","name_ru":"Милл","population":6289,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"monster","lat":52.02583,"lon":4.175,"name_en":"Monster","name_ru":"Монстер","population":11580,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"montfoort","lat":52.04583,"lon":4.95278,"name_en":"Montfoort","name_ru":"Montfoort","population":5500,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"muiden","lat":52.33,"lon":5.06944,"name_en":"Muiden","name_ru":"Мёйден","population":6223,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"muiden","lat":52.33,"lon":5.06944,"name_en":"Muiden","name_ru":"Мёйден","population":7325,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"musselkanaal","lat":52.9325,"lon":7.01528,"name_en":"Musselkanaal","name_ru":"Musselkanaal","population":7350,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"naaldwijk","lat":51.99417,"lon":4.20972,"name_en":"Naaldwijk","name_ru":"Налдвейк","population":17753,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"naarden","lat":52.29583,"lon":5.1625,"name_en":"Naarden","name_ru":"Нарден","population":17115,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"naarden","lat":52.29583,"lon":5.1625,"name_en":"Naarden","name_ru":"Нарден","population":18520,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"nederweert","lat":51.28583,"lon":5.74861,"name_en":"Nederweert","name_ru":"Недерверт","population":7205,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"neede","lat":52.13417,"lon":6.61389,"name_en":"Neede","name_ru":"Неде","population":7730,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"nieuw-bergen","lat":51.60333,"lon":6.05417,"name_en":"Nieuw-Bergen","name_ru":"Nieuw-Bergen","population":5270,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"nieuw-lekkerland","lat":51.88915,"lon":4.68653,"name_en":"Nieuw-Lekkerland","name_ru":"Ньив-Леккерланд","population":9535,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"nieuw-loosdrecht","lat":52.19917,"lon":5.13889,"name_en":"Nieuw-Loosdrecht","name_ru":"Ньив-Лосдрехт","population":5970,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"nieuw-vennep","lat":52.26417,"lon":4.63056,"name_en":"Nieuw-Vennep","name_ru":"Ньив-Веннеп","population":31415,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"nieuw-vennep","lat":52.26417,"lon":4.63056,"name_en":"Nieuw-Vennep","name_ru":"Ньив-Веннеп","population":31790,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"nieuwegein","lat":52.02917,"lon":5.08056,"name_en":"Nieuwegein","name_ru":"Ньивегейн","population":61489,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"nieuwerkerk-aan-den-ijssel","lat":51.96833,"lon":4.60972,"name_en":"Nieuwerkerk aan den IJssel","name_ru":"Ньиверкерк-ан-ден-Эйссел","population":10000,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"nijkerk","lat":52.22,"lon":5.48611,"name_en":"Nijkerk","name_ru":"Нейкерк","population":38335,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -43981,7 +43990,7 @@
 {"airports":[],"country_code":"NL","id":"oldenzaal","lat":52.31333,"lon":6.92917,"name_en":"Oldenzaal","name_ru":"Олдензал","population":31410,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"ommen","lat":52.52083,"lon":6.42083,"name_en":"Ommen","name_ru":"Оммен","population":11820,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"oost-souburg","lat":51.46333,"lon":3.60417,"name_en":"Oost-Souburg","name_ru":"Ост-Саубюрг","population":10370,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"oosteinde","lat":52.27917,"lon":4.79583,"name_en":"Oosteinde","name_ru":"Oosteinde","population":7780,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"oosteinde","lat":52.27917,"lon":4.79583,"name_en":"Oosteinde","name_ru":"Oosteinde","population":10495,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"oosterbeek","lat":51.98583,"lon":5.84583,"name_en":"Oosterbeek","name_ru":"Остербек","population":11138,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"oosterhout","lat":51.645,"lon":4.85972,"name_en":"Oosterhout","name_ru":"Остерхоут","population":53107,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"oosterwolde","lat":52.99164,"lon":6.29096,"name_en":"Oosterwolde","name_ru":"Oosterwolde","population":9245,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -43993,7 +44002,7 @@
 {"airports":[],"country_code":"NL","id":"ouddorp","lat":51.81167,"lon":3.93472,"name_en":"Ouddorp","name_ru":"Ауддорп","population":5930,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"oude-pekela","lat":53.10417,"lon":7.00972,"name_en":"Oude Pekela","name_ru":"Oude Pekela","population":7580,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"oudenbosch","lat":51.58833,"lon":4.53472,"name_en":"Oudenbosch","name_ru":"Ауденбос","population":13380,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"ouderkerk-aan-de-amstel","lat":52.29504,"lon":4.90746,"name_en":"Ouderkerk aan de Amstel","name_ru":"Аудеркерк-Ан-Де-Амстел","population":7955,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"ouderkerk-aan-de-amstel","lat":52.29504,"lon":4.90746,"name_en":"Ouderkerk aan de Amstel","name_ru":"Аудеркерк-Ан-Де-Амстел","population":8860,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"oudewater","lat":52.025,"lon":4.86806,"name_en":"Oudewater","name_ru":"Oudewater","population":9836,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"oudorp","lat":52.63333,"lon":4.77361,"name_en":"Oudorp","name_ru":"Oudorp","population":13995,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"panningen","lat":51.32667,"lon":5.97917,"name_en":"Panningen","name_ru":"Паннинген","population":6710,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -44025,6 +44034,7 @@
 {"airports":[],"country_code":"NL","id":"s-gravendeel","lat":51.78,"lon":4.61667,"name_en":"s-Gravendeel","name_ru":"'с-Гравендел","population":9000,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"s-gravenzande","lat":52.00167,"lon":4.16528,"name_en":"'s-Gravenzande","name_ru":"Гравензанде","population":19190,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"s-hertogenbosch","lat":51.69917,"lon":5.30417,"name_en":"'s-Hertogenbosch","name_ru":"Хертогенбос","population":160783,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"santpoort-noord","lat":52.43357,"lon":4.64224,"name_en":"Santpoort-Noord","name_ru":"Santpoort-Noord","population":7260,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"sappemeer","lat":53.16417,"lon":6.79028,"name_en":"Sappemeer","name_ru":"Саппемер","population":8298,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"sassenheim","lat":52.225,"lon":4.52222,"name_en":"Sassenheim","name_ru":"Сассенхейм","population":15510,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"schagen","lat":52.7875,"lon":4.79861,"name_en":"Schagen","name_ru":"Схаген","population":20105,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -44071,8 +44081,8 @@
 {"airports":[],"country_code":"NL","id":"twello","lat":52.23667,"lon":6.10278,"name_en":"Twello","name_ru":"Твелло","population":13500,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"uden","lat":51.66083,"lon":5.61944,"name_en":"Uden","name_ru":"Уден","population":34601,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"udenhout","lat":51.60917,"lon":5.14306,"name_en":"Udenhout","name_ru":"Udenhout","population":7650,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"uitgeest","lat":52.52917,"lon":4.70972,"name_en":"Uitgeest","name_ru":"Эйтгест","population":11794,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"uithoorn","lat":52.2375,"lon":4.82639,"name_en":"Uithoorn","name_ru":"Эйтхорн","population":26846,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"uitgeest","lat":52.52917,"lon":4.70972,"name_en":"Uitgeest","name_ru":"Эйтгест","population":13489,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"uithoorn","lat":52.2375,"lon":4.82639,"name_en":"Uithoorn","name_ru":"Эйтхорн","population":28434,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"ulft","lat":51.89,"lon":6.37778,"name_en":"Ulft","name_ru":"Ульфт","population":10440,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"urk","lat":52.6625,"lon":5.60139,"name_en":"Urk","name_ru":"Урк","population":22173,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"utrecht","lat":52.09083,"lon":5.12222,"name_en":"Utrecht","name_ru":"Утрехт","population":376435,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -44088,7 +44098,7 @@
 {"airports":[],"country_code":"NL","id":"veldhoven","lat":51.41833,"lon":5.40278,"name_en":"Veldhoven","name_ru":"Велдховен","population":5340,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"veldhuizen","lat":52.07537,"lon":5.01234,"name_en":"Veldhuizen","name_ru":"Veldhuizen","population":9460,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"velp","lat":51.995,"lon":5.97361,"name_en":"Velp","name_ru":"Велп","population":17669,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"velsen-zuid","lat":52.46,"lon":4.65,"name_en":"Velsen-Zuid","name_ru":"Velsen-Zuid","population":67758,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"velsen-noord","lat":52.47167,"lon":4.64722,"name_en":"Velsen-Noord","name_ru":"Велзен-Норд","population":15340,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"velserbroek","lat":52.43283,"lon":4.66155,"name_en":"Velserbroek","name_ru":"Velserbroek","population":15420,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"venlo","lat":51.37,"lon":6.16806,"name_en":"Venlo","name_ru":"Венло","population":101988,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"venray","lat":51.525,"lon":5.975,"name_en":"Venray","name_ru":"Venray","population":39047,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -44139,7 +44149,7 @@
 {"airports":[],"country_code":"NL","id":"zaandijk","lat":52.47494,"lon":4.80686,"name_en":"Zaandijk","name_ru":"Зандейк","population":8868,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"zaanstad","lat":52.45313,"lon":4.81356,"name_en":"Zaanstad","name_ru":"Занстад","population":140085,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"zaltbommel","lat":51.81,"lon":5.24444,"name_en":"Zaltbommel","name_ru":"Залтбоммел","population":26383,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"zandvoort","lat":52.37125,"lon":4.53306,"name_en":"Zandvoort","name_ru":"Зандвоорт","population":16868,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"zandvoort","lat":52.37125,"lon":4.53306,"name_en":"Zandvoort","name_ru":"Зандвоорт","population":16325,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"zeewolde","lat":52.33,"lon":5.54167,"name_en":"Zeewolde","name_ru":"Зеволде","population":19022,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"zeist","lat":52.09,"lon":5.23333,"name_en":"Zeist","name_ru":"Зейст","population":60949,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"zelhem","lat":52.00667,"lon":6.34861,"name_en":"Zelhem","name_ru":"Зелхем","population":5760,"stations":[],"timezone":"Europe/Amsterdam"}
@@ -44152,7 +44162,7 @@
 {"airports":[],"country_code":"NL","id":"zundert","lat":51.47167,"lon":4.65556,"name_en":"Zundert","name_ru":"Зюндерт","population":6835,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"zutphen","lat":52.13833,"lon":6.20139,"name_en":"Zutphen","name_ru":"Зютфен","population":36188,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"zwaag","lat":52.66917,"lon":5.07639,"name_en":"Zwaag","name_ru":"Zwaag","population":17671,"stations":[],"timezone":"Europe/Amsterdam"}
-{"airports":[],"country_code":"NL","id":"zwanenburg","lat":52.38,"lon":4.74583,"name_en":"Zwanenburg","name_ru":"Zwanenburg","population":7935,"stations":[],"timezone":"Europe/Amsterdam"}
+{"airports":[],"country_code":"NL","id":"zwanenburg","lat":52.38,"lon":4.74583,"name_en":"Zwanenburg","name_ru":"Zwanenburg","population":8095,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"zwijndrecht","lat":51.8175,"lon":4.63333,"name_en":"Zwijndrecht","name_ru":"Звейндрехте","population":45696,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NL","id":"zwolle","lat":52.5125,"lon":6.09444,"name_en":"Zwolle","name_ru":"Зволле","population":129840,"stations":[],"timezone":"Europe/Amsterdam"}
 {"airports":[],"country_code":"NO","id":"akrehamn","lat":59.26053,"lon":5.18689,"name_en":"Akrehamn","name_ru":"Окрехамн","population":5018,"stations":[],"timezone":"Europe/Oslo"}
@@ -46093,7 +46103,6 @@
 {"airports":[],"country_code":"PK","id":"berani","lat":25.78497,"lon":68.80754,"name_en":"Berani","name_ru":"Berani","population":9975,"stations":[],"timezone":"Asia/Karachi"}
 {"airports":[],"country_code":"PK","id":"bhag","lat":29.04174,"lon":67.82394,"name_en":"Bhag","name_ru":"Бхаг","population":14555,"stations":[],"timezone":"Asia/Karachi"}
 {"airports":[],"country_code":"PK","id":"bhagowal","lat":32.43751,"lon":74.66939,"name_en":"Bhagowal","name_ru":"Bhagowal","population":12000,"stations":[],"timezone":"Asia/Karachi"}
-{"airports":[],"country_code":"PK","id":"bhagwal","lat":32.82111,"lon":73.95528,"name_en":"Bhagwal","name_ru":"Bhagwal","population":10669,"stations":[],"timezone":"Asia/Karachi"}
 {"airports":[],"country_code":"PK","id":"bhakkar","lat":31.62685,"lon":71.06471,"name_en":"Bhakkar","name_ru":"Бхаккар","population":131658,"stations":[],"timezone":"Asia/Karachi"}
 {"airports":[],"country_code":"PK","id":"bhalwal","lat":32.26576,"lon":72.89809,"name_en":"Bhalwal","name_ru":"Бхалвал","population":74744,"stations":[],"timezone":"Asia/Karachi"}
 {"airports":[],"country_code":"PK","id":"bhan","lat":26.55831,"lon":67.72139,"name_en":"Bhan","name_ru":"Бхан","population":16961,"stations":[],"timezone":"Asia/Karachi"}
@@ -51638,9 +51647,10 @@
 {"airports":[],"country_code":"TM","id":"kerkici","lat":37.85075,"lon":65.2433,"name_en":"Kerkici","name_ru":"Керкичи","population":14996,"stations":[],"timezone":"Asia/Ashgabat"}
 {"airports":[],"country_code":"TM","id":"koeneuergenc","lat":42.32613,"lon":59.15307,"name_en":"Koeneuergenc","name_ru":"Куня-Ургенч","population":37176,"stations":[],"timezone":"Asia/Ashgabat"}
 {"airports":[],"country_code":"TM","id":"koeytendag","lat":37.51557,"lon":66.01348,"name_en":"Koeytendag","name_ru":"Koeytendag","population":8654,"stations":[],"timezone":"Asia/Ashgabat"}
-{"airports":[],"country_code":"TM","id":"magdanly","lat":37.81244,"lon":66.04656,"name_en":"Magdanly","name_ru":"Магданлы","population":44508,"stations":[],"timezone":"Asia/Ashgabat"}
+{"airports":[],"country_code":"TM","id":"magdanly","lat":37.80725,"lon":66.05688,"name_en":"Magdanly","name_ru":"Магданлы","population":44508,"stations":[],"timezone":"Asia/Ashgabat"}
 {"airports":[],"country_code":"TM","id":"magtymguly","lat":38.43637,"lon":56.28401,"name_en":"Magtymguly","name_ru":"Махтумкули","population":15386,"stations":[],"timezone":"Asia/Ashgabat"}
 {"airports":[],"country_code":"TM","id":"magtymguly-tm","lat":37.88341,"lon":58.51573,"name_en":"Magtymguly","name_ru":"имени Магтымгулы","population":9173,"stations":[],"timezone":"Asia/Ashgabat"}
+{"airports":[],"country_code":"TM","id":"mehinli","lat":37.46612,"lon":59.41618,"name_en":"Mehinli","name_ru":"Мехинли","population":5089,"stations":[],"timezone":"Asia/Ashgabat"}
 {"airports":[],"country_code":"TM","id":"murgap","lat":37.49656,"lon":61.97142,"name_en":"Murgap","name_ru":"Мургап","population":14822,"stations":[],"timezone":"Asia/Ashgabat"}
 {"airports":[],"country_code":"TM","id":"nohur","lat":38.48157,"lon":57.03319,"name_en":"Nohur","name_ru":"Нохур","population":6258,"stations":[],"timezone":"Asia/Ashgabat"}
 {"airports":[],"country_code":"TM","id":"nyyazow","lat":41.83926,"lon":60.13172,"name_en":"Nyyazow","name_ru":"Nyyazow","population":7291,"stations":[],"timezone":"Asia/Ashgabat"}

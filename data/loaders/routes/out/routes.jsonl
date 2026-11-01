@@ -87,7 +87,7 @@
 {"direct":false,"distance_km":2079,"from_iata":"AER","to_iata":"PRG"}
 {"direct":false,"distance_km":921,"from_iata":"AER","to_iata":"SAW"}
 {"direct":true,"distance_km":1791,"from_iata":"AER","to_iata":"SSH"}
-{"direct":false,"distance_km":1405,"from_iata":"AER","to_iata":"SVO"}
+{"direct":true,"distance_km":1405,"from_iata":"AER","to_iata":"SVO"}
 {"direct":true,"distance_km":2081,"from_iata":"AER","to_iata":"SVX"}
 {"direct":true,"distance_km":2409,"from_iata":"AER","to_iata":"TAS"}
 {"direct":true,"distance_km":455,"from_iata":"AER","to_iata":"TBS"}
@@ -189,13 +189,13 @@
 {"direct":true,"distance_km":679,"from_iata":"ALA","to_iata":"TAS"}
 {"direct":true,"distance_km":2621,"from_iata":"ALA","to_iata":"TBS"}
 {"direct":false,"distance_km":668,"from_iata":"ALA","to_iata":"TVT"}
-{"direct":false,"distance_km":3124,"from_iata":"ALA","to_iata":"VKO"}
+{"direct":true,"distance_km":3124,"from_iata":"ALA","to_iata":"VKO"}
 {"direct":false,"distance_km":4369,"from_iata":"ALA","to_iata":"VVO"}
 {"direct":false,"distance_km":3068,"from_iata":"ALA","to_iata":"ZIA"}
 {"direct":false,"distance_km":2352,"from_iata":"ARH","to_iata":"AER"}
 {"direct":false,"distance_km":3266,"from_iata":"ARH","to_iata":"ALA"}
 {"direct":false,"distance_km":3163,"from_iata":"ARH","to_iata":"ATH"}
-{"direct":true,"distance_km":3150,"from_iata":"ARH","to_iata":"AYT"}
+{"direct":false,"distance_km":3150,"from_iata":"ARH","to_iata":"AYT"}
 {"direct":false,"distance_km":3560,"from_iata":"ARH","to_iata":"BCN"}
 {"direct":false,"distance_km":3161,"from_iata":"ARH","to_iata":"BJV"}
 {"direct":false,"distance_km":7233,"from_iata":"ARH","to_iata":"BKK"}
@@ -263,7 +263,7 @@
 {"direct":false,"distance_km":802,"from_iata":"ASF","to_iata":"GDZ"}
 {"direct":false,"distance_km":6381,"from_iata":"ASF","to_iata":"HKT"}
 {"direct":false,"distance_km":7366,"from_iata":"ASF","to_iata":"HND"}
-{"direct":true,"distance_km":2465,"from_iata":"ASF","to_iata":"HRG"}
+{"direct":false,"distance_km":2465,"from_iata":"ASF","to_iata":"HRG"}
 {"direct":false,"distance_km":4038,"from_iata":"ASF","to_iata":"IKT"}
 {"direct":false,"distance_km":2769,"from_iata":"ASF","to_iata":"INN"}
 {"direct":false,"distance_km":1640,"from_iata":"ASF","to_iata":"IST"}
@@ -329,7 +329,7 @@
 {"direct":false,"distance_km":5822,"from_iata":"AZN","to_iata":"NRT"}
 {"direct":false,"distance_km":5399,"from_iata":"AZN","to_iata":"ORY"}
 {"direct":false,"distance_km":4528,"from_iata":"AZN","to_iata":"PRG"}
-{"direct":false,"distance_km":3580,"from_iata":"AZN","to_iata":"SAW"}
+{"direct":true,"distance_km":3580,"from_iata":"AZN","to_iata":"SAW"}
 {"direct":false,"distance_km":3722,"from_iata":"AZN","to_iata":"SSH"}
 {"direct":false,"distance_km":3037,"from_iata":"AZN","to_iata":"SVO"}
 {"direct":false,"distance_km":1964,"from_iata":"AZN","to_iata":"SVX"}
@@ -777,7 +777,7 @@
 {"direct":false,"distance_km":689,"from_iata":"BXY","to_iata":"TAS"}
 {"direct":false,"distance_km":1529,"from_iata":"BXY","to_iata":"TBS"}
 {"direct":false,"distance_km":691,"from_iata":"BXY","to_iata":"TVT"}
-{"direct":true,"distance_km":2122,"from_iata":"BXY","to_iata":"VKO"}
+{"direct":false,"distance_km":2122,"from_iata":"BXY","to_iata":"VKO"}
 {"direct":false,"distance_km":5298,"from_iata":"BXY","to_iata":"VVO"}
 {"direct":false,"distance_km":2068,"from_iata":"BXY","to_iata":"ZIA"}
 {"direct":false,"distance_km":1764,"from_iata":"CEE","to_iata":"AER"}
@@ -832,7 +832,7 @@
 {"direct":true,"distance_km":2027,"from_iata":"CEK","to_iata":"AER"}
 {"direct":false,"distance_km":1734,"from_iata":"CEK","to_iata":"ALA"}
 {"direct":false,"distance_km":3395,"from_iata":"CEK","to_iata":"ATH"}
-{"direct":true,"distance_km":3085,"from_iata":"CEK","to_iata":"AYT"}
+{"direct":false,"distance_km":3085,"from_iata":"CEK","to_iata":"AYT"}
 {"direct":false,"distance_km":4506,"from_iata":"CEK","to_iata":"BCN"}
 {"direct":false,"distance_km":3233,"from_iata":"CEK","to_iata":"BJV"}
 {"direct":false,"distance_km":5724,"from_iata":"CEK","to_iata":"BKK"}
@@ -851,7 +851,7 @@
 {"direct":false,"distance_km":2045,"from_iata":"CEK","to_iata":"GDZ"}
 {"direct":true,"distance_km":6165,"from_iata":"CEK","to_iata":"HKT"}
 {"direct":false,"distance_km":6127,"from_iata":"CEK","to_iata":"HND"}
-{"direct":true,"distance_km":3839,"from_iata":"CEK","to_iata":"HRG"}
+{"direct":false,"distance_km":3839,"from_iata":"CEK","to_iata":"HRG"}
 {"direct":false,"distance_km":2793,"from_iata":"CEK","to_iata":"IKT"}
 {"direct":false,"distance_km":3519,"from_iata":"CEK","to_iata":"INN"}
 {"direct":false,"distance_km":2843,"from_iata":"CEK","to_iata":"IST"}
@@ -869,10 +869,10 @@
 {"direct":false,"distance_km":3987,"from_iata":"CEK","to_iata":"ORY"}
 {"direct":false,"distance_km":3172,"from_iata":"CEK","to_iata":"PRG"}
 {"direct":false,"distance_km":2838,"from_iata":"CEK","to_iata":"SAW"}
-{"direct":true,"distance_km":3733,"from_iata":"CEK","to_iata":"SSH"}
+{"direct":false,"distance_km":3733,"from_iata":"CEK","to_iata":"SSH"}
 {"direct":true,"distance_km":1508,"from_iata":"CEK","to_iata":"SVO"}
-{"direct":true,"distance_km":166,"from_iata":"CEK","to_iata":"SVX"}
-{"direct":false,"distance_km":1662,"from_iata":"CEK","to_iata":"TAS"}
+{"direct":false,"distance_km":166,"from_iata":"CEK","to_iata":"SVX"}
+{"direct":true,"distance_km":1662,"from_iata":"CEK","to_iata":"TAS"}
 {"direct":false,"distance_km":1936,"from_iata":"CEK","to_iata":"TBS"}
 {"direct":false,"distance_km":1659,"from_iata":"CEK","to_iata":"TVT"}
 {"direct":true,"distance_km":1521,"from_iata":"CEK","to_iata":"VKO"}
@@ -927,7 +927,7 @@
 {"direct":true,"distance_km":2736,"from_iata":"CIT","to_iata":"VKO"}
 {"direct":false,"distance_km":4983,"from_iata":"CIT","to_iata":"VVO"}
 {"direct":false,"distance_km":2682,"from_iata":"CIT","to_iata":"ZIA"}
-{"direct":true,"distance_km":1500,"from_iata":"CSY","to_iata":"AER"}
+{"direct":false,"distance_km":1500,"from_iata":"CSY","to_iata":"AER"}
 {"direct":false,"distance_km":2531,"from_iata":"CSY","to_iata":"ALA"}
 {"direct":false,"distance_km":2661,"from_iata":"CSY","to_iata":"ATH"}
 {"direct":false,"distance_km":2467,"from_iata":"CSY","to_iata":"AYT"}
@@ -1404,7 +1404,7 @@
 {"direct":true,"distance_km":2587,"from_iata":"EVN","to_iata":"PRG"}
 {"direct":true,"distance_km":1276,"from_iata":"EVN","to_iata":"SAW"}
 {"direct":true,"distance_km":1635,"from_iata":"EVN","to_iata":"SSH"}
-{"direct":false,"distance_km":1833,"from_iata":"EVN","to_iata":"SVO"}
+{"direct":true,"distance_km":1833,"from_iata":"EVN","to_iata":"SVO"}
 {"direct":true,"distance_km":2194,"from_iata":"EVN","to_iata":"SVX"}
 {"direct":true,"distance_km":2094,"from_iata":"EVN","to_iata":"TAS"}
 {"direct":true,"distance_km":175,"from_iata":"EVN","to_iata":"TBS"}
@@ -1586,7 +1586,7 @@
 {"direct":false,"distance_km":840,"from_iata":"GDZ","to_iata":"IST"}
 {"direct":false,"distance_km":1689,"from_iata":"GDZ","to_iata":"KGD"}
 {"direct":false,"distance_km":1462,"from_iata":"GDZ","to_iata":"KZN"}
-{"direct":true,"distance_km":1770,"from_iata":"GDZ","to_iata":"LED"}
+{"direct":false,"distance_km":1770,"from_iata":"GDZ","to_iata":"LED"}
 {"direct":false,"distance_km":3913,"from_iata":"GDZ","to_iata":"LIS"}
 {"direct":false,"distance_km":799,"from_iata":"GDZ","to_iata":"MCX"}
 {"direct":false,"distance_km":5670,"from_iata":"GDZ","to_iata":"MLE"}
@@ -1659,7 +1659,7 @@
 {"direct":true,"distance_km":1447,"from_iata":"GOJ","to_iata":"AER"}
 {"direct":false,"distance_km":2744,"from_iata":"GOJ","to_iata":"ALA"}
 {"direct":false,"distance_km":2509,"from_iata":"GOJ","to_iata":"ATH"}
-{"direct":true,"distance_km":2358,"from_iata":"GOJ","to_iata":"AYT"}
+{"direct":false,"distance_km":2358,"from_iata":"GOJ","to_iata":"AYT"}
 {"direct":false,"distance_km":3407,"from_iata":"GOJ","to_iata":"BCN"}
 {"direct":false,"distance_km":2428,"from_iata":"GOJ","to_iata":"BJV"}
 {"direct":false,"distance_km":6737,"from_iata":"GOJ","to_iata":"BKK"}
@@ -1668,7 +1668,7 @@
 {"direct":false,"distance_km":2849,"from_iata":"GOJ","to_iata":"CDG"}
 {"direct":false,"distance_km":2746,"from_iata":"GOJ","to_iata":"CIA"}
 {"direct":false,"distance_km":7394,"from_iata":"GOJ","to_iata":"CXR"}
-{"direct":true,"distance_km":378,"from_iata":"GOJ","to_iata":"DME"}
+{"direct":false,"distance_km":378,"from_iata":"GOJ","to_iata":"DME"}
 {"direct":false,"distance_km":6707,"from_iata":"GOJ","to_iata":"DMK"}
 {"direct":false,"distance_km":9695,"from_iata":"GOJ","to_iata":"DPS"}
 {"direct":false,"distance_km":3603,"from_iata":"GOJ","to_iata":"DWC"}
@@ -1757,7 +1757,7 @@
 {"direct":true,"distance_km":1029,"from_iata":"GSV","to_iata":"AER"}
 {"direct":false,"distance_km":2474,"from_iata":"GSV","to_iata":"ALA"}
 {"direct":false,"distance_km":2311,"from_iata":"GSV","to_iata":"ATH"}
-{"direct":true,"distance_km":2043,"from_iata":"GSV","to_iata":"AYT"}
+{"direct":false,"distance_km":2043,"from_iata":"GSV","to_iata":"AYT"}
 {"direct":false,"distance_km":3506,"from_iata":"GSV","to_iata":"BCN"}
 {"direct":false,"distance_km":2165,"from_iata":"GSV","to_iata":"BJV"}
 {"direct":false,"distance_km":6414,"from_iata":"GSV","to_iata":"BKK"}
@@ -1800,7 +1800,7 @@
 {"direct":false,"distance_km":2103,"from_iata":"GSV","to_iata":"TAS"}
 {"direct":false,"distance_km":1121,"from_iata":"GSV","to_iata":"TBS"}
 {"direct":false,"distance_km":2106,"from_iata":"GSV","to_iata":"TVT"}
-{"direct":false,"distance_km":728,"from_iata":"GSV","to_iata":"VKO"}
+{"direct":true,"distance_km":728,"from_iata":"GSV","to_iata":"VKO"}
 {"direct":false,"distance_km":6137,"from_iata":"GSV","to_iata":"VVO"}
 {"direct":false,"distance_km":679,"from_iata":"GSV","to_iata":"ZIA"}
 {"direct":false,"distance_km":1013,"from_iata":"GUW","to_iata":"AER"}
@@ -1893,7 +1893,7 @@
 {"direct":false,"distance_km":3533,"from_iata":"HMA","to_iata":"PRG"}
 {"direct":false,"distance_km":3484,"from_iata":"HMA","to_iata":"SAW"}
 {"direct":false,"distance_km":4486,"from_iata":"HMA","to_iata":"SSH"}
-{"direct":true,"distance_km":1904,"from_iata":"HMA","to_iata":"SVO"}
+{"direct":false,"distance_km":1904,"from_iata":"HMA","to_iata":"SVO"}
 {"direct":true,"distance_km":673,"from_iata":"HMA","to_iata":"SVX"}
 {"direct":false,"distance_km":2198,"from_iata":"HMA","to_iata":"TAS"}
 {"direct":false,"distance_km":2695,"from_iata":"HMA","to_iata":"TBS"}
@@ -2186,7 +2186,7 @@
 {"direct":false,"distance_km":5861,"from_iata":"IKT","to_iata":"PRG"}
 {"direct":false,"distance_km":5609,"from_iata":"IKT","to_iata":"SAW"}
 {"direct":false,"distance_km":6253,"from_iata":"IKT","to_iata":"SSH"}
-{"direct":true,"distance_km":4213,"from_iata":"IKT","to_iata":"SVO"}
+{"direct":false,"distance_km":4213,"from_iata":"IKT","to_iata":"SVO"}
 {"direct":true,"distance_km":2808,"from_iata":"IKT","to_iata":"SVX"}
 {"direct":true,"distance_km":2904,"from_iata":"IKT","to_iata":"TAS"}
 {"direct":false,"distance_km":4525,"from_iata":"IKT","to_iata":"TBS"}
@@ -2344,7 +2344,7 @@
 {"direct":false,"distance_km":1886,"from_iata":"KGD","to_iata":"AER"}
 {"direct":false,"distance_km":4176,"from_iata":"KGD","to_iata":"ALA"}
 {"direct":false,"distance_km":1902,"from_iata":"KGD","to_iata":"ATH"}
-{"direct":true,"distance_km":2146,"from_iata":"KGD","to_iata":"AYT"}
+{"direct":false,"distance_km":2146,"from_iata":"KGD","to_iata":"AYT"}
 {"direct":false,"distance_km":2031,"from_iata":"KGD","to_iata":"BCN"}
 {"direct":false,"distance_km":2034,"from_iata":"KGD","to_iata":"BJV"}
 {"direct":false,"distance_km":8139,"from_iata":"KGD","to_iata":"BKK"}
@@ -2539,7 +2539,7 @@
 {"direct":true,"distance_km":3914,"from_iata":"KJA","to_iata":"AER"}
 {"direct":true,"distance_km":1798,"from_iata":"KJA","to_iata":"ALA"}
 {"direct":false,"distance_km":5318,"from_iata":"KJA","to_iata":"ATH"}
-{"direct":true,"distance_km":4978,"from_iata":"KJA","to_iata":"AYT"}
+{"direct":false,"distance_km":4978,"from_iata":"KJA","to_iata":"AYT"}
 {"direct":false,"distance_km":6333,"from_iata":"KJA","to_iata":"BCN"}
 {"direct":false,"distance_km":5144,"from_iata":"KJA","to_iata":"BJV"}
 {"direct":true,"distance_km":4778,"from_iata":"KJA","to_iata":"BKK"}
@@ -2569,7 +2569,7 @@
 {"direct":false,"distance_km":3484,"from_iata":"KJA","to_iata":"MCX"}
 {"direct":false,"distance_km":6020,"from_iata":"KJA","to_iata":"MLE"}
 {"direct":false,"distance_km":3207,"from_iata":"KJA","to_iata":"MMK"}
-{"direct":true,"distance_km":3666,"from_iata":"KJA","to_iata":"MRV"}
+{"direct":false,"distance_km":3666,"from_iata":"KJA","to_iata":"MRV"}
 {"direct":false,"distance_km":3963,"from_iata":"KJA","to_iata":"MSQ"}
 {"direct":true,"distance_km":444,"from_iata":"KJA","to_iata":"NOZ"}
 {"direct":false,"distance_km":4222,"from_iata":"KJA","to_iata":"NRT"}
@@ -2613,7 +2613,7 @@
 {"direct":false,"distance_km":2033,"from_iata":"KMW","to_iata":"IST"}
 {"direct":false,"distance_km":1294,"from_iata":"KMW","to_iata":"KGD"}
 {"direct":false,"distance_km":559,"from_iata":"KMW","to_iata":"KZN"}
-{"direct":true,"distance_km":658,"from_iata":"KMW","to_iata":"LED"}
+{"direct":false,"distance_km":658,"from_iata":"KMW","to_iata":"LED"}
 {"direct":false,"distance_km":4140,"from_iata":"KMW","to_iata":"LIS"}
 {"direct":false,"distance_km":1729,"from_iata":"KMW","to_iata":"MCX"}
 {"direct":false,"distance_km":6597,"from_iata":"KMW","to_iata":"MLE"}
@@ -2725,7 +2725,7 @@
 {"direct":false,"distance_km":3078,"from_iata":"KRO","to_iata":"SAW"}
 {"direct":false,"distance_km":3933,"from_iata":"KRO","to_iata":"SSH"}
 {"direct":false,"distance_km":1744,"from_iata":"KRO","to_iata":"SVO"}
-{"direct":false,"distance_km":319,"from_iata":"KRO","to_iata":"SVX"}
+{"direct":true,"distance_km":319,"from_iata":"KRO","to_iata":"SVX"}
 {"direct":false,"distance_km":1606,"from_iata":"KRO","to_iata":"TAS"}
 {"direct":false,"distance_km":2135,"from_iata":"KRO","to_iata":"TBS"}
 {"direct":false,"distance_km":1601,"from_iata":"KRO","to_iata":"TVT"}
@@ -2876,7 +2876,7 @@
 {"direct":true,"distance_km":405,"from_iata":"KSQ","to_iata":"TAS"}
 {"direct":false,"distance_km":1791,"from_iata":"KSQ","to_iata":"TBS"}
 {"direct":false,"distance_km":416,"from_iata":"KSQ","to_iata":"TVT"}
-{"direct":false,"distance_km":2815,"from_iata":"KSQ","to_iata":"VKO"}
+{"direct":true,"distance_km":2815,"from_iata":"KSQ","to_iata":"VKO"}
 {"direct":false,"distance_km":5437,"from_iata":"KSQ","to_iata":"VVO"}
 {"direct":false,"distance_km":2765,"from_iata":"KSQ","to_iata":"ZIA"}
 {"direct":false,"distance_km":2027,"from_iata":"KSZ","to_iata":"AER"}
@@ -2931,7 +2931,7 @@
 {"direct":true,"distance_km":1345,"from_iata":"KUF","to_iata":"AER"}
 {"direct":false,"distance_km":2262,"from_iata":"KUF","to_iata":"ALA"}
 {"direct":false,"distance_km":2645,"from_iata":"KUF","to_iata":"ATH"}
-{"direct":true,"distance_km":2374,"from_iata":"KUF","to_iata":"AYT"}
+{"direct":false,"distance_km":2374,"from_iata":"KUF","to_iata":"AYT"}
 {"direct":false,"distance_km":3781,"from_iata":"KUF","to_iata":"BCN"}
 {"direct":false,"distance_km":2500,"from_iata":"KUF","to_iata":"BJV"}
 {"direct":false,"distance_km":6243,"from_iata":"KUF","to_iata":"BKK"}
@@ -2989,7 +2989,7 @@
 {"direct":false,"distance_km":2683,"from_iata":"KVK","to_iata":"CDG"}
 {"direct":false,"distance_km":3121,"from_iata":"KVK","to_iata":"CIA"}
 {"direct":false,"distance_km":8166,"from_iata":"KVK","to_iata":"CXR"}
-{"direct":false,"distance_km":1359,"from_iata":"KVK","to_iata":"DME"}
+{"direct":true,"distance_km":1359,"from_iata":"KVK","to_iata":"DME"}
 {"direct":false,"distance_km":7611,"from_iata":"KVK","to_iata":"DMK"}
 {"direct":false,"distance_km":10550,"from_iata":"KVK","to_iata":"DPS"}
 {"direct":false,"distance_km":4958,"from_iata":"KVK","to_iata":"DWC"}
@@ -3282,14 +3282,14 @@
 {"direct":false,"distance_km":2133,"from_iata":"LED","to_iata":"CDG"}
 {"direct":false,"distance_km":2339,"from_iata":"LED","to_iata":"CIA"}
 {"direct":true,"distance_km":8240,"from_iata":"LED","to_iata":"CXR"}
-{"direct":false,"distance_km":667,"from_iata":"LED","to_iata":"DME"}
+{"direct":true,"distance_km":667,"from_iata":"LED","to_iata":"DME"}
 {"direct":false,"distance_km":7579,"from_iata":"LED","to_iata":"DMK"}
 {"direct":false,"distance_km":10564,"from_iata":"LED","to_iata":"DPS"}
 {"direct":false,"distance_km":4331,"from_iata":"LED","to_iata":"DWC"}
 {"direct":true,"distance_km":4301,"from_iata":"LED","to_iata":"DXB"}
 {"direct":true,"distance_km":2396,"from_iata":"LED","to_iata":"EVN"}
 {"direct":false,"distance_km":2351,"from_iata":"LED","to_iata":"FCO"}
-{"direct":true,"distance_km":1770,"from_iata":"LED","to_iata":"GDZ"}
+{"direct":false,"distance_km":1770,"from_iata":"LED","to_iata":"GDZ"}
 {"direct":true,"distance_km":8012,"from_iata":"LED","to_iata":"HKT"}
 {"direct":false,"distance_km":7622,"from_iata":"LED","to_iata":"HND"}
 {"direct":true,"distance_km":3638,"from_iata":"LED","to_iata":"HRG"}
@@ -3310,7 +3310,7 @@
 {"direct":false,"distance_km":1478,"from_iata":"LED","to_iata":"PRG"}
 {"direct":false,"distance_km":2103,"from_iata":"LED","to_iata":"SAW"}
 {"direct":true,"distance_km":3552,"from_iata":"LED","to_iata":"SSH"}
-{"direct":true,"distance_km":598,"from_iata":"LED","to_iata":"SVO"}
+{"direct":false,"distance_km":598,"from_iata":"LED","to_iata":"SVO"}
 {"direct":true,"distance_km":1801,"from_iata":"LED","to_iata":"SVX"}
 {"direct":true,"distance_km":3365,"from_iata":"LED","to_iata":"TAS"}
 {"direct":true,"distance_km":2254,"from_iata":"LED","to_iata":"TBS"}
@@ -3407,7 +3407,7 @@
 {"direct":false,"distance_km":2658,"from_iata":"MCX","to_iata":"PRG"}
 {"direct":false,"distance_km":1531,"from_iata":"MCX","to_iata":"SAW"}
 {"direct":false,"distance_km":2036,"from_iata":"MCX","to_iata":"SSH"}
-{"direct":true,"distance_km":1637,"from_iata":"MCX","to_iata":"SVO"}
+{"direct":false,"distance_km":1637,"from_iata":"MCX","to_iata":"SVO"}
 {"direct":true,"distance_km":1807,"from_iata":"MCX","to_iata":"SVX"}
 {"direct":true,"distance_km":1790,"from_iata":"MCX","to_iata":"TAS"}
 {"direct":false,"distance_km":256,"from_iata":"MCX","to_iata":"TBS"}
@@ -3752,7 +3752,7 @@
 {"direct":false,"distance_km":2113,"from_iata":"NAL","to_iata":"TAS"}
 {"direct":false,"distance_km":232,"from_iata":"NAL","to_iata":"TBS"}
 {"direct":false,"distance_km":2120,"from_iata":"NAL","to_iata":"TVT"}
-{"direct":false,"distance_km":1418,"from_iata":"NAL","to_iata":"VKO"}
+{"direct":true,"distance_km":1418,"from_iata":"NAL","to_iata":"VKO"}
 {"direct":false,"distance_km":6769,"from_iata":"NAL","to_iata":"VVO"}
 {"direct":false,"distance_km":1395,"from_iata":"NAL","to_iata":"ZIA"}
 {"direct":false,"distance_km":1602,"from_iata":"NBC","to_iata":"AER"}
@@ -4131,7 +4131,7 @@
 {"direct":false,"distance_km":2877,"from_iata":"NOJ","to_iata":"MCX"}
 {"direct":false,"distance_km":6561,"from_iata":"NOJ","to_iata":"MLE"}
 {"direct":false,"distance_km":1976,"from_iata":"NOJ","to_iata":"MMK"}
-{"direct":true,"distance_km":2930,"from_iata":"NOJ","to_iata":"MRV"}
+{"direct":false,"distance_km":2930,"from_iata":"NOJ","to_iata":"MRV"}
 {"direct":false,"distance_km":2851,"from_iata":"NOJ","to_iata":"MSQ"}
 {"direct":false,"distance_km":1237,"from_iata":"NOJ","to_iata":"NOZ"}
 {"direct":false,"distance_km":5281,"from_iata":"NOJ","to_iata":"NRT"}
@@ -4187,7 +4187,7 @@
 {"direct":false,"distance_km":4772,"from_iata":"NOZ","to_iata":"PRG"}
 {"direct":false,"distance_km":4431,"from_iata":"NOZ","to_iata":"SAW"}
 {"direct":false,"distance_km":5101,"from_iata":"NOZ","to_iata":"SSH"}
-{"direct":false,"distance_km":3106,"from_iata":"NOZ","to_iata":"SVO"}
+{"direct":true,"distance_km":3106,"from_iata":"NOZ","to_iata":"SVO"}
 {"direct":true,"distance_km":1673,"from_iata":"NOZ","to_iata":"SVX"}
 {"direct":false,"distance_km":1912,"from_iata":"NOZ","to_iata":"TAS"}
 {"direct":false,"distance_km":3352,"from_iata":"NOZ","to_iata":"TBS"}
@@ -4271,7 +4271,7 @@
 {"direct":false,"distance_km":4651,"from_iata":"NSK","to_iata":"INN"}
 {"direct":false,"distance_km":4551,"from_iata":"NSK","to_iata":"IST"}
 {"direct":false,"distance_km":3588,"from_iata":"NSK","to_iata":"KGD"}
-{"direct":true,"distance_km":2413,"from_iata":"NSK","to_iata":"KZN"}
+{"direct":false,"distance_km":2413,"from_iata":"NSK","to_iata":"KZN"}
 {"direct":true,"distance_km":2797,"from_iata":"NSK","to_iata":"LED"}
 {"direct":false,"distance_km":6259,"from_iata":"NSK","to_iata":"LIS"}
 {"direct":false,"distance_km":3709,"from_iata":"NSK","to_iata":"MCX"}
@@ -4316,7 +4316,7 @@
 {"direct":false,"distance_km":6658,"from_iata":"NUX","to_iata":"HKT"}
 {"direct":false,"distance_km":5245,"from_iata":"NUX","to_iata":"HND"}
 {"direct":false,"distance_km":5221,"from_iata":"NUX","to_iata":"HRG"}
-{"direct":true,"distance_km":2174,"from_iata":"NUX","to_iata":"IKT"}
+{"direct":false,"distance_km":2174,"from_iata":"NUX","to_iata":"IKT"}
 {"direct":false,"distance_km":4237,"from_iata":"NUX","to_iata":"INN"}
 {"direct":false,"distance_km":4016,"from_iata":"NUX","to_iata":"IST"}
 {"direct":false,"distance_km":3174,"from_iata":"NUX","to_iata":"KGD"}
@@ -4388,7 +4388,7 @@
 {"direct":true,"distance_km":369,"from_iata":"NVI","to_iata":"TAS"}
 {"direct":false,"distance_km":1704,"from_iata":"NVI","to_iata":"TBS"}
 {"direct":false,"distance_km":380,"from_iata":"NVI","to_iata":"TVT"}
-{"direct":true,"distance_km":2670,"from_iata":"NVI","to_iata":"VKO"}
+{"direct":false,"distance_km":2670,"from_iata":"NVI","to_iata":"VKO"}
 {"direct":false,"distance_km":5415,"from_iata":"NVI","to_iata":"VVO"}
 {"direct":false,"distance_km":2619,"from_iata":"NVI","to_iata":"ZIA"}
 {"direct":false,"distance_km":2662,"from_iata":"NYA","to_iata":"AER"}
@@ -4486,7 +4486,7 @@
 {"direct":false,"distance_km":2702,"from_iata":"NYM","to_iata":"TAS"}
 {"direct":false,"distance_km":3163,"from_iata":"NYM","to_iata":"TBS"}
 {"direct":false,"distance_km":2695,"from_iata":"NYM","to_iata":"TVT"}
-{"direct":true,"distance_km":2186,"from_iata":"NYM","to_iata":"VKO"}
+{"direct":false,"distance_km":2186,"from_iata":"NYM","to_iata":"VKO"}
 {"direct":false,"distance_km":4324,"from_iata":"NYM","to_iata":"VVO"}
 {"direct":false,"distance_km":2149,"from_iata":"NYM","to_iata":"ZIA"}
 {"direct":false,"distance_km":4971,"from_iata":"NZG","to_iata":"AER"}
@@ -4627,7 +4627,7 @@
 {"direct":false,"distance_km":3279,"from_iata":"OGZ","to_iata":"ORY"}
 {"direct":false,"distance_km":2420,"from_iata":"OGZ","to_iata":"PRG"}
 {"direct":false,"distance_km":1287,"from_iata":"OGZ","to_iata":"SAW"}
-{"direct":true,"distance_km":1925,"from_iata":"OGZ","to_iata":"SSH"}
+{"direct":false,"distance_km":1925,"from_iata":"OGZ","to_iata":"SSH"}
 {"direct":true,"distance_km":1511,"from_iata":"OGZ","to_iata":"SVO"}
 {"direct":false,"distance_km":1889,"from_iata":"OGZ","to_iata":"SVX"}
 {"direct":false,"distance_km":2036,"from_iata":"OGZ","to_iata":"TAS"}
@@ -4685,10 +4685,10 @@
 {"direct":false,"distance_km":2861,"from_iata":"OMN","to_iata":"VKO"}
 {"direct":false,"distance_km":5174,"from_iata":"OMN","to_iata":"VVO"}
 {"direct":false,"distance_km":2808,"from_iata":"OMN","to_iata":"ZIA"}
-{"direct":true,"distance_km":2705,"from_iata":"OMS","to_iata":"AER"}
+{"direct":false,"distance_km":2705,"from_iata":"OMS","to_iata":"AER"}
 {"direct":false,"distance_km":1319,"from_iata":"OMS","to_iata":"ALA"}
 {"direct":false,"distance_km":4118,"from_iata":"OMS","to_iata":"ATH"}
-{"direct":true,"distance_km":3769,"from_iata":"OMS","to_iata":"AYT"}
+{"direct":false,"distance_km":3769,"from_iata":"OMS","to_iata":"AYT"}
 {"direct":false,"distance_km":5251,"from_iata":"OMS","to_iata":"BCN"}
 {"direct":false,"distance_km":3937,"from_iata":"OMS","to_iata":"BJV"}
 {"direct":false,"distance_km":5167,"from_iata":"OMS","to_iata":"BKK"}
@@ -4696,7 +4696,7 @@
 {"direct":false,"distance_km":2741,"from_iata":"OMS","to_iata":"BUS"}
 {"direct":false,"distance_km":4680,"from_iata":"OMS","to_iata":"CDG"}
 {"direct":false,"distance_km":4555,"from_iata":"OMS","to_iata":"CIA"}
-{"direct":false,"distance_km":5706,"from_iata":"OMS","to_iata":"CXR"}
+{"direct":true,"distance_km":5706,"from_iata":"OMS","to_iata":"CXR"}
 {"direct":false,"distance_km":2224,"from_iata":"OMS","to_iata":"DME"}
 {"direct":false,"distance_km":5138,"from_iata":"OMS","to_iata":"DMK"}
 {"direct":false,"distance_km":8079,"from_iata":"OMS","to_iata":"DPS"}
@@ -4725,7 +4725,7 @@
 {"direct":false,"distance_km":4710,"from_iata":"OMS","to_iata":"ORY"}
 {"direct":false,"distance_km":3910,"from_iata":"OMS","to_iata":"PRG"}
 {"direct":false,"distance_km":3556,"from_iata":"OMS","to_iata":"SAW"}
-{"direct":true,"distance_km":4322,"from_iata":"OMS","to_iata":"SSH"}
+{"direct":false,"distance_km":4322,"from_iata":"OMS","to_iata":"SSH"}
 {"direct":true,"distance_km":2242,"from_iata":"OMS","to_iata":"SVO"}
 {"direct":true,"distance_km":804,"from_iata":"OMS","to_iata":"SVX"}
 {"direct":true,"distance_km":1552,"from_iata":"OMS","to_iata":"TAS"}
@@ -4884,7 +4884,7 @@
 {"direct":true,"distance_km":1956,"from_iata":"PEE","to_iata":"AER"}
 {"direct":false,"distance_km":2177,"from_iata":"PEE","to_iata":"ALA"}
 {"direct":false,"distance_km":3208,"from_iata":"PEE","to_iata":"ATH"}
-{"direct":true,"distance_km":2974,"from_iata":"PEE","to_iata":"AYT"}
+{"direct":false,"distance_km":2974,"from_iata":"PEE","to_iata":"AYT"}
 {"direct":false,"distance_km":4162,"from_iata":"PEE","to_iata":"BCN"}
 {"direct":false,"distance_km":3087,"from_iata":"PEE","to_iata":"BJV"}
 {"direct":false,"distance_km":6166,"from_iata":"PEE","to_iata":"BKK"}
@@ -4892,7 +4892,7 @@
 {"direct":false,"distance_km":2078,"from_iata":"PEE","to_iata":"BUS"}
 {"direct":false,"distance_km":3572,"from_iata":"PEE","to_iata":"CDG"}
 {"direct":false,"distance_km":3507,"from_iata":"PEE","to_iata":"CIA"}
-{"direct":false,"distance_km":6764,"from_iata":"PEE","to_iata":"CXR"}
+{"direct":true,"distance_km":6764,"from_iata":"PEE","to_iata":"CXR"}
 {"direct":false,"distance_km":1138,"from_iata":"PEE","to_iata":"DME"}
 {"direct":false,"distance_km":6136,"from_iata":"PEE","to_iata":"DMK"}
 {"direct":false,"distance_km":9110,"from_iata":"PEE","to_iata":"DPS"}
@@ -4942,7 +4942,7 @@
 {"direct":false,"distance_km":2415,"from_iata":"PES","to_iata":"CDG"}
 {"direct":false,"distance_km":2652,"from_iata":"PES","to_iata":"CIA"}
 {"direct":false,"distance_km":8052,"from_iata":"PES","to_iata":"CXR"}
-{"direct":false,"distance_km":752,"from_iata":"PES","to_iata":"DME"}
+{"direct":true,"distance_km":752,"from_iata":"PES","to_iata":"DME"}
 {"direct":false,"distance_km":7422,"from_iata":"PES","to_iata":"DMK"}
 {"direct":false,"distance_km":10399,"from_iata":"PES","to_iata":"DPS"}
 {"direct":false,"distance_km":4405,"from_iata":"PES","to_iata":"DWC"}
@@ -4963,7 +4963,7 @@
 {"direct":false,"distance_km":2299,"from_iata":"PES","to_iata":"MCX"}
 {"direct":false,"distance_km":7191,"from_iata":"PES","to_iata":"MLE"}
 {"direct":false,"distance_km":770,"from_iata":"PES","to_iata":"MMK"}
-{"direct":true,"distance_km":2048,"from_iata":"PES","to_iata":"MRV"}
+{"direct":false,"distance_km":2048,"from_iata":"PES","to_iata":"MRV"}
 {"direct":false,"distance_km":959,"from_iata":"PES","to_iata":"MSQ"}
 {"direct":false,"distance_km":3148,"from_iata":"PES","to_iata":"NOZ"}
 {"direct":false,"distance_km":7326,"from_iata":"PES","to_iata":"NRT"}
@@ -4971,7 +4971,7 @@
 {"direct":false,"distance_km":1788,"from_iata":"PES","to_iata":"PRG"}
 {"direct":false,"distance_km":2356,"from_iata":"PES","to_iata":"SAW"}
 {"direct":false,"distance_km":3770,"from_iata":"PES","to_iata":"SSH"}
-{"direct":true,"distance_km":682,"from_iata":"PES","to_iata":"SVO"}
+{"direct":false,"distance_km":682,"from_iata":"PES","to_iata":"SVO"}
 {"direct":false,"distance_km":1603,"from_iata":"PES","to_iata":"SVX"}
 {"direct":false,"distance_km":3267,"from_iata":"PES","to_iata":"TAS"}
 {"direct":false,"distance_km":2360,"from_iata":"PES","to_iata":"TBS"}
@@ -5371,10 +5371,10 @@
 {"direct":false,"distance_km":3933,"from_iata":"PYJ","to_iata":"VKO"}
 {"direct":false,"distance_km":2833,"from_iata":"PYJ","to_iata":"VVO"}
 {"direct":false,"distance_km":3898,"from_iata":"PYJ","to_iata":"ZIA"}
-{"direct":true,"distance_km":1481,"from_iata":"REN","to_iata":"AER"}
+{"direct":false,"distance_km":1481,"from_iata":"REN","to_iata":"AER"}
 {"direct":true,"distance_km":1861,"from_iata":"REN","to_iata":"ALA"}
 {"direct":false,"distance_km":2889,"from_iata":"REN","to_iata":"ATH"}
-{"direct":true,"distance_km":2544,"from_iata":"REN","to_iata":"AYT"}
+{"direct":false,"distance_km":2544,"from_iata":"REN","to_iata":"AYT"}
 {"direct":false,"distance_km":4144,"from_iata":"REN","to_iata":"BCN"}
 {"direct":false,"distance_km":2706,"from_iata":"REN","to_iata":"BJV"}
 {"direct":false,"distance_km":5839,"from_iata":"REN","to_iata":"BKK"}
@@ -5494,7 +5494,7 @@
 {"direct":false,"distance_km":2417,"from_iata":"SCO","to_iata":"HRG"}
 {"direct":false,"distance_km":3974,"from_iata":"SCO","to_iata":"IKT"}
 {"direct":false,"distance_km":3084,"from_iata":"SCO","to_iata":"INN"}
-{"direct":false,"distance_km":1848,"from_iata":"SCO","to_iata":"IST"}
+{"direct":true,"distance_km":1848,"from_iata":"SCO","to_iata":"IST"}
 {"direct":false,"distance_km":2497,"from_iata":"SCO","to_iata":"KGD"}
 {"direct":false,"distance_km":1312,"from_iata":"SCO","to_iata":"KZN"}
 {"direct":false,"distance_km":2258,"from_iata":"SCO","to_iata":"LED"}
@@ -5508,7 +5508,7 @@
 {"direct":false,"distance_km":7301,"from_iata":"SCO","to_iata":"NRT"}
 {"direct":false,"distance_km":3718,"from_iata":"SCO","to_iata":"ORY"}
 {"direct":false,"distance_km":2848,"from_iata":"SCO","to_iata":"PRG"}
-{"direct":true,"distance_km":1814,"from_iata":"SCO","to_iata":"SAW"}
+{"direct":false,"distance_km":1814,"from_iata":"SCO","to_iata":"SAW"}
 {"direct":false,"distance_km":2310,"from_iata":"SCO","to_iata":"SSH"}
 {"direct":true,"distance_km":1660,"from_iata":"SCO","to_iata":"SVO"}
 {"direct":false,"distance_km":1586,"from_iata":"SCO","to_iata":"SVX"}
@@ -5521,7 +5521,7 @@
 {"direct":false,"distance_km":2146,"from_iata":"SCW","to_iata":"AER"}
 {"direct":false,"distance_km":2662,"from_iata":"SCW","to_iata":"ALA"}
 {"direct":false,"distance_km":3219,"from_iata":"SCW","to_iata":"ATH"}
-{"direct":true,"distance_km":3083,"from_iata":"SCW","to_iata":"AYT"}
+{"direct":false,"distance_km":3083,"from_iata":"SCW","to_iata":"AYT"}
 {"direct":false,"distance_km":3927,"from_iata":"SCW","to_iata":"BCN"}
 {"direct":false,"distance_km":3151,"from_iata":"SCW","to_iata":"BJV"}
 {"direct":false,"distance_km":6632,"from_iata":"SCW","to_iata":"BKK"}
@@ -5559,7 +5559,7 @@
 {"direct":false,"distance_km":2570,"from_iata":"SCW","to_iata":"PRG"}
 {"direct":false,"distance_km":2722,"from_iata":"SCW","to_iata":"SAW"}
 {"direct":false,"distance_km":3937,"from_iata":"SCW","to_iata":"SSH"}
-{"direct":true,"distance_km":996,"from_iata":"SCW","to_iata":"SVO"}
+{"direct":false,"distance_km":996,"from_iata":"SCW","to_iata":"SVO"}
 {"direct":false,"distance_km":785,"from_iata":"SCW","to_iata":"SVX"}
 {"direct":false,"distance_km":2581,"from_iata":"SCW","to_iata":"TAS"}
 {"direct":false,"distance_km":2256,"from_iata":"SCW","to_iata":"TBS"}
@@ -5726,7 +5726,7 @@
 {"direct":false,"distance_km":4028,"from_iata":"SLY","to_iata":"CDG"}
 {"direct":false,"distance_km":4249,"from_iata":"SLY","to_iata":"CIA"}
 {"direct":false,"distance_km":6841,"from_iata":"SLY","to_iata":"CXR"}
-{"direct":true,"distance_km":1955,"from_iata":"SLY","to_iata":"DME"}
+{"direct":false,"distance_km":1955,"from_iata":"SLY","to_iata":"DME"}
 {"direct":false,"distance_km":6370,"from_iata":"SLY","to_iata":"DMK"}
 {"direct":false,"distance_km":9239,"from_iata":"SLY","to_iata":"DPS"}
 {"direct":false,"distance_km":4705,"from_iata":"SLY","to_iata":"DWC"}
@@ -5817,7 +5817,7 @@
 {"direct":false,"distance_km":2241,"from_iata":"SVO","to_iata":"ATH"}
 {"direct":true,"distance_km":2178,"from_iata":"SVO","to_iata":"AYT"}
 {"direct":false,"distance_km":3016,"from_iata":"SVO","to_iata":"BCN"}
-{"direct":true,"distance_km":2206,"from_iata":"SVO","to_iata":"BJV"}
+{"direct":false,"distance_km":2206,"from_iata":"SVO","to_iata":"BJV"}
 {"direct":true,"distance_km":7106,"from_iata":"SVO","to_iata":"BKK"}
 {"direct":false,"distance_km":1562,"from_iata":"SVO","to_iata":"BUD"}
 {"direct":false,"distance_km":1626,"from_iata":"SVO","to_iata":"BUS"}
@@ -5898,13 +5898,13 @@
 {"direct":false,"distance_km":3106,"from_iata":"SVX","to_iata":"PRG"}
 {"direct":false,"distance_km":2860,"from_iata":"SVX","to_iata":"SAW"}
 {"direct":true,"distance_km":3814,"from_iata":"SVX","to_iata":"SSH"}
-{"direct":false,"distance_km":1438,"from_iata":"SVX","to_iata":"SVO"}
+{"direct":true,"distance_km":1438,"from_iata":"SVX","to_iata":"SVO"}
 {"direct":true,"distance_km":1826,"from_iata":"SVX","to_iata":"TAS"}
 {"direct":true,"distance_km":2023,"from_iata":"SVX","to_iata":"TBS"}
 {"direct":false,"distance_km":1823,"from_iata":"SVX","to_iata":"TVT"}
-{"direct":true,"distance_km":1456,"from_iata":"SVX","to_iata":"VKO"}
+{"direct":false,"distance_km":1456,"from_iata":"SVX","to_iata":"VKO"}
 {"direct":true,"distance_km":5050,"from_iata":"SVX","to_iata":"VVO"}
-{"direct":true,"distance_km":1403,"from_iata":"SVX","to_iata":"ZIA"}
+{"direct":false,"distance_km":1403,"from_iata":"SVX","to_iata":"ZIA"}
 {"direct":false,"distance_km":3483,"from_iata":"SZI","to_iata":"AER"}
 {"direct":false,"distance_km":765,"from_iata":"SZI","to_iata":"ALA"}
 {"direct":false,"distance_km":4959,"from_iata":"SZI","to_iata":"ATH"}
@@ -5972,7 +5972,7 @@
 {"direct":false,"distance_km":2239,"from_iata":"TAS","to_iata":"DWC"}
 {"direct":true,"distance_km":2194,"from_iata":"TAS","to_iata":"DXB"}
 {"direct":true,"distance_km":2094,"from_iata":"TAS","to_iata":"EVN"}
-{"direct":true,"distance_km":4657,"from_iata":"TAS","to_iata":"FCO"}
+{"direct":false,"distance_km":4657,"from_iata":"TAS","to_iata":"FCO"}
 {"direct":false,"distance_km":2557,"from_iata":"TAS","to_iata":"GDZ"}
 {"direct":true,"distance_km":4664,"from_iata":"TAS","to_iata":"HKT"}
 {"direct":false,"distance_km":6007,"from_iata":"TAS","to_iata":"HND"}
@@ -5995,7 +5995,7 @@
 {"direct":false,"distance_km":4284,"from_iata":"TAS","to_iata":"PRG"}
 {"direct":false,"distance_km":3321,"from_iata":"TAS","to_iata":"SAW"}
 {"direct":true,"distance_km":3487,"from_iata":"TAS","to_iata":"SSH"}
-{"direct":false,"distance_km":2819,"from_iata":"TAS","to_iata":"SVO"}
+{"direct":true,"distance_km":2819,"from_iata":"TAS","to_iata":"SVO"}
 {"direct":true,"distance_km":1826,"from_iata":"TAS","to_iata":"SVX"}
 {"direct":true,"distance_km":2021,"from_iata":"TAS","to_iata":"TBS"}
 {"direct":true,"distance_km":2811,"from_iata":"TAS","to_iata":"VKO"}
@@ -6053,7 +6053,7 @@
 {"direct":true,"distance_km":2337,"from_iata":"TJM","to_iata":"AER"}
 {"direct":false,"distance_km":1743,"from_iata":"TJM","to_iata":"ALA"}
 {"direct":false,"distance_km":3684,"from_iata":"TJM","to_iata":"ATH"}
-{"direct":true,"distance_km":3391,"from_iata":"TJM","to_iata":"AYT"}
+{"direct":false,"distance_km":3391,"from_iata":"TJM","to_iata":"AYT"}
 {"direct":false,"distance_km":4720,"from_iata":"TJM","to_iata":"BCN"}
 {"direct":false,"distance_km":3532,"from_iata":"TJM","to_iata":"BJV"}
 {"direct":false,"distance_km":5682,"from_iata":"TJM","to_iata":"BKK"}
@@ -6146,7 +6146,7 @@
 {"direct":false,"distance_km":6989,"from_iata":"TLY","to_iata":"TBS"}
 {"direct":false,"distance_km":5292,"from_iata":"TLY","to_iata":"TVT"}
 {"direct":false,"distance_km":6534,"from_iata":"TLY","to_iata":"VKO"}
-{"direct":true,"distance_km":366,"from_iata":"TLY","to_iata":"VVO"}
+{"direct":false,"distance_km":366,"from_iata":"TLY","to_iata":"VVO"}
 {"direct":false,"distance_km":6491,"from_iata":"TLY","to_iata":"ZIA"}
 {"direct":false,"distance_km":2404,"from_iata":"TMJ","to_iata":"AER"}
 {"direct":false,"distance_km":1064,"from_iata":"TMJ","to_iata":"ALA"}
@@ -6160,7 +6160,7 @@
 {"direct":false,"distance_km":5245,"from_iata":"TMJ","to_iata":"CDG"}
 {"direct":false,"distance_km":4639,"from_iata":"TMJ","to_iata":"CIA"}
 {"direct":false,"distance_km":5022,"from_iata":"TMJ","to_iata":"CXR"}
-{"direct":true,"distance_km":2985,"from_iata":"TMJ","to_iata":"DME"}
+{"direct":false,"distance_km":2985,"from_iata":"TMJ","to_iata":"DME"}
 {"direct":false,"distance_km":4193,"from_iata":"TMJ","to_iata":"DMK"}
 {"direct":false,"distance_km":7137,"from_iata":"TMJ","to_iata":"DPS"}
 {"direct":false,"distance_km":1796,"from_iata":"TMJ","to_iata":"DWC"}
@@ -6345,7 +6345,7 @@
 {"direct":true,"distance_km":1688,"from_iata":"UFA","to_iata":"AER"}
 {"direct":false,"distance_km":1972,"from_iata":"UFA","to_iata":"ALA"}
 {"direct":false,"distance_km":3030,"from_iata":"UFA","to_iata":"ATH"}
-{"direct":true,"distance_km":2736,"from_iata":"UFA","to_iata":"AYT"}
+{"direct":false,"distance_km":2736,"from_iata":"UFA","to_iata":"AYT"}
 {"direct":false,"distance_km":4153,"from_iata":"UFA","to_iata":"BCN"}
 {"direct":false,"distance_km":2875,"from_iata":"UFA","to_iata":"BJV"}
 {"direct":false,"distance_km":5971,"from_iata":"UFA","to_iata":"BKK"}
@@ -6354,7 +6354,7 @@
 {"direct":false,"distance_km":3628,"from_iata":"UFA","to_iata":"CDG"}
 {"direct":false,"distance_km":3440,"from_iata":"UFA","to_iata":"CIA"}
 {"direct":true,"distance_km":6613,"from_iata":"UFA","to_iata":"CXR"}
-{"direct":true,"distance_km":1147,"from_iata":"UFA","to_iata":"DME"}
+{"direct":false,"distance_km":1147,"from_iata":"UFA","to_iata":"DME"}
 {"direct":false,"distance_km":5942,"from_iata":"UFA","to_iata":"DMK"}
 {"direct":false,"distance_km":8927,"from_iata":"UFA","to_iata":"DPS"}
 {"direct":true,"distance_km":3299,"from_iata":"UFA","to_iata":"DWC"}
@@ -6439,7 +6439,7 @@
 {"direct":false,"distance_km":730,"from_iata":"UGC","to_iata":"TVT"}
 {"direct":false,"distance_km":2300,"from_iata":"UGC","to_iata":"VKO"}
 {"direct":false,"distance_km":5678,"from_iata":"UGC","to_iata":"VVO"}
-{"direct":true,"distance_km":2251,"from_iata":"UGC","to_iata":"ZIA"}
+{"direct":false,"distance_km":2251,"from_iata":"UGC","to_iata":"ZIA"}
 {"direct":false,"distance_km":3276,"from_iata":"UKK","to_iata":"AER"}
 {"direct":true,"distance_km":851,"from_iata":"UKK","to_iata":"ALA"}
 {"direct":false,"distance_km":4743,"from_iata":"UKK","to_iata":"ATH"}
@@ -6628,7 +6628,7 @@
 {"direct":false,"distance_km":2338,"from_iata":"ULV","to_iata":"PRG"}
 {"direct":false,"distance_km":2042,"from_iata":"ULV","to_iata":"SAW"}
 {"direct":false,"distance_km":3132,"from_iata":"ULV","to_iata":"SSH"}
-{"direct":true,"distance_km":714,"from_iata":"ULV","to_iata":"SVO"}
+{"direct":false,"distance_km":714,"from_iata":"ULV","to_iata":"SVO"}
 {"direct":false,"distance_km":837,"from_iata":"ULV","to_iata":"SVX"}
 {"direct":false,"distance_km":2123,"from_iata":"ULV","to_iata":"TAS"}
 {"direct":false,"distance_km":1422,"from_iata":"ULV","to_iata":"TBS"}
@@ -7054,7 +7054,7 @@
 {"direct":false,"distance_km":2005,"from_iata":"VKO","to_iata":"INN"}
 {"direct":true,"distance_km":1709,"from_iata":"VKO","to_iata":"IST"}
 {"direct":true,"distance_km":1057,"from_iata":"VKO","to_iata":"KGD"}
-{"direct":true,"distance_km":754,"from_iata":"VKO","to_iata":"KZN"}
+{"direct":false,"distance_km":754,"from_iata":"VKO","to_iata":"KZN"}
 {"direct":true,"distance_km":625,"from_iata":"VKO","to_iata":"LED"}
 {"direct":false,"distance_km":3876,"from_iata":"VKO","to_iata":"LIS"}
 {"direct":true,"distance_km":1605,"from_iata":"VKO","to_iata":"MCX"}
@@ -7406,7 +7406,7 @@
 {"direct":false,"distance_km":1705,"from_iata":"ZIA","to_iata":"PRG"}
 {"direct":false,"distance_km":1753,"from_iata":"ZIA","to_iata":"SAW"}
 {"direct":false,"distance_km":3081,"from_iata":"ZIA","to_iata":"SSH"}
-{"direct":true,"distance_km":1403,"from_iata":"ZIA","to_iata":"SVX"}
+{"direct":false,"distance_km":1403,"from_iata":"ZIA","to_iata":"SVX"}
 {"direct":true,"distance_km":2757,"from_iata":"ZIA","to_iata":"TAS"}
 {"direct":true,"distance_km":1621,"from_iata":"ZIA","to_iata":"TBS"}
 {"direct":false,"distance_km":2760,"from_iata":"ZIA","to_iata":"TVT"}

@@ -756,7 +756,7 @@
 {"city_id":"chitato","country_code":"AO","iata":"DUE","lat":-7.400889873504639,"lon":20.818500518798828,"name":"Dundo Airport","scheduled":true,"timezone":"Africa/Luanda"}
 {"city_id":"dubois","country_code":"US","iata":"DUJ","lat":41.17829895,"lon":-78.8986969,"name":"DuBois Regional Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"dumai","country_code":"ID","iata":"DUM","lat":1.609026,"lon":101.433493,"name":"Pinang Kampai Airport","scheduled":true,"timezone":"Asia/Jakarta"}
-{"city_id":"durban","country_code":"ZA","iata":"DUR","lat":-29.6144444444,"lon":31.1197222222,"name":"King Shaka International Airport","scheduled":true,"timezone":"Africa/Johannesburg"}
+{"city_id":"durban","country_code":"ZA","iata":"DUR","lat":-29.613381,"lon":31.117942,"name":"King Shaka International Airport","scheduled":true,"timezone":"Africa/Johannesburg"}
 {"city_id":"koeln","country_code":"DE","iata":"DUS","lat":51.289501,"lon":6.76678,"name":"Düsseldorf Airport","scheduled":true,"timezone":"Europe/Berlin"}
 {"city_id":"devils-lake","country_code":"US","iata":"DVL","lat":48.115454,"lon":-98.908796,"name":"Devils Lake Regional Airport","scheduled":true,"timezone":"America/Chicago"}
 {"city_id":"davao","country_code":"PH","iata":"DVO","lat":7.12552,"lon":125.646004,"name":"Francisco Bangoy International Airport","scheduled":true,"timezone":"Asia/Manila"}
@@ -1804,7 +1804,7 @@
 {"city_id":"maracaibo","country_code":"VE","iata":"MAR","lat":10.557542,"lon":-71.729307,"name":"La Chinita International Airport","scheduled":true,"timezone":"America/Caracas"}
 {"city_id":"lorengau","country_code":"PG","iata":"MAS","lat":-2.06189,"lon":147.423996,"name":"Momote Airport","scheduled":true,"timezone":"Pacific/Port_Moresby"}
 {"city_id":"mombasa","country_code":"KE","iata":"MBA","lat":-4.03483,"lon":39.5942,"name":"Moi International Airport","scheduled":true,"timezone":"Africa/Nairobi"}
-{"city_id":"mafikeng","country_code":"ZA","iata":"MBD","lat":-25.798400878900004,"lon":25.548000335699996,"name":"Mmabatho International Airport","scheduled":true,"timezone":"Africa/Johannesburg"}
+{"city_id":"mafikeng","country_code":"ZA","iata":"MBD","lat":-25.798401,"lon":25.548,"name":"George Dick Montshioa Airport","scheduled":true,"timezone":"Africa/Johannesburg"}
 {"city_id":"mombetsu","country_code":"JP","iata":"MBE","lat":44.303901672399995,"lon":143.404006958,"name":"Monbetsu Airport","scheduled":true,"timezone":"Asia/Tokyo"}
 {"city_id":"mbeya","country_code":"TZ","iata":"MBI","lat":-8.919942,"lon":33.273981,"name":"Songwe Airport","scheduled":true,"timezone":"Africa/Dar_es_Salaam"}
 {"city_id":"montego-bay","country_code":"JM","iata":"MBJ","lat":18.50342,"lon":-77.91323,"name":"Sangster International Airport","scheduled":true,"timezone":"America/Jamaica"}
@@ -3204,6 +3204,7 @@
 {"city_id":"whangarei","country_code":"NZ","iata":"WRE","lat":-35.769253,"lon":174.363713,"name":"Whangarei Airport","scheduled":true,"timezone":"Pacific/Auckland"}
 {"city_id":"wroclaw","country_code":"PL","iata":"WRO","lat":51.103719,"lon":16.882096,"name":"Copernicus Wrocław Airport","scheduled":true,"timezone":"Europe/Warsaw"}
 {"city_id":"kirkwall","country_code":"GB","iata":"WRY","lat":59.350475,"lon":-2.950062,"name":"Westray Airport","scheduled":true,"timezone":"Europe/London"}
+{"city_id":"sydney","country_code":"AU","iata":"WSI","lat":-33.883461,"lon":150.712981,"name":"Western Sydney International (Nancy-Bird Walton) Airport","scheduled":true,"timezone":"Australia/Sydney"}
 {"city_id":"wushan","country_code":"CN","iata":"WSK","lat":31.06896,"lon":109.708958,"name":"Chongqing Wushan Airport","scheduled":true,"timezone":"Asia/Shanghai"}
 {"city_id":"westerly","country_code":"US","iata":"WST","lat":41.349602,"lon":-71.803398,"name":"Westerly State Airport","scheduled":true,"timezone":"America/New_York"}
 {"city_id":"bellingham","country_code":"US","iata":"WSX","lat":48.617901,"lon":-122.956903,"name":"Westsound/WSX Seaplane Base","scheduled":true,"timezone":"America/Los_Angeles"}

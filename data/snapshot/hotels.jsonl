@@ -97,7 +97,7 @@
 {"destination_id":"almaty","id":"osm.way.428922432","lat":43.2421458,"lon":76.9583655,"name":"Novotel, Отель","osm_id":428922432,"sources":["osm"]}
 {"destination_id":"almaty","id":"osm.way.437276141","lat":43.2113561,"lon":76.8822618,"name":"Роза","osm_id":437276141,"sources":["osm"]}
 {"destination_id":"almaty","id":"osm.way.490727029","lat":43.2342257,"lon":76.9301011,"name":"Garden Park","osm_id":490727029,"sources":["osm"]}
-{"destination_id":"almaty","id":"osm.way.50568022","lat":43.2588008,"lon":76.9456214,"name":"Voyage","osm_id":50568022,"sources":["osm"],"stars":5}
+{"destination_id":"almaty","id":"osm.way.50568022","lat":43.2588009,"lon":76.9456214,"name":"Voyage","osm_id":50568022,"sources":["osm"],"stars":5}
 {"destination_id":"almaty","id":"osm.way.50875776","lat":43.2685783,"lon":76.9249617,"name":"Дойт","osm_id":50875776,"sources":["osm"]}
 {"destination_id":"almaty","id":"osm.way.51008099","lat":43.2503736,"lon":76.9445815,"name":"Алматы","osm_id":51008099,"sources":["osm"]}
 {"destination_id":"almaty","id":"osm.way.51008145","lat":43.2516477,"lon":76.9398382,"name":"Амбассадор","osm_id":51008145,"sources":["osm"]}
@@ -188,6 +188,7 @@
 {"destination_id":"antalya","id":"osm.node.14277346378","lat":36.8626196,"lon":30.6332557,"name":"BOMO suites","osm_id":14277346378,"sources":["osm"]}
 {"destination_id":"antalya","id":"osm.node.14287167135","lat":36.8641075,"lon":30.63512,"name":"Retro Star Suites","osm_id":14287167135,"sources":["osm"]}
 {"destination_id":"antalya","id":"osm.node.14287292805","lat":36.8643691,"lon":30.635545,"name":"Ale Park Hotel Apartments","osm_id":14287292805,"sources":["osm"]}
+{"destination_id":"antalya","id":"osm.node.14335735921","lat":36.8872902,"lon":30.7301577,"name":"Moon City","osm_id":14335735921,"sources":["osm"]}
 {"destination_id":"antalya","id":"osm.node.1486003008","lat":36.8817046,"lon":30.7095505,"name":"Oscar Boutique","osm_id":1486003008,"sources":["osm"],"stars":3}
 {"destination_id":"antalya","id":"osm.node.1584867163","lat":36.8513326,"lon":30.6228211,"name":"Portobello Hotel","osm_id":1584867163,"sources":["osm"]}
 {"destination_id":"antalya","id":"osm.node.1654133400","lat":36.8485398,"lon":30.770805,"name":"UpOn Hotel","osm_id":1654133400,"sources":["osm"]}
@@ -291,7 +292,7 @@
 {"destination_id":"antalya","id":"osm.way.304547612","lat":36.8767628,"lon":30.707979,"name":"Ramada Plaza Antalya","osm_id":304547612,"sources":["osm"],"stars":5}
 {"destination_id":"antalya","id":"osm.way.347259719","lat":36.8663383,"lon":30.724736,"name":"Atan Park Hotel","osm_id":347259719,"sources":["osm"]}
 {"destination_id":"antalya","id":"osm.way.368452489","lat":36.8932589,"lon":30.7016258,"name":"Mostar Otel","osm_id":368452489,"sources":["osm"]}
-{"destination_id":"antalya","id":"osm.way.368649252","lat":36.8598638,"lon":30.6335896,"name":"Megasaray Westbeach","osm_id":368649252,"sources":["osm"]}
+{"destination_id":"antalya","id":"osm.way.368649252","lat":36.8599066,"lon":30.6335272,"name":"Megasaray Westbeach","osm_id":368649252,"sources":["osm"]}
 {"destination_id":"antalya","id":"osm.way.426752884","lat":36.854769,"lon":30.746391,"name":"Nasa Flora Otel","osm_id":426752884,"sources":["osm"]}
 {"destination_id":"antalya","id":"osm.way.426752885","lat":36.8545587,"lon":30.7466231,"name":"Selge Otel","osm_id":426752885,"sources":["osm"]}
 {"destination_id":"antalya","id":"osm.way.426752886","lat":36.8546744,"lon":30.7465208,"name":"La suite boutique hotel","osm_id":426752886,"sources":["osm"]}
@@ -402,6 +403,9 @@
 {"destination_id":"athens","id":"osm.node.14204602901","lat":37.9768116,"lon":23.7225494,"name":"Altar Suites","osm_id":14204602901,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.14306943600","lat":38.0242514,"lon":23.7202013,"name":"Devotion Twins","osm_id":14306943600,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.14312671897","lat":37.9776065,"lon":23.7286377,"name":"Athens Commercial","osm_id":14312671897,"sources":["osm"]}
+{"destination_id":"athens","id":"osm.node.14331420801","lat":37.9789809,"lon":23.7223172,"name":"Morus","osm_id":14331420801,"sources":["osm"]}
+{"destination_id":"athens","id":"osm.node.14331420802","lat":37.9784168,"lon":23.7222035,"name":"Athenian Lofts","osm_id":14331420802,"sources":["osm"]}
+{"destination_id":"athens","id":"osm.node.14334672079","lat":37.9673642,"lon":23.7284259,"name":"Generation 6 Boutique Apartments","osm_id":14334672079,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.1445375802","lat":37.9936932,"lon":23.722085,"name":"Diethnes Hotel","osm_id":1445375802,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.1668113866","lat":38.0479675,"lon":23.7981851,"name":"Civitel Attik Rooms & Apartments","osm_id":1668113866,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.1814574432","lat":37.977568,"lon":23.7219308,"name":"O&B Athens Boutique Hotel","osm_id":1814574432,"sources":["osm"],"stars":4}
@@ -429,6 +433,7 @@
 {"destination_id":"athens","id":"osm.node.2748134109","lat":38.0571727,"lon":23.7321249,"name":"Ολύμπιον","osm_id":2748134109,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.2748165156","lat":38.0460778,"lon":23.7381009,"name":"Bora Bora","osm_id":2748165156,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.2778806819","lat":37.9746372,"lon":23.7311391,"name":"Central Athens Hotel","osm_id":2778806819,"sources":["osm"],"stars":3}
+{"destination_id":"athens","id":"osm.node.2786550377","lat":37.979168,"lon":23.7255231,"name":"Medley","osm_id":2786550377,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.2791293463","lat":37.9835077,"lon":23.7241026,"name":"Marina Hotel","osm_id":2791293463,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.2878494114","lat":37.9817126,"lon":23.7245319,"name":"Sparta Team Hotel","osm_id":2878494114,"sources":["osm"],"stars":1}
 {"destination_id":"athens","id":"osm.node.2878494125","lat":37.9819766,"lon":23.724622,"name":"SOHO Hotel","osm_id":2878494125,"sources":["osm"]}
@@ -524,7 +529,7 @@
 {"destination_id":"athens","id":"osm.node.7181735671","lat":37.986943,"lon":23.7275435,"name":"Tins","osm_id":7181735671,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.7181735672","lat":37.9876277,"lon":23.7277278,"name":"Art Suites Korai","osm_id":7181735672,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.7248904557","lat":37.9784074,"lon":23.7256448,"name":"Pallada Athens","osm_id":7248904557,"sources":["osm"]}
-{"destination_id":"athens","id":"osm.node.7626001182","lat":37.9856063,"lon":23.7287097,"name":"Αρτεμίσιον","osm_id":7626001182,"sources":["osm"]}
+{"destination_id":"athens","id":"osm.node.7626001182","lat":37.9855809,"lon":23.7287161,"name":"Αρτεμίσιον","osm_id":7626001182,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.7843997485","lat":37.9783436,"lon":23.7226213,"name":"Downtown lofts","osm_id":7843997485,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.7977088136","lat":37.9836154,"lon":23.7273098,"name":"Brown Acropol","osm_id":7977088136,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.node.8262667877","lat":37.9051363,"lon":23.7188633,"name":"URBAN VILLAS AND SUITES","osm_id":8262667877,"sources":["osm"]}
@@ -612,10 +617,6 @@
 {"destination_id":"athens","id":"osm.way.269118514","lat":37.9367973,"lon":23.6420574,"name":"Savoy Hotel","osm_id":269118514,"sources":["osm"],"stars":3}
 {"destination_id":"athens","id":"osm.way.269118665","lat":37.9446648,"lon":23.6482827,"name":"TWINN Downtown Piraeus","osm_id":269118665,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.way.269479915","lat":37.9473423,"lon":23.6446695,"name":"Gallery central","osm_id":269479915,"sources":["osm"]}
-{"destination_id":"athens","id":"osm.way.269479966","lat":37.9470242,"lon":23.6446811,"name":"Gallery Suites","osm_id":269479966,"sources":["osm"]}
-{"destination_id":"athens","id":"osm.way.269479973","lat":37.9470232,"lon":23.6445235,"name":"Gallery Residence","osm_id":269479973,"sources":["osm"]}
-{"destination_id":"athens","id":"osm.way.270061331","lat":37.9440932,"lon":23.6485259,"name":"Iris Lime Home","osm_id":270061331,"sources":["osm"]}
-{"destination_id":"athens","id":"osm.way.27086166","lat":37.9849204,"lon":23.7210328,"name":"Wyndham Grand","osm_id":27086166,"sources":["osm"]}
 {"destination_id":"athens","id":"osm.way.279474841","lat":37.9786808,"lon":23.7207068,"name":"Jason Inn","osm_id":279474841,"sources":["osm"],"stars":3}
 {"destination_id":"athens","id":"osm.way.359002172","lat":37.941673,"lon":23.6962922,"name":"Medousa Hotel","osm_id":359002172,"sources":["osm"],"stars":2}
 {"destination_id":"athens","id":"osm.way.461120133","lat":37.9561777,"lon":23.7152241,"name":"Athens Avenue Hotel","osm_id":461120133,"sources":["osm"],"stars":4}
@@ -1130,7 +1131,7 @@
 {"destination_id":"barcelona","id":"osm.relation.10795366","lat":41.3798959,"lon":2.1730066,"name":"Hotel Espanya","osm_id":10795366,"sources":["osm"],"stars":4}
 {"destination_id":"barcelona","id":"osm.relation.11186591","lat":41.3908444,"lon":2.171237,"name":"ICON BCN","osm_id":11186591,"sources":["osm"],"stars":4}
 {"destination_id":"barcelona","id":"osm.relation.11226976","lat":41.3848559,"lon":2.1746132,"name":"Hotel Catalonia Catedral","osm_id":11226976,"sources":["osm"],"stars":4}
-{"destination_id":"barcelona","id":"osm.relation.11227006","lat":41.385041,"lon":2.1756471,"name":"Hotel Colon","osm_id":11227006,"sources":["osm"],"stars":4}
+{"destination_id":"barcelona","id":"osm.relation.11227006","lat":41.385041,"lon":2.1756471,"name":"Lamaro Hotel","osm_id":11227006,"sources":["osm"],"stars":4}
 {"destination_id":"barcelona","id":"osm.relation.14723314","lat":41.3768314,"lon":2.1501749,"name":"Ofelias Hotel","osm_id":14723314,"sources":["osm"],"stars":4}
 {"destination_id":"barcelona","id":"osm.relation.21282017","lat":41.3687241,"lon":2.190049,"name":"W Barcelona","osm_id":21282017,"sources":["osm"],"stars":5}
 {"destination_id":"barcelona","id":"osm.relation.6291608","lat":41.3702763,"lon":2.1714007,"name":"Hotel Miramar Barcelona","osm_id":6291608,"sources":["osm"],"stars":5}
@@ -1376,7 +1377,7 @@
 {"destination_id":"batumi","id":"osm.node.9381995347","lat":41.6498228,"lon":41.6415783,"name":"ო. გალოგრეს","osm_id":9381995347,"sources":["osm"]}
 {"destination_id":"batumi","id":"osm.node.9797143367","lat":41.6438343,"lon":41.6254631,"name":"Hills","osm_id":9797143367,"sources":["osm"]}
 {"destination_id":"batumi","id":"osm.node.9845391745","lat":41.6417077,"lon":41.6161569,"name":"Courtyard by Marriott","osm_id":9845391745,"sources":["osm"]}
-{"destination_id":"batumi","id":"osm.node.9846575763","lat":41.6420009,"lon":41.6206979,"name":"Hotel Garant","osm_id":9846575763,"sources":["osm"]}
+{"destination_id":"batumi","id":"osm.node.9846575763","lat":41.6420009,"lon":41.6206979,"name":"გარანტი","osm_id":9846575763,"sources":["osm"]}
 {"destination_id":"batumi","id":"osm.node.9851512484","lat":41.6443943,"lon":41.6248127,"name":"Sky Star","osm_id":9851512484,"sources":["osm"]}
 {"destination_id":"batumi","id":"osm.node.9907481041","lat":41.6444363,"lon":41.6322885,"name":"Elio","osm_id":9907481041,"sources":["osm"]}
 {"destination_id":"batumi","id":"osm.node.9907481054","lat":41.6440252,"lon":41.6325444,"name":"Tao","osm_id":9907481054,"sources":["osm"]}
@@ -1612,6 +1613,7 @@
 {"destination_id":"budapest","id":"osm.node.14247045343","lat":47.4927413,"lon":19.0596477,"name":"Hotel Collect","osm_id":14247045343,"sources":["osm"],"stars":4}
 {"destination_id":"budapest","id":"osm.node.14280904455","lat":47.4997876,"lon":19.0604419,"name":"AnVa","osm_id":14280904455,"sources":["osm"]}
 {"destination_id":"budapest","id":"osm.node.14291180353","lat":47.503823,"lon":19.0851781,"name":"Rooftop City Residence","osm_id":14291180353,"sources":["osm"]}
+{"destination_id":"budapest","id":"osm.node.14330738190","lat":47.5063408,"lon":19.058355,"name":"Dormero","osm_id":14330738190,"sources":["osm"]}
 {"destination_id":"budapest","id":"osm.node.1512525404","lat":47.5197303,"lon":19.0367031,"name":"Császár Hotel","osm_id":1512525404,"sources":["osm"]}
 {"destination_id":"budapest","id":"osm.node.1521285220","lat":47.4793023,"lon":19.0743185,"name":"Actor Hotel","osm_id":1521285220,"sources":["osm"],"stars":4}
 {"destination_id":"budapest","id":"osm.node.1578704940","lat":47.5615837,"lon":19.0515197,"name":"Retro","osm_id":1578704940,"sources":["osm"]}
@@ -1686,7 +1688,7 @@
 {"destination_id":"budapest","id":"osm.node.6012528449","lat":47.5663068,"lon":18.961592,"name":"Klebelsberg Kastély","osm_id":6012528449,"sources":["osm"],"stars":4}
 {"destination_id":"budapest","id":"osm.node.6578800385","lat":47.5012917,"lon":19.061788,"name":"Connection Guesthouse","osm_id":6578800385,"sources":["osm"]}
 {"destination_id":"budapest","id":"osm.node.674469043","lat":47.5041509,"lon":19.0579592,"name":"Broadway Apartments and Hostel","osm_id":674469043,"sources":["osm"]}
-{"destination_id":"budapest","id":"osm.node.692973204","lat":47.5064577,"lon":19.0586065,"name":"Star Inn","osm_id":692973204,"sources":["osm"],"stars":3}
+{"destination_id":"budapest","id":"osm.node.692973204","lat":47.5064577,"lon":19.0586065,"name":"Nexto","osm_id":692973204,"sources":["osm"],"stars":3}
 {"destination_id":"budapest","id":"osm.node.6935794503","lat":47.497218,"lon":19.0699592,"name":"Centrooms Budapest","osm_id":6935794503,"sources":["osm"]}
 {"destination_id":"budapest","id":"osm.node.7104255491","lat":47.5035041,"lon":19.108918,"name":"Hotel Veritas","osm_id":7104255491,"sources":["osm"]}
 {"destination_id":"budapest","id":"osm.node.713696012","lat":47.4973576,"lon":19.0722013,"name":"Mövenpick Hotel Budapest Centre","osm_id":713696012,"sources":["osm"],"stars":4}
@@ -1994,6 +1996,7 @@
 {"destination_id":"denpasar","id":"osm.node.14171029497","lat":-8.6574632,"lon":115.1433472,"name":"Villa Casa Amor by GORO","osm_id":14171029497,"sources":["osm"]}
 {"destination_id":"denpasar","id":"osm.node.14171029498","lat":-8.6376064,"lon":115.1306925,"name":"Villa Casa Riva by GORO","osm_id":14171029498,"sources":["osm"]}
 {"destination_id":"denpasar","id":"osm.node.14205383801","lat":-8.721455,"lon":115.1742137,"name":"Poppies cottages","osm_id":14205383801,"sources":["osm"]}
+{"destination_id":"denpasar","id":"osm.node.14335449401","lat":-8.7126762,"lon":115.1702305,"name":"Un's Hotel","osm_id":14335449401,"sources":["osm"]}
 {"destination_id":"denpasar","id":"osm.node.1456256757","lat":-8.6926575,"lon":115.2644639,"name":"Laghawa Beach","osm_id":1456256757,"sources":["osm"]}
 {"destination_id":"denpasar","id":"osm.node.1456256763","lat":-8.7062365,"lon":115.2606382,"name":"Palm Garden","osm_id":1456256763,"sources":["osm"]}
 {"destination_id":"denpasar","id":"osm.node.1456256769","lat":-8.7056751,"lon":115.2605797,"name":"Puri Gopa","osm_id":1456256769,"sources":["osm"]}
@@ -2003,7 +2006,6 @@
 {"destination_id":"denpasar","id":"osm.node.1534959995","lat":-8.6745201,"lon":115.2634463,"name":"Diwany kara holyday","osm_id":1534959995,"sources":["osm"]}
 {"destination_id":"denpasar","id":"osm.node.1597737971","lat":-8.6899042,"lon":115.2628313,"name":"Bumas Hotel","osm_id":1597737971,"sources":["osm"]}
 {"destination_id":"denpasar","id":"osm.node.1598662107","lat":-8.7244687,"lon":115.1735708,"name":"Nagasari","osm_id":1598662107,"sources":["osm"]}
-{"destination_id":"denpasar","id":"osm.node.1709273980","lat":-8.712492,"lon":115.170779,"name":"Un's Hotel","osm_id":1709273980,"sources":["osm"]}
 {"destination_id":"denpasar","id":"osm.node.1726087033","lat":-8.6868124,"lon":115.1553708,"name":"Oberoi Hotel","osm_id":1726087033,"sources":["osm"]}
 {"destination_id":"denpasar","id":"osm.node.1726087734","lat":-8.6866624,"lon":115.1644302,"name":"Uma Sapna Villas","osm_id":1726087734,"sources":["osm"]}
 {"destination_id":"denpasar","id":"osm.node.1726088777","lat":-8.6894411,"lon":115.1717258,"name":"Ahimsa Villas","osm_id":1726088777,"sources":["osm"]}
@@ -2236,7 +2238,7 @@
 {"destination_id":"dubai","id":"osm.way.12700546","lat":25.1412873,"lon":55.1852863,"name":"برج العرب جميرا","osm_id":12700546,"sources":["osm"],"stars":5}
 {"destination_id":"dubai","id":"osm.way.1320031255","lat":25.1745859,"lon":55.3132908,"name":"Hotel","osm_id":1320031255,"sources":["osm"]}
 {"destination_id":"dubai","id":"osm.way.1323490094","lat":25.0975974,"lon":55.179874,"name":"Premier Inn Dubai Barsha Heights Hotel","osm_id":1323490094,"sources":["osm"]}
-{"destination_id":"dubai","id":"osm.way.1337992386","lat":25.0538412,"lon":55.2107536,"name":"Holiday Inn Dubai Jumeirah Village Circle by IHG","osm_id":1337992386,"sources":["osm"]}
+{"destination_id":"dubai","id":"osm.way.1337992386","lat":25.0538392,"lon":55.2107539,"name":"Holiday Inn Dubai Jumeirah Village Circle by IHG","osm_id":1337992386,"sources":["osm"]}
 {"destination_id":"dubai","id":"osm.way.1528954686","lat":25.1835943,"lon":55.2544472,"name":"Al Habtoor Palace, Preferred Hotels & Resorts","osm_id":1528954686,"sources":["osm"],"stars":5}
 {"destination_id":"dubai","id":"osm.way.1529316677","lat":25.1828615,"lon":55.274288,"name":"Renaissance Business Bay Hotel, Dubai","osm_id":1529316677,"sources":["osm"]}
 {"destination_id":"dubai","id":"osm.way.1529316678","lat":25.1826165,"lon":55.2747875,"name":"Grand Mercure Business Bay","osm_id":1529316678,"sources":["osm"]}
@@ -2467,7 +2469,6 @@
 {"destination_id":"hurghada","id":"osm.node.13952328469","lat":27.2614035,"lon":33.820589,"name":"امبايرثرى","osm_id":13952328469,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.node.13957568949","lat":27.2584625,"lon":33.8266455,"name":"Tiba Rose","osm_id":13957568949,"sources":["osm"],"stars":3}
 {"destination_id":"hurghada","id":"osm.node.13959653501","lat":27.2234285,"lon":33.8414955,"name":"Blue Beach Club","osm_id":13959653501,"sources":["osm"]}
-{"destination_id":"hurghada","id":"osm.node.13959904824","lat":27.2178389,"lon":33.8384217,"name":"Minamark","osm_id":13959904824,"sources":["osm"],"stars":3}
 {"destination_id":"hurghada","id":"osm.node.13960250451","lat":27.2129598,"lon":33.841863,"name":"Hun summer","osm_id":13960250451,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.node.13962076109","lat":27.204655,"lon":33.8485752,"name":"The View","osm_id":13962076109,"sources":["osm"],"stars":4}
 {"destination_id":"hurghada","id":"osm.node.13962544584","lat":27.1963376,"lon":33.8423297,"name":"Elysees Dream Beach","osm_id":13962544584,"sources":["osm"],"stars":4}
@@ -2489,12 +2490,13 @@
 {"destination_id":"hurghada","id":"osm.node.5784657570","lat":27.2208427,"lon":33.8401963,"name":"Golden Rose Hotel","osm_id":5784657570,"sources":["osm"],"stars":3}
 {"destination_id":"hurghada","id":"osm.node.5801918453","lat":27.2238077,"lon":33.8404684,"name":"The Boutique Hotel New Marina","osm_id":5801918453,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.node.6416003320","lat":27.2493416,"lon":33.8275966,"name":"Canary Hotel Hurghada","osm_id":6416003320,"sources":["osm"]}
-{"destination_id":"hurghada","id":"osm.node.7283228388","lat":27.2161365,"lon":33.8396841,"name":"Seagull","osm_id":7283228388,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.node.8984112787","lat":27.1849729,"lon":33.8269648,"name":"Giftun Azur Resort Hotel","osm_id":8984112787,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.node.914817093","lat":27.25818,"lon":33.825508,"name":"Hotel Seaview","osm_id":914817093,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.node.914817094","lat":27.2587141,"lon":33.8236626,"name":"Hotel Cindrella","osm_id":914817094,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.node.9182575051","lat":27.2218105,"lon":33.8374311,"name":"Golf Hotel","osm_id":9182575051,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.node.9839515842","lat":27.1893094,"lon":33.8313398,"name":"Sindbad Club","osm_id":9839515842,"sources":["osm"],"stars":4}
+{"destination_id":"hurghada","id":"osm.relation.21259425","lat":27.2156043,"lon":33.8403798,"name":"سيجل بيتش ريزورت","osm_id":21259425,"sources":["osm"],"stars":4}
+{"destination_id":"hurghada","id":"osm.relation.21261255","lat":27.21851,"lon":33.8386649,"name":"La Pacha Resort","osm_id":21261255,"sources":["osm"],"stars":4}
 {"destination_id":"hurghada","id":"osm.relation.3919570","lat":27.3000432,"lon":33.7365638,"name":"Oasis Resort","osm_id":3919570,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.relation.4095189","lat":27.2203114,"lon":33.8359528,"name":"Cherry Hotel","osm_id":4095189,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.relation.5284497","lat":27.2090428,"lon":33.8459156,"name":"Sunrise Holidаys Resort","osm_id":5284497,"sources":["osm"],"stars":5}
@@ -2505,13 +2507,15 @@
 {"destination_id":"hurghada","id":"osm.way.1054478798","lat":27.1960221,"lon":33.8359392,"name":"Luxury Hurghada Self-Catering Apartments & Studios, Al Dau Heights","osm_id":1054478798,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.way.1149724524","lat":27.2150299,"lon":33.8413164,"name":"La Rosa waves beach","osm_id":1149724524,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.way.1179956997","lat":27.1822681,"lon":33.8249104,"name":"Pickalbatros Blu Spa Resort","osm_id":1179956997,"sources":["osm"]}
-{"destination_id":"hurghada","id":"osm.way.1210578837","lat":27.2149585,"lon":33.8402166,"name":"سيجل بيتش ريزورت","osm_id":1210578837,"sources":["osm"],"stars":4}
+{"destination_id":"hurghada","id":"osm.way.1198938279","lat":27.2179717,"lon":33.8386943,"name":"Minamark","osm_id":1198938279,"sources":["osm"],"stars":3}
 {"destination_id":"hurghada","id":"osm.way.1445236061","lat":27.296135,"lon":33.7495588,"name":"La Boutique","osm_id":1445236061,"sources":["osm"],"stars":3}
 {"destination_id":"hurghada","id":"osm.way.146214987","lat":27.1700892,"lon":33.8228696,"name":"Friendship Village","osm_id":146214987,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.way.146215045","lat":27.2454696,"lon":33.8430659,"name":"Sunny Days Palma de Mirette Resort","osm_id":146215045,"sources":["osm"],"stars":4}
 {"destination_id":"hurghada","id":"osm.way.146215119","lat":27.2467428,"lon":33.8464459,"name":"Sunny Days El Palacio Resort & Spa","osm_id":146215119,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.way.1469188097","lat":27.2112715,"lon":33.8415521,"name":"Andrea's Residence","osm_id":1469188097,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.way.1530584861","lat":27.2730322,"lon":33.7846749,"name":"Holiday Hurghada Beach","osm_id":1530584861,"sources":["osm"]}
+{"destination_id":"hurghada","id":"osm.way.1551313082","lat":27.2161014,"lon":33.8395905,"name":"Seagull","osm_id":1551313082,"sources":["osm"]}
+{"destination_id":"hurghada","id":"osm.way.1551359578","lat":27.2139315,"lon":33.841365,"name":"Aqua Fun","osm_id":1551359578,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.way.171234578","lat":27.1970345,"lon":33.8425922,"name":"Elysees Hotel","osm_id":171234578,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.way.171362517","lat":27.25992,"lon":33.8127839,"name":"Sea Horse Hotel","osm_id":171362517,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.way.171371035","lat":27.2118016,"lon":33.8415314,"name":"Roma Hotel managed by DEXON Hotel","osm_id":171371035,"sources":["osm"],"stars":3}
@@ -2561,9 +2565,7 @@
 {"destination_id":"hurghada","id":"osm.way.99771317","lat":27.2005448,"lon":33.841108,"name":"Tiba Hotel","osm_id":99771317,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.way.99799877","lat":27.2113112,"lon":33.843728,"name":"Paradiana Lagune Hotel","osm_id":99799877,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.way.99799878","lat":27.2164748,"lon":33.8405687,"name":"Seagull Beach Club","osm_id":99799878,"sources":["osm"]}
-{"destination_id":"hurghada","id":"osm.way.99799882","lat":27.2141106,"lon":33.8415801,"name":"Aqua Fun","osm_id":99799882,"sources":["osm"]}
-{"destination_id":"hurghada","id":"osm.way.99799883","lat":27.2198111,"lon":33.8396254,"name":"Regina Resort","osm_id":99799883,"sources":["osm"],"stars":4}
-{"destination_id":"hurghada","id":"osm.way.99799888","lat":27.2187221,"lon":33.840078,"name":"La Pacha Resort","osm_id":99799888,"sources":["osm"],"stars":4}
+{"destination_id":"hurghada","id":"osm.way.99799883","lat":27.219816,"lon":33.8396254,"name":"Regina Resort","osm_id":99799883,"sources":["osm"],"stars":4}
 {"destination_id":"hurghada","id":"osm.way.99799889","lat":27.2158028,"lon":33.8410934,"name":"Seagull Beach Resort","osm_id":99799889,"sources":["osm"]}
 {"destination_id":"hurghada","id":"osm.way.99799891","lat":27.2009039,"lon":33.8513235,"name":"Sea Shell","osm_id":99799891,"sources":["osm"],"stars":4}
 {"destination_id":"hurghada","id":"osm.way.99799895","lat":27.2124994,"lon":33.8421197,"name":"Roma Beach Club","osm_id":99799895,"sources":["osm"]}
@@ -2727,14 +2729,14 @@
 {"destination_id":"irkutsk","id":"osm.node.7183533686","lat":52.2505063,"lon":104.4096905,"name":"Пекин","osm_id":7183533686,"sources":["osm"]}
 {"destination_id":"irkutsk","id":"osm.node.7260730215","lat":52.252034,"lon":104.3210973,"name":"Байкал-Северное море","osm_id":7260730215,"sources":["osm"]}
 {"destination_id":"irkutsk","id":"osm.node.7293981359","lat":52.276012,"lon":104.283278,"name":"Спорт","osm_id":7293981359,"sources":["osm"]}
-{"destination_id":"irkutsk","id":"osm.way.105819620","lat":52.2881981,"lon":104.2730174,"name":"Mariott Courtyard Irkutsk City Center","osm_id":105819620,"sources":["osm"]}
+{"destination_id":"irkutsk","id":"osm.way.105819620","lat":52.2881981,"lon":104.2730174,"name":"Irkutsk City Center","osm_id":105819620,"sources":["osm"]}
 {"destination_id":"irkutsk","id":"osm.way.129207373","lat":52.2826079,"lon":104.2768488,"name":"Business-hall","osm_id":129207373,"sources":["osm"]}
 {"destination_id":"irkutsk","id":"osm.way.131642717","lat":52.2836701,"lon":104.3010842,"name":"Дельта","osm_id":131642717,"sources":["osm"]}
 {"destination_id":"irkutsk","id":"osm.way.132395533","lat":52.2813878,"lon":104.2580392,"name":"Магас","osm_id":132395533,"sources":["osm"]}
 {"destination_id":"irkutsk","id":"osm.way.132994055","lat":52.2888973,"lon":104.2852964,"name":"Иркут","osm_id":132994055,"sources":["osm"]}
 {"destination_id":"irkutsk","id":"osm.way.132994061","lat":52.2874339,"lon":104.2880044,"name":"Гостиница \"Арена\"","osm_id":132994061,"sources":["osm"]}
 {"destination_id":"irkutsk","id":"osm.way.133025378","lat":52.2746106,"lon":104.3048839,"name":"Европа","osm_id":133025378,"sources":["osm"]}
-{"destination_id":"irkutsk","id":"osm.way.136576482","lat":52.253473,"lon":104.3273621,"name":"Фрегат","osm_id":136576482,"sources":["osm"]}
+{"destination_id":"irkutsk","id":"osm.way.136576482","lat":52.2535151,"lon":104.32734,"name":"Фрегат","osm_id":136576482,"sources":["osm"]}
 {"destination_id":"irkutsk","id":"osm.way.139061481","lat":52.2920895,"lon":104.2836039,"name":"Империя","osm_id":139061481,"sources":["osm"],"stars":3}
 {"destination_id":"irkutsk","id":"osm.way.262232681","lat":52.2574372,"lon":104.3588539,"name":"Sun Hotel","osm_id":262232681,"sources":["osm"]}
 {"destination_id":"irkutsk","id":"osm.way.28522957","lat":52.2487313,"lon":104.2709769,"name":"Академическая","osm_id":28522957,"sources":["osm"]}
@@ -2758,7 +2760,7 @@
 {"destination_id":"istanbul","id":"osm.node.10066765016","lat":41.0029488,"lon":28.9764492,"name":"Aycan Sultan Apart Hotel","osm_id":10066765016,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.10082183195","lat":41.0069574,"lon":28.9520235,"name":"Diamond City Hotels Yenikapı","osm_id":10082183195,"sources":["osm"],"stars":5}
 {"destination_id":"istanbul","id":"osm.node.10086696650","lat":41.0381977,"lon":28.9812757,"name":"Taksim story residence","osm_id":10086696650,"sources":["osm"]}
-{"destination_id":"istanbul","id":"osm.node.10094852617","lat":41.0344071,"lon":28.9797142,"name":"blue pera","osm_id":10094852617,"sources":["osm"]}
+{"destination_id":"istanbul","id":"osm.node.10094852617","lat":41.0343933,"lon":28.9797057,"name":"blue pera","osm_id":10094852617,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.10098614217","lat":41.0100899,"lon":28.9544421,"name":"فندق كلاريوس","osm_id":10098614217,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.10100003382","lat":41.0270692,"lon":28.9748799,"name":"Meroddi","osm_id":10100003382,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.10103816403","lat":41.0057948,"lon":28.9741914,"name":"Hacibayram Hotel","osm_id":10103816403,"sources":["osm"]}
@@ -2818,6 +2820,7 @@
 {"destination_id":"istanbul","id":"osm.node.11658068569","lat":41.0065307,"lon":28.9700135,"name":"aprilis deluxe hotel","osm_id":11658068569,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.11694384222","lat":41.0133215,"lon":28.9778867,"name":"Downtown Sirkeci Hotel","osm_id":11694384222,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.11732284670","lat":41.0200142,"lon":28.9629642,"name":"Lucky Hotel Istanbul","osm_id":11732284670,"sources":["osm"]}
+{"destination_id":"istanbul","id":"osm.node.11749014869","lat":41.0339128,"lon":28.9812288,"name":"Aleksandr Pera Hotel","osm_id":11749014869,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.1179308582","lat":41.0034679,"lon":28.9768052,"name":"Tashkonak Hotel","osm_id":1179308582,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.11802260270","lat":40.9926896,"lon":29.0251515,"name":"Moja City Hotel","osm_id":11802260270,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.11811873069","lat":41.0342528,"lon":28.9836892,"name":"Pera Center Hotel","osm_id":11811873069,"sources":["osm"]}
@@ -2838,7 +2841,7 @@
 {"destination_id":"istanbul","id":"osm.node.12023278469","lat":41.0357533,"lon":28.9741732,"name":"Ore Pera Suite","osm_id":12023278469,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.12031242969","lat":41.0317156,"lon":28.9799561,"name":"The Havana Residence","osm_id":12031242969,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.12035343061","lat":41.0269716,"lon":28.9754865,"name":"Wilson Galata Hotel","osm_id":12035343061,"sources":["osm"]}
-{"destination_id":"istanbul","id":"osm.node.12038055269","lat":41.0338096,"lon":28.9835108,"name":"taxim cool","osm_id":12038055269,"sources":["osm"]}
+{"destination_id":"istanbul","id":"osm.node.12038055269","lat":41.0338039,"lon":28.9835085,"name":"taxim cool suites","osm_id":12038055269,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.12143531301","lat":41.0261796,"lon":28.958422,"name":"GEN PLUS HÔTEL","osm_id":12143531301,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.12180166901","lat":41.0369366,"lon":28.9921661,"name":"The Artisan MGallery Istanbul","osm_id":12180166901,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.12180580815","lat":40.9786614,"lon":28.8705968,"name":"Ruby Royal","osm_id":12180580815,"sources":["osm"]}
@@ -2980,7 +2983,6 @@
 {"destination_id":"istanbul","id":"osm.node.13739197284","lat":41.005832,"lon":28.9716279,"name":"The Laila Hotel","osm_id":13739197284,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.13745067653","lat":41.0068933,"lon":28.9583317,"name":"Grand Gross Hotel","osm_id":13745067653,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.13764560524","lat":41.0517621,"lon":28.9893863,"name":"Nishant Boutique","osm_id":13764560524,"sources":["osm"]}
-{"destination_id":"istanbul","id":"osm.node.13860345801","lat":41.0139326,"lon":28.976178,"name":"Turvan hotel","osm_id":13860345801,"sources":["osm"]}
 {"destination_id":"istanbul","id":"osm.node.1632649056","lat":41.0033858,"lon":28.98156,"name":"Radisson Hotel Istanbul Sultanahmet","osm_id":1632649056,"sources":["osm"],"stars":4}
 {"destination_id":"istanbul","id":"osm.node.2519859562","lat":41.0070836,"lon":28.9706285,"name":"Santa Sophia","osm_id":2519859562,"sources":["osm"],"stars":3}
 {"destination_id":"istanbul","id":"osm.node.2768450499","lat":41.0130358,"lon":28.9756727,"name":"Levni Hotel & SPA","osm_id":2768450499,"sources":["osm"],"stars":4}
@@ -3033,7 +3035,7 @@
 {"destination_id":"istanbul","id":"osm.way.465139273","lat":40.9803575,"lon":28.9013733,"name":"Novotel Istanbul Zeytinburnu","osm_id":465139273,"sources":["osm"],"stars":4}
 {"destination_id":"istanbul","id":"osm.way.49501446","lat":41.0423766,"lon":29.0115856,"name":"Four Seasons","osm_id":49501446,"sources":["osm"],"stars":5}
 {"destination_id":"istanbul","id":"osm.way.498861863","lat":41.0444587,"lon":29.0168574,"name":"Çırağan Sarayı Kempinski","osm_id":498861863,"sources":["osm"],"stars":5}
-{"destination_id":"istanbul","id":"osm.way.501759259","lat":41.0351366,"lon":28.9772694,"name":"Grand Hisar Hotel","osm_id":501759259,"sources":["osm"],"stars":3}
+{"destination_id":"istanbul","id":"osm.way.501759259","lat":41.0351261,"lon":28.9772694,"name":"Grand Hisar Hotel","osm_id":501759259,"sources":["osm"],"stars":3}
 {"destination_id":"istanbul","id":"osm.way.503352175","lat":41.0537166,"lon":28.9496417,"name":"Dosso Dossi Golden Horn Hotel","osm_id":503352175,"sources":["osm"],"stars":4}
 {"destination_id":"istanbul","id":"osm.way.530509261","lat":41.0054482,"lon":28.9812538,"name":"Royan Hotel Hagia Sophia Istanbul","osm_id":530509261,"sources":["osm"],"stars":4}
 {"destination_id":"istanbul","id":"osm.way.539522436","lat":41.0406165,"lon":29.0051584,"name":"Shangri-La Bosphorus","osm_id":539522436,"sources":["osm"],"stars":5}
@@ -3057,6 +3059,7 @@
 {"destination_id":"kaliningrad","id":"osm.node.13570586046","lat":54.7051587,"lon":20.5144538,"name":"У медового моста","osm_id":13570586046,"sources":["osm"]}
 {"destination_id":"kaliningrad","id":"osm.node.13888074772","lat":54.708731,"lon":20.5062509,"name":"Lastadie","osm_id":13888074772,"sources":["osm"]}
 {"destination_id":"kaliningrad","id":"osm.node.14133703857","lat":54.7286939,"lon":20.48341,"name":"Бриз","osm_id":14133703857,"sources":["osm"]}
+{"destination_id":"kaliningrad","id":"osm.node.14154858035","lat":54.7168963,"lon":20.4736124,"name":"Villa Toscana","osm_id":14154858035,"sources":["osm"]}
 {"destination_id":"kaliningrad","id":"osm.node.14157678623","lat":54.7175736,"lon":20.5000664,"name":"Европа","osm_id":14157678623,"sources":["osm"]}
 {"destination_id":"kaliningrad","id":"osm.node.1419122616","lat":54.7317448,"lon":20.5308826,"name":"Турист","osm_id":1419122616,"sources":["osm"]}
 {"destination_id":"kaliningrad","id":"osm.node.1732701858","lat":54.719896,"lon":20.5048151,"name":"Рэдиссон Калининград","osm_id":1732701858,"sources":["osm"]}
@@ -4100,7 +4103,7 @@
 {"destination_id":"nha-trang","id":"osm.node.12730813276","lat":12.2303504,"lon":109.1964689,"name":"Larosa 2 hotel","osm_id":12730813276,"sources":["osm"]}
 {"destination_id":"nha-trang","id":"osm.node.12774621062","lat":12.2425888,"lon":109.192204,"name":"Diamond Nha Trang Hotel","osm_id":12774621062,"sources":["osm"]}
 {"destination_id":"nha-trang","id":"osm.node.13033705727","lat":12.2523576,"lon":109.1918495,"name":"Khách sạn Areca Hotel Nha Trang","osm_id":13033705727,"sources":["osm"]}
-{"destination_id":"nha-trang","id":"osm.node.1305477894","lat":12.2214496,"lon":109.2460806,"name":"Vinpearl Deluxe","osm_id":1305477894,"sources":["osm"]}
+{"destination_id":"nha-trang","id":"osm.node.1305477894","lat":12.2214496,"lon":109.2460806,"name":"Vinpearl Resort Nha Trang","osm_id":1305477894,"sources":["osm"]}
 {"destination_id":"nha-trang","id":"osm.node.13161510818","lat":12.2811711,"lon":109.2015432,"name":"Scenia Bay Nha Trang Hotel","osm_id":13161510818,"sources":["osm"]}
 {"destination_id":"nha-trang","id":"osm.node.13176156797","lat":12.2338415,"lon":109.1949301,"name":"Rasaka","osm_id":13176156797,"sources":["osm"]}
 {"destination_id":"nha-trang","id":"osm.node.13188663101","lat":12.2266389,"lon":109.2001085,"name":"Regalia hotel","osm_id":13188663101,"sources":["osm"]}
@@ -4220,7 +4223,7 @@
 {"destination_id":"nha-trang","id":"osm.node.4723810391","lat":12.2440695,"lon":109.193967,"name":"Hotel Hong Hac","osm_id":4723810391,"sources":["osm"]}
 {"destination_id":"nha-trang","id":"osm.node.4763438521","lat":12.2395787,"lon":109.1926037,"name":"Nha trang Paradise","osm_id":4763438521,"sources":["osm"]}
 {"destination_id":"nha-trang","id":"osm.node.4784099429","lat":12.2349016,"lon":109.1941823,"name":"Son and Daughter","osm_id":4784099429,"sources":["osm"]}
-{"destination_id":"nha-trang","id":"osm.node.4789128521","lat":12.2256253,"lon":109.2371427,"name":"Vinpearl Nha Trang Bay Resort & Villas","osm_id":4789128521,"sources":["osm"]}
+{"destination_id":"nha-trang","id":"osm.node.4789128521","lat":12.2256253,"lon":109.2371427,"name":"Vinpearl Resort & Spa Nha Trang Bay","osm_id":4789128521,"sources":["osm"]}
 {"destination_id":"nha-trang","id":"osm.node.4888648298","lat":12.2374808,"lon":109.1961789,"name":"Venue","osm_id":4888648298,"sources":["osm"],"stars":3}
 {"destination_id":"nha-trang","id":"osm.node.4890960521","lat":12.2806915,"lon":109.2024419,"name":"Thien thanh 32 pham van dong","osm_id":4890960521,"sources":["osm"]}
 {"destination_id":"nha-trang","id":"osm.node.4893456024","lat":12.2566195,"lon":109.1947117,"name":"Bavico ngo quyen","osm_id":4893456024,"sources":["osm"]}
@@ -4514,6 +4517,7 @@
 {"destination_id":"paris","id":"osm.node.251758241","lat":48.8519344,"lon":2.3253667,"name":"Le Petit Chomel","osm_id":251758241,"sources":["osm"],"stars":3}
 {"destination_id":"paris","id":"osm.node.251758242","lat":48.8521505,"lon":2.326091,"name":"Signature","osm_id":251758242,"sources":["osm"],"stars":4}
 {"destination_id":"paris","id":"osm.node.251851365","lat":48.876717,"lon":2.3485948,"name":"Matissia","osm_id":251851365,"sources":["osm"],"stars":4}
+{"destination_id":"paris","id":"osm.node.251851402","lat":48.8711954,"lon":2.3550205,"name":"Hôtel Brady","osm_id":251851402,"sources":["osm"],"stars":3}
 {"destination_id":"paris","id":"osm.node.252732427","lat":48.8658412,"lon":2.367479,"name":"Hôtel du Nord et de l'Est","osm_id":252732427,"sources":["osm"],"stars":3}
 {"destination_id":"paris","id":"osm.node.252806985","lat":48.8462381,"lon":2.3733925,"name":"Hôtel Palym","osm_id":252806985,"sources":["osm"],"stars":3}
 {"destination_id":"paris","id":"osm.node.252817439","lat":48.8337711,"lon":2.3550065,"name":"Kyriad Italie Gobelins","osm_id":252817439,"sources":["osm"],"stars":3}
@@ -4612,7 +4616,6 @@
 {"destination_id":"paris","id":"osm.node.3688015011","lat":48.875549,"lon":2.29986,"name":"Le Royal Monceau – Raffles Paris","osm_id":3688015011,"sources":["osm"],"stars":5}
 {"destination_id":"paris","id":"osm.node.3759536276","lat":48.8452882,"lon":2.3099267,"name":"Vic Eiffel","osm_id":3759536276,"sources":["osm"],"stars":3}
 {"destination_id":"paris","id":"osm.node.3768467670","lat":48.8486989,"lon":2.2983272,"name":"Art Hotel Eiffel","osm_id":3768467670,"sources":["osm"],"stars":3}
-{"destination_id":"paris","id":"osm.node.3770664767","lat":48.8721186,"lon":2.3280405,"name":"Saint-Pétersbourg","osm_id":3770664767,"sources":["osm"],"stars":3}
 {"destination_id":"paris","id":"osm.node.703339736","lat":48.8691274,"lon":2.3007665,"name":"Prince de Galles","osm_id":703339736,"pets":true,"sources":["osm"],"stars":5}
 {"destination_id":"phuket","id":"osm.node.10223017518","lat":7.9126999,"lon":98.3322356,"name":"Goodday Kathu","osm_id":10223017518,"sources":["osm"]}
 {"destination_id":"phuket","id":"osm.node.10249982596","lat":7.9137317,"lon":98.3353546,"name":"B&B NAMO PHUKET","osm_id":10249982596,"sources":["osm"]}
@@ -5568,7 +5571,6 @@
 {"destination_id":"saint-petersburg","id":"osm.node.14240962792","lat":59.8906377,"lon":30.3138063,"name":"ARTSTUDIO M103","osm_id":14240962792,"sources":["osm"]}
 {"destination_id":"saint-petersburg","id":"osm.node.1425736643","lat":59.9265297,"lon":30.3429179,"name":"Sweet Dreams","osm_id":1425736643,"sources":["osm"]}
 {"destination_id":"saint-petersburg","id":"osm.node.14280113657","lat":59.9170432,"lon":30.2914209,"name":"Villa Mr. Pinky","osm_id":14280113657,"sources":["osm"],"stars":5}
-{"destination_id":"saint-petersburg","id":"osm.node.14321596904","lat":59.931114,"lon":30.3640294,"name":"Север","osm_id":14321596904,"sources":["osm"]}
 {"destination_id":"saint-petersburg","id":"osm.node.1447263729","lat":59.9329248,"lon":30.3342458,"name":"М-отель","osm_id":1447263729,"sources":["osm"],"stars":3}
 {"destination_id":"saint-petersburg","id":"osm.node.1488478976","lat":59.9097308,"lon":30.2874386,"name":"Ланселот","osm_id":1488478976,"sources":["osm"]}
 {"destination_id":"saint-petersburg","id":"osm.node.1520110813","lat":59.9259286,"lon":30.235701,"name":"Морской Вокзал","osm_id":1520110813,"sources":["osm"]}
@@ -5628,6 +5630,7 @@
 {"destination_id":"saint-petersburg","id":"osm.node.258371903","lat":59.932087,"lon":30.3508462,"name":"Коринтия","osm_id":258371903,"sources":["osm"]}
 {"destination_id":"saint-petersburg","id":"osm.node.2585195424","lat":59.9427606,"lon":30.3551916,"name":"Соната","osm_id":2585195424,"sources":["osm"]}
 {"destination_id":"saint-petersburg","id":"osm.node.2591842302","lat":59.9434087,"lon":30.2847245,"name":"Shelfort","osm_id":2591842302,"sources":["osm"]}
+{"destination_id":"saint-petersburg","id":"osm.node.2595232579","lat":59.9404204,"lon":30.3550392,"name":"Респекталь","osm_id":2595232579,"sources":["osm"]}
 {"destination_id":"saint-petersburg","id":"osm.node.2861371835","lat":59.9408986,"lon":30.3574855,"name":"На Саперном","osm_id":2861371835,"sources":["osm"],"stars":2}
 {"destination_id":"saint-petersburg","id":"osm.node.2922210501","lat":59.9291545,"lon":30.3212952,"name":"Капитал","osm_id":2922210501,"sources":["osm"],"stars":3}
 {"destination_id":"saint-petersburg","id":"osm.node.2927035510","lat":59.9288133,"lon":30.3591499,"name":"Лиготель","osm_id":2927035510,"sources":["osm"],"stars":3}
@@ -5874,7 +5877,8 @@
 {"destination_id":"sochi","id":"osm.node.1323204199","lat":43.5808926,"lon":39.7227223,"name":"МИРИТ","osm_id":1323204199,"sources":["osm"],"stars":3}
 {"destination_id":"sochi","id":"osm.node.13301736401","lat":43.661793,"lon":39.6786599,"name":"Lavicon Dagomys","osm_id":13301736401,"sources":["osm"]}
 {"destination_id":"sochi","id":"osm.node.13301736501","lat":43.5729518,"lon":39.7348283,"name":"Lavicon apart Sochi","osm_id":13301736501,"sources":["osm"]}
-{"destination_id":"sochi","id":"osm.node.13438392946","lat":43.574512,"lon":39.7365946,"name":"Разин","osm_id":13438392946,"sources":["osm"]}
+{"destination_id":"sochi","id":"osm.node.13438392946","lat":43.5744999,"lon":39.7366334,"name":"Разин","osm_id":13438392946,"sources":["osm"]}
+{"destination_id":"sochi","id":"osm.node.14330609598","lat":43.574475,"lon":39.73658,"name":"Bergs Spa & Detox","osm_id":14330609598,"sources":["osm"]}
 {"destination_id":"sochi","id":"osm.node.1521215547","lat":43.6214072,"lon":39.7020619,"name":"Санаторий Салют","osm_id":1521215547,"sources":["osm"],"stars":4}
 {"destination_id":"sochi","id":"osm.node.1859716038","lat":43.5717633,"lon":39.7398019,"name":"Вилла \"Анна\"","osm_id":1859716038,"sources":["osm"]}
 {"destination_id":"sochi","id":"osm.node.2181712522","lat":43.5772504,"lon":39.7223214,"name":"Мини-отель \"Маяк\"","osm_id":2181712522,"sources":["osm"]}
@@ -5996,7 +6000,6 @@
 {"destination_id":"tashkent","id":"osm.node.11027819858","lat":41.2910908,"lon":69.2643651,"name":"Shosh Boutique","osm_id":11027819858,"sources":["osm"]}
 {"destination_id":"tashkent","id":"osm.node.11027819871","lat":41.2951677,"lon":69.2893499,"name":"Aura","osm_id":11027819871,"sources":["osm"]}
 {"destination_id":"tashkent","id":"osm.node.11027819875","lat":41.2708518,"lon":69.1457767,"name":"Izza Palace","osm_id":11027819875,"sources":["osm"]}
-{"destination_id":"tashkent","id":"osm.node.11052615606","lat":41.2681232,"lon":69.2446756,"name":"С бассейном","osm_id":11052615606,"sources":["osm"]}
 {"destination_id":"tashkent","id":"osm.node.11081731367","lat":41.2689011,"lon":69.2483754,"name":"Dragon","osm_id":11081731367,"sources":["osm"]}
 {"destination_id":"tashkent","id":"osm.node.11140806041","lat":41.2822195,"lon":69.2632241,"name":"Summer","osm_id":11140806041,"sources":["osm"]}
 {"destination_id":"tashkent","id":"osm.node.11330545209","lat":41.3145409,"lon":69.244899,"name":"Holiday Inn Tashkent City","osm_id":11330545209,"sources":["osm"]}
@@ -6076,6 +6079,8 @@
 {"destination_id":"tashkent","id":"osm.node.14173942301","lat":41.2971851,"lon":69.2360751,"name":"Dsf Garden Hotel","osm_id":14173942301,"sources":["osm"]}
 {"destination_id":"tashkent","id":"osm.node.14268803803","lat":41.292277,"lon":69.2653162,"name":"Sapiens","osm_id":14268803803,"sources":["osm"]}
 {"destination_id":"tashkent","id":"osm.node.14282888501","lat":41.2979594,"lon":69.2607466,"name":"Art Inn hotel","osm_id":14282888501,"sources":["osm"]}
+{"destination_id":"tashkent","id":"osm.node.14333046113","lat":41.3174101,"lon":69.2256081,"name":"Suzuk Ota Hotel","osm_id":14333046113,"sources":["osm"]}
+{"destination_id":"tashkent","id":"osm.node.14336109257","lat":41.265099,"lon":69.3148703,"name":"Noor by Byond","osm_id":14336109257,"sources":["osm"]}
 {"destination_id":"tashkent","id":"osm.node.1830368950","lat":41.2813391,"lon":69.1926382,"name":"Бахт","osm_id":1830368950,"sources":["osm"]}
 {"destination_id":"tashkent","id":"osm.node.2044103880","lat":41.2826598,"lon":69.2668759,"name":"Western Suites Hotel","osm_id":2044103880,"sources":["osm"]}
 {"destination_id":"tashkent","id":"osm.node.2131915690","lat":41.2964346,"lon":69.2678941,"name":"Grand Mir Hotel","osm_id":2131915690,"sources":["osm"]}
@@ -6217,7 +6222,7 @@
 {"destination_id":"tbilisi","id":"osm.node.10285884972","lat":41.7055734,"lon":44.7888507,"name":"ზემელი","osm_id":10285884972,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.10287775476","lat":41.6877428,"lon":44.812392,"name":"ღვინო მინდა","osm_id":10287775476,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.10287775486","lat":41.6874965,"lon":44.8133256,"name":"Hotel Eleven Inn","osm_id":10287775486,"sources":["osm"]}
-{"destination_id":"tbilisi","id":"osm.node.10287775502","lat":41.687229,"lon":44.8141725,"name":"მეტეხი","osm_id":10287775502,"sources":["osm"]}
+{"destination_id":"tbilisi","id":"osm.node.10287775502","lat":41.687229,"lon":44.8141725,"name":"მეტეხი ლაინი","osm_id":10287775502,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.1030870531","lat":41.7687241,"lon":44.7798226,"name":"კრუიზი","osm_id":1030870531,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.10312753845","lat":41.7126775,"lon":44.7943766,"name":"იურალიუსი","osm_id":10312753845,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.10312753846","lat":41.7126755,"lon":44.7952173,"name":"ტრიბეკა","osm_id":10312753846,"sources":["osm"]}
@@ -6271,7 +6276,7 @@
 {"destination_id":"tbilisi","id":"osm.node.11262511827","lat":41.6926418,"lon":44.8057351,"name":"ზეგ","osm_id":11262511827,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.11262518139","lat":41.6930791,"lon":44.8039686,"name":"Ata","osm_id":11262518139,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.11262518146","lat":41.6931984,"lon":44.8034857,"name":"გლარროს ოლდ თაუნ","osm_id":11262518146,"sources":["osm"],"stars":5}
-{"destination_id":"tbilisi","id":"osm.node.11262635095","lat":41.6904935,"lon":44.8134634,"name":"კმმ","osm_id":11262635095,"sources":["osm"]}
+{"destination_id":"tbilisi","id":"osm.node.11262635095","lat":41.6904935,"lon":44.8134634,"name":"კმმ","osm_id":11262635095,"sources":["osm"],"stars":4}
 {"destination_id":"tbilisi","id":"osm.node.11262635104","lat":41.6900447,"lon":44.8129804,"name":"boutique","osm_id":11262635104,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.11262635113","lat":41.6901813,"lon":44.8087617,"name":"მეიდან პალასი","osm_id":11262635113,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.11263142968","lat":41.7102674,"lon":44.7965585,"name":"Old Avenue","osm_id":11263142968,"sources":["osm"]}
@@ -6289,6 +6294,7 @@
 {"destination_id":"tbilisi","id":"osm.node.11293429532","lat":41.6998706,"lon":44.7989354,"name":"H'otello","osm_id":11293429532,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.11293429538","lat":41.7019367,"lon":44.798717,"name":"ბროსე","osm_id":11293429538,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.11293429547","lat":41.6985176,"lon":44.8043489,"name":"ძველი სახლი","osm_id":11293429547,"sources":["osm"]}
+{"destination_id":"tbilisi","id":"osm.node.11297724645","lat":41.697514,"lon":44.8131168,"name":"მარია ლუის","osm_id":11297724645,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.11297724649","lat":41.6969257,"lon":44.8107654,"name":"პანტომიმა","osm_id":11297724649,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.11297724650","lat":41.6974321,"lon":44.8106423,"name":"პასპორტი","osm_id":11297724650,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.11297724656","lat":41.7001908,"lon":44.8092267,"name":"სითი","osm_id":11297724656,"sources":["osm"]}
@@ -6462,9 +6468,10 @@
 {"destination_id":"tbilisi","id":"osm.node.13251939301","lat":41.6902344,"lon":44.8130064,"name":"Grand","osm_id":13251939301,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.13261086901","lat":41.6911623,"lon":44.8130097,"name":"Tiflis Town","osm_id":13261086901,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.13261280801","lat":41.6888592,"lon":44.8099279,"name":"Tbili Inn","osm_id":13261280801,"sources":["osm"]}
+{"destination_id":"tbilisi","id":"osm.node.13294847201","lat":41.6803402,"lon":44.8195782,"name":"სფარქ ბაი ჰილტონ","osm_id":13294847201,"sources":["osm"],"stars":4}
 {"destination_id":"tbilisi","id":"osm.node.13340439263","lat":41.6936667,"lon":44.7989946,"name":"Gallery Palace","osm_id":13340439263,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.13353045783","lat":41.7007886,"lon":44.8201255,"name":"Urban Bliss","osm_id":13353045783,"sources":["osm"]}
-{"destination_id":"tbilisi","id":"osm.node.13395412299","lat":41.6973046,"lon":44.8126705,"name":"Iris","osm_id":13395412299,"sources":["osm"]}
+{"destination_id":"tbilisi","id":"osm.node.13395412299","lat":41.6973046,"lon":44.8126705,"name":"ირისი","osm_id":13395412299,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.13395412300","lat":41.6979655,"lon":44.813734,"name":"ლივა","osm_id":13395412300,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.13410028359","lat":41.6852478,"lon":44.8329815,"name":"ნეაპოლი","osm_id":13410028359,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.13476752001","lat":41.7158941,"lon":44.7983203,"name":"Communal Plekhanovi Hotel","osm_id":13476752001,"sources":["osm"]}
@@ -6479,7 +6486,7 @@
 {"destination_id":"tbilisi","id":"osm.node.13873722401","lat":41.6957806,"lon":44.8139619,"name":"Hotel eight","osm_id":13873722401,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.13878303770","lat":41.6981488,"lon":44.7957858,"name":"კაზმა","osm_id":13878303770,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.13894525903","lat":41.7184224,"lon":44.7824954,"name":"Museum Hostel","osm_id":13894525903,"sources":["osm"]}
-{"destination_id":"tbilisi","id":"osm.node.13906516401","lat":41.6899966,"lon":44.8159133,"name":"სოტა მეტეხი","osm_id":13906516401,"sources":["osm"]}
+{"destination_id":"tbilisi","id":"osm.node.13906516401","lat":41.6899966,"lon":44.8159133,"name":"სოტა მეტეხი","osm_id":13906516401,"sources":["osm"],"stars":4}
 {"destination_id":"tbilisi","id":"osm.node.13910163515","lat":41.6887657,"lon":44.8097889,"name":"ზერტა","osm_id":13910163515,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.13910163517","lat":41.6897323,"lon":44.8070539,"name":"ნიკოლასი","osm_id":13910163517,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.13998157102","lat":41.7133577,"lon":44.757817,"name":"როუზ","osm_id":13998157102,"sources":["osm"]}
@@ -6491,7 +6498,6 @@
 {"destination_id":"tbilisi","id":"osm.node.14158053802","lat":41.7149914,"lon":44.7931434,"name":"Avenue N146","osm_id":14158053802,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.14178366301","lat":41.7070738,"lon":44.7848154,"name":"ვერისიმა","osm_id":14178366301,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.14213854101","lat":41.7125157,"lon":44.7956254,"name":"Unfound Door","osm_id":14213854101,"sources":["osm"]}
-{"destination_id":"tbilisi","id":"osm.node.14216338170","lat":41.6886064,"lon":44.8245512,"name":"ოლიმპუსი","osm_id":14216338170,"sources":["osm"]}
 {"destination_id":"tbilisi","id":"osm.node.1502584904","lat":41.7319074,"lon":44.7692843,"name":"Tbilotel","osm_id":1502584904,"sources":["osm"],"stars":3}
 {"destination_id":"tbilisi","id":"osm.node.3747385640","lat":41.6892115,"lon":44.8672991,"name":"ივერია ინნ","osm_id":3747385640,"sources":["osm"],"stars":4}
 {"destination_id":"tbilisi","id":"osm.node.4332197391","lat":41.696036,"lon":44.8043765,"name":"Blue Balcony Hotel","osm_id":4332197391,"sources":["osm"],"stars":4}
@@ -6500,7 +6506,6 @@
 {"destination_id":"tbilisi","id":"osm.relation.20990671","lat":41.6888384,"lon":44.8232939,"name":"შერატონ მეტეხი პალასი","osm_id":20990671,"sources":["osm"],"stars":5}
 {"destination_id":"tbilisi","id":"osm.relation.7108262","lat":41.6991648,"lon":44.7982961,"name":"Tbilisi Marriott Hotel","osm_id":7108262,"sources":["osm"],"stars":5}
 {"destination_id":"tbilisi","id":"osm.way.1144545920","lat":41.7107343,"lon":44.7580709,"name":"ჰილტონ გარდენ ინნ","osm_id":1144545920,"sources":["osm"],"stars":4}
-{"destination_id":"tbilisi","id":"osm.way.1570376762","lat":41.6803764,"lon":44.8195116,"name":"Spark by Hilton Tbilisi Biography","osm_id":1570376762,"sources":["osm"],"stars":4}
 {"destination_id":"tbilisi","id":"osm.way.284719990","lat":41.7072461,"lon":44.7841602,"name":"Tbilisi Philharmonic by Mercure Hotel","osm_id":284719990,"sources":["osm"],"stars":3}
 {"destination_id":"tbilisi","id":"osm.way.376290172","lat":41.7131066,"lon":44.7921953,"name":"Coral Boutique Hotel","osm_id":376290172,"sources":["osm"],"stars":4}
 {"destination_id":"tbilisi","id":"osm.way.75311496","lat":41.6884933,"lon":44.8134395,"name":"მერკური","osm_id":75311496,"sources":["osm"],"stars":4}
@@ -6631,6 +6636,7 @@
 {"destination_id":"tokyo","id":"osm.node.13357151039","lat":35.7279885,"lon":139.7722649,"name":"ホテルパレット","osm_id":13357151039,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.13367435959","lat":35.7391297,"lon":139.7347765,"name":"COTO 東京巣鴨","osm_id":13367435959,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.13397283471","lat":35.7100705,"lon":139.7777497,"name":"日光館","osm_id":13397283471,"sources":["osm"]}
+{"destination_id":"tokyo","id":"osm.node.13410606501","lat":35.729579,"lon":139.719401,"name":"Sunshine City Prince Hotel","osm_id":13410606501,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.13438007385","lat":35.6699667,"lon":139.7404728,"name":"1 Hotel Tokyo","osm_id":13438007385,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.13449752225","lat":35.6975055,"lon":139.7023878,"name":"VILLA FONTAINE","osm_id":13449752225,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.13452465401","lat":35.7164203,"lon":139.7952336,"name":"The Kanzashi Tokyo Asakusa Hotel","osm_id":13452465401,"sources":["osm"]}
@@ -6674,8 +6680,6 @@
 {"destination_id":"tokyo","id":"osm.node.14257791801","lat":35.708793,"lon":139.7730041,"name":"No.412 APA Hotel Keisei Ueno Ekimae Minami","osm_id":14257791801,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.14283166301","lat":35.6598332,"lon":139.6954358,"name":"エンホテル渋谷","osm_id":14283166301,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.14291815194","lat":35.6020212,"lon":139.7139183,"name":"Flexstay Inn","osm_id":14291815194,"sources":["osm"]}
-{"destination_id":"tokyo","id":"osm.node.14309311101","lat":35.7134071,"lon":139.7981581,"name":"Hop Inn Tokyo Asakusa","osm_id":14309311101,"sources":["osm"]}
-{"destination_id":"tokyo","id":"osm.node.14314893201","lat":35.6889166,"lon":139.7088457,"name":"No.220 APA Hotel Shinjuku Gyoemmae","osm_id":14314893201,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.1494149076","lat":35.6741016,"lon":139.7409221,"name":"The Capitol Hotel Tokyu","osm_id":1494149076,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.1509875950","lat":35.6638117,"lon":139.7314079,"name":"Remm Roppongi","osm_id":1509875950,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.1589723018","lat":35.7068085,"lon":139.7945162,"name":"ホテル法華クラブ浅草","osm_id":1589723018,"sources":["osm"]}
@@ -6763,6 +6767,7 @@
 {"destination_id":"tokyo","id":"osm.node.4059463490","lat":35.6579365,"lon":139.7556588,"name":"名鉄イン","osm_id":4059463490,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.4071214124","lat":35.7112786,"lon":139.7563519,"name":"鳳明館　本館・台町別館","osm_id":4071214124,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.4115229589","lat":35.6631355,"lon":139.6948504,"name":"Creston","osm_id":4115229589,"sources":["osm"]}
+{"destination_id":"tokyo","id":"osm.node.4130115103","lat":35.6427268,"lon":139.7450712,"name":"Hotel Villa Fontaine Tamachi","osm_id":4130115103,"sources":["osm"]}
 {"destination_id":"tokyo","id":"osm.node.4501131334","lat":35.6732755,"lon":139.7690493,"name":"ダイワロイネットホテル銀座プレミア","osm_id":4501131334,"sources":["osm"],"stars":3}
 {"destination_id":"tokyo","id":"osm.node.4524246754","lat":35.6642293,"lon":139.7520437,"name":"ファーストキャビン愛宕山","osm_id":4524246754,"sources":["osm"],"stars":5}
 {"destination_id":"tokyo","id":"osm.node.4864258012","lat":35.6630388,"lon":139.7614085,"name":"Conrad Tokyo","osm_id":4864258012,"sources":["osm"],"stars":5}
